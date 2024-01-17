@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Page</title>
+    <!-- Bootstrap CSS 파일 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.css">
+
+
+    <style>
+        /* 추가적인 사용자 정의 스타일 */
+        .container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+          width: 90%;
+          margin: 20px;
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          position: relative;
+          align-items: center;
+          justify-items: center;
+        }
+
+        .flex {
+          display: flex;
+          width: 100%;
+          gap: 6px;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 로그인 페이지 내용 작성 -->
+    <div class="container">
+        <div class="row justify-content-center">
+          <!-- Section: Design Block -->
+          <section class="">
+              <!-- Jumbotron -->
+              <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+                <div class="container">
+                  <div class="row gx-lg-5 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                      <h1 class="my-5 display-3 fw-bold ls-tight">
+                        
+                        <span class="text-primary">WELCOME to </span>chimedAi
+                      </h1>
+                      <p style="color: hsl(217, 10%, 50.8%)">
+                        Chapter-Level Lecture Video Recommendation System Using Graph Neural Network.
+                      </p>
+                    </div>
+            
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                      <div class="card">
+                        <div class="card-body py-5 px-md-5">
+                          <form method="post" action="{% url 'signupnext' %}" class="form">
+                            {% csrf_token %}
+                            {% if message %}
+                            <div class="alert alert-{{class}}">
+                              {{message}}
+                            </div>
+                            {% endif%} 
+                            <!-- Password input -->
+                            <div class="flex px-md-8">
+                              <div class="form-group">
+                                <input name="phone" type="tel" id="form3Example4" class="form-control" placeholder="Phone Number" required=""/>
+                              </div>
+                              <div class="form-group">
+                                <select name="role" id="form3Example4" class="form-control" required>
+                                  <option value="">Options</option>
+                                  <option value="0">Student</option>
+                                  <option value="1">Professor</option>
+                                </select>                    
+                              </div>
+                            </div>
+                            <!-- Submit button -->
+
+                              <button type="submit" class="btn btn-primary btn-block mb-8">
+                                Sign up
+                              </button>
+
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Jumbotron -->
+            </section>
+  <!-- Section: Design Block -->
+        </div>
+    </div>
+    
+    <!-- Bootstrap JavaScript 파일 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+
+    <script>
+      // 전화번호 입력 필드를 초기화
+      var phoneNumberInput = document.querySelector('#form3Example4');
+      window.intlTelInput(phoneNumberInput, {
+          preferredCountries: ['kr', 'mn'], // 원하는 국가 번호를 지정
+          separateDialCode: true // 국가 번호와 전화번호를 분리하여 표시
+      });
+  </script>
+</body>
+</html>

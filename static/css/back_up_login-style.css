@@ -1,0 +1,32 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	text-rendering : optimizeLegibility;
+	-webkit-font-smoothing : antialiased;
+	background-color: #333;
+}
+
+#login-bg.container-fluid {
+	padding: 0;
+	height: 80%;
+	position: absolute;
+}
+/* Background image an color divs*/
+
+#login{
+	padding-top: 10%;
+	/* text-transform: uppercase; */
+}
+
+.login form {
+	max-width: 265px;
+	margin: 30px auto;
+}
+
+/* .form-group{
+	width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+

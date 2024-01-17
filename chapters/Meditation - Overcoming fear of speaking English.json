@@ -1,0 +1,5109 @@
+{
+    "id": "6haceh9r5g-71d6-49ab-9b23-3138cc908897",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/af9c18ba-4a04-494e-9dbf-aa9e1f6a6795",
+    "text": "Hello, and welcome to this guided meditation. I will guide you through getting rid of fear of speaking English. This meditation is for you to stop being afraid, to start working on your goals in English. Close your eyes. Take a seated position. Breathe in and breathe out. Breathe in all the positive things that English brings to your life. Excitement about understanding other people. Joy of being able to explain yourself. Feeling of absolute happiness. Knowing that you have a powerful instrument to start living a life of your dreams. Breathe out all the judgment. Breathe out all the negativity that you've ever experienced when learning a language. If someone ever said nasty things about you or your English, it was really just a reflection of that person. Breathe in and breathe out. Inhale ah and exhale. Very often, our actions are controlled by our fears. Sometimes those fears do not even belong to us. They came from someone else and occupied, uh, precious space in our brain. These fears prevent us from living a life that we want. Breathe in and breathe out all your fear. Learning English is a process, a, um, very enjoyable and powerful process. When learning a new language, you start living a new life. You rediscover yourself. You create a new environment. You, um, start living a new life and a new language. Remember the last time you were dreaming in English? Remember how effortless your speech was? How excited you were about the conversation? Get that feeling back by letting go of control. When you try to control too many things, when you try to avoid making mistakes, your brain gets overloaded and it just stops. It blocks your actions. It starts creating a wall for you. Relax. Let go of control. Because it's okay to make mistakes. Even native speakers make mistakes. Say it in your mind. I am not afraid of making mistakes. I will not blame myself for making mistakes or forgetting words because I am on an exciting journey, on a journey to a new life. And my English language is a wave in the ocean that takes me there. And all I have to do is let my body flow with that wave. My mistakes in English don't define me. The more mistakes I make today, the fewer I will make in the future. I am going to speak English and to use English no matter how many mistakes I make. People are imperfect by nature. I can't know everything. But I know that our brains are capable of retaining a lot of things. Breathe in and breathe out. I won't quit practicing English. I am not afraid of failure because every mistake is just another step on my journey to my goals. I can clearly see myself speaking English. I can clearly see myself succeeding in an English speaking world. My English gets better every day. My vocabulary is expanding. I have no fear about my new life. I know that I'm great, and I know that a lot of exciting things are waiting for me in my future, and I know that the English language is going to bring me there. And because of that, I do not doubt myself. I am not afraid of speaking. I believe in myself. I can reach my goals, and there are no limits to what I can achieve. Take a deep breath. In and out. In and uh out. Inhale and exhale. Slowly open your eyes and say out loud, I love and I value who I am. Thank you so much, guys, for joining me for this practice today. Learning English is not just about learning words and phrases and grammar. It's also about working on your mindset, being more confident, and being happier. If you like this meditation, I would really appreciate a quick thank you in the comment section. Thank you so much.",
+    "words": [
+        {
+            "text": "Hello,",
+            "start": 12010,
+            "end": 12560,
+            "confidence": 0.98732,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 13250,
+            "end": 13662,
+            "confidence": 0.84,
+            "speaker": null
+        },
+        {
+            "text": "welcome",
+            "start": 13716,
+            "end": 14320,
+            "confidence": 0.98145,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 15010,
+            "end": 15422,
+            "confidence": 0.78,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 15476,
+            "end": 15694,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "guided",
+            "start": 15732,
+            "end": 16170,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "meditation.",
+            "start": 16250,
+            "end": 17150,
+            "confidence": 0.8822,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 17810,
+            "end": 18174,
+            "confidence": 0.61,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 18212,
+            "end": 18414,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "guide",
+            "start": 18452,
+            "end": 18746,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 18778,
+            "end": 19022,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "through",
+            "start": 19076,
+            "end": 19294,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "getting",
+            "start": 19332,
+            "end": 19582,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "rid",
+            "start": 19636,
+            "end": 19898,
+            "confidence": 0.98114,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 19914,
+            "end": 20094,
+            "confidence": 0.86,
+            "speaker": null
+        },
+        {
+            "text": "fear",
+            "start": 20132,
+            "end": 20910,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 21570,
+            "end": 21934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "speaking",
+            "start": 21972,
+            "end": 22318,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "English.",
+            "start": 22404,
+            "end": 23230,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 23890,
+            "end": 24302,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "meditation",
+            "start": 24356,
+            "end": 25090,
+            "confidence": 0.90596,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 25210,
+            "end": 25494,
+            "confidence": 0.9991,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 25532,
+            "end": 25734,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 25772,
+            "end": 25974,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 26012,
+            "end": 26262,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "stop",
+            "start": 26316,
+            "end": 26920,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "being",
+            "start": 27530,
+            "end": 27942,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "afraid,",
+            "start": 27996,
+            "end": 28790,
+            "confidence": 0.97956,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 29370,
+            "end": 29830,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 29900,
+            "end": 30230,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "working",
+            "start": 30300,
+            "end": 30920,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 31610,
+            "end": 31974,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 32012,
+            "end": 32262,
+            "confidence": 0.99494,
+            "speaker": null
+        },
+        {
+            "text": "goals",
+            "start": 32316,
+            "end": 33030,
+            "confidence": 0.91476,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 34170,
+            "end": 34534,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "English.",
+            "start": 34572,
+            "end": 35270,
+            "confidence": 0.95851,
+            "speaker": null
+        },
+        {
+            "text": "Close",
+            "start": 36090,
+            "end": 36502,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 36556,
+            "end": 36774,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "eyes.",
+            "start": 36812,
+            "end": 37400,
+            "confidence": 0.99921,
+            "speaker": null
+        },
+        {
+            "text": "Take",
+            "start": 38430,
+            "end": 38842,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 38896,
+            "end": 39018,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "seated",
+            "start": 39024,
+            "end": 39430,
+            "confidence": 0.72482,
+            "speaker": null
+        },
+        {
+            "text": "position.",
+            "start": 39510,
+            "end": 40140,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 41950,
+            "end": 42486,
+            "confidence": 0.98991,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 42518,
+            "end": 43100,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 44670,
+            "end": 45034,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "breathe",
+            "start": 45072,
+            "end": 45446,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "out.",
+            "start": 45478,
+            "end": 46060,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 46910,
+            "end": 47366,
+            "confidence": 0.95695,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 47398,
+            "end": 47690,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 47760,
+            "end": 48042,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 48096,
+            "end": 48314,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "positive",
+            "start": 48352,
+            "end": 48822,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 48886,
+            "end": 49500,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 50450,
+            "end": 50862,
+            "confidence": 0.86701,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 50916,
+            "end": 51322,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "brings",
+            "start": 51386,
+            "end": 51706,
+            "confidence": 0.99455,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 51738,
+            "end": 51886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 51908,
+            "end": 52142,
+            "confidence": 0.84796,
+            "speaker": null
+        },
+        {
+            "text": "life.",
+            "start": 52196,
+            "end": 52800,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "Excitement",
+            "start": 54850,
+            "end": 55950,
+            "confidence": 0.68762,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 57090,
+            "end": 57598,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "understanding",
+            "start": 57684,
+            "end": 58554,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "other",
+            "start": 58602,
+            "end": 58862,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "people.",
+            "start": 58916,
+            "end": 59520,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Joy",
+            "start": 61810,
+            "end": 62750,
+            "confidence": 0.99774,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 63830,
+            "end": 64242,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "being",
+            "start": 64296,
+            "end": 64562,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "able",
+            "start": 64616,
+            "end": 64882,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 64936,
+            "end": 65154,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "explain",
+            "start": 65192,
+            "end": 65586,
+            "confidence": 0.99675,
+            "speaker": null
+        },
+        {
+            "text": "yourself.",
+            "start": 65688,
+            "end": 66340,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "Feeling",
+            "start": 67510,
+            "end": 68094,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 68142,
+            "end": 68546,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "absolute",
+            "start": 68648,
+            "end": 69202,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "happiness.",
+            "start": 69336,
+            "end": 70210,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "Knowing",
+            "start": 71430,
+            "end": 72014,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 72062,
+            "end": 72322,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 72376,
+            "end": 72980,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 74390,
+            "end": 74754,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 74792,
+            "end": 75006,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "powerful",
+            "start": 75048,
+            "end": 75618,
+            "confidence": 0.99737,
+            "speaker": null
+        },
+        {
+            "text": "instrument",
+            "start": 75714,
+            "end": 76630,
+            "confidence": 0.6925,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 78730,
+            "end": 79142,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 79196,
+            "end": 79510,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "living",
+            "start": 79580,
+            "end": 79910,
+            "confidence": 0.94332,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 79980,
+            "end": 80214,
+            "confidence": 0.59,
+            "speaker": null
+        },
+        {
+            "text": "life",
+            "start": 80252,
+            "end": 80840,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 82730,
+            "end": 83094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 83132,
+            "end": 83382,
+            "confidence": 0.57763,
+            "speaker": null
+        },
+        {
+            "text": "dreams.",
+            "start": 83436,
+            "end": 84230,
+            "confidence": 0.61482,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 85290,
+            "end": 85778,
+            "confidence": 0.99849,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 85794,
+            "end": 86406,
+            "confidence": 0.5311,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 86588,
+            "end": 86982,
+            "confidence": 0.55822,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 87036,
+            "end": 87206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "judgment.",
+            "start": 87228,
+            "end": 88070,
+            "confidence": 0.70649,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 89070,
+            "end": 89686,
+            "confidence": 0.84755,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 89718,
+            "end": 90300,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 90830,
+            "end": 91242,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 91296,
+            "end": 91514,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "negativity",
+            "start": 91552,
+            "end": 92570,
+            "confidence": 0.70532,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 93310,
+            "end": 93626,
+            "confidence": 0.63162,
+            "speaker": null
+        },
+        {
+            "text": "you've",
+            "start": 93648,
+            "end": 93974,
+            "confidence": 0.99203,
+            "speaker": null
+        },
+        {
+            "text": "ever",
+            "start": 94022,
+            "end": 94330,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "experienced",
+            "start": 94400,
+            "end": 95450,
+            "confidence": 0.69589,
+            "speaker": null
+        },
+        {
+            "text": "when",
+            "start": 96190,
+            "end": 96602,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 96656,
+            "end": 97114,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 97232,
+            "end": 97466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "language.",
+            "start": 97488,
+            "end": 98330,
+            "confidence": 0.98054,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 98830,
+            "end": 99194,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "someone",
+            "start": 99232,
+            "end": 99578,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "ever",
+            "start": 99664,
+            "end": 100118,
+            "confidence": 0.85191,
+            "speaker": null
+        },
+        {
+            "text": "said",
+            "start": 100224,
+            "end": 100880,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "nasty",
+            "start": 101330,
+            "end": 102074,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 102122,
+            "end": 102430,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 102500,
+            "end": 102782,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 102836,
+            "end": 103440,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 104130,
+            "end": 104494,
+            "confidence": 0.99894,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 104532,
+            "end": 104782,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "English,",
+            "start": 104836,
+            "end": 105550,
+            "confidence": 0.97276,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 106050,
+            "end": 106366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "was",
+            "start": 106388,
+            "end": 106574,
+            "confidence": 0.97323,
+            "speaker": null
+        },
+        {
+            "text": "really",
+            "start": 106612,
+            "end": 106862,
+            "confidence": 0.55441,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 106916,
+            "end": 107182,
+            "confidence": 0.97903,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 107236,
+            "end": 107406,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "reflection",
+            "start": 107428,
+            "end": 108506,
+            "confidence": 0.99789,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 108698,
+            "end": 109054,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 109092,
+            "end": 109342,
+            "confidence": 0.99029,
+            "speaker": null
+        },
+        {
+            "text": "person.",
+            "start": 109396,
+            "end": 110000,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 110610,
+            "end": 111066,
+            "confidence": 0.48104,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 111098,
+            "end": 111680,
+            "confidence": 0.50381,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 112470,
+            "end": 112786,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "breathe",
+            "start": 112808,
+            "end": 113166,
+            "confidence": 0.99938,
+            "speaker": null
+        },
+        {
+            "text": "out.",
+            "start": 113198,
+            "end": 113780,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Inhale",
+            "start": 115110,
+            "end": 115440,
+            "confidence": 0.94849,
+            "speaker": null
+        },
+        {
+            "text": "ah",
+            "start": 115440,
+            "end": 115510,
+            "confidence": 0.7437871694564819,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 118070,
+            "end": 118434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "exhale.",
+            "start": 118472,
+            "end": 119410,
+            "confidence": 0.98331,
+            "speaker": null
+        },
+        {
+            "text": "Very",
+            "start": 120870,
+            "end": 121330,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "often,",
+            "start": 121400,
+            "end": 122020,
+            "confidence": 0.94739,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 123030,
+            "end": 123442,
+            "confidence": 0.84394,
+            "speaker": null
+        },
+        {
+            "text": "actions",
+            "start": 123496,
+            "end": 124126,
+            "confidence": 0.98695,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 124238,
+            "end": 124562,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "controlled",
+            "start": 124616,
+            "end": 125570,
+            "confidence": 0.96373,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 126170,
+            "end": 126534,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 126572,
+            "end": 126822,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "fears.",
+            "start": 126876,
+            "end": 127590,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "Sometimes",
+            "start": 128330,
+            "end": 129080,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "those",
+            "start": 130890,
+            "end": 131350,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "fears",
+            "start": 131420,
+            "end": 132150,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 133130,
+            "end": 133494,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 133532,
+            "end": 133734,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "even",
+            "start": 133772,
+            "end": 134070,
+            "confidence": 0.95598,
+            "speaker": null
+        },
+        {
+            "text": "belong",
+            "start": 134140,
+            "end": 134562,
+            "confidence": 0.83542,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 134626,
+            "end": 134854,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "us.",
+            "start": 134892,
+            "end": 135480,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "They",
+            "start": 135930,
+            "end": 136294,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "came",
+            "start": 136332,
+            "end": 136582,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 136636,
+            "end": 136950,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "someone",
+            "start": 137020,
+            "end": 137398,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "else",
+            "start": 137484,
+            "end": 138120,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 138490,
+            "end": 138914,
+            "confidence": 0.68,
+            "speaker": null
+        },
+        {
+            "text": "occupied,",
+            "start": 138972,
+            "end": 139770,
+            "confidence": 0.90526,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 139770,
+            "end": 140360,
+            "confidence": 0.970272958278656,
+            "speaker": null
+        },
+        {
+            "text": "precious",
+            "start": 141150,
+            "end": 141782,
+            "confidence": 0.99639,
+            "speaker": null
+        },
+        {
+            "text": "space",
+            "start": 141846,
+            "end": 142460,
+            "confidence": 0.5311,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 143150,
+            "end": 143514,
+            "confidence": 0.99913,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 143552,
+            "end": 143754,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "brain.",
+            "start": 143792,
+            "end": 144570,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "These",
+            "start": 145150,
+            "end": 145610,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "fears",
+            "start": 145680,
+            "end": 146410,
+            "confidence": 0.99827,
+            "speaker": null
+        },
+        {
+            "text": "prevent",
+            "start": 147870,
+            "end": 148534,
+            "confidence": 0.97772,
+            "speaker": null
+        },
+        {
+            "text": "us",
+            "start": 148582,
+            "end": 149180,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 149890,
+            "end": 150254,
+            "confidence": 0.54929,
+            "speaker": null
+        },
+        {
+            "text": "living",
+            "start": 150292,
+            "end": 150542,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 150596,
+            "end": 150814,
+            "confidence": 0.62,
+            "speaker": null
+        },
+        {
+            "text": "life",
+            "start": 150852,
+            "end": 151440,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 152930,
+            "end": 153342,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 153396,
+            "end": 153662,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "want.",
+            "start": 153716,
+            "end": 154320,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 155570,
+            "end": 156106,
+            "confidence": 0.99351,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 156138,
+            "end": 156720,
+            "confidence": 0.67235,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 158530,
+            "end": 158942,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "breathe",
+            "start": 158996,
+            "end": 159386,
+            "confidence": 0.99949,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 159418,
+            "end": 160000,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 160930,
+            "end": 161390,
+            "confidence": 0.999,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 161460,
+            "end": 161742,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "fear.",
+            "start": 161796,
+            "end": 162590,
+            "confidence": 0.99671,
+            "speaker": null
+        },
+        {
+            "text": "Learning",
+            "start": 163590,
+            "end": 164194,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 164312,
+            "end": 165090,
+            "confidence": 0.85773,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 166150,
+            "end": 166562,
+            "confidence": 0.61144,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 166616,
+            "end": 166834,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "process,",
+            "start": 166872,
+            "end": 167460,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a,",
+            "start": 168870,
+            "end": 168970,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "um,",
+            "start": 168970,
+            "end": 169090,
+            "confidence": 0.9216160774230957,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 169336,
+            "end": 169794,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "enjoyable",
+            "start": 169912,
+            "end": 171010,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 172070,
+            "end": 172578,
+            "confidence": 0.63,
+            "speaker": null
+        },
+        {
+            "text": "powerful",
+            "start": 172664,
+            "end": 173650,
+            "confidence": 0.99848,
+            "speaker": null
+        },
+        {
+            "text": "process.",
+            "start": 174310,
+            "end": 175060,
+            "confidence": 0.67581,
+            "speaker": null
+        },
+        {
+            "text": "When",
+            "start": 176010,
+            "end": 176422,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 176476,
+            "end": 176934,
+            "confidence": 0.74915,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 177052,
+            "end": 177334,
+            "confidence": 0.93,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 177372,
+            "end": 177574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "language,",
+            "start": 177612,
+            "end": 178470,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 179690,
+            "end": 180150,
+            "confidence": 0.53893,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 180220,
+            "end": 180550,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "living",
+            "start": 180620,
+            "end": 181240,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 182650,
+            "end": 183014,
+            "confidence": 0.91,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 183052,
+            "end": 183302,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "life.",
+            "start": 183356,
+            "end": 183960,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 184490,
+            "end": 184950,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "rediscover",
+            "start": 185020,
+            "end": 185938,
+            "confidence": 0.64371,
+            "speaker": null
+        },
+        {
+            "text": "yourself.",
+            "start": 186034,
+            "end": 186680,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 187550,
+            "end": 187914,
+            "confidence": 0.94811,
+            "speaker": null
+        },
+        {
+            "text": "create",
+            "start": 187952,
+            "end": 188540,
+            "confidence": 0.98358,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 189870,
+            "end": 190234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 190272,
+            "end": 190618,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "environment.",
+            "start": 190704,
+            "end": 191770,
+            "confidence": 0.87743,
+            "speaker": null
+        },
+        {
+            "text": "You,",
+            "start": 192510,
+            "end": 192690,
+            "confidence": 0.60757,
+            "speaker": null
+        },
+        {
+            "text": "um,",
+            "start": 192690,
+            "end": 192730,
+            "confidence": 0.9583206176757812,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 192912,
+            "end": 193162,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "living",
+            "start": 193216,
+            "end": 193578,
+            "confidence": 0.79552,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 193664,
+            "end": 193866,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 193888,
+            "end": 194170,
+            "confidence": 0.94,
+            "speaker": null
+        },
+        {
+            "text": "life",
+            "start": 194240,
+            "end": 194860,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 195390,
+            "end": 195754,
+            "confidence": 0.69,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 195792,
+            "end": 195946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 195968,
+            "end": 196202,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "language.",
+            "start": 196256,
+            "end": 197050,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Remember",
+            "start": 197470,
+            "end": 198026,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 198128,
+            "end": 198442,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "last",
+            "start": 198496,
+            "end": 198762,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "time",
+            "start": 198816,
+            "end": 199420,
+            "confidence": 0.90331,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 200450,
+            "end": 200814,
+            "confidence": 0.99908,
+            "speaker": null
+        },
+        {
+            "text": "were",
+            "start": 200852,
+            "end": 201102,
+            "confidence": 0.78616,
+            "speaker": null
+        },
+        {
+            "text": "dreaming",
+            "start": 201156,
+            "end": 201642,
+            "confidence": 0.98093,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 201706,
+            "end": 201934,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "English?",
+            "start": 201972,
+            "end": 202670,
+            "confidence": 0.99596,
+            "speaker": null
+        },
+        {
+            "text": "Remember",
+            "start": 203410,
+            "end": 203966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 204068,
+            "end": 204430,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "effortless",
+            "start": 204500,
+            "end": 205470,
+            "confidence": 0.9961,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 206210,
+            "end": 206622,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "speech",
+            "start": 206676,
+            "end": 207082,
+            "confidence": 0.77799,
+            "speaker": null
+        },
+        {
+            "text": "was?",
+            "start": 207146,
+            "end": 207760,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "How",
+            "start": 208370,
+            "end": 208878,
+            "confidence": 0.54289,
+            "speaker": null
+        },
+        {
+            "text": "excited",
+            "start": 208964,
+            "end": 209706,
+            "confidence": 0.99484,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 209818,
+            "end": 210142,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "were",
+            "start": 210196,
+            "end": 210800,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 211410,
+            "end": 211822,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 211876,
+            "end": 212142,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "conversation?",
+            "start": 212196,
+            "end": 213150,
+            "confidence": 0.99654,
+            "speaker": null
+        },
+        {
+            "text": "Get",
+            "start": 213990,
+            "end": 214402,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 214456,
+            "end": 214770,
+            "confidence": 0.62243,
+            "speaker": null
+        },
+        {
+            "text": "feeling",
+            "start": 214840,
+            "end": 215294,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "back",
+            "start": 215342,
+            "end": 215940,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 217270,
+            "end": 217634,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "letting",
+            "start": 217672,
+            "end": 218046,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "go",
+            "start": 218078,
+            "end": 218660,
+            "confidence": 0.95185,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 219910,
+            "end": 220322,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "control.",
+            "start": 220376,
+            "end": 220980,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "When",
+            "start": 222230,
+            "end": 222594,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 222632,
+            "end": 223026,
+            "confidence": 0.97404,
+            "speaker": null
+        },
+        {
+            "text": "try",
+            "start": 223128,
+            "end": 223780,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 225370,
+            "end": 225782,
+            "confidence": 0.83,
+            "speaker": null
+        },
+        {
+            "text": "control",
+            "start": 225836,
+            "end": 226294,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "too",
+            "start": 226412,
+            "end": 226742,
+            "confidence": 0.71223,
+            "speaker": null
+        },
+        {
+            "text": "many",
+            "start": 226796,
+            "end": 227158,
+            "confidence": 0.98738,
+            "speaker": null
+        },
+        {
+            "text": "things,",
+            "start": 227244,
+            "end": 227880,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "when",
+            "start": 230010,
+            "end": 230422,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 230476,
+            "end": 230790,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "try",
+            "start": 230860,
+            "end": 231480,
+            "confidence": 0.99938,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 233050,
+            "end": 233414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "avoid",
+            "start": 233452,
+            "end": 234002,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "making",
+            "start": 234066,
+            "end": 234390,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "mistakes,",
+            "start": 234460,
+            "end": 235510,
+            "confidence": 0.76223,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 235850,
+            "end": 236262,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "brain",
+            "start": 236316,
+            "end": 236594,
+            "confidence": 0.74314,
+            "speaker": null
+        },
+        {
+            "text": "gets",
+            "start": 236642,
+            "end": 236998,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "overloaded",
+            "start": 237084,
+            "end": 238310,
+            "confidence": 0.48168,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 238750,
+            "end": 239114,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 239152,
+            "end": 239306,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 239328,
+            "end": 239562,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "stops.",
+            "start": 239616,
+            "end": 240490,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 241950,
+            "end": 242314,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "blocks",
+            "start": 242352,
+            "end": 242726,
+            "confidence": 0.90321,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 242758,
+            "end": 243050,
+            "confidence": 0.5813,
+            "speaker": null
+        },
+        {
+            "text": "actions.",
+            "start": 243120,
+            "end": 243850,
+            "confidence": 0.6991,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 244830,
+            "end": 245338,
+            "confidence": 0.55441,
+            "speaker": null
+        },
+        {
+            "text": "starts",
+            "start": 245424,
+            "end": 246406,
+            "confidence": 0.95077,
+            "speaker": null
+        },
+        {
+            "text": "creating",
+            "start": 246598,
+            "end": 247302,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 247366,
+            "end": 247546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "wall",
+            "start": 247568,
+            "end": 247850,
+            "confidence": 0.88239,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 247920,
+            "end": 248154,
+            "confidence": 0.99879,
+            "speaker": null
+        },
+        {
+            "text": "you.",
+            "start": 248192,
+            "end": 248780,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Relax.",
+            "start": 249890,
+            "end": 250830,
+            "confidence": 0.99851,
+            "speaker": null
+        },
+        {
+            "text": "Let",
+            "start": 252450,
+            "end": 252862,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "go",
+            "start": 252916,
+            "end": 253520,
+            "confidence": 0.96838,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 254370,
+            "end": 254782,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "control.",
+            "start": 254836,
+            "end": 255440,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Because",
+            "start": 256450,
+            "end": 256910,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "it's",
+            "start": 256980,
+            "end": 257306,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "okay",
+            "start": 257338,
+            "end": 257630,
+            "confidence": 0.99862,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 257700,
+            "end": 257982,
+            "confidence": 0.83,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 258036,
+            "end": 258254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "mistakes.",
+            "start": 258292,
+            "end": 259310,
+            "confidence": 0.92175,
+            "speaker": null
+        },
+        {
+            "text": "Even",
+            "start": 259650,
+            "end": 260158,
+            "confidence": 0.55441,
+            "speaker": null
+        },
+        {
+            "text": "native",
+            "start": 260244,
+            "end": 260682,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "speakers",
+            "start": 260746,
+            "end": 261710,
+            "confidence": 0.99908,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 262130,
+            "end": 262554,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "mistakes.",
+            "start": 262612,
+            "end": 263650,
+            "confidence": 0.59973,
+            "speaker": null
+        },
+        {
+            "text": "Say",
+            "start": 264230,
+            "end": 264594,
+            "confidence": 0.99853,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 264632,
+            "end": 264786,
+            "confidence": 0.99924,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 264808,
+            "end": 264946,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 264968,
+            "end": 265154,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "mind.",
+            "start": 265192,
+            "end": 265780,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 267350,
+            "end": 267666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "am",
+            "start": 267688,
+            "end": 267922,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 267976,
+            "end": 268242,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "afraid",
+            "start": 268296,
+            "end": 269090,
+            "confidence": 0.75009,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 269670,
+            "end": 270082,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "making",
+            "start": 270136,
+            "end": 270402,
+            "confidence": 0.99645,
+            "speaker": null
+        },
+        {
+            "text": "mistakes.",
+            "start": 270456,
+            "end": 271490,
+            "confidence": 0.5208,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 272070,
+            "end": 272434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 272472,
+            "end": 272626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 272648,
+            "end": 272978,
+            "confidence": 0.92192,
+            "speaker": null
+        },
+        {
+            "text": "blame",
+            "start": 273064,
+            "end": 273582,
+            "confidence": 0.77589,
+            "speaker": null
+        },
+        {
+            "text": "myself",
+            "start": 273646,
+            "end": 274260,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 275290,
+            "end": 275702,
+            "confidence": 0.62182,
+            "speaker": null
+        },
+        {
+            "text": "making",
+            "start": 275756,
+            "end": 276022,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "mistakes",
+            "start": 276076,
+            "end": 277110,
+            "confidence": 0.96281,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 278010,
+            "end": 278422,
+            "confidence": 0.82862,
+            "speaker": null
+        },
+        {
+            "text": "forgetting",
+            "start": 278476,
+            "end": 279074,
+            "confidence": 0.99731,
+            "speaker": null
+        },
+        {
+            "text": "words",
+            "start": 279122,
+            "end": 279720,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 280810,
+            "end": 281366,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 281468,
+            "end": 281782,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "am",
+            "start": 281836,
+            "end": 282440,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 283210,
+            "end": 283526,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 283548,
+            "end": 283686,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "exciting",
+            "start": 283708,
+            "end": 284210,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "journey,",
+            "start": 284290,
+            "end": 285110,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 286490,
+            "end": 286854,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 286892,
+            "end": 287046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "journey",
+            "start": 287068,
+            "end": 287830,
+            "confidence": 0.95583,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 288430,
+            "end": 288746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 288768,
+            "end": 288906,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 288928,
+            "end": 289162,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "life.",
+            "start": 289216,
+            "end": 289820,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 290270,
+            "end": 290634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 290672,
+            "end": 290922,
+            "confidence": 0.54662,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 290976,
+            "end": 291382,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "language",
+            "start": 291446,
+            "end": 292250,
+            "confidence": 0.93809,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 292910,
+            "end": 293322,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 293376,
+            "end": 293546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "wave",
+            "start": 293568,
+            "end": 294022,
+            "confidence": 0.85387,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 294086,
+            "end": 294266,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 294288,
+            "end": 294474,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ocean",
+            "start": 294512,
+            "end": 295290,
+            "confidence": 0.97519,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 296590,
+            "end": 297002,
+            "confidence": 0.98457,
+            "speaker": null
+        },
+        {
+            "text": "takes",
+            "start": 297056,
+            "end": 297322,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "me",
+            "start": 297376,
+            "end": 297642,
+            "confidence": 0.54662,
+            "speaker": null
+        },
+        {
+            "text": "there.",
+            "start": 297696,
+            "end": 298300,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 299970,
+            "end": 300286,
+            "confidence": 0.85,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 300308,
+            "end": 300494,
+            "confidence": 0.81757,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 300532,
+            "end": 300686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 300708,
+            "end": 300894,
+            "confidence": 0.74314,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 300932,
+            "end": 301134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 301172,
+            "end": 301760,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 302370,
+            "end": 302734,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "let",
+            "start": 302772,
+            "end": 302974,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 303012,
+            "end": 303214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "body",
+            "start": 303252,
+            "end": 303840,
+            "confidence": 0.67581,
+            "speaker": null
+        },
+        {
+            "text": "flow",
+            "start": 304850,
+            "end": 305790,
+            "confidence": 0.99799,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 306450,
+            "end": 306814,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 306852,
+            "end": 307102,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "wave.",
+            "start": 307156,
+            "end": 307950,
+            "confidence": 0.7341,
+            "speaker": null
+        },
+        {
+            "text": "My",
+            "start": 308530,
+            "end": 308894,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "mistakes",
+            "start": 308932,
+            "end": 309466,
+            "confidence": 0.94796,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 309498,
+            "end": 309694,
+            "confidence": 0.76355,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 309732,
+            "end": 310430,
+            "confidence": 0.99851,
+            "speaker": null
+        },
+        {
+            "text": "don't",
+            "start": 311490,
+            "end": 312042,
+            "confidence": 0.44391,
+            "speaker": null
+        },
+        {
+            "text": "define",
+            "start": 312106,
+            "end": 312694,
+            "confidence": 0.5697,
+            "speaker": null
+        },
+        {
+            "text": "me.",
+            "start": 312762,
+            "end": 313380,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 314070,
+            "end": 314434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 314472,
+            "end": 314722,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "mistakes",
+            "start": 314776,
+            "end": 315326,
+            "confidence": 0.99755,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 315358,
+            "end": 315554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 315592,
+            "end": 315794,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "today,",
+            "start": 315832,
+            "end": 316420,
+            "confidence": 0.94416,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 317270,
+            "end": 317634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fewer",
+            "start": 317672,
+            "end": 318530,
+            "confidence": 0.99919,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 319270,
+            "end": 319586,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 319608,
+            "end": 319842,
+            "confidence": 0.9381,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 319896,
+            "end": 320114,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 320152,
+            "end": 320306,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 320328,
+            "end": 320466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "future.",
+            "start": 320488,
+            "end": 321060,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 321910,
+            "end": 322274,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "am",
+            "start": 322312,
+            "end": 322610,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 322680,
+            "end": 322962,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 323016,
+            "end": 323234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "speak",
+            "start": 323272,
+            "end": 323570,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 323640,
+            "end": 324450,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 325050,
+            "end": 325414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 325452,
+            "end": 325750,
+            "confidence": 0.76,
+            "speaker": null
+        },
+        {
+            "text": "use",
+            "start": 325820,
+            "end": 326246,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 326348,
+            "end": 327190,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "no",
+            "start": 327850,
+            "end": 328214,
+            "confidence": 0.91246,
+            "speaker": null
+        },
+        {
+            "text": "matter",
+            "start": 328252,
+            "end": 328550,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 328620,
+            "end": 328950,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "many",
+            "start": 329020,
+            "end": 329302,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "mistakes",
+            "start": 329356,
+            "end": 330470,
+            "confidence": 0.57922,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 331290,
+            "end": 331702,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "make.",
+            "start": 331756,
+            "end": 332360,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "People",
+            "start": 332970,
+            "end": 333430,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 333500,
+            "end": 333734,
+            "confidence": 0.87745,
+            "speaker": null
+        },
+        {
+            "text": "imperfect",
+            "start": 333772,
+            "end": 334630,
+            "confidence": 0.96469,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 335610,
+            "end": 336022,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "nature.",
+            "start": 336076,
+            "end": 336790,
+            "confidence": 0.99834,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 337870,
+            "end": 338426,
+            "confidence": 0.74,
+            "speaker": null
+        },
+        {
+            "text": "can't",
+            "start": 338528,
+            "end": 339222,
+            "confidence": 0.93276,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 339366,
+            "end": 339770,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "everything.",
+            "start": 339840,
+            "end": 340460,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 341550,
+            "end": 341914,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 341952,
+            "end": 342202,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 342256,
+            "end": 342860,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 344110,
+            "end": 344522,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 344576,
+            "end": 344842,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "brains",
+            "start": 344896,
+            "end": 345610,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 346590,
+            "end": 347002,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "capable",
+            "start": 347056,
+            "end": 347590,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 347670,
+            "end": 347962,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "retaining",
+            "start": 348016,
+            "end": 349050,
+            "confidence": 0.9993,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 349470,
+            "end": 349786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "lot",
+            "start": 349808,
+            "end": 350006,
+            "confidence": 0.99073,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 350048,
+            "end": 350254,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "things.",
+            "start": 350292,
+            "end": 350880,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "Breathe",
+            "start": 352130,
+            "end": 352666,
+            "confidence": 0.99931,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 352698,
+            "end": 353280,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 354610,
+            "end": 354974,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "breathe",
+            "start": 355012,
+            "end": 355306,
+            "confidence": 0.91487,
+            "speaker": null
+        },
+        {
+            "text": "out.",
+            "start": 355338,
+            "end": 355920,
+            "confidence": 0.52722,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 356770,
+            "end": 357182,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "won't",
+            "start": 357236,
+            "end": 357562,
+            "confidence": 0.99734,
+            "speaker": null
+        },
+        {
+            "text": "quit",
+            "start": 357626,
+            "end": 358350,
+            "confidence": 0.99933,
+            "speaker": null
+        },
+        {
+            "text": "practicing",
+            "start": 358770,
+            "end": 359610,
+            "confidence": 0.58835,
+            "speaker": null
+        },
+        {
+            "text": "English.",
+            "start": 359690,
+            "end": 360430,
+            "confidence": 0.99736,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 360770,
+            "end": 361086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "am",
+            "start": 361108,
+            "end": 361294,
+            "confidence": 0.84,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 361332,
+            "end": 361534,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "afraid",
+            "start": 361572,
+            "end": 361946,
+            "confidence": 0.98547,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 361978,
+            "end": 362174,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "failure",
+            "start": 362212,
+            "end": 362990,
+            "confidence": 0.90728,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 363830,
+            "end": 364434,
+            "confidence": 0.98775,
+            "speaker": null
+        },
+        {
+            "text": "every",
+            "start": 364552,
+            "end": 364930,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "mistake",
+            "start": 365000,
+            "end": 365890,
+            "confidence": 0.58886,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 366790,
+            "end": 367202,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 367256,
+            "end": 367522,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "another",
+            "start": 367576,
+            "end": 367986,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "step",
+            "start": 368088,
+            "end": 368740,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 369270,
+            "end": 369634,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 369672,
+            "end": 369874,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "journey",
+            "start": 369912,
+            "end": 370334,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 370382,
+            "end": 370546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 370568,
+            "end": 370754,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "goals.",
+            "start": 370792,
+            "end": 371490,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 372070,
+            "end": 372434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 372472,
+            "end": 372722,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "clearly",
+            "start": 372776,
+            "end": 373470,
+            "confidence": 0.57113,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 373550,
+            "end": 373842,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "myself",
+            "start": 373896,
+            "end": 374500,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "speaking",
+            "start": 375450,
+            "end": 376006,
+            "confidence": 0.96481,
+            "speaker": null
+        },
+        {
+            "text": "English.",
+            "start": 376108,
+            "end": 376870,
+            "confidence": 0.99028,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 377610,
+            "end": 378022,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 378076,
+            "end": 378342,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "clearly",
+            "start": 378396,
+            "end": 379042,
+            "confidence": 0.95106,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 379106,
+            "end": 379382,
+            "confidence": 0.98717,
+            "speaker": null
+        },
+        {
+            "text": "myself",
+            "start": 379436,
+            "end": 380134,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "succeeding",
+            "start": 380332,
+            "end": 381590,
+            "confidence": 0.99313,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 382330,
+            "end": 382646,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 382668,
+            "end": 382854,
+            "confidence": 0.99405,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 382892,
+            "end": 383234,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "speaking",
+            "start": 383282,
+            "end": 383686,
+            "confidence": 0.97291,
+            "speaker": null
+        },
+        {
+            "text": "world.",
+            "start": 383788,
+            "end": 384440,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "My",
+            "start": 386170,
+            "end": 386630,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 386700,
+            "end": 387510,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "gets",
+            "start": 388430,
+            "end": 388890,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "better",
+            "start": 388960,
+            "end": 389386,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "every",
+            "start": 389488,
+            "end": 389850,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "day.",
+            "start": 389920,
+            "end": 390540,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "My",
+            "start": 391230,
+            "end": 391642,
+            "confidence": 0.64423,
+            "speaker": null
+        },
+        {
+            "text": "vocabulary",
+            "start": 391696,
+            "end": 393050,
+            "confidence": 0.82469,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 393710,
+            "end": 394122,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "expanding.",
+            "start": 394176,
+            "end": 395210,
+            "confidence": 0.94951,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 395630,
+            "end": 395946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 395968,
+            "end": 396202,
+            "confidence": 0.97156,
+            "speaker": null
+        },
+        {
+            "text": "no",
+            "start": 396256,
+            "end": 396474,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fear",
+            "start": 396512,
+            "end": 396854,
+            "confidence": 0.98793,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 396902,
+            "end": 397162,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 397216,
+            "end": 397434,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 397472,
+            "end": 397722,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "life.",
+            "start": 397776,
+            "end": 398380,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 399070,
+            "end": 399482,
+            "confidence": 0.54,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 399536,
+            "end": 399754,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 399792,
+            "end": 399946,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "I'm",
+            "start": 399968,
+            "end": 400226,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "great,",
+            "start": 400278,
+            "end": 400880,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 401330,
+            "end": 401646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 401668,
+            "end": 401854,
+            "confidence": 0.57,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 401892,
+            "end": 402094,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 402132,
+            "end": 402478,
+            "confidence": 0.52722,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 402564,
+            "end": 402718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "lot",
+            "start": 402724,
+            "end": 402846,
+            "confidence": 0.99911,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 402868,
+            "end": 403054,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "exciting",
+            "start": 403092,
+            "end": 403610,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 403690,
+            "end": 404320,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 405330,
+            "end": 405694,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "waiting",
+            "start": 405732,
+            "end": 406154,
+            "confidence": 0.57333,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 406202,
+            "end": 406366,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "me",
+            "start": 406388,
+            "end": 406622,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 406676,
+            "end": 406894,
+            "confidence": 0.65135,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 406932,
+            "end": 407182,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "future,",
+            "start": 407236,
+            "end": 407840,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 409010,
+            "end": 409374,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 409412,
+            "end": 409614,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 409652,
+            "end": 410240,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 411250,
+            "end": 411662,
+            "confidence": 0.62243,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 411716,
+            "end": 411934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 411972,
+            "end": 412422,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "language",
+            "start": 412506,
+            "end": 413330,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 414630,
+            "end": 414994,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 415032,
+            "end": 415138,
+            "confidence": 0.9921,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 415144,
+            "end": 415266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "bring",
+            "start": 415288,
+            "end": 415522,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "me",
+            "start": 415576,
+            "end": 415794,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "there.",
+            "start": 415832,
+            "end": 416420,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 416950,
+            "end": 417362,
+            "confidence": 0.64,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 417416,
+            "end": 417634,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 417672,
+            "end": 417874,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that,",
+            "start": 417912,
+            "end": 418498,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 418664,
+            "end": 418994,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 419032,
+            "end": 419186,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 419208,
+            "end": 419394,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "doubt",
+            "start": 419432,
+            "end": 419806,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "myself.",
+            "start": 419838,
+            "end": 420420,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 421750,
+            "end": 422114,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "am",
+            "start": 422152,
+            "end": 422354,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 422392,
+            "end": 422594,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "afraid",
+            "start": 422632,
+            "end": 423006,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 423038,
+            "end": 423234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "speaking.",
+            "start": 423272,
+            "end": 423860,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 424710,
+            "end": 425134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "believe",
+            "start": 425192,
+            "end": 425510,
+            "confidence": 0.99019,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 425580,
+            "end": 425766,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "myself.",
+            "start": 425788,
+            "end": 426360,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 427370,
+            "end": 427734,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 427772,
+            "end": 427974,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "reach",
+            "start": 428012,
+            "end": 428262,
+            "confidence": 0.535,
+            "speaker": null
+        },
+        {
+            "text": "my",
+            "start": 428316,
+            "end": 428582,
+            "confidence": 0.50777,
+            "speaker": null
+        },
+        {
+            "text": "goals,",
+            "start": 428636,
+            "end": 429270,
+            "confidence": 0.71222,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 430730,
+            "end": 431142,
+            "confidence": 0.68,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 431196,
+            "end": 431366,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 431388,
+            "end": 431670,
+            "confidence": 0.97966,
+            "speaker": null
+        },
+        {
+            "text": "no",
+            "start": 431740,
+            "end": 432022,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "limits",
+            "start": 432076,
+            "end": 432790,
+            "confidence": 0.83737,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 433850,
+            "end": 434262,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 434316,
+            "end": 434486,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 434508,
+            "end": 434646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 434668,
+            "end": 434902,
+            "confidence": 0.62243,
+            "speaker": null
+        },
+        {
+            "text": "achieve.",
+            "start": 434956,
+            "end": 435750,
+            "confidence": 0.97818,
+            "speaker": null
+        },
+        {
+            "text": "Take",
+            "start": 437950,
+            "end": 438362,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 438416,
+            "end": 438586,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "deep",
+            "start": 438608,
+            "end": 438854,
+            "confidence": 0.99932,
+            "speaker": null
+        },
+        {
+            "text": "breath.",
+            "start": 438902,
+            "end": 439318,
+            "confidence": 0.56589,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 439414,
+            "end": 440060,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 442190,
+            "end": 442602,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "out.",
+            "start": 442656,
+            "end": 443260,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 445230,
+            "end": 445980,
+            "confidence": 0.70239,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 447470,
+            "end": 447930,
+            "confidence": 0.63,
+            "speaker": null
+        },
+        {
+            "text": "uh",
+            "start": 447980,
+            "end": 448090,
+            "confidence": 0.9428775906562805,
+            "speaker": null
+        },
+        {
+            "text": "out.",
+            "start": 448090,
+            "end": 448620,
+            "confidence": 0.78788,
+            "speaker": null
+        },
+        {
+            "text": "Inhale",
+            "start": 450850,
+            "end": 451870,
+            "confidence": 0.96839,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 453730,
+            "end": 454094,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "exhale.",
+            "start": 454132,
+            "end": 455070,
+            "confidence": 0.75089,
+            "speaker": null
+        },
+        {
+            "text": "Slowly",
+            "start": 456530,
+            "end": 457162,
+            "confidence": 0.65632,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 457226,
+            "end": 457502,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 457556,
+            "end": 457774,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "eyes",
+            "start": 457812,
+            "end": 458400,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 460050,
+            "end": 460462,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "say",
+            "start": 460516,
+            "end": 460734,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 460772,
+            "end": 460974,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "loud,",
+            "start": 461012,
+            "end": 461710,
+            "confidence": 0.79528,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 463250,
+            "end": 463662,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "love",
+            "start": 463716,
+            "end": 464320,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 465330,
+            "end": 465694,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 465732,
+            "end": 465982,
+            "confidence": 0.88,
+            "speaker": null
+        },
+        {
+            "text": "value",
+            "start": 466036,
+            "end": 466640,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "who",
+            "start": 468290,
+            "end": 468654,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 468692,
+            "end": 468894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "am.",
+            "start": 468932,
+            "end": 469520,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Thank",
+            "start": 470290,
+            "end": 470654,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 470692,
+            "end": 470846,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 470868,
+            "end": 471054,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "much,",
+            "start": 471092,
+            "end": 471294,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "guys,",
+            "start": 471332,
+            "end": 471630,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 471700,
+            "end": 471934,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "joining",
+            "start": 471972,
+            "end": 472346,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "me",
+            "start": 472378,
+            "end": 472526,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 472548,
+            "end": 472686,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 472708,
+            "end": 472894,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "practice",
+            "start": 472932,
+            "end": 473434,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "today.",
+            "start": 473482,
+            "end": 474080,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "Learning",
+            "start": 474530,
+            "end": 475062,
+            "confidence": 0.98321,
+            "speaker": null
+        },
+        {
+            "text": "English",
+            "start": 475156,
+            "end": 475554,
+            "confidence": 0.99861,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 475602,
+            "end": 475814,
+            "confidence": 0.72486,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 475852,
+            "end": 476054,
+            "confidence": 0.99786,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 476092,
+            "end": 476342,
+            "confidence": 0.99828,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 476396,
+            "end": 476662,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 476716,
+            "end": 477030,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "words",
+            "start": 477100,
+            "end": 477382,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 477436,
+            "end": 477702,
+            "confidence": 0.5,
+            "speaker": null
+        },
+        {
+            "text": "phrases",
+            "start": 477756,
+            "end": 478194,
+            "confidence": 0.86422,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 478242,
+            "end": 478454,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "grammar.",
+            "start": 478492,
+            "end": 479378,
+            "confidence": 0.99927,
+            "speaker": null
+        },
+        {
+            "text": "It's",
+            "start": 479554,
+            "end": 479906,
+            "confidence": 0.83914,
+            "speaker": null
+        },
+        {
+            "text": "also",
+            "start": 479938,
+            "end": 480182,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 480236,
+            "end": 480550,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "working",
+            "start": 480620,
+            "end": 481240,
+            "confidence": 0.9979,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 481930,
+            "end": 482294,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 482332,
+            "end": 482534,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "mindset,",
+            "start": 482572,
+            "end": 483510,
+            "confidence": 0.68957,
+            "speaker": null
+        },
+        {
+            "text": "being",
+            "start": 484170,
+            "end": 484582,
+            "confidence": 0.98162,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 484636,
+            "end": 484902,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "confident,",
+            "start": 484956,
+            "end": 485750,
+            "confidence": 0.86301,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 486410,
+            "end": 486774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "being",
+            "start": 486812,
+            "end": 487062,
+            "confidence": 0.99956,
+            "speaker": null
+        },
+        {
+            "text": "happier.",
+            "start": 487116,
+            "end": 487986,
+            "confidence": 0.97117,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 488178,
+            "end": 488486,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 488508,
+            "end": 488646,
+            "confidence": 0.99895,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 488668,
+            "end": 488854,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 488892,
+            "end": 489094,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "meditation,",
+            "start": 489132,
+            "end": 489874,
+            "confidence": 0.83941,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 490002,
+            "end": 490246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "would",
+            "start": 490268,
+            "end": 490454,
+            "confidence": 0.99954,
+            "speaker": null
+        },
+        {
+            "text": "really",
+            "start": 490492,
+            "end": 490742,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "appreciate",
+            "start": 490796,
+            "end": 491282,
+            "confidence": 0.94414,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 491346,
+            "end": 491526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "quick",
+            "start": 491548,
+            "end": 491782,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "thank",
+            "start": 491836,
+            "end": 492054,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 492092,
+            "end": 492438,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 492524,
+            "end": 492726,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 492748,
+            "end": 492886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "comment",
+            "start": 492908,
+            "end": 493234,
+            "confidence": 0.54537,
+            "speaker": null
+        },
+        {
+            "text": "section.",
+            "start": 493282,
+            "end": 494070,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "Thank",
+            "start": 494410,
+            "end": 494726,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 494748,
+            "end": 494982,
+            "confidence": 0.92734,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 495036,
+            "end": 495350,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "much.",
+            "start": 495420,
+            "end": 496040,
+            "confidence": 0.99976,
+            "speaker": null
+        }
+    ],
+    "utterances": null,
+    "confidence": 0.9379607057955788,
+    "audio_duration": 497,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": null,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": false,
+    "content_safety": false,
+    "iab_categories": true,
+    "content_safety_labels": {
+        "status": "unavailable",
+        "results": [],
+        "summary": {}
+    },
+    "iab_categories_result": {
+        "status": "success",
+        "results": [
+            {
+                "text": "Hello, and welcome to this guided meditation. I will guide you through getting rid of fear of speaking English. This meditation is for you to stop being afraid, to start working on your goals in English. Close your eyes. Take a seated position. Breathe in and breathe out. Breathe in all the positive things that English brings to your life. Excitement about understanding other people. Joy of being able to explain yourself. Feeling of absolute happiness.",
+                "labels": [
+                    {
+                        "relevance": 0.9959404468536377,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.0065694041550159454,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.0062752109952270985,
+                        "label": "Religion&Spirituality>Buddhism"
+                    },
+                    {
+                        "relevance": 0.005130921024829149,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.002246006391942501,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0016972561134025455,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.0014686672948300838,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0011506874579936266,
+                        "label": "Education>HomeworkAndStudy"
+                    },
+                    {
+                        "relevance": 0.0009517474099993706,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0008132809307426214,
+                        "label": "Education"
+                    }
+                ],
+                "timestamp": {
+                    "start": 12010,
+                    "end": 70210
+                },
+                "sentences_idx_start": 0,
+                "sentences_idx_end": 9
+            },
+            {
+                "text": "Knowing that you have a powerful instrument to start living a life of your dreams. Breathe out all the judgment. Breathe out all the negativity that you've ever experienced when learning a language. If someone ever said nasty things about you or your English, it was really just a reflection of that person. Breathe in and breathe out. Inhale ah and exhale. Very often, our actions are controlled by our fears. Sometimes those fears do not even belong to us.",
+                "labels": [
+                    {
+                        "relevance": 0.9973959922790527,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.02250014804303646,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.0032747206278145313,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0026744503993541002,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0020318320021033287,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.001691210432909429,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.0009118710877373815,
+                        "label": "Hobbies&Interests>ContentProduction>Screenwriting"
+                    },
+                    {
+                        "relevance": 0.0008736244635656476,
+                        "label": "Education>HomeworkAndStudy"
+                    },
+                    {
+                        "relevance": 0.000715492875315249,
+                        "label": "Education"
+                    },
+                    {
+                        "relevance": 0.0005773726152256131,
+                        "label": "BusinessAndFinance>Industries>EducationIndustry"
+                    }
+                ],
+                "timestamp": {
+                    "start": 71430,
+                    "end": 135480
+                },
+                "sentences_idx_start": 10,
+                "sentences_idx_end": 17
+            },
+            {
+                "text": "They came from someone else and occupied, uh, precious space in our brain. These fears prevent us from living a life that we want. Breathe in and breathe out all your fear. Learning English is a process, a, um, very enjoyable and powerful process. When learning a new language, you start living a new life. You rediscover yourself. You create a new environment. You, um, start living a new life and a new language. Remember the last time you were dreaming in English?",
+                "labels": [
+                    {
+                        "relevance": 0.9986886382102966,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.011844567023217678,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.007212774828076363,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.0020782731007784605,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0013638156233355403,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0009487830684520304,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.0006986081134527922,
+                        "label": "BusinessAndFinance>Economy>Currencies"
+                    },
+                    {
+                        "relevance": 0.0006671196315437555,
+                        "label": "Hobbies&Interests>ContentProduction>Screenwriting"
+                    },
+                    {
+                        "relevance": 0.0006300716777332127,
+                        "label": "Travel>TravelLocations>AustraliaAndOceaniaTravel"
+                    },
+                    {
+                        "relevance": 0.0005999025306664407,
+                        "label": "VideoGaming>VideoGameGenres>EducationalVideoGames"
+                    }
+                ],
+                "timestamp": {
+                    "start": 135930,
+                    "end": 202670
+                },
+                "sentences_idx_start": 18,
+                "sentences_idx_end": 26
+            },
+            {
+                "text": "Remember how effortless your speech was? How excited you were about the conversation? Get that feeling back by letting go of control. When you try to control too many things, when you try to avoid making mistakes, your brain gets overloaded and it just stops. It blocks your actions. It starts creating a wall for you. Relax. Let go of control. Because it's okay to make mistakes. Even native speakers make mistakes. Say it in your mind. I am not afraid of making mistakes.",
+                "labels": [
+                    {
+                        "relevance": 0.8030587434768677,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.01487159077078104,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.0014020957751199603,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0013173473998904228,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0010855869622901082,
+                        "label": "EventsAndAttractions>ComedyEvents"
+                    },
+                    {
+                        "relevance": 0.0008680425817146897,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0007590946042910218,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    },
+                    {
+                        "relevance": 0.0007140980451367795,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.0006447616033256054,
+                        "label": "BusinessAndFinance>Business>ExecutiveLeadership&Management"
+                    },
+                    {
+                        "relevance": 0.0005956003442406654,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    }
+                ],
+                "timestamp": {
+                    "start": 203410,
+                    "end": 271490
+                },
+                "sentences_idx_start": 27,
+                "sentences_idx_end": 38
+            },
+            {
+                "text": "I will not blame myself for making mistakes or forgetting words because I am on an exciting journey, on a journey to a new life. And my English language is a wave in the ocean that takes me there. And all I have to do is let my body flow with that wave. My mistakes in English don't define me. The more mistakes I make today, the fewer I will make in the future. I am going to speak English and to use English no matter how many mistakes I make.",
+                "labels": [
+                    {
+                        "relevance": 0.9911161661148071,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.001722205663099885,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.001097370171919465,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.0007406859658658504,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.0005522886058315635,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.00030451224301941693,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0002577408740762621,
+                        "label": "BusinessAndFinance>Economy>Currencies"
+                    },
+                    {
+                        "relevance": 0.00021454643865581602,
+                        "label": "Travel>TravelLocations>AustraliaAndOceaniaTravel"
+                    },
+                    {
+                        "relevance": 0.0001983528200071305,
+                        "label": "MedicalHealth>DiseasesAndConditions>EyeAndVisionConditions"
+                    },
+                    {
+                        "relevance": 0.00018762006948236376,
+                        "label": "Education>OnlineEducation"
+                    }
+                ],
+                "timestamp": {
+                    "start": 272070,
+                    "end": 332360
+                },
+                "sentences_idx_start": 39,
+                "sentences_idx_end": 44
+            },
+            {
+                "text": "People are imperfect by nature. I can't know everything. But I know that our brains are capable of retaining a lot of things. Breathe in and breathe out. I won't quit practicing English. I am not afraid of failure because every mistake is just another step on my journey to my goals. I can clearly see myself speaking English. I can clearly see myself succeeding in an English speaking world. My English gets better every day. My vocabulary is expanding.",
+                "labels": [
+                    {
+                        "relevance": 0.9968780279159546,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.004433272406458855,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.0032348684035241604,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.0016730137867853045,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0014090662589296699,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.0005450397147797048,
+                        "label": "Education>HomeworkAndStudy"
+                    },
+                    {
+                        "relevance": 0.000460310053313151,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.00036175225977785885,
+                        "label": "BusinessAndFinance>Economy>Currencies"
+                    },
+                    {
+                        "relevance": 0.0003170215059071779,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.00027786745340563357,
+                        "label": "Hobbies&Interests>ContentProduction>Screenwriting"
+                    }
+                ],
+                "timestamp": {
+                    "start": 332970,
+                    "end": 395210
+                },
+                "sentences_idx_start": 45,
+                "sentences_idx_end": 54
+            },
+            {
+                "text": "I have no fear about my new life. I know that I'm great, and I know that a lot of exciting things are waiting for me in my future, and I know that the English language is going to bring me there. And because of that, I do not doubt myself. I am not afraid of speaking. I believe in myself. I can reach my goals, and there are no limits to what I can achieve. Take a deep breath. In and out.",
+                "labels": [
+                    {
+                        "relevance": 0.9969894289970398,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.007662625517696142,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.005803599022328854,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.005021366756409407,
+                        "label": "Hobbies&Interests>ContentProduction>FreelanceWriting"
+                    },
+                    {
+                        "relevance": 0.0008372941520065069,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0007515823817811906,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0006129827233962715,
+                        "label": "Hobbies&Interests>ContentProduction>Screenwriting"
+                    },
+                    {
+                        "relevance": 0.0003485095512587577,
+                        "label": "BooksAndLiterature>ArtAndPhotographyBooks"
+                    },
+                    {
+                        "relevance": 0.00032286529312841594,
+                        "label": "BusinessAndFinance>Economy>Currencies"
+                    },
+                    {
+                        "relevance": 0.0002887005393858999,
+                        "label": "BooksAndLiterature"
+                    }
+                ],
+                "timestamp": {
+                    "start": 395630,
+                    "end": 443260
+                },
+                "sentences_idx_start": 55,
+                "sentences_idx_end": 62
+            },
+            {
+                "text": "In and uh out. Inhale and exhale. Slowly open your eyes and say out loud, I love and I value who I am. Thank you so much, guys, for joining me for this practice today. Learning English is not just about learning words and phrases and grammar. It's also about working on your mindset, being more confident, and being happier. If you like this meditation, I would really appreciate a quick thank you in the comment section. Thank you so much.",
+                "labels": [
+                    {
+                        "relevance": 0.7305046916007996,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.05133366212248802,
+                        "label": "Religion&Spirituality>Buddhism"
+                    },
+                    {
+                        "relevance": 0.004701238125562668,
+                        "label": "Religion&Spirituality>Spirituality"
+                    },
+                    {
+                        "relevance": 0.0015416867099702358,
+                        "label": "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers"
+                    },
+                    {
+                        "relevance": 0.0013688977342098951,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0013530297437682748,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0012612633872777224,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.00105739024002105,
+                        "label": "Religion&Spirituality>Hinduism"
+                    },
+                    {
+                        "relevance": 0.0007845789077691734,
+                        "label": "HealthyLiving>Wellness>AlternativeMedicine>HolisticHealth"
+                    },
+                    {
+                        "relevance": 0.00071155303157866,
+                        "label": "HealthyLiving>Wellness>AlternativeMedicine"
+                    }
+                ],
+                "timestamp": {
+                    "start": 445230,
+                    "end": 496040
+                },
+                "sentences_idx_start": 63,
+                "sentences_idx_end": 70
+            }
+        ],
+        "summary": {
+            "Education>LanguageLearning": 1.0,
+            "Religion&Spirituality>Buddhism": 0.007700937334448099,
+            "Education>AdultEducation": 0.006774102803319693,
+            "FamilyAndRelationships>Parenting>ParentingBabiesAndToddlers": 0.004277937114238739,
+            "Hobbies&Interests>ContentProduction>FreelanceWriting": 0.003641586285084486,
+            "Education>OnlineEducation": 0.0015670586144551635,
+            "Education>EducationalAssessment": 0.0014965448062866926,
+            "Religion&Spirituality>Spirituality": 0.0007655680528841913,
+            "Education>HomeworkAndStudy": 0.0006050851079635322,
+            "Hobbies&Interests>ContentProduction>Screenwriting": 0.0005072048516012728,
+            "Technology&Computing>Computing>ProgrammingLanguages": 0.0004954823525622487,
+            "BusinessAndFinance>Economy>Currencies": 0.0003984151699114591,
+            "Education": 0.0003634450549725443,
+            "MedicalHealth>DiseasesAndConditions>EyeAndVisionConditions": 0.00030718528432771564,
+            "Travel>TravelLocations>AustraliaAndOceaniaTravel": 0.0002980906574521214,
+            "BusinessAndFinance>Industries>EducationIndustry": 0.0002490782062523067,
+            "VideoGaming>VideoGameGenres>EducationalVideoGames": 0.00022563290258403867,
+            "EventsAndAttractions>ComedyEvents": 0.00021681653743144125,
+            "Religion&Spirituality>Hinduism": 0.00021118010045029223,
+            "Education>EarlyChildhoodEducation": 0.00020799356570933014
+        }
+    },
+    "language_detection": true,
+    "custom_spelling": null,
+    "throttled": null,
+    "auto_chapters": true,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": null,
+    "disfluencies": true,
+    "sentiment_analysis": false,
+    "chapters": [
+        {
+            "summary": " meditation will guide you through getting rid of fear of speaking English. When learning a new language, you start living a new life. Let go of control. Every mistake is just another step on your journey to your goals.",
+            "gist": "Getting rid of fear of speaking English",
+            "headline": "This meditation helps you get rid of fear of speaking English",
+            "start": 12010,
+            "end": 496040
+        }
+    ],
+    "sentiment_analysis_results": null,
+    "entity_detection": false,
+    "entities": null,
+    "summary": null,
+    "speakers_expected": null
+}

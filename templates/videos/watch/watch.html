@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'icons/cAi.png' %}">
+    <title >chimedAi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <!-- Font Awesome -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+      />
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+      
+      <!-- MDB -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+      
+    <style>
+        *{
+            margin:0; padding: 0;
+            box-sizing: border-box;
+            /* capitalize : 단어의 첫번째 글자를 대문자로 바꿉니다. */
+            /* text-transform: capitalize; */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 15px;
+            align-items: flex-start;
+            padding: 5px 5px;
+        }
+
+        .container .main-video {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .container .main-video iframe{
+            width: 100%;
+            height: 500px;
+            border-radius: 5px;
+        }
+
+        .container .video-list {
+            background-color: #fff;
+            border-radius: 5px;
+            height: 520px;
+            overflow-x: scroll;
+        }
+
+        .container .video-list::-webkit-scrollbar{
+            width:7px;
+        }
+        .container .video-list::-webkit-scrollbar-track{
+            background: #ccc;
+            border-radius: 50px;
+        }
+        .container .video-list::-webkit-scrollbar-thumb{
+            background: #666;
+            border-radius: 50px;
+        }
+        .container .video-list .vid img{
+            width: 100px;
+            border-radius: 5px;
+        }
+        .container .video-list .vid{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            border:1px solid rgba(0, 0, 0, .1);
+            cursor: pointer;
+        }
+        .container .video-list .vid:hover{
+            background: #eee;
+        }
+        .container .video-list .vid.active{
+            background: #2980b9;
+        }
+        .container .video-list .vid.active .title{
+            background: #fff;
+        }
+        .container .video-list .vid .title{
+            color: #333;
+            font-size: 17px;
+        }
+
+        @media (max-width:991px){
+            .container {
+                grid-template-columns: 1.5fr 1fr;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width:768px){
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% include 'header/netflix_header.html' %}
+    <br>
+    <br>
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <!-- <video src="{{ video.youtube_id }}" controls></video> -->
+                <iframe src="https://www.youtube.com/embed/{{youtube_id}}" frameborder="0" allowfullscreen></iframe>
+                <!-- context dotor baigaa deed taliin youtub_id gesneer danjuulan barij awna. -->
+            </div>
+        </div>
+
+        <div class="video-list">
+                {% for vid in videos %}
+                <div class="vid">
+                        <!-- <img class="video_img" onclick="location.href='https://www.youtube.com/embed/{{ vid.youtube_id }}'" src="https://img.youtube.com/vi/{{ vid.youtube_id }}/0.jpg"></img> -->
+                        <img class="video_img" src="https://img.youtube.com/vi/{{ vid.youtube_id }}/0.jpg"></img>
+                        <!-- <video src="{{ vid.video_l.url }}" controls></video> -->
+                        <a href="{% url 'watch' vid.youtube_id %}"><h3 class="title">{{ vid.title }}</h3></a>
+                </div>
+                {% empty %}
+                <p>No Videos available.</p>
+                {% endfor %}
+        </div>
+    </div>
+  <script src="{% static '/js/script.js' %}" defer></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+</body>
+</html>

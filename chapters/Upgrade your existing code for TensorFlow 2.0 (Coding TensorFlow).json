@@ -1,0 +1,3665 @@
+{
+    "id": "6hceksdg9m-9819-4997-8af6-1339277207f2",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/aa332625-df60-4b6f-976b-37d02fcc31db",
+    "text": "TensorFlow 20 has arrived with a focus on usability, developer, productivity, and simple, intuitive APIs. If you like Keras and you like eager execution, you will love TF 20. And if you're a longtime fan of the original TensorFlow, you'll still have the low level control that you've come to expect. Over the last few years, we've added a large number of components to TensorFlow, and with TF 20, these components are packaged together into a comprehensive platform that supports machine learning workflows through training and deployment. This TensorFlow 20 release includes many API changes such as argument reorders, API symbol renames, and more. The TF upgrade V Two tool helps the transition by converting existing TensorFlow 112 Python scripts to TensorFlow 20 preview scripts. Let's dive into colab and see how you would upgrade. To use the TensorFlow upgrade V Two script, all you need to do is pip install the TF nightly preview. Once that's done, you can preface your command with an uh exclamation point. Here we can see that we're specifying an in file textgeneration PY and the name of an out file so text generationupgrade PY. We hit shift enter, and we're immediately displayed output code showing all of the conversions that have taken place due to this upgrade script, we can take a look at the report text, and we can also check to make sure that the original script has been modified with compatv one terms. That's it. You successfully upgraded a TensorFlow model. Some warnings do not update parts of your code manually before running this script. In particular, functions that have had reordered arguments like TF ARGMAX or TF batch to space cause the script to incorrectly add keyword arguments, and they get mismapped. This script does not reorder arguments. Instead, it adds keyword arguments to functions that have had their arguments reordered. The conversion process is not able to upgrade all functions. One notable example is TF Nn.com 2D, which no longer takes the use cudn on GPU argument. If the script detects this, it'll report to standard out and in the report, and you can fix it manually. For example, if you have this, you'll need to change it to this. Excellent work. You just learned how to upgrade your legacy TensorFlow code to TensorFlow 20 with the TF 20 upgrade script. If you run into any snags while doing your model conversions, please let us know by filing an issue on GitHub. And if you have any feedback on TensorFlow 20, make sure to let the team know by sending an email to testing@tensorflow.org. You can find a link to that in the video description below. We're excited to hear what you think and happy. Engineering mhm.",
+    "words": [
+        {
+            "text": "TensorFlow",
+            "start": 6650,
+            "end": 7258,
+            "confidence": 0.59,
+            "speaker": null
+        },
+        {
+            "text": "20",
+            "start": 7274,
+            "end": 7902,
+            "confidence": 0.86,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 7956,
+            "end": 8126,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "arrived",
+            "start": 8148,
+            "end": 8602,
+            "confidence": 0.99368,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 8666,
+            "end": 8846,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 8868,
+            "end": 8958,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "focus",
+            "start": 8964,
+            "end": 9230,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 9300,
+            "end": 9486,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "usability,",
+            "start": 9508,
+            "end": 10234,
+            "confidence": 0.70781,
+            "speaker": null
+        },
+        {
+            "text": "developer,",
+            "start": 10362,
+            "end": 10954,
+            "confidence": 0.98554,
+            "speaker": null
+        },
+        {
+            "text": "productivity,",
+            "start": 11002,
+            "end": 11642,
+            "confidence": 0.82714,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 11706,
+            "end": 12030,
+            "confidence": 0.76,
+            "speaker": null
+        },
+        {
+            "text": "simple,",
+            "start": 12100,
+            "end": 12478,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "intuitive",
+            "start": 12564,
+            "end": 13162,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "APIs.",
+            "start": 13226,
+            "end": 14090,
+            "confidence": 0.99012,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 14250,
+            "end": 14526,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 14548,
+            "end": 14686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 14708,
+            "end": 14894,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Keras",
+            "start": 14932,
+            "end": 15386,
+            "confidence": 0.97048,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 15418,
+            "end": 15566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 15588,
+            "end": 15678,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 15684,
+            "end": 15854,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "eager",
+            "start": 15892,
+            "end": 16186,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "execution,",
+            "start": 16218,
+            "end": 16858,
+            "confidence": 0.97063,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 16954,
+            "end": 17166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 17188,
+            "end": 17422,
+            "confidence": 0.70256,
+            "speaker": null
+        },
+        {
+            "text": "love",
+            "start": 17476,
+            "end": 17790,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 17860,
+            "end": 18186,
+            "confidence": 0.99011,
+            "speaker": null
+        },
+        {
+            "text": "20.",
+            "start": 18218,
+            "end": 19006,
+            "confidence": 0.92,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 19108,
+            "end": 19326,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 19348,
+            "end": 19438,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you're",
+            "start": 19444,
+            "end": 19626,
+            "confidence": 0.48741,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 19658,
+            "end": 19758,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "longtime",
+            "start": 19764,
+            "end": 20186,
+            "confidence": 0.99795,
+            "speaker": null
+        },
+        {
+            "text": "fan",
+            "start": 20218,
+            "end": 20426,
+            "confidence": 0.9825,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 20458,
+            "end": 20606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 20628,
+            "end": 20718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "original",
+            "start": 20724,
+            "end": 21146,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow,",
+            "start": 21178,
+            "end": 21914,
+            "confidence": 0.61,
+            "speaker": null
+        },
+        {
+            "text": "you'll",
+            "start": 21962,
+            "end": 22266,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "still",
+            "start": 22298,
+            "end": 22494,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 22532,
+            "end": 22686,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 22708,
+            "end": 22846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "low",
+            "start": 22868,
+            "end": 23054,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "level",
+            "start": 23092,
+            "end": 23390,
+            "confidence": 0.99082,
+            "speaker": null
+        },
+        {
+            "text": "control",
+            "start": 23460,
+            "end": 23790,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 23860,
+            "end": 23998,
+            "confidence": 0.99949,
+            "speaker": null
+        },
+        {
+            "text": "you've",
+            "start": 24004,
+            "end": 24218,
+            "confidence": 0.59265,
+            "speaker": null
+        },
+        {
+            "text": "come",
+            "start": 24234,
+            "end": 24366,
+            "confidence": 0.99687,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 24388,
+            "end": 24574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "expect.",
+            "start": 24612,
+            "end": 25174,
+            "confidence": 0.99898,
+            "speaker": null
+        },
+        {
+            "text": "Over",
+            "start": 25332,
+            "end": 25654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 25692,
+            "end": 25798,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "last",
+            "start": 25804,
+            "end": 26022,
+            "confidence": 0.69268,
+            "speaker": null
+        },
+        {
+            "text": "few",
+            "start": 26076,
+            "end": 26342,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "years,",
+            "start": 26396,
+            "end": 26710,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we've",
+            "start": 26780,
+            "end": 27026,
+            "confidence": 0.85574,
+            "speaker": null
+        },
+        {
+            "text": "added",
+            "start": 27058,
+            "end": 27346,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 27378,
+            "end": 27526,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "large",
+            "start": 27548,
+            "end": 27830,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "number",
+            "start": 27900,
+            "end": 28086,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 28108,
+            "end": 28294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "components",
+            "start": 28332,
+            "end": 28786,
+            "confidence": 0.92171,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 28818,
+            "end": 28966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow,",
+            "start": 28988,
+            "end": 29714,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 29762,
+            "end": 29974,
+            "confidence": 0.6,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 30012,
+            "end": 30166,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 30188,
+            "end": 30466,
+            "confidence": 0.99754,
+            "speaker": null
+        },
+        {
+            "text": "20,",
+            "start": 30498,
+            "end": 31158,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 31244,
+            "end": 31494,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "components",
+            "start": 31532,
+            "end": 31986,
+            "confidence": 0.92173,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 32018,
+            "end": 32166,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "packaged",
+            "start": 32188,
+            "end": 32626,
+            "confidence": 0.99934,
+            "speaker": null
+        },
+        {
+            "text": "together",
+            "start": 32658,
+            "end": 32998,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 33084,
+            "end": 33334,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 33372,
+            "end": 33526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "comprehensive",
+            "start": 33548,
+            "end": 34130,
+            "confidence": 0.5997,
+            "speaker": null
+        },
+        {
+            "text": "platform",
+            "start": 34210,
+            "end": 34694,
+            "confidence": 0.52722,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 34812,
+            "end": 35094,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "supports",
+            "start": 35132,
+            "end": 35554,
+            "confidence": 0.99862,
+            "speaker": null
+        },
+        {
+            "text": "machine",
+            "start": 35602,
+            "end": 35858,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 35874,
+            "end": 36150,
+            "confidence": 0.65135,
+            "speaker": null
+        },
+        {
+            "text": "workflows",
+            "start": 36220,
+            "end": 36866,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "through",
+            "start": 36898,
+            "end": 37094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "training",
+            "start": 37132,
+            "end": 37490,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 37580,
+            "end": 37834,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "deployment.",
+            "start": 37872,
+            "end": 38662,
+            "confidence": 0.95759,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 38806,
+            "end": 39114,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 39152,
+            "end": 39798,
+            "confidence": 0.86,
+            "speaker": null
+        },
+        {
+            "text": "20",
+            "start": 39814,
+            "end": 40394,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "release",
+            "start": 40432,
+            "end": 40774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "includes",
+            "start": 40822,
+            "end": 41254,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "many",
+            "start": 41302,
+            "end": 41562,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "API",
+            "start": 41616,
+            "end": 42134,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "changes",
+            "start": 42182,
+            "end": 42586,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "such",
+            "start": 42688,
+            "end": 42954,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 42992,
+            "end": 43194,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "argument",
+            "start": 43232,
+            "end": 43654,
+            "confidence": 0.6951,
+            "speaker": null
+        },
+        {
+            "text": "reorders,",
+            "start": 43702,
+            "end": 44390,
+            "confidence": 0.67229,
+            "speaker": null
+        },
+        {
+            "text": "API",
+            "start": 44470,
+            "end": 45014,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "symbol",
+            "start": 45062,
+            "end": 45414,
+            "confidence": 0.99866,
+            "speaker": null
+        },
+        {
+            "text": "renames,",
+            "start": 45462,
+            "end": 46054,
+            "confidence": 0.53492,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 46102,
+            "end": 46362,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "more.",
+            "start": 46416,
+            "end": 46874,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 46992,
+            "end": 47226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 47248,
+            "end": 47702,
+            "confidence": 0.99846,
+            "speaker": null
+        },
+        {
+            "text": "upgrade",
+            "start": 47766,
+            "end": 48198,
+            "confidence": 0.99691,
+            "speaker": null
+        },
+        {
+            "text": "V",
+            "start": 48214,
+            "end": 48394,
+            "confidence": 0.95,
+            "speaker": null
+        },
+        {
+            "text": "Two",
+            "start": 48432,
+            "end": 48634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "tool",
+            "start": 48672,
+            "end": 49018,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "helps",
+            "start": 49104,
+            "end": 49494,
+            "confidence": 0.55813,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 49542,
+            "end": 49706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "transition",
+            "start": 49728,
+            "end": 50278,
+            "confidence": 0.99897,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 50374,
+            "end": 50598,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "converting",
+            "start": 50624,
+            "end": 51034,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "existing",
+            "start": 51082,
+            "end": 51594,
+            "confidence": 0.29009,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 51642,
+            "end": 52346,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "112",
+            "start": 52378,
+            "end": 53022,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Python",
+            "start": 53076,
+            "end": 53594,
+            "confidence": 0.96685,
+            "speaker": null
+        },
+        {
+            "text": "scripts",
+            "start": 53642,
+            "end": 54122,
+            "confidence": 0.99179,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 54186,
+            "end": 54414,
+            "confidence": 0.54,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 54452,
+            "end": 55018,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "20",
+            "start": 55034,
+            "end": 55614,
+            "confidence": 0.95,
+            "speaker": null
+        },
+        {
+            "text": "preview",
+            "start": 55652,
+            "end": 55994,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "scripts.",
+            "start": 56042,
+            "end": 56570,
+            "confidence": 0.53878,
+            "speaker": null
+        },
+        {
+            "text": "Let's",
+            "start": 56650,
+            "end": 56986,
+            "confidence": 0.6342,
+            "speaker": null
+        },
+        {
+            "text": "dive",
+            "start": 57018,
+            "end": 57226,
+            "confidence": 0.81528,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 57258,
+            "end": 57454,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "colab",
+            "start": 57492,
+            "end": 57914,
+            "confidence": 0.98867,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 57962,
+            "end": 58126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 58148,
+            "end": 58334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 58372,
+            "end": 58526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 58548,
+            "end": 58638,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "would",
+            "start": 58644,
+            "end": 58814,
+            "confidence": 0.9099,
+            "speaker": null
+        },
+        {
+            "text": "upgrade.",
+            "start": 58852,
+            "end": 59710,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "To",
+            "start": 60050,
+            "end": 60414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "use",
+            "start": 60452,
+            "end": 60606,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 60628,
+            "end": 60814,
+            "confidence": 0.55,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 60852,
+            "end": 61546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "upgrade",
+            "start": 61578,
+            "end": 62026,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "V",
+            "start": 62058,
+            "end": 62254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Two",
+            "start": 62292,
+            "end": 62494,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "script,",
+            "start": 62532,
+            "end": 63018,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 63114,
+            "end": 63374,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 63412,
+            "end": 63530,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 63540,
+            "end": 63714,
+            "confidence": 0.64062,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 63752,
+            "end": 63906,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 63928,
+            "end": 64162,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 64216,
+            "end": 64434,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "pip",
+            "start": 64472,
+            "end": 64734,
+            "confidence": 0.60683,
+            "speaker": null
+        },
+        {
+            "text": "install",
+            "start": 64782,
+            "end": 65138,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 65224,
+            "end": 65474,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 65512,
+            "end": 65854,
+            "confidence": 0.97045,
+            "speaker": null
+        },
+        {
+            "text": "nightly",
+            "start": 65902,
+            "end": 66286,
+            "confidence": 0.89582,
+            "speaker": null
+        },
+        {
+            "text": "preview.",
+            "start": 66318,
+            "end": 67010,
+            "confidence": 0.93698,
+            "speaker": null
+        },
+        {
+            "text": "Once",
+            "start": 67510,
+            "end": 67922,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 67976,
+            "end": 68286,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "done,",
+            "start": 68318,
+            "end": 68658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 68744,
+            "end": 68946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 68968,
+            "end": 69154,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "preface",
+            "start": 69192,
+            "end": 69710,
+            "confidence": 0.65466,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 69790,
+            "end": 70082,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "command",
+            "start": 70136,
+            "end": 70590,
+            "confidence": 0.9005,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 70670,
+            "end": 70962,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 71016,
+            "end": 71060,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "uh",
+            "start": 71060,
+            "end": 71130,
+            "confidence": 0.85,
+            "speaker": null
+        },
+        {
+            "text": "exclamation",
+            "start": 71336,
+            "end": 71982,
+            "confidence": 0.72155,
+            "speaker": null
+        },
+        {
+            "text": "point.",
+            "start": 72046,
+            "end": 72658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Here",
+            "start": 72824,
+            "end": 73154,
+            "confidence": 0.50777,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 73192,
+            "end": 73346,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 73368,
+            "end": 73506,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 73528,
+            "end": 73714,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 73752,
+            "end": 73858,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 73864,
+            "end": 74078,
+            "confidence": 0.81754,
+            "speaker": null
+        },
+        {
+            "text": "specifying",
+            "start": 74094,
+            "end": 74606,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 74638,
+            "end": 74834,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 74872,
+            "end": 75074,
+            "confidence": 0.8,
+            "speaker": null
+        },
+        {
+            "text": "file",
+            "start": 75112,
+            "end": 75726,
+            "confidence": 0.9891,
+            "speaker": null
+        },
+        {
+            "text": "textgeneration",
+            "start": 75838,
+            "end": 76938,
+            "confidence": 0.76371,
+            "speaker": null
+        },
+        {
+            "text": "PY",
+            "start": 77054,
+            "end": 77842,
+            "confidence": 0.67151,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 77986,
+            "end": 78294,
+            "confidence": 0.91,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 78332,
+            "end": 78486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "name",
+            "start": 78508,
+            "end": 78646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 78668,
+            "end": 78806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 78828,
+            "end": 78966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 78988,
+            "end": 79174,
+            "confidence": 0.99748,
+            "speaker": null
+        },
+        {
+            "text": "file",
+            "start": 79212,
+            "end": 79778,
+            "confidence": 0.9782,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 79874,
+            "end": 80182,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "text",
+            "start": 80236,
+            "end": 80502,
+            "confidence": 0.99938,
+            "speaker": null
+        },
+        {
+            "text": "generationupgrade",
+            "start": 80556,
+            "end": 81890,
+            "confidence": 0.32419,
+            "speaker": null
+        },
+        {
+            "text": "PY.",
+            "start": 81970,
+            "end": 82722,
+            "confidence": 0.53875,
+            "speaker": null
+        },
+        {
+            "text": "We",
+            "start": 82866,
+            "end": 83222,
+            "confidence": 0.65838,
+            "speaker": null
+        },
+        {
+            "text": "hit",
+            "start": 83276,
+            "end": 83542,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "shift",
+            "start": 83596,
+            "end": 83954,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "enter,",
+            "start": 84002,
+            "end": 84550,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 84700,
+            "end": 85014,
+            "confidence": 0.84,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 85052,
+            "end": 85266,
+            "confidence": 0.97948,
+            "speaker": null
+        },
+        {
+            "text": "immediately",
+            "start": 85298,
+            "end": 85874,
+            "confidence": 0.96086,
+            "speaker": null
+        },
+        {
+            "text": "displayed",
+            "start": 85922,
+            "end": 86610,
+            "confidence": 0.93636,
+            "speaker": null
+        },
+        {
+            "text": "output",
+            "start": 86690,
+            "end": 87234,
+            "confidence": 0.98086,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 87282,
+            "end": 87734,
+            "confidence": 0.99844,
+            "speaker": null
+        },
+        {
+            "text": "showing",
+            "start": 87852,
+            "end": 88274,
+            "confidence": 0.99946,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 88322,
+            "end": 88534,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 88572,
+            "end": 88726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 88748,
+            "end": 88886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "conversions",
+            "start": 88908,
+            "end": 89406,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 89458,
+            "end": 89626,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 89648,
+            "end": 89834,
+            "confidence": 0.99931,
+            "speaker": null
+        },
+        {
+            "text": "taken",
+            "start": 89872,
+            "end": 90074,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "place",
+            "start": 90112,
+            "end": 90410,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "due",
+            "start": 90480,
+            "end": 90678,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 90694,
+            "end": 90826,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 90848,
+            "end": 91034,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "upgrade",
+            "start": 91072,
+            "end": 91446,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "script,",
+            "start": 91478,
+            "end": 92198,
+            "confidence": 0.9993,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 92374,
+            "end": 92666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 92688,
+            "end": 92874,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "take",
+            "start": 92912,
+            "end": 93066,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 93088,
+            "end": 93178,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "look",
+            "start": 93184,
+            "end": 93306,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "at",
+            "start": 93328,
+            "end": 93418,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 93424,
+            "end": 93546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "report",
+            "start": 93568,
+            "end": 93994,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "text,",
+            "start": 94112,
+            "end": 94780,
+            "confidence": 0.98608,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 96670,
+            "end": 97034,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 97072,
+            "end": 97226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 97248,
+            "end": 97434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "also",
+            "start": 97472,
+            "end": 97722,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "check",
+            "start": 97776,
+            "end": 98042,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 98096,
+            "end": 98266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 98288,
+            "end": 98474,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "sure",
+            "start": 98512,
+            "end": 98714,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 98752,
+            "end": 98906,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 98928,
+            "end": 99066,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "original",
+            "start": 99088,
+            "end": 99574,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "script",
+            "start": 99622,
+            "end": 100082,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 100166,
+            "end": 100366,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "been",
+            "start": 100388,
+            "end": 100574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "modified",
+            "start": 100612,
+            "end": 101178,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 101274,
+            "end": 101534,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "compatv",
+            "start": 101572,
+            "end": 102282,
+            "confidence": 0.58649,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 102346,
+            "end": 102622,
+            "confidence": 0.89,
+            "speaker": null
+        },
+        {
+            "text": "terms.",
+            "start": 102676,
+            "end": 103280,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "That's",
+            "start": 103650,
+            "end": 104106,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "it.",
+            "start": 104138,
+            "end": 104526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 104628,
+            "end": 105038,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "successfully",
+            "start": 105124,
+            "end": 105898,
+            "confidence": 0.81496,
+            "speaker": null
+        },
+        {
+            "text": "upgraded",
+            "start": 105994,
+            "end": 106682,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 106746,
+            "end": 106926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 106948,
+            "end": 107578,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model.",
+            "start": 107594,
+            "end": 108160,
+            "confidence": 0.66859,
+            "speaker": null
+        },
+        {
+            "text": "Some",
+            "start": 108690,
+            "end": 109054,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "warnings",
+            "start": 109092,
+            "end": 109914,
+            "confidence": 0.9988,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 110042,
+            "end": 110334,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 110372,
+            "end": 110670,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "update",
+            "start": 110740,
+            "end": 111242,
+            "confidence": 0.9972,
+            "speaker": null
+        },
+        {
+            "text": "parts",
+            "start": 111306,
+            "end": 111578,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 111594,
+            "end": 111726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 111748,
+            "end": 111934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 111972,
+            "end": 112330,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "manually",
+            "start": 112420,
+            "end": 112830,
+            "confidence": 0.60825,
+            "speaker": null
+        },
+        {
+            "text": "before",
+            "start": 112910,
+            "end": 113202,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "running",
+            "start": 113256,
+            "end": 113522,
+            "confidence": 0.9511,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 113576,
+            "end": 113842,
+            "confidence": 0.92186,
+            "speaker": null
+        },
+        {
+            "text": "script.",
+            "start": 113896,
+            "end": 114446,
+            "confidence": 0.98541,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 114558,
+            "end": 114834,
+            "confidence": 0.94,
+            "speaker": null
+        },
+        {
+            "text": "particular,",
+            "start": 114872,
+            "end": 115506,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "functions",
+            "start": 115688,
+            "end": 116286,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 116318,
+            "end": 116466,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 116488,
+            "end": 116626,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "had",
+            "start": 116648,
+            "end": 116930,
+            "confidence": 0.99948,
+            "speaker": null
+        },
+        {
+            "text": "reordered",
+            "start": 117000,
+            "end": 117694,
+            "confidence": 0.99188,
+            "speaker": null
+        },
+        {
+            "text": "arguments",
+            "start": 117742,
+            "end": 118302,
+            "confidence": 0.92521,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 118366,
+            "end": 118594,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 118632,
+            "end": 119070,
+            "confidence": 0.99514,
+            "speaker": null
+        },
+        {
+            "text": "ARGMAX",
+            "start": 119150,
+            "end": 119774,
+            "confidence": 0.74387,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 119822,
+            "end": 119986,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 120008,
+            "end": 120430,
+            "confidence": 0.98656,
+            "speaker": null
+        },
+        {
+            "text": "batch",
+            "start": 120510,
+            "end": 120814,
+            "confidence": 0.95491,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 120862,
+            "end": 121026,
+            "confidence": 0.57,
+            "speaker": null
+        },
+        {
+            "text": "space",
+            "start": 121048,
+            "end": 121570,
+            "confidence": 0.98817,
+            "speaker": null
+        },
+        {
+            "text": "cause",
+            "start": 121720,
+            "end": 122082,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 122136,
+            "end": 122306,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "script",
+            "start": 122328,
+            "end": 122606,
+            "confidence": 0.86518,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 122638,
+            "end": 122882,
+            "confidence": 0.68,
+            "speaker": null
+        },
+        {
+            "text": "incorrectly",
+            "start": 122936,
+            "end": 123694,
+            "confidence": 0.90371,
+            "speaker": null
+        },
+        {
+            "text": "add",
+            "start": 123742,
+            "end": 124002,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "keyword",
+            "start": 124056,
+            "end": 124494,
+            "confidence": 0.98802,
+            "speaker": null
+        },
+        {
+            "text": "arguments,",
+            "start": 124542,
+            "end": 125054,
+            "confidence": 0.98503,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 125102,
+            "end": 125278,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "they",
+            "start": 125304,
+            "end": 125446,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 125468,
+            "end": 125654,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "mismapped.",
+            "start": 125692,
+            "end": 126498,
+            "confidence": 0.71886,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 126594,
+            "end": 126854,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "script",
+            "start": 126892,
+            "end": 127330,
+            "confidence": 0.99649,
+            "speaker": null
+        },
+        {
+            "text": "does",
+            "start": 127410,
+            "end": 127654,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 127692,
+            "end": 127894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "reorder",
+            "start": 127932,
+            "end": 128466,
+            "confidence": 0.99897,
+            "speaker": null
+        },
+        {
+            "text": "arguments.",
+            "start": 128498,
+            "end": 129170,
+            "confidence": 0.99654,
+            "speaker": null
+        },
+        {
+            "text": "Instead,",
+            "start": 129250,
+            "end": 129782,
+            "confidence": 0.71537,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 129916,
+            "end": 130214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "adds",
+            "start": 130252,
+            "end": 130546,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "keyword",
+            "start": 130578,
+            "end": 131074,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "arguments",
+            "start": 131122,
+            "end": 131586,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 131618,
+            "end": 131814,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "functions",
+            "start": 131852,
+            "end": 132226,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 132258,
+            "end": 132406,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 132428,
+            "end": 132614,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "had",
+            "start": 132652,
+            "end": 132806,
+            "confidence": 0.99955,
+            "speaker": null
+        },
+        {
+            "text": "their",
+            "start": 132828,
+            "end": 132966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "arguments",
+            "start": 132988,
+            "end": 133474,
+            "confidence": 0.94488,
+            "speaker": null
+        },
+        {
+            "text": "reordered.",
+            "start": 133522,
+            "end": 134354,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 134482,
+            "end": 134774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "conversion",
+            "start": 134812,
+            "end": 135314,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "process",
+            "start": 135362,
+            "end": 135862,
+            "confidence": 0.81528,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 135996,
+            "end": 136294,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 136332,
+            "end": 136582,
+            "confidence": 0.99949,
+            "speaker": null
+        },
+        {
+            "text": "able",
+            "start": 136636,
+            "end": 136854,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 136892,
+            "end": 137094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "upgrade",
+            "start": 137132,
+            "end": 137566,
+            "confidence": 0.50966,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 137618,
+            "end": 137834,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "functions.",
+            "start": 137872,
+            "end": 138838,
+            "confidence": 0.99963,
+            "speaker": null
+        },
+        {
+            "text": "One",
+            "start": 139014,
+            "end": 139402,
+            "confidence": 0.85,
+            "speaker": null
+        },
+        {
+            "text": "notable",
+            "start": 139456,
+            "end": 139862,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "example",
+            "start": 139926,
+            "end": 140250,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 140320,
+            "end": 140602,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 140656,
+            "end": 141334,
+            "confidence": 0.99924,
+            "speaker": null
+        },
+        {
+            "text": "Nn.com",
+            "start": 141462,
+            "end": 142086,
+            "confidence": 0.79,
+            "speaker": null
+        },
+        {
+            "text": "2D,",
+            "start": 142198,
+            "end": 143226,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 143328,
+            "end": 143642,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "no",
+            "start": 143696,
+            "end": 143866,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "longer",
+            "start": 143888,
+            "end": 144074,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "takes",
+            "start": 144112,
+            "end": 144362,
+            "confidence": 0.71223,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 144416,
+            "end": 144586,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "use",
+            "start": 144608,
+            "end": 144794,
+            "confidence": 0.96372,
+            "speaker": null
+        },
+        {
+            "text": "cudn",
+            "start": 144832,
+            "end": 145382,
+            "confidence": 0.75492,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 145446,
+            "end": 145626,
+            "confidence": 0.99806,
+            "speaker": null
+        },
+        {
+            "text": "GPU",
+            "start": 145648,
+            "end": 146134,
+            "confidence": 0.98106,
+            "speaker": null
+        },
+        {
+            "text": "argument.",
+            "start": 146182,
+            "end": 146998,
+            "confidence": 0.72099,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 147174,
+            "end": 147514,
+            "confidence": 0.76355,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 147552,
+            "end": 147706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "script",
+            "start": 147728,
+            "end": 148006,
+            "confidence": 0.99938,
+            "speaker": null
+        },
+        {
+            "text": "detects",
+            "start": 148038,
+            "end": 148406,
+            "confidence": 0.99885,
+            "speaker": null
+        },
+        {
+            "text": "this,",
+            "start": 148438,
+            "end": 148778,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "it'll",
+            "start": 148864,
+            "end": 149286,
+            "confidence": 0.81687,
+            "speaker": null
+        },
+        {
+            "text": "report",
+            "start": 149318,
+            "end": 149562,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 149616,
+            "end": 149834,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "standard",
+            "start": 149872,
+            "end": 150230,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 150320,
+            "end": 150574,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 150612,
+            "end": 150814,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 150852,
+            "end": 150958,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 150964,
+            "end": 151086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "report,",
+            "start": 151108,
+            "end": 151438,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 151524,
+            "end": 151726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 151748,
+            "end": 151886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 151908,
+            "end": 152046,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "fix",
+            "start": 152068,
+            "end": 152254,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 152292,
+            "end": 152446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "manually.",
+            "start": 152468,
+            "end": 153130,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "For",
+            "start": 153290,
+            "end": 153566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "example,",
+            "start": 153588,
+            "end": 153966,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 154068,
+            "end": 154334,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 154372,
+            "end": 154526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 154548,
+            "end": 154830,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "this,",
+            "start": 154900,
+            "end": 155520,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "you'll",
+            "start": 156690,
+            "end": 157146,
+            "confidence": 0.96802,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 157178,
+            "end": 157326,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 157348,
+            "end": 157534,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "change",
+            "start": 157572,
+            "end": 157774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 157812,
+            "end": 158014,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 158052,
+            "end": 158398,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 158484,
+            "end": 159120,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "Excellent",
+            "start": 160450,
+            "end": 161082,
+            "confidence": 0.72044,
+            "speaker": null
+        },
+        {
+            "text": "work.",
+            "start": 161146,
+            "end": 161614,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 161732,
+            "end": 162014,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 162052,
+            "end": 162254,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "learned",
+            "start": 162292,
+            "end": 162586,
+            "confidence": 0.99324,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 162618,
+            "end": 162766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 162788,
+            "end": 162926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "upgrade",
+            "start": 162948,
+            "end": 163386,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 163418,
+            "end": 163566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "legacy",
+            "start": 163588,
+            "end": 164074,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 164122,
+            "end": 164746,
+            "confidence": 0.55,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 164778,
+            "end": 164974,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 165012,
+            "end": 165166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 165188,
+            "end": 165786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "20",
+            "start": 165818,
+            "end": 166430,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 166500,
+            "end": 166686,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 166708,
+            "end": 166798,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "TF",
+            "start": 166804,
+            "end": 167146,
+            "confidence": 0.99577,
+            "speaker": null
+        },
+        {
+            "text": "20",
+            "start": 167178,
+            "end": 167822,
+            "confidence": 0.78,
+            "speaker": null
+        },
+        {
+            "text": "upgrade",
+            "start": 167876,
+            "end": 168266,
+            "confidence": 0.99785,
+            "speaker": null
+        },
+        {
+            "text": "script.",
+            "start": 168298,
+            "end": 168826,
+            "confidence": 0.97881,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 168938,
+            "end": 169166,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 169188,
+            "end": 169326,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "run",
+            "start": 169348,
+            "end": 169534,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 169572,
+            "end": 169822,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "any",
+            "start": 169876,
+            "end": 170094,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "snags",
+            "start": 170132,
+            "end": 170586,
+            "confidence": 0.78171,
+            "speaker": null
+        },
+        {
+            "text": "while",
+            "start": 170618,
+            "end": 170766,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "doing",
+            "start": 170788,
+            "end": 170974,
+            "confidence": 0.84178,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 171012,
+            "end": 171214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 171252,
+            "end": 171502,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "conversions,",
+            "start": 171556,
+            "end": 172218,
+            "confidence": 0.99957,
+            "speaker": null
+        },
+        {
+            "text": "please",
+            "start": 172314,
+            "end": 172622,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "let",
+            "start": 172676,
+            "end": 172846,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "us",
+            "start": 172868,
+            "end": 173006,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 173028,
+            "end": 173214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 173252,
+            "end": 173406,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "filing",
+            "start": 173428,
+            "end": 173786,
+            "confidence": 0.65118,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 173818,
+            "end": 173918,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "issue",
+            "start": 173924,
+            "end": 174142,
+            "confidence": 0.89913,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 174196,
+            "end": 174366,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "GitHub.",
+            "start": 174388,
+            "end": 174914,
+            "confidence": 0.9983,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 175002,
+            "end": 175206,
+            "confidence": 0.61,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 175228,
+            "end": 175366,
+            "confidence": 0.9997,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 175388,
+            "end": 175526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 175548,
+            "end": 175734,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "any",
+            "start": 175772,
+            "end": 176022,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "feedback",
+            "start": 176076,
+            "end": 176514,
+            "confidence": 0.57027,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 176562,
+            "end": 176726,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 176748,
+            "end": 177298,
+            "confidence": 0.55,
+            "speaker": null
+        },
+        {
+            "text": "20,",
+            "start": 177314,
+            "end": 177990,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 178060,
+            "end": 178294,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "sure",
+            "start": 178332,
+            "end": 178486,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 178508,
+            "end": 178646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "let",
+            "start": 178668,
+            "end": 178854,
+            "confidence": 0.96266,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 178892,
+            "end": 179046,
+            "confidence": 0.71,
+            "speaker": null
+        },
+        {
+            "text": "team",
+            "start": 179068,
+            "end": 179302,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 179356,
+            "end": 179574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 179612,
+            "end": 179814,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "sending",
+            "start": 179852,
+            "end": 180146,
+            "confidence": 0.99913,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 180178,
+            "end": 180326,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "email",
+            "start": 180348,
+            "end": 180582,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 180636,
+            "end": 180806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "testing@tensorflow.org.",
+            "start": 180828,
+            "end": 182738,
+            "confidence": 0.92,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 182834,
+            "end": 183046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 183068,
+            "end": 183206,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "find",
+            "start": 183228,
+            "end": 183366,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 183388,
+            "end": 183526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "link",
+            "start": 183548,
+            "end": 183686,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 183708,
+            "end": 183846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 183868,
+            "end": 184054,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 184092,
+            "end": 184246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 184268,
+            "end": 184358,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "video",
+            "start": 184364,
+            "end": 184582,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "description",
+            "start": 184636,
+            "end": 185074,
+            "confidence": 0.8541,
+            "speaker": null
+        },
+        {
+            "text": "below.",
+            "start": 185122,
+            "end": 185526,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "We're",
+            "start": 185628,
+            "end": 185986,
+            "confidence": 0.9997,
+            "speaker": null
+        },
+        {
+            "text": "excited",
+            "start": 186018,
+            "end": 186274,
+            "confidence": 0.99863,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 186322,
+            "end": 186486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "hear",
+            "start": 186508,
+            "end": 186646,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 186668,
+            "end": 186806,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 186828,
+            "end": 186966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 186988,
+            "end": 187270,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 187340,
+            "end": 187574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "happy.",
+            "start": 187612,
+            "end": 187862,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "Engineering",
+            "start": 187916,
+            "end": 188370,
+            "confidence": 0.67808,
+            "speaker": null
+        },
+        {
+            "text": "mhm.",
+            "start": 188880,
+            "end": 189450,
+            "confidence": 0.9707826375961304,
+            "speaker": null
+        }
+    ],
+    "utterances": null,
+    "confidence": 0.9442656266614302,
+    "audio_duration": 196,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": null,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": false,
+    "content_safety": false,
+    "iab_categories": true,
+    "content_safety_labels": {
+        "status": "unavailable",
+        "results": [],
+        "summary": {}
+    },
+    "iab_categories_result": {
+        "status": "success",
+        "results": [
+            {
+                "text": "TensorFlow 20 has arrived with a focus on usability, developer, productivity, and simple, intuitive APIs. If you like Keras and you like eager execution, you will love TF 20. And if you're a longtime fan of the original TensorFlow, you'll still have the low level control that you've come to expect.",
+                "labels": [
+                    {
+                        "relevance": 0.012382816523313522,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.0026219321880489588,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0011488808086141944,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0008800304494798183,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0008661678875796497,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.0005294989096000791,
+                        "label": "Technology&Computing>VirtualReality"
+                    },
+                    {
+                        "relevance": 0.0005248176748864353,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0004993160837329924,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0004151970206294209,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.0003777470556087792,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    }
+                ],
+                "timestamp": {
+                    "start": 6650,
+                    "end": 25174
+                },
+                "sentences_idx_start": 0,
+                "sentences_idx_end": 2
+            },
+            {
+                "text": "Over the last few years, we've added a large number of components to TensorFlow, and with TF 20, these components are packaged together into a comprehensive platform that supports machine learning workflows through training and deployment. This TensorFlow 20 release includes many API changes such as argument reorders, API symbol renames, and more. The TF upgrade V Two tool helps the transition by converting existing TensorFlow 112 Python scripts to TensorFlow 20 preview scripts. Let's dive into colab and see how you would upgrade.",
+                "labels": [
+                    {
+                        "relevance": 0.04783588647842407,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.0043553560972213745,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.003776051802560687,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0021897261030972004,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0009445061441510916,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0008115483797155321,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0005568799679167569,
+                        "label": "Technology&Computing>Computing>Internet>Search"
+                    },
+                    {
+                        "relevance": 0.0005489276954904199,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0004837985325139016,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0002791379811242223,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    }
+                ],
+                "timestamp": {
+                    "start": 25332,
+                    "end": 59710
+                },
+                "sentences_idx_start": 3,
+                "sentences_idx_end": 6
+            },
+            {
+                "text": "To use the TensorFlow upgrade V Two script, all you need to do is pip install the TF nightly preview. Once that's done, you can preface your command with an uh exclamation point. Here we can see that we're specifying an in file textgeneration PY and the name of an out file so text generationupgrade PY.",
+                "labels": [
+                    {
+                        "relevance": 0.003599046263843775,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.0011666089994832873,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0007570169400423765,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.00041608078754507005,
+                        "label": "Technology&Computing>Computing>Internet>Search"
+                    },
+                    {
+                        "relevance": 0.00041143738781102,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0004101494268979877,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0003904672630596906,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.00038603012217208743,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.00029388093389570713,
+                        "label": "Home&Garden>SmartHome"
+                    },
+                    {
+                        "relevance": 0.00027843815041705966,
+                        "label": "Automotive>AutoTechnology>AutoNavigationSystems"
+                    }
+                ],
+                "timestamp": {
+                    "start": 60050,
+                    "end": 82722
+                },
+                "sentences_idx_start": 7,
+                "sentences_idx_end": 9
+            },
+            {
+                "text": "We hit shift enter, and we're immediately displayed output code showing all of the conversions that have taken place due to this upgrade script, we can take a look at the report text, and we can also check to make sure that the original script has been modified with compatv one terms. That's it. You successfully upgraded a TensorFlow model. Some warnings do not update parts of your code manually before running this script.",
+                "labels": [
+                    {
+                        "relevance": 0.003408694639801979,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.0021830725017935038,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0018351470353081822,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.001039549708366394,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0007565459818579257,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.000638590136077255,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.00043081329204142094,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.00034835809492506087,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0002630611998029053,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>OperatingSystems"
+                    },
+                    {
+                        "relevance": 0.0002351959265070036,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    }
+                ],
+                "timestamp": {
+                    "start": 82866,
+                    "end": 114446
+                },
+                "sentences_idx_start": 10,
+                "sentences_idx_end": 13
+            },
+            {
+                "text": "In particular, functions that have had reordered arguments like TF ARGMAX or TF batch to space cause the script to incorrectly add keyword arguments, and they get mismapped. This script does not reorder arguments. Instead, it adds keyword arguments to functions that have had their arguments reordered. The conversion process is not able to upgrade all functions. One notable example is TF Nn.com 2D, which no longer takes the use cudn on GPU argument.",
+                "labels": [
+                    {
+                        "relevance": 0.6457238793373108,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.03233346343040466,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>OperatingSystems"
+                    },
+                    {
+                        "relevance": 0.019043216481804848,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.00576968165114522,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.003064959542825818,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0017623738385736942,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.00168349698651582,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0015263617970049381,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    },
+                    {
+                        "relevance": 0.0008439649827778339,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0007334365509450436,
+                        "label": "Technology&Computing>Computing>ComputerPeripherals"
+                    }
+                ],
+                "timestamp": {
+                    "start": 114558,
+                    "end": 146998
+                },
+                "sentences_idx_start": 14,
+                "sentences_idx_end": 18
+            },
+            {
+                "text": "If the script detects this, it'll report to standard out and in the report, and you can fix it manually. For example, if you have this, you'll need to change it to this. Excellent work. You just learned how to upgrade your legacy TensorFlow code to TensorFlow 20 with the TF 20 upgrade script. If you run into any snags while doing your model conversions, please let us know by filing an issue on GitHub.",
+                "labels": [
+                    {
+                        "relevance": 0.0026852807495743036,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.0016538208583369851,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0009766248986124992,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0007356050773523748,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.00037663805414922535,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.00035664919414557517,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.00026986506418325007,
+                        "label": "MedicalHealth>DiseasesAndConditions>EndocrineAndMetabolicDiseases>HormonalDisorders"
+                    },
+                    {
+                        "relevance": 0.00025529152480885386,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.00019885522488038987,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.00018321121751796454,
+                        "label": "Science>Physics"
+                    }
+                ],
+                "timestamp": {
+                    "start": 147174,
+                    "end": 174914
+                },
+                "sentences_idx_start": 19,
+                "sentences_idx_end": 23
+            },
+            {
+                "text": "And if you have any feedback on TensorFlow 20, make sure to let the team know by sending an email to testing@tensorflow.org. You can find a link to that in the video description below. We're excited to hear what you think and happy. Engineering mhm.",
+                "labels": [
+                    {
+                        "relevance": 0.03006524033844471,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.019359420984983444,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0019524262752383947,
+                        "label": "Technology&Computing>VirtualReality"
+                    },
+                    {
+                        "relevance": 0.0011556342942640185,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.000815866922494024,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.000736664398573339,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.0006666969275102019,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0005249377572908998,
+                        "label": "Home&Garden>SmartHome"
+                    },
+                    {
+                        "relevance": 0.00040365871973335743,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0003763809218071401,
+                        "label": "Science>Physics"
+                    }
+                ],
+                "timestamp": {
+                    "start": 175002,
+                    "end": 189450
+                },
+                "sentences_idx_start": 24,
+                "sentences_idx_end": 27
+            }
+        ],
+        "summary": {
+            "Technology&Computing>Computing>ProgrammingLanguages": 1.0,
+            "Technology&Computing>ArtificialIntelligence": 0.15309076011180878,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>OperatingSystems": 0.05047360062599182,
+            "Technology&Computing>Robotics": 0.048513803631067276,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics": 0.03312171995639801,
+            "Technology&Computing>Computing": 0.012115728110074997,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware": 0.009122868999838829,
+            "Technology&Computing>Computing>DataStorageAndWarehousing": 0.005407479126006365,
+            "Technology&Computing>VirtualReality": 0.004612041637301445,
+            "Technology&Computing>AugmentedReality": 0.004227350931614637,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases": 0.004074323922395706,
+            "Technology&Computing>Computing>Internet>WebDevelopment": 0.004047401249408722,
+            "Automotive>AutoType>DriverlessCars": 0.0038692138623446226,
+            "Technology&Computing>Computing>Internet>CloudComputing": 0.00378657435066998,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications": 0.0031432989053428173,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation": 0.0029146885499358177,
+            "Technology&Computing>Computing>Internet>InternetOfThings": 0.0027136553544551134,
+            "Home&Garden>SmartHome": 0.00230336282402277,
+            "MedicalHealth>DiseasesAndConditions>EndocrineAndMetabolicDiseases>HormonalDisorders": 0.0018053468083962798,
+            "Technology&Computing>Computing>Internet>Search": 0.0017728230450302362
+        }
+    },
+    "language_detection": true,
+    "custom_spelling": null,
+    "throttled": null,
+    "auto_chapters": true,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": null,
+    "disfluencies": true,
+    "sentiment_analysis": false,
+    "chapters": [
+        {
+            "summary": "TensorFlow 20 includes many API changes such as argument reorders, API symbol renames, and more. The TF upgrade V Two tool helps the transition by converting existing TensorFlow 112 Python scripts. If you run into any snags while doing your model conversions, please let us know by filing an issue on GitHub.",
+            "gist": "How to Upgrade TensorFlow 2.8 to Tensor",
+            "headline": "TensorFlow 20 has arrived with a focus on usability, developer, productivity",
+            "start": 6650,
+            "end": 189450
+        }
+    ],
+    "sentiment_analysis_results": null,
+    "entity_detection": false,
+    "entities": null,
+    "summary": null,
+    "speakers_expected": null
+}

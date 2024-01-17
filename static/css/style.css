@@ -1,0 +1,80 @@
+/*start video list and main video */
+/* 동영상 시청 영역 */
+#video-player {
+    height: 360px;
+}
+
+/* 동영상 리스트 영역 */
+.video-list {
+    margin-top: 20px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.video-item img {
+    width: 80px;
+    height: 60px;
+    margin-right: 10px;
+}
+/*end video list and main video */
+
+/* ====================== */
+
+/*start search_bar */
+.justify-content-center{
+    margin-bottom: 20px;
+}
+.form{
+
+    position: relative;
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:20px;
+    left: 20px;
+    color: #9ca3af;
+
+}
+
+.form span{
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+
+.d-flex{
+    margin-bottom:20px;
+}
+/*end search_bar */

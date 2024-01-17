@@ -1,0 +1,7063 @@
+{
+    "id": "6hj9ipwhpk-df2b-4d63-8147-249b795b00f0",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/b4c2b61c-b4fe-4735-aadb-fa5ec7b6e11e",
+    "text": "Hi, and welcome to episode three of Zero to Hero with TensorFlow. In the previous episode, you saw how to do basic computer vision using a deep neural network that matched the pixels of an image to a label. So an image like this was matched to a numeric label that represented it like this. But there was a limitation to that. The image you were looking at had to have the subject centered in it, and it had to be the only thing in the image. So the code you wrote would work for that shoe. But what about these? It wouldn't be able to identify all of them because it's not trained to do so. For that, we have to use something called a convolutional neural network, which works a little differently than what you've just seen. The idea behind a convolutional neural network is that you filter the images before training the deep neural network. After filtering the images, features within the images could then come to the forefront, and you would then spot those features to identify something. A filter is simply a set of multipliers. So, for example, in this case, if you're looking at a particular pixel that has the value 192 and the filter is the values in the red box, then you multiply 192 by 4.5 and each of its neighbors by the respective filter value. So its neighbor above and to the left is zero. So you multiply that by minus one. Its upper neighbor is 64, so you multiply that by zero and so on. Sum up the result, and you get the new value for the pixel. Now, this might seem a little OD, but check out the results for some filters. Like this one that when multiplied over the contents of the image, it removes almost everything except the vertical lines. And this one, that removes almost everything except the horizontal lines. This can then be combined with something called pooling, which groups up the pixels in the image and filters them down to a subset. So, for example, max pooling, two by two will group the image into sets of two by two pixels and simply pick the largest. The image will be reduced to a quarter of its original size, but the features can still be maintained. So the previous image, after being filtered and then max pooled, could look like this. The image on the right is one quarter the size of the one on the left. But the vertical line features were maintained, and indeed, they were enhanced. So where did these filters come from? That's the magic of a convolutional neural network. They're actually learned they're just parameters like those in the neurons of a neural network that we saw in the last video. So as our image is fed into the convolutional layer, a number of randomly initialized filters will pass over the image. The results of these are fed into the next layer, and matching is performed by the neural network. And over time, the filters that give us the image outputs that give the best matches will be learned. And the process is called feature extraction. Here's an example of how a convolutional filter layer can help a computer visualize things. You can see across the top row here that you actually have a shoe, but it has been filtered down to the sole and the silhouette of a shoe by filters that learned what a shoe looks like. You'll run this code for yourself in just a few minutes. Now, let's take a look at the code to build a convolutional neural network. Like this. So this code is very similar to what you used earlier, where you have a flattened input that's fed into a dense layer that in turn, is fed into the final dense layer that is our output. The only difference here is that I haven't specified the input shape. That's because I'll, uh, put a convolutional layer on top of it, like this. This layer takes the input. So we specify the input shape and we're telling it to generate 64 filters with this parameter. That is, it will generate 64 filters and multiply each of them across the image. Then, each epoch, it will figure out which filters gave the best signals to help match the images to their labels. In much the same way, it learned which parameters worked best in the dense layer. The max pooling to compress the image and enhance the features looks like this. And we can stack convolutional layers on top of each other to really break down the image and try to learn from very abstract features like this. With this methodology, your network starts to learn based on the features of the image instead of just the raw patterns of pixels. Two sleeves, it's a shirt. Two short sleeves, it's a T shirt. Solen laces, it's a shoe, that type of thing. Now, we're still looking at just the simple images of fashion at the moment, but the principles will extend into more complex images. And you'll see that in the next video. But before going there, try out the notebook to see convolutions for yourself. I've made a link to it in the description below. And before we get to the next video, don't forget to hit that subscribe button. Thank you.",
+    "words": [
+        {
+            "text": "Hi,",
+            "start": 3850,
+            "end": 4062,
+            "confidence": 0.99576,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 4116,
+            "end": 4334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "welcome",
+            "start": 4372,
+            "end": 4574,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 4612,
+            "end": 4766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "episode",
+            "start": 4788,
+            "end": 5194,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "three",
+            "start": 5242,
+            "end": 5454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 5492,
+            "end": 5694,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Zero",
+            "start": 5732,
+            "end": 5934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 5972,
+            "end": 6126,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "Hero",
+            "start": 6148,
+            "end": 6378,
+            "confidence": 0.95044,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 6394,
+            "end": 6526,
+            "confidence": 0.76954,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow.",
+            "start": 6548,
+            "end": 7514,
+            "confidence": 0.99941,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 7642,
+            "end": 7886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 7908,
+            "end": 8046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "previous",
+            "start": 8068,
+            "end": 8442,
+            "confidence": 0.99445,
+            "speaker": null
+        },
+        {
+            "text": "episode,",
+            "start": 8506,
+            "end": 8954,
+            "confidence": 0.86152,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 9002,
+            "end": 9214,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "saw",
+            "start": 9252,
+            "end": 9454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 9492,
+            "end": 9646,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 9668,
+            "end": 9758,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 9764,
+            "end": 9934,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "basic",
+            "start": 9972,
+            "end": 10314,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "computer",
+            "start": 10362,
+            "end": 10622,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "vision",
+            "start": 10676,
+            "end": 11114,
+            "confidence": 0.79561,
+            "speaker": null
+        },
+        {
+            "text": "using",
+            "start": 11162,
+            "end": 11374,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 11412,
+            "end": 11566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "deep",
+            "start": 11588,
+            "end": 11786,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 11818,
+            "end": 12106,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 12138,
+            "end": 12714,
+            "confidence": 0.99804,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 12842,
+            "end": 13182,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "matched",
+            "start": 13236,
+            "end": 13498,
+            "confidence": 0.99819,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 13514,
+            "end": 13646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pixels",
+            "start": 13668,
+            "end": 14122,
+            "confidence": 0.8397,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 14186,
+            "end": 14366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 14388,
+            "end": 14574,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 14612,
+            "end": 14906,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 14938,
+            "end": 15086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 15108,
+            "end": 15246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "label.",
+            "start": 15268,
+            "end": 15950,
+            "confidence": 0.98353,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 16290,
+            "end": 16654,
+            "confidence": 0.54662,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 16692,
+            "end": 16846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 16868,
+            "end": 17146,
+            "confidence": 0.94079,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 17178,
+            "end": 17374,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 17412,
+            "end": 18000,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "was",
+            "start": 18450,
+            "end": 18814,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "matched",
+            "start": 18852,
+            "end": 19098,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 19114,
+            "end": 19294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 19332,
+            "end": 19438,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "numeric",
+            "start": 19444,
+            "end": 19898,
+            "confidence": 0.99458,
+            "speaker": null
+        },
+        {
+            "text": "label",
+            "start": 19994,
+            "end": 20346,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 20378,
+            "end": 20526,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "represented",
+            "start": 20548,
+            "end": 21146,
+            "confidence": 0.99571,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 21178,
+            "end": 21470,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 21540,
+            "end": 21822,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 21876,
+            "end": 22478,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 22644,
+            "end": 22974,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 23012,
+            "end": 23166,
+            "confidence": 0.99964,
+            "speaker": null
+        },
+        {
+            "text": "was",
+            "start": 23188,
+            "end": 23422,
+            "confidence": 0.64062,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 23476,
+            "end": 23598,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "limitation",
+            "start": 23604,
+            "end": 24154,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 24202,
+            "end": 24414,
+            "confidence": 0.53,
+            "speaker": null
+        },
+        {
+            "text": "that.",
+            "start": 24452,
+            "end": 25014,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 25172,
+            "end": 25446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 25468,
+            "end": 25698,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 25714,
+            "end": 25846,
+            "confidence": 0.78261,
+            "speaker": null
+        },
+        {
+            "text": "were",
+            "start": 25868,
+            "end": 26054,
+            "confidence": 0.9426,
+            "speaker": null
+        },
+        {
+            "text": "looking",
+            "start": 26092,
+            "end": 26294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "at",
+            "start": 26332,
+            "end": 26630,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "had",
+            "start": 26700,
+            "end": 26886,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 26908,
+            "end": 27094,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 27132,
+            "end": 27286,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 27308,
+            "end": 27446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "subject",
+            "start": 27468,
+            "end": 27922,
+            "confidence": 0.77463,
+            "speaker": null
+        },
+        {
+            "text": "centered",
+            "start": 27986,
+            "end": 28386,
+            "confidence": 0.99963,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 28418,
+            "end": 28566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it,",
+            "start": 28588,
+            "end": 28870,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 28940,
+            "end": 29174,
+            "confidence": 0.82,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 29212,
+            "end": 29366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "had",
+            "start": 29388,
+            "end": 29526,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 29548,
+            "end": 29686,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 29708,
+            "end": 29894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 29932,
+            "end": 30086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "only",
+            "start": 30108,
+            "end": 30342,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "thing",
+            "start": 30396,
+            "end": 30566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 30588,
+            "end": 30726,
+            "confidence": 0.65838,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 30748,
+            "end": 30886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image.",
+            "start": 30908,
+            "end": 31506,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 31618,
+            "end": 31894,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 31932,
+            "end": 32086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 32108,
+            "end": 32342,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 32396,
+            "end": 32566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "wrote",
+            "start": 32588,
+            "end": 33058,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "would",
+            "start": 33154,
+            "end": 33414,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "work",
+            "start": 33452,
+            "end": 33654,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 33692,
+            "end": 33846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 33868,
+            "end": 34054,
+            "confidence": 0.9895,
+            "speaker": null
+        },
+        {
+            "text": "shoe.",
+            "start": 34092,
+            "end": 34850,
+            "confidence": 0.52317,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 35010,
+            "end": 35334,
+            "confidence": 0.58501,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 35372,
+            "end": 35526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 35548,
+            "end": 35782,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "these?",
+            "start": 35836,
+            "end": 36486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 36668,
+            "end": 36966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "wouldn't",
+            "start": 36988,
+            "end": 37218,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 37234,
+            "end": 37366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "able",
+            "start": 37388,
+            "end": 37526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 37548,
+            "end": 37734,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "identify",
+            "start": 37772,
+            "end": 38290,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 38370,
+            "end": 38614,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 38652,
+            "end": 38806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "them",
+            "start": 38828,
+            "end": 39074,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 39132,
+            "end": 39402,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "it's",
+            "start": 39456,
+            "end": 39686,
+            "confidence": 0.99975,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 39718,
+            "end": 39962,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "trained",
+            "start": 40016,
+            "end": 40406,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 40438,
+            "end": 40586,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 40608,
+            "end": 40794,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "so.",
+            "start": 40832,
+            "end": 41420,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "For",
+            "start": 41790,
+            "end": 42154,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that,",
+            "start": 42192,
+            "end": 42442,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 42496,
+            "end": 42666,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 42688,
+            "end": 42826,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 42848,
+            "end": 42986,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "use",
+            "start": 43008,
+            "end": 43194,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "something",
+            "start": 43232,
+            "end": 43482,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "called",
+            "start": 43536,
+            "end": 43802,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 43856,
+            "end": 44074,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 44112,
+            "end": 44966,
+            "confidence": 0.99028,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 44998,
+            "end": 45366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "network,",
+            "start": 45398,
+            "end": 46102,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 46246,
+            "end": 46602,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "works",
+            "start": 46656,
+            "end": 46874,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 46912,
+            "end": 47066,
+            "confidence": 0.95,
+            "speaker": null
+        },
+        {
+            "text": "little",
+            "start": 47088,
+            "end": 47322,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "differently",
+            "start": 47376,
+            "end": 47990,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "than",
+            "start": 48070,
+            "end": 48314,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 48352,
+            "end": 48506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you've",
+            "start": 48528,
+            "end": 48678,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 48694,
+            "end": 48874,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "seen.",
+            "start": 48912,
+            "end": 49498,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 49664,
+            "end": 49994,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "idea",
+            "start": 50032,
+            "end": 50330,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "behind",
+            "start": 50400,
+            "end": 50694,
+            "confidence": 0.85191,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 50752,
+            "end": 50926,
+            "confidence": 0.74,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 50948,
+            "end": 51546,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 51578,
+            "end": 51946,
+            "confidence": 0.86342,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 51978,
+            "end": 52554,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 52682,
+            "end": 52926,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 52948,
+            "end": 53086,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 53108,
+            "end": 53294,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "filter",
+            "start": 53332,
+            "end": 53626,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 53658,
+            "end": 53854,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "images",
+            "start": 53892,
+            "end": 54458,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "before",
+            "start": 54554,
+            "end": 55006,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "training",
+            "start": 55108,
+            "end": 55470,
+            "confidence": 0.9982,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 55540,
+            "end": 55774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "deep",
+            "start": 55812,
+            "end": 56074,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 56122,
+            "end": 56426,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "network.",
+            "start": 56458,
+            "end": 57230,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "After",
+            "start": 57650,
+            "end": 58110,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filtering",
+            "start": 58180,
+            "end": 58666,
+            "confidence": 0.99954,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 58698,
+            "end": 58846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "images,",
+            "start": 58868,
+            "end": 59466,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 59578,
+            "end": 60154,
+            "confidence": 0.78103,
+            "speaker": null
+        },
+        {
+            "text": "within",
+            "start": 60202,
+            "end": 60462,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 60516,
+            "end": 60686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "images",
+            "start": 60708,
+            "end": 61114,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "could",
+            "start": 61162,
+            "end": 61374,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 61412,
+            "end": 61662,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "come",
+            "start": 61716,
+            "end": 61886,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 61908,
+            "end": 62046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 62068,
+            "end": 62206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "forefront,",
+            "start": 62228,
+            "end": 62954,
+            "confidence": 0.64422,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 63082,
+            "end": 63374,
+            "confidence": 0.72,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 63412,
+            "end": 63518,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "would",
+            "start": 63524,
+            "end": 63694,
+            "confidence": 0.7519,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 63732,
+            "end": 63886,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "spot",
+            "start": 63908,
+            "end": 64234,
+            "confidence": 0.89758,
+            "speaker": null
+        },
+        {
+            "text": "those",
+            "start": 64282,
+            "end": 64554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 64612,
+            "end": 65214,
+            "confidence": 0.70871,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 65262,
+            "end": 65474,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "identify",
+            "start": 65512,
+            "end": 66030,
+            "confidence": 0.64423,
+            "speaker": null
+        },
+        {
+            "text": "something.",
+            "start": 66110,
+            "end": 66738,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "A",
+            "start": 66904,
+            "end": 67234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filter",
+            "start": 67272,
+            "end": 67710,
+            "confidence": 0.99468,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 67790,
+            "end": 68034,
+            "confidence": 0.91849,
+            "speaker": null
+        },
+        {
+            "text": "simply",
+            "start": 68072,
+            "end": 68366,
+            "confidence": 0.99907,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 68398,
+            "end": 68546,
+            "confidence": 0.9,
+            "speaker": null
+        },
+        {
+            "text": "set",
+            "start": 68568,
+            "end": 68754,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 68792,
+            "end": 68946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "multipliers.",
+            "start": 68968,
+            "end": 69998,
+            "confidence": 0.99849,
+            "speaker": null
+        },
+        {
+            "text": "So,",
+            "start": 70174,
+            "end": 70514,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 70552,
+            "end": 70706,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "example,",
+            "start": 70728,
+            "end": 71010,
+            "confidence": 0.87062,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 71080,
+            "end": 71314,
+            "confidence": 0.93626,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 71352,
+            "end": 71554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "case,",
+            "start": 71592,
+            "end": 71890,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 71960,
+            "end": 72146,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you're",
+            "start": 72168,
+            "end": 72366,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "looking",
+            "start": 72398,
+            "end": 72546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "at",
+            "start": 72568,
+            "end": 72754,
+            "confidence": 0.7,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 72792,
+            "end": 72946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "particular",
+            "start": 72968,
+            "end": 73346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pixel",
+            "start": 73448,
+            "end": 73934,
+            "confidence": 0.51062,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 73982,
+            "end": 74146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 74168,
+            "end": 74306,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 74328,
+            "end": 74466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "value",
+            "start": 74488,
+            "end": 74722,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "192",
+            "start": 74776,
+            "end": 74966,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 74968,
+            "end": 76434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 76472,
+            "end": 76626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filter",
+            "start": 76648,
+            "end": 76974,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 77022,
+            "end": 77186,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 77208,
+            "end": 77298,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "values",
+            "start": 77304,
+            "end": 77658,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 77694,
+            "end": 77798,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 77804,
+            "end": 77926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "red",
+            "start": 77948,
+            "end": 78134,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "box,",
+            "start": 78172,
+            "end": 78758,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 78924,
+            "end": 79206,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 79228,
+            "end": 79366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "multiply",
+            "start": 79388,
+            "end": 79842,
+            "confidence": 0.99837,
+            "speaker": null
+        },
+        {
+            "text": "192",
+            "start": 79906,
+            "end": 80614,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 80652,
+            "end": 80806,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "4.5",
+            "start": 80828,
+            "end": 81734,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 81852,
+            "end": 82182,
+            "confidence": 0.95,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 82236,
+            "end": 82406,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 82428,
+            "end": 82566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 82588,
+            "end": 82774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "neighbors",
+            "start": 82812,
+            "end": 83218,
+            "confidence": 0.96078,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 83234,
+            "end": 83366,
+            "confidence": 0.7519,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 83388,
+            "end": 83526,
+            "confidence": 0.94,
+            "speaker": null
+        },
+        {
+            "text": "respective",
+            "start": 83548,
+            "end": 84034,
+            "confidence": 0.87568,
+            "speaker": null
+        },
+        {
+            "text": "filter",
+            "start": 84082,
+            "end": 84482,
+            "confidence": 0.87572,
+            "speaker": null
+        },
+        {
+            "text": "value.",
+            "start": 84546,
+            "end": 85160,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 85930,
+            "end": 86294,
+            "confidence": 0.50777,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 86332,
+            "end": 86486,
+            "confidence": 0.99882,
+            "speaker": null
+        },
+        {
+            "text": "neighbor",
+            "start": 86508,
+            "end": 86866,
+            "confidence": 0.99288,
+            "speaker": null
+        },
+        {
+            "text": "above",
+            "start": 86898,
+            "end": 87362,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 87426,
+            "end": 87606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 87628,
+            "end": 87766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 87788,
+            "end": 87878,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "left",
+            "start": 87884,
+            "end": 88102,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 88156,
+            "end": 88374,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "zero.",
+            "start": 88412,
+            "end": 88710,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 88780,
+            "end": 88966,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 88988,
+            "end": 89126,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "multiply",
+            "start": 89148,
+            "end": 89426,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 89458,
+            "end": 89606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 89628,
+            "end": 89778,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "minus",
+            "start": 89804,
+            "end": 90134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one.",
+            "start": 90182,
+            "end": 90730,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Its",
+            "start": 90880,
+            "end": 91242,
+            "confidence": 0.68561,
+            "speaker": null
+        },
+        {
+            "text": "upper",
+            "start": 91296,
+            "end": 91526,
+            "confidence": 0.99445,
+            "speaker": null
+        },
+        {
+            "text": "neighbor",
+            "start": 91558,
+            "end": 91878,
+            "confidence": 0.99599,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 91894,
+            "end": 92074,
+            "confidence": 0.5311,
+            "speaker": null
+        },
+        {
+            "text": "64,",
+            "start": 92112,
+            "end": 92602,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 92656,
+            "end": 92826,
+            "confidence": 0.74623,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 92848,
+            "end": 93034,
+            "confidence": 0.88871,
+            "speaker": null
+        },
+        {
+            "text": "multiply",
+            "start": 93072,
+            "end": 93414,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 93462,
+            "end": 93626,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 93648,
+            "end": 93786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "zero",
+            "start": 93808,
+            "end": 94186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 94288,
+            "end": 94602,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 94656,
+            "end": 94874,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on.",
+            "start": 94912,
+            "end": 95500,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Sum",
+            "start": 95950,
+            "end": 96406,
+            "confidence": 0.95925,
+            "speaker": null
+        },
+        {
+            "text": "up",
+            "start": 96438,
+            "end": 96586,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 96608,
+            "end": 96698,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "result,",
+            "start": 96704,
+            "end": 97018,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 97104,
+            "end": 97354,
+            "confidence": 0.62,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 97392,
+            "end": 97546,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 97568,
+            "end": 97754,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 97792,
+            "end": 97994,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 98032,
+            "end": 98234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "value",
+            "start": 98272,
+            "end": 98522,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 98576,
+            "end": 98746,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 98768,
+            "end": 98858,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pixel.",
+            "start": 98864,
+            "end": 99690,
+            "confidence": 0.99975,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 100030,
+            "end": 100346,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 100368,
+            "end": 100554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "might",
+            "start": 100592,
+            "end": 100746,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "seem",
+            "start": 100768,
+            "end": 100966,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 100998,
+            "end": 101110,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "little",
+            "start": 101120,
+            "end": 101294,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "OD,",
+            "start": 101332,
+            "end": 102186,
+            "confidence": 0.77179,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 102378,
+            "end": 102782,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "check",
+            "start": 102836,
+            "end": 103054,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 103092,
+            "end": 103294,
+            "confidence": 0.87403,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 103332,
+            "end": 103486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "results",
+            "start": 103508,
+            "end": 103914,
+            "confidence": 0.98716,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 103962,
+            "end": 104174,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "some",
+            "start": 104212,
+            "end": 104414,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "filters.",
+            "start": 104452,
+            "end": 105114,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "Like",
+            "start": 105242,
+            "end": 105534,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 105572,
+            "end": 105774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 105812,
+            "end": 106446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 106628,
+            "end": 106926,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "when",
+            "start": 106948,
+            "end": 107134,
+            "confidence": 0.6959,
+            "speaker": null
+        },
+        {
+            "text": "multiplied",
+            "start": 107172,
+            "end": 107706,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "over",
+            "start": 107738,
+            "end": 107886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 107908,
+            "end": 108046,
+            "confidence": 0.54,
+            "speaker": null
+        },
+        {
+            "text": "contents",
+            "start": 108068,
+            "end": 108506,
+            "confidence": 0.99339,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 108538,
+            "end": 108638,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 108644,
+            "end": 108766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image,",
+            "start": 108788,
+            "end": 109146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 109178,
+            "end": 109374,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "removes",
+            "start": 109412,
+            "end": 109834,
+            "confidence": 0.75779,
+            "speaker": null
+        },
+        {
+            "text": "almost",
+            "start": 109882,
+            "end": 110190,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "everything",
+            "start": 110260,
+            "end": 110638,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "except",
+            "start": 110724,
+            "end": 111098,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 111114,
+            "end": 111246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "vertical",
+            "start": 111268,
+            "end": 111674,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "lines.",
+            "start": 111722,
+            "end": 112510,
+            "confidence": 0.99879,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 112930,
+            "end": 113342,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 113396,
+            "end": 113614,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one,",
+            "start": 113652,
+            "end": 114058,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 114164,
+            "end": 114386,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "removes",
+            "start": 114408,
+            "end": 114766,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "almost",
+            "start": 114798,
+            "end": 115042,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "everything",
+            "start": 115096,
+            "end": 115410,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "except",
+            "start": 115480,
+            "end": 115806,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 115838,
+            "end": 115938,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "horizontal",
+            "start": 115944,
+            "end": 116574,
+            "confidence": 0.99069,
+            "speaker": null
+        },
+        {
+            "text": "lines.",
+            "start": 116622,
+            "end": 117410,
+            "confidence": 0.99926,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 118550,
+            "end": 118962,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 119016,
+            "end": 119186,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 119208,
+            "end": 119346,
+            "confidence": 0.99964,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 119368,
+            "end": 119506,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "combined",
+            "start": 119528,
+            "end": 119886,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 119918,
+            "end": 120114,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "something",
+            "start": 120152,
+            "end": 120354,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "called",
+            "start": 120392,
+            "end": 120690,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pooling,",
+            "start": 120760,
+            "end": 121486,
+            "confidence": 0.99935,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 121598,
+            "end": 121922,
+            "confidence": 0.98901,
+            "speaker": null
+        },
+        {
+            "text": "groups",
+            "start": 121976,
+            "end": 122318,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "up",
+            "start": 122334,
+            "end": 122466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 122488,
+            "end": 122626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pixels",
+            "start": 122648,
+            "end": 123006,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 123038,
+            "end": 123186,
+            "confidence": 0.71852,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 123208,
+            "end": 123346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 123368,
+            "end": 123646,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 123678,
+            "end": 123874,
+            "confidence": 0.69,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 123912,
+            "end": 124302,
+            "confidence": 0.88449,
+            "speaker": null
+        },
+        {
+            "text": "them",
+            "start": 124366,
+            "end": 124546,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "down",
+            "start": 124568,
+            "end": 124754,
+            "confidence": 0.62609,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 124792,
+            "end": 124946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 124968,
+            "end": 125106,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "subset.",
+            "start": 125128,
+            "end": 126046,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "So,",
+            "start": 126238,
+            "end": 126594,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 126632,
+            "end": 126834,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "example,",
+            "start": 126872,
+            "end": 127266,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "max",
+            "start": 127368,
+            "end": 127774,
+            "confidence": 0.9997,
+            "speaker": null
+        },
+        {
+            "text": "pooling,",
+            "start": 127822,
+            "end": 128218,
+            "confidence": 0.92377,
+            "speaker": null
+        },
+        {
+            "text": "two",
+            "start": 128254,
+            "end": 128454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 128492,
+            "end": 128694,
+            "confidence": 0.97663,
+            "speaker": null
+        },
+        {
+            "text": "two",
+            "start": 128732,
+            "end": 129222,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 129356,
+            "end": 129654,
+            "confidence": 0.81012,
+            "speaker": null
+        },
+        {
+            "text": "group",
+            "start": 129692,
+            "end": 129942,
+            "confidence": 0.8459,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 129996,
+            "end": 130166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 130188,
+            "end": 130466,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 130498,
+            "end": 130742,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "sets",
+            "start": 130796,
+            "end": 131058,
+            "confidence": 0.99915,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 131074,
+            "end": 131206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "two",
+            "start": 131228,
+            "end": 131414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 131452,
+            "end": 131606,
+            "confidence": 0.97343,
+            "speaker": null
+        },
+        {
+            "text": "two",
+            "start": 131628,
+            "end": 131766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pixels",
+            "start": 131788,
+            "end": 132418,
+            "confidence": 0.99177,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 132514,
+            "end": 132774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "simply",
+            "start": 132812,
+            "end": 133154,
+            "confidence": 0.99452,
+            "speaker": null
+        },
+        {
+            "text": "pick",
+            "start": 133202,
+            "end": 133414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 133452,
+            "end": 133606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "largest.",
+            "start": 133628,
+            "end": 134390,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 134730,
+            "end": 135094,
+            "confidence": 0.69,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 135132,
+            "end": 135506,
+            "confidence": 0.70579,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 135538,
+            "end": 135686,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 135708,
+            "end": 135846,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "reduced",
+            "start": 135868,
+            "end": 136226,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 136258,
+            "end": 136406,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 136428,
+            "end": 136614,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "quarter",
+            "start": 136652,
+            "end": 136946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 136978,
+            "end": 137126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 137148,
+            "end": 137334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "original",
+            "start": 137372,
+            "end": 137794,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "size,",
+            "start": 137842,
+            "end": 138390,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 138540,
+            "end": 138866,
+            "confidence": 0.64062,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 138908,
+            "end": 139114,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 139152,
+            "end": 139574,
+            "confidence": 0.75483,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 139622,
+            "end": 139786,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "still",
+            "start": 139808,
+            "end": 139994,
+            "confidence": 0.99651,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 140032,
+            "end": 140234,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "maintained.",
+            "start": 140272,
+            "end": 141050,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 141950,
+            "end": 142314,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 142352,
+            "end": 142506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "previous",
+            "start": 142528,
+            "end": 142822,
+            "confidence": 0.74915,
+            "speaker": null
+        },
+        {
+            "text": "image,",
+            "start": 142886,
+            "end": 143334,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "after",
+            "start": 143382,
+            "end": 143642,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "being",
+            "start": 143696,
+            "end": 143962,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "filtered",
+            "start": 144016,
+            "end": 144630,
+            "confidence": 0.97339,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 144710,
+            "end": 144906,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 144928,
+            "end": 145162,
+            "confidence": 0.61503,
+            "speaker": null
+        },
+        {
+            "text": "max",
+            "start": 145216,
+            "end": 145494,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "pooled,",
+            "start": 145542,
+            "end": 146022,
+            "confidence": 0.86418,
+            "speaker": null
+        },
+        {
+            "text": "could",
+            "start": 146086,
+            "end": 146266,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "look",
+            "start": 146288,
+            "end": 146474,
+            "confidence": 0.70893,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 146512,
+            "end": 146714,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 146752,
+            "end": 147340,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 147870,
+            "end": 148186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 148208,
+            "end": 148486,
+            "confidence": 0.94967,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 148518,
+            "end": 148666,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 148688,
+            "end": 148778,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "right",
+            "start": 148784,
+            "end": 149002,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 149056,
+            "end": 149274,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 149312,
+            "end": 149514,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "quarter",
+            "start": 149552,
+            "end": 149926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 149958,
+            "end": 150106,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "size",
+            "start": 150128,
+            "end": 150362,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 150416,
+            "end": 150538,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 150544,
+            "end": 150666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 150688,
+            "end": 150886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 150928,
+            "end": 151038,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 151044,
+            "end": 151166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "left.",
+            "start": 151188,
+            "end": 151758,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 151924,
+            "end": 152206,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 152228,
+            "end": 152366,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "vertical",
+            "start": 152388,
+            "end": 152794,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "line",
+            "start": 152842,
+            "end": 153054,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 153092,
+            "end": 153498,
+            "confidence": 0.78528,
+            "speaker": null
+        },
+        {
+            "text": "were",
+            "start": 153514,
+            "end": 153694,
+            "confidence": 0.52337,
+            "speaker": null
+        },
+        {
+            "text": "maintained,",
+            "start": 153732,
+            "end": 154378,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 154474,
+            "end": 154782,
+            "confidence": 0.69,
+            "speaker": null
+        },
+        {
+            "text": "indeed,",
+            "start": 154836,
+            "end": 155146,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "they",
+            "start": 155178,
+            "end": 155326,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "were",
+            "start": 155348,
+            "end": 155534,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "enhanced.",
+            "start": 155572,
+            "end": 156510,
+            "confidence": 0.99785,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 157810,
+            "end": 158174,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "where",
+            "start": 158212,
+            "end": 158366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "did",
+            "start": 158388,
+            "end": 158526,
+            "confidence": 0.64062,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 158548,
+            "end": 158686,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 158708,
+            "end": 159002,
+            "confidence": 0.6758,
+            "speaker": null
+        },
+        {
+            "text": "come",
+            "start": 159066,
+            "end": 159294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "from?",
+            "start": 159332,
+            "end": 159966,
+            "confidence": 0.99938,
+            "speaker": null
+        },
+        {
+            "text": "That's",
+            "start": 160148,
+            "end": 160586,
+            "confidence": 0.99567,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 160618,
+            "end": 160718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "magic",
+            "start": 160724,
+            "end": 161066,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 161098,
+            "end": 161246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 161268,
+            "end": 161358,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 161364,
+            "end": 162026,
+            "confidence": 0.8254,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 162058,
+            "end": 162346,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "network.",
+            "start": 162378,
+            "end": 162858,
+            "confidence": 0.99527,
+            "speaker": null
+        },
+        {
+            "text": "They're",
+            "start": 162954,
+            "end": 163274,
+            "confidence": 0.76353,
+            "speaker": null
+        },
+        {
+            "text": "actually",
+            "start": 163322,
+            "end": 163774,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "learned",
+            "start": 163892,
+            "end": 164858,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "they're",
+            "start": 165034,
+            "end": 165478,
+            "confidence": 0.99719,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 165514,
+            "end": 165714,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "parameters",
+            "start": 165752,
+            "end": 166398,
+            "confidence": 0.90281,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 166494,
+            "end": 166802,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "those",
+            "start": 166856,
+            "end": 167074,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 167112,
+            "end": 167218,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 167224,
+            "end": 167346,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "neurons",
+            "start": 167368,
+            "end": 167966,
+            "confidence": 0.29877,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 167998,
+            "end": 168194,
+            "confidence": 0.89,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 168232,
+            "end": 168338,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 168344,
+            "end": 168686,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 168718,
+            "end": 169006,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 169038,
+            "end": 169186,
+            "confidence": 0.74314,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 169208,
+            "end": 169346,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "saw",
+            "start": 169368,
+            "end": 169506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 169528,
+            "end": 169618,
+            "confidence": 0.98055,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 169624,
+            "end": 169698,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "last",
+            "start": 169704,
+            "end": 169922,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "video.",
+            "start": 169976,
+            "end": 170580,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 171270,
+            "end": 171634,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 171672,
+            "end": 171826,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 171848,
+            "end": 172034,
+            "confidence": 0.95531,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 172072,
+            "end": 172366,
+            "confidence": 0.97871,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 172398,
+            "end": 172546,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "fed",
+            "start": 172568,
+            "end": 172766,
+            "confidence": 0.50777,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 172798,
+            "end": 172994,
+            "confidence": 0.86701,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 173032,
+            "end": 173186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 173208,
+            "end": 173886,
+            "confidence": 0.99958,
+            "speaker": null
+        },
+        {
+            "text": "layer,",
+            "start": 173918,
+            "end": 174446,
+            "confidence": 0.99639,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 174558,
+            "end": 174834,
+            "confidence": 0.82,
+            "speaker": null
+        },
+        {
+            "text": "number",
+            "start": 174872,
+            "end": 175122,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 175176,
+            "end": 175394,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "randomly",
+            "start": 175432,
+            "end": 176026,
+            "confidence": 0.94964,
+            "speaker": null
+        },
+        {
+            "text": "initialized",
+            "start": 176078,
+            "end": 176674,
+            "confidence": 0.61867,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 176722,
+            "end": 177122,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 177186,
+            "end": 177414,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "pass",
+            "start": 177452,
+            "end": 177702,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "over",
+            "start": 177756,
+            "end": 177926,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 177948,
+            "end": 178134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image.",
+            "start": 178172,
+            "end": 178870,
+            "confidence": 0.98308,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 179290,
+            "end": 179606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "results",
+            "start": 179628,
+            "end": 180018,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 180034,
+            "end": 180166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 180188,
+            "end": 180374,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 180412,
+            "end": 180566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "fed",
+            "start": 180588,
+            "end": 180786,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 180818,
+            "end": 181014,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 181052,
+            "end": 181158,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "next",
+            "start": 181164,
+            "end": 181382,
+            "confidence": 0.88401,
+            "speaker": null
+        },
+        {
+            "text": "layer,",
+            "start": 181436,
+            "end": 181890,
+            "confidence": 0.98115,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 181970,
+            "end": 182214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "matching",
+            "start": 182252,
+            "end": 182754,
+            "confidence": 0.79031,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 182802,
+            "end": 182966,
+            "confidence": 0.99926,
+            "speaker": null
+        },
+        {
+            "text": "performed",
+            "start": 182988,
+            "end": 183298,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 183314,
+            "end": 183446,
+            "confidence": 0.99922,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 183468,
+            "end": 183606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 183628,
+            "end": 183906,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "network.",
+            "start": 183938,
+            "end": 184710,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 185610,
+            "end": 185974,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "over",
+            "start": 186012,
+            "end": 186262,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "time,",
+            "start": 186316,
+            "end": 186678,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 186764,
+            "end": 187014,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 187052,
+            "end": 187362,
+            "confidence": 0.78788,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 187426,
+            "end": 187654,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "give",
+            "start": 187692,
+            "end": 187894,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "us",
+            "start": 187932,
+            "end": 188086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 188108,
+            "end": 188258,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 188284,
+            "end": 188646,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "outputs",
+            "start": 188678,
+            "end": 189206,
+            "confidence": 0.8038,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 189238,
+            "end": 189386,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "give",
+            "start": 189408,
+            "end": 189594,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 189632,
+            "end": 189786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "best",
+            "start": 189808,
+            "end": 190042,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "matches",
+            "start": 190096,
+            "end": 190582,
+            "confidence": 0.99939,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 190646,
+            "end": 190826,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 190848,
+            "end": 191034,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "learned.",
+            "start": 191072,
+            "end": 191686,
+            "confidence": 0.9993,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 191798,
+            "end": 192026,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 192048,
+            "end": 192234,
+            "confidence": 0.6,
+            "speaker": null
+        },
+        {
+            "text": "process",
+            "start": 192272,
+            "end": 192618,
+            "confidence": 0.99794,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 192704,
+            "end": 192954,
+            "confidence": 0.99955,
+            "speaker": null
+        },
+        {
+            "text": "called",
+            "start": 192992,
+            "end": 193290,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 193360,
+            "end": 193830,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "extraction.",
+            "start": 193910,
+            "end": 194730,
+            "confidence": 0.99887,
+            "speaker": null
+        },
+        {
+            "text": "Here's",
+            "start": 195550,
+            "end": 196006,
+            "confidence": 0.9993,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 196038,
+            "end": 196186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "example",
+            "start": 196208,
+            "end": 196538,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 196624,
+            "end": 196826,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 196848,
+            "end": 197034,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 197072,
+            "end": 197226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 197248,
+            "end": 197974,
+            "confidence": 0.99708,
+            "speaker": null
+        },
+        {
+            "text": "filter",
+            "start": 198022,
+            "end": 198374,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 198422,
+            "end": 198998,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 199094,
+            "end": 199306,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "help",
+            "start": 199328,
+            "end": 199514,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 199552,
+            "end": 199706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "computer",
+            "start": 199728,
+            "end": 200058,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "visualize",
+            "start": 200144,
+            "end": 200742,
+            "confidence": 0.83318,
+            "speaker": null
+        },
+        {
+            "text": "things.",
+            "start": 200806,
+            "end": 201466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 201648,
+            "end": 201898,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 201904,
+            "end": 202026,
+            "confidence": 0.6959,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 202048,
+            "end": 202234,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "across",
+            "start": 202272,
+            "end": 202522,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 202576,
+            "end": 202746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "top",
+            "start": 202768,
+            "end": 202954,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "row",
+            "start": 202992,
+            "end": 203218,
+            "confidence": 0.69264,
+            "speaker": null
+        },
+        {
+            "text": "here",
+            "start": 203254,
+            "end": 203646,
+            "confidence": 0.66891,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 203748,
+            "end": 203966,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 203988,
+            "end": 204126,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "actually",
+            "start": 204148,
+            "end": 204382,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 204436,
+            "end": 204606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 204628,
+            "end": 204766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "shoe,",
+            "start": 204788,
+            "end": 205306,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 205418,
+            "end": 205694,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 205732,
+            "end": 205838,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 205844,
+            "end": 205966,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "been",
+            "start": 205988,
+            "end": 206174,
+            "confidence": 0.99813,
+            "speaker": null
+        },
+        {
+            "text": "filtered",
+            "start": 206212,
+            "end": 206618,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "down",
+            "start": 206634,
+            "end": 206862,
+            "confidence": 0.69268,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 206916,
+            "end": 207086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 207108,
+            "end": 207294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "sole",
+            "start": 207332,
+            "end": 207802,
+            "confidence": 0.36537,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 207866,
+            "end": 208046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 208068,
+            "end": 208254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "silhouette",
+            "start": 208292,
+            "end": 208826,
+            "confidence": 0.94378,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 208858,
+            "end": 209006,
+            "confidence": 0.51,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 209028,
+            "end": 209166,
+            "confidence": 0.56,
+            "speaker": null
+        },
+        {
+            "text": "shoe",
+            "start": 209188,
+            "end": 209754,
+            "confidence": 0.88718,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 209882,
+            "end": 210174,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 210212,
+            "end": 210602,
+            "confidence": 0.999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 210666,
+            "end": 210894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learned",
+            "start": 210932,
+            "end": 211322,
+            "confidence": 0.73085,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 211386,
+            "end": 211566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 211588,
+            "end": 211726,
+            "confidence": 0.54,
+            "speaker": null
+        },
+        {
+            "text": "shoe",
+            "start": 211748,
+            "end": 212074,
+            "confidence": 0.99873,
+            "speaker": null
+        },
+        {
+            "text": "looks",
+            "start": 212122,
+            "end": 212382,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "like.",
+            "start": 212436,
+            "end": 212942,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "You'll",
+            "start": 213076,
+            "end": 213386,
+            "confidence": 0.93625,
+            "speaker": null
+        },
+        {
+            "text": "run",
+            "start": 213418,
+            "end": 213566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 213588,
+            "end": 213774,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 213812,
+            "end": 213966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 213988,
+            "end": 214126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "yourself",
+            "start": 214148,
+            "end": 214382,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 214436,
+            "end": 214606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 214628,
+            "end": 214730,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 214740,
+            "end": 214818,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "few",
+            "start": 214824,
+            "end": 214994,
+            "confidence": 0.98334,
+            "speaker": null
+        },
+        {
+            "text": "minutes.",
+            "start": 215032,
+            "end": 215620,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 216710,
+            "end": 217170,
+            "confidence": 0.72486,
+            "speaker": null
+        },
+        {
+            "text": "let's",
+            "start": 217240,
+            "end": 217486,
+            "confidence": 0.78788,
+            "speaker": null
+        },
+        {
+            "text": "take",
+            "start": 217518,
+            "end": 217666,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 217688,
+            "end": 217826,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "look",
+            "start": 217848,
+            "end": 217986,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "at",
+            "start": 218008,
+            "end": 218098,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 218104,
+            "end": 218274,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 218312,
+            "end": 218562,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 218616,
+            "end": 218786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "build",
+            "start": 218808,
+            "end": 218994,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 219032,
+            "end": 219234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 219272,
+            "end": 219966,
+            "confidence": 0.8139,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 219998,
+            "end": 220366,
+            "confidence": 0.95249,
+            "speaker": null
+        },
+        {
+            "text": "network.",
+            "start": 220398,
+            "end": 220862,
+            "confidence": 0.48165,
+            "speaker": null
+        },
+        {
+            "text": "Like",
+            "start": 220926,
+            "end": 221154,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 221192,
+            "end": 221874,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 222072,
+            "end": 222434,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 222472,
+            "end": 222674,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "code",
+            "start": 222712,
+            "end": 222914,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 222952,
+            "end": 223154,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 223192,
+            "end": 223346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "similar",
+            "start": 223368,
+            "end": 223650,
+            "confidence": 0.64423,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 223720,
+            "end": 223906,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 223928,
+            "end": 224018,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 224024,
+            "end": 224146,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "used",
+            "start": 224168,
+            "end": 224402,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "earlier,",
+            "start": 224456,
+            "end": 225038,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "where",
+            "start": 225134,
+            "end": 225346,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 225368,
+            "end": 225506,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 225528,
+            "end": 225618,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 225624,
+            "end": 225746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "flattened",
+            "start": 225768,
+            "end": 226206,
+            "confidence": 0.76587,
+            "speaker": null
+        },
+        {
+            "text": "input",
+            "start": 226238,
+            "end": 226654,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 226702,
+            "end": 226958,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "fed",
+            "start": 226974,
+            "end": 227246,
+            "confidence": 0.68261,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 227278,
+            "end": 227438,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 227464,
+            "end": 227606,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "dense",
+            "start": 227628,
+            "end": 227906,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 227938,
+            "end": 228370,
+            "confidence": 0.87062,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 228450,
+            "end": 228694,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 228732,
+            "end": 228886,
+            "confidence": 0.96978,
+            "speaker": null
+        },
+        {
+            "text": "turn,",
+            "start": 228908,
+            "end": 229094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 229132,
+            "end": 229286,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "fed",
+            "start": 229308,
+            "end": 229506,
+            "confidence": 0.9752,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 229538,
+            "end": 229734,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 229772,
+            "end": 229926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "final",
+            "start": 229948,
+            "end": 230182,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "dense",
+            "start": 230236,
+            "end": 230626,
+            "confidence": 0.59984,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 230658,
+            "end": 230994,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 231042,
+            "end": 231254,
+            "confidence": 0.89181,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 231292,
+            "end": 231446,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 231468,
+            "end": 231606,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "output.",
+            "start": 231628,
+            "end": 232546,
+            "confidence": 0.83114,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 232738,
+            "end": 233094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "only",
+            "start": 233132,
+            "end": 233334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "difference",
+            "start": 233372,
+            "end": 233670,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "here",
+            "start": 233740,
+            "end": 233974,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 234012,
+            "end": 234166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 234188,
+            "end": 234326,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 234348,
+            "end": 234438,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "haven't",
+            "start": 234444,
+            "end": 234706,
+            "confidence": 0.93624,
+            "speaker": null
+        },
+        {
+            "text": "specified",
+            "start": 234738,
+            "end": 235202,
+            "confidence": 0.79489,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 235266,
+            "end": 235446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "input",
+            "start": 235468,
+            "end": 235874,
+            "confidence": 0.99108,
+            "speaker": null
+        },
+        {
+            "text": "shape.",
+            "start": 235922,
+            "end": 236710,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "That's",
+            "start": 237130,
+            "end": 237586,
+            "confidence": 0.99713,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 237618,
+            "end": 237862,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I'll,",
+            "start": 237916,
+            "end": 237940,
+            "confidence": 0.98613,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 237940,
+            "end": 237980,
+            "confidence": 0.9947985410690308,
+            "speaker": null
+        },
+        {
+            "text": "put",
+            "start": 238258,
+            "end": 238406,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 238428,
+            "end": 238566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 238588,
+            "end": 239278,
+            "confidence": 0.74528,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 239314,
+            "end": 239734,
+            "confidence": 0.65134,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 239782,
+            "end": 239946,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "top",
+            "start": 239968,
+            "end": 240106,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 240128,
+            "end": 240266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it,",
+            "start": 240288,
+            "end": 240426,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 240448,
+            "end": 240634,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 240672,
+            "end": 241260,
+            "confidence": 0.64423,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 241870,
+            "end": 242330,
+            "confidence": 0.81528,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 242400,
+            "end": 242726,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "takes",
+            "start": 242758,
+            "end": 242954,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 242992,
+            "end": 243146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "input.",
+            "start": 243168,
+            "end": 243574,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 243622,
+            "end": 243834,
+            "confidence": 0.68931,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 243872,
+            "end": 244026,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "specify",
+            "start": 244048,
+            "end": 244422,
+            "confidence": 0.99402,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 244486,
+            "end": 244618,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "input",
+            "start": 244624,
+            "end": 244966,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "shape",
+            "start": 244998,
+            "end": 245770,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 246110,
+            "end": 246426,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 246448,
+            "end": 246678,
+            "confidence": 0.99154,
+            "speaker": null
+        },
+        {
+            "text": "telling",
+            "start": 246694,
+            "end": 246966,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 246998,
+            "end": 247146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 247168,
+            "end": 247306,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "generate",
+            "start": 247328,
+            "end": 247782,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "64",
+            "start": 247846,
+            "end": 248394,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 248432,
+            "end": 248870,
+            "confidence": 0.76916,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 248950,
+            "end": 249194,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 249232,
+            "end": 249434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "parameter.",
+            "start": 249472,
+            "end": 250330,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "That",
+            "start": 250850,
+            "end": 251214,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "is,",
+            "start": 251252,
+            "end": 251502,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 251556,
+            "end": 251726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 251748,
+            "end": 251934,
+            "confidence": 0.9381,
+            "speaker": null
+        },
+        {
+            "text": "generate",
+            "start": 251972,
+            "end": 252442,
+            "confidence": 0.99954,
+            "speaker": null
+        },
+        {
+            "text": "64",
+            "start": 252506,
+            "end": 253102,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 253156,
+            "end": 253706,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 253818,
+            "end": 254142,
+            "confidence": 0.65,
+            "speaker": null
+        },
+        {
+            "text": "multiply",
+            "start": 254196,
+            "end": 254762,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 254826,
+            "end": 255006,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 255028,
+            "end": 255214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "them",
+            "start": 255252,
+            "end": 255598,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "across",
+            "start": 255684,
+            "end": 256030,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 256100,
+            "end": 256334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image.",
+            "start": 256372,
+            "end": 257226,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "Then,",
+            "start": 257418,
+            "end": 257870,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 257940,
+            "end": 258222,
+            "confidence": 0.66193,
+            "speaker": null
+        },
+        {
+            "text": "epoch,",
+            "start": 258276,
+            "end": 259050,
+            "confidence": 0.67551,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 259130,
+            "end": 259326,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 259348,
+            "end": 259534,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "figure",
+            "start": 259572,
+            "end": 259822,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 259876,
+            "end": 260142,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 260196,
+            "end": 260462,
+            "confidence": 0.99288,
+            "speaker": null
+        },
+        {
+            "text": "filters",
+            "start": 260516,
+            "end": 260970,
+            "confidence": 0.99141,
+            "speaker": null
+        },
+        {
+            "text": "gave",
+            "start": 261050,
+            "end": 261294,
+            "confidence": 0.88714,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 261332,
+            "end": 261486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "best",
+            "start": 261508,
+            "end": 261742,
+            "confidence": 0.61503,
+            "speaker": null
+        },
+        {
+            "text": "signals",
+            "start": 261796,
+            "end": 262474,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 262602,
+            "end": 262894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "help",
+            "start": 262932,
+            "end": 263134,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "match",
+            "start": 263172,
+            "end": 263422,
+            "confidence": 0.9674,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 263476,
+            "end": 263646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "images",
+            "start": 263668,
+            "end": 264086,
+            "confidence": 0.94296,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 264138,
+            "end": 264306,
+            "confidence": 0.91,
+            "speaker": null
+        },
+        {
+            "text": "their",
+            "start": 264328,
+            "end": 264514,
+            "confidence": 0.98867,
+            "speaker": null
+        },
+        {
+            "text": "labels.",
+            "start": 264552,
+            "end": 265262,
+            "confidence": 0.98352,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 265406,
+            "end": 265714,
+            "confidence": 0.65486,
+            "speaker": null
+        },
+        {
+            "text": "much",
+            "start": 265752,
+            "end": 265954,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 265992,
+            "end": 266146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "same",
+            "start": 266168,
+            "end": 266354,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "way,",
+            "start": 266392,
+            "end": 266642,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 266696,
+            "end": 266914,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learned",
+            "start": 266952,
+            "end": 267246,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 267278,
+            "end": 267474,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "parameters",
+            "start": 267512,
+            "end": 268030,
+            "confidence": 0.95894,
+            "speaker": null
+        },
+        {
+            "text": "worked",
+            "start": 268110,
+            "end": 268402,
+            "confidence": 0.99931,
+            "speaker": null
+        },
+        {
+            "text": "best",
+            "start": 268456,
+            "end": 268818,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 268904,
+            "end": 269106,
+            "confidence": 0.57763,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 269128,
+            "end": 269266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "dense",
+            "start": 269288,
+            "end": 269614,
+            "confidence": 0.48025,
+            "speaker": null
+        },
+        {
+            "text": "layer.",
+            "start": 269662,
+            "end": 270370,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 271350,
+            "end": 271666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "max",
+            "start": 271688,
+            "end": 271934,
+            "confidence": 0.95098,
+            "speaker": null
+        },
+        {
+            "text": "pooling",
+            "start": 271982,
+            "end": 272366,
+            "confidence": 0.87991,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 272398,
+            "end": 272594,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "compress",
+            "start": 272632,
+            "end": 272974,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 273022,
+            "end": 273186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 273208,
+            "end": 273486,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 273518,
+            "end": 273714,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "enhance",
+            "start": 273752,
+            "end": 274094,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 274142,
+            "end": 274306,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 274328,
+            "end": 274782,
+            "confidence": 0.99941,
+            "speaker": null
+        },
+        {
+            "text": "looks",
+            "start": 274846,
+            "end": 275122,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 275176,
+            "end": 275346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 275368,
+            "end": 275940,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 277130,
+            "end": 277494,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 277532,
+            "end": 277686,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 277708,
+            "end": 277894,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "stack",
+            "start": 277932,
+            "end": 278242,
+            "confidence": 0.59654,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 278306,
+            "end": 279074,
+            "confidence": 0.88702,
+            "speaker": null
+        },
+        {
+            "text": "layers",
+            "start": 279122,
+            "end": 279522,
+            "confidence": 0.51175,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 279586,
+            "end": 279814,
+            "confidence": 0.74314,
+            "speaker": null
+        },
+        {
+            "text": "top",
+            "start": 279852,
+            "end": 280054,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 280092,
+            "end": 280246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 280268,
+            "end": 280406,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "other",
+            "start": 280428,
+            "end": 280662,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 280716,
+            "end": 280982,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "really",
+            "start": 281036,
+            "end": 281302,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "break",
+            "start": 281356,
+            "end": 281622,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "down",
+            "start": 281676,
+            "end": 281846,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 281868,
+            "end": 282054,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 282092,
+            "end": 282578,
+            "confidence": 0.99861,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 282674,
+            "end": 282934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "try",
+            "start": 282972,
+            "end": 283174,
+            "confidence": 0.78788,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 283212,
+            "end": 283414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learn",
+            "start": 283452,
+            "end": 283702,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 283756,
+            "end": 283974,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 284012,
+            "end": 284262,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "abstract",
+            "start": 284316,
+            "end": 284754,
+            "confidence": 0.99229,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 284802,
+            "end": 285362,
+            "confidence": 0.98924,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 285426,
+            "end": 285702,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "this.",
+            "start": 285756,
+            "end": 286360,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "With",
+            "start": 286810,
+            "end": 287126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 287148,
+            "end": 287334,
+            "confidence": 0.72168,
+            "speaker": null
+        },
+        {
+            "text": "methodology,",
+            "start": 287372,
+            "end": 288098,
+            "confidence": 0.99936,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 288194,
+            "end": 288454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 288492,
+            "end": 288962,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "starts",
+            "start": 289026,
+            "end": 289346,
+            "confidence": 0.97803,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 289378,
+            "end": 289574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learn",
+            "start": 289612,
+            "end": 289910,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "based",
+            "start": 289980,
+            "end": 290214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 290252,
+            "end": 290370,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 290380,
+            "end": 290554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 290592,
+            "end": 290918,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 290934,
+            "end": 291066,
+            "confidence": 0.64,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 291088,
+            "end": 291226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 291248,
+            "end": 291750,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "instead",
+            "start": 291830,
+            "end": 292122,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 292176,
+            "end": 292346,
+            "confidence": 0.75,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 292368,
+            "end": 292554,
+            "confidence": 0.79,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 292592,
+            "end": 292698,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "raw",
+            "start": 292704,
+            "end": 293014,
+            "confidence": 0.74232,
+            "speaker": null
+        },
+        {
+            "text": "patterns",
+            "start": 293062,
+            "end": 293446,
+            "confidence": 0.58096,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 293478,
+            "end": 293578,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pixels.",
+            "start": 293584,
+            "end": 294390,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "Two",
+            "start": 294550,
+            "end": 294874,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "sleeves,",
+            "start": 294912,
+            "end": 295254,
+            "confidence": 0.99868,
+            "speaker": null
+        },
+        {
+            "text": "it's",
+            "start": 295302,
+            "end": 295526,
+            "confidence": 0.59997,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 295558,
+            "end": 295658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "shirt.",
+            "start": 295664,
+            "end": 296150,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "Two",
+            "start": 296230,
+            "end": 296474,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "short",
+            "start": 296512,
+            "end": 296714,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "sleeves,",
+            "start": 296752,
+            "end": 297094,
+            "confidence": 0.99941,
+            "speaker": null
+        },
+        {
+            "text": "it's",
+            "start": 297142,
+            "end": 297318,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 297334,
+            "end": 297418,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "T",
+            "start": 297424,
+            "end": 297594,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "shirt.",
+            "start": 297632,
+            "end": 298214,
+            "confidence": 0.95583,
+            "speaker": null
+        },
+        {
+            "text": "Solen",
+            "start": 298342,
+            "end": 298806,
+            "confidence": 0.89732,
+            "speaker": null
+        },
+        {
+            "text": "laces,",
+            "start": 298838,
+            "end": 299270,
+            "confidence": 0.99948,
+            "speaker": null
+        },
+        {
+            "text": "it's",
+            "start": 299350,
+            "end": 299558,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 299574,
+            "end": 299706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "shoe,",
+            "start": 299728,
+            "end": 300102,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 300166,
+            "end": 300346,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "type",
+            "start": 300368,
+            "end": 300554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 300592,
+            "end": 300746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "thing.",
+            "start": 300768,
+            "end": 301434,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 301632,
+            "end": 301946,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 301968,
+            "end": 302166,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "still",
+            "start": 302198,
+            "end": 302394,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "looking",
+            "start": 302432,
+            "end": 302730,
+            "confidence": 0.68,
+            "speaker": null
+        },
+        {
+            "text": "at",
+            "start": 302800,
+            "end": 303034,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 303072,
+            "end": 303226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 303248,
+            "end": 303446,
+            "confidence": 0.71,
+            "speaker": null
+        },
+        {
+            "text": "simple",
+            "start": 303488,
+            "end": 303790,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "images",
+            "start": 303860,
+            "end": 304266,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 304298,
+            "end": 304446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fashion",
+            "start": 304468,
+            "end": 304746,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "at",
+            "start": 304778,
+            "end": 304926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 304948,
+            "end": 305038,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "moment,",
+            "start": 305044,
+            "end": 305454,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 305572,
+            "end": 305854,
+            "confidence": 0.78529,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 305892,
+            "end": 306094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "principles",
+            "start": 306132,
+            "end": 306666,
+            "confidence": 0.66851,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 306698,
+            "end": 306846,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "extend",
+            "start": 306868,
+            "end": 307242,
+            "confidence": 0.76628,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 307306,
+            "end": 307582,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 307636,
+            "end": 307806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "complex",
+            "start": 307828,
+            "end": 308202,
+            "confidence": 0.99815,
+            "speaker": null
+        },
+        {
+            "text": "images.",
+            "start": 308266,
+            "end": 308762,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 308826,
+            "end": 309006,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you'll",
+            "start": 309028,
+            "end": 309226,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 309258,
+            "end": 309406,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 309428,
+            "end": 309566,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 309588,
+            "end": 309678,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 309684,
+            "end": 309806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "next",
+            "start": 309828,
+            "end": 310014,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "video.",
+            "start": 310052,
+            "end": 310686,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 310868,
+            "end": 311214,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "before",
+            "start": 311252,
+            "end": 311502,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 311556,
+            "end": 311774,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "there,",
+            "start": 311812,
+            "end": 312062,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "try",
+            "start": 312116,
+            "end": 312334,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 312372,
+            "end": 312526,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 312548,
+            "end": 312638,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "notebook",
+            "start": 312644,
+            "end": 313034,
+            "confidence": 0.70573,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 313082,
+            "end": 313246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 313268,
+            "end": 313502,
+            "confidence": 0.99841,
+            "speaker": null
+        },
+        {
+            "text": "convolutions",
+            "start": 313556,
+            "end": 314138,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 314154,
+            "end": 314286,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "yourself.",
+            "start": 314308,
+            "end": 314782,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "I've",
+            "start": 314916,
+            "end": 315226,
+            "confidence": 0.95992,
+            "speaker": null
+        },
+        {
+            "text": "made",
+            "start": 315258,
+            "end": 315406,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 315428,
+            "end": 315518,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "link",
+            "start": 315524,
+            "end": 315646,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 315668,
+            "end": 315806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 315828,
+            "end": 315918,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 315924,
+            "end": 315998,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 316004,
+            "end": 316126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "description",
+            "start": 316148,
+            "end": 316522,
+            "confidence": 0.49356,
+            "speaker": null
+        },
+        {
+            "text": "below.",
+            "start": 316586,
+            "end": 317102,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 317236,
+            "end": 317534,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "before",
+            "start": 317572,
+            "end": 317726,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 317748,
+            "end": 317886,
+            "confidence": 0.99954,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 317908,
+            "end": 317998,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 318004,
+            "end": 318126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 318148,
+            "end": 318238,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "next",
+            "start": 318244,
+            "end": 318414,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "video,",
+            "start": 318452,
+            "end": 318798,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "don't",
+            "start": 318884,
+            "end": 319098,
+            "confidence": 0.99935,
+            "speaker": null
+        },
+        {
+            "text": "forget",
+            "start": 319114,
+            "end": 319338,
+            "confidence": 0.87905,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 319354,
+            "end": 319486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "hit",
+            "start": 319508,
+            "end": 319646,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 319668,
+            "end": 319806,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "subscribe",
+            "start": 319828,
+            "end": 320106,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "button.",
+            "start": 320138,
+            "end": 320526,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Thank",
+            "start": 320628,
+            "end": 320894,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "you.",
+            "start": 320932,
+            "end": 321520,
+            "confidence": 0.99964,
+            "speaker": null
+        }
+    ],
+    "utterances": null,
+    "confidence": 0.9547147781289327,
+    "audio_duration": 332,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": null,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": false,
+    "content_safety": false,
+    "iab_categories": true,
+    "content_safety_labels": {
+        "status": "unavailable",
+        "results": [],
+        "summary": {}
+    },
+    "iab_categories_result": {
+        "status": "success",
+        "results": [
+            {
+                "text": "Hi, and welcome to episode three of Zero to Hero with TensorFlow. In the previous episode, you saw how to do basic computer vision using a deep neural network that matched the pixels of an image to a label. So an image like this was matched to a numeric label that represented it like this. But there was a limitation to that. The image you were looking at had to have the subject centered in it, and it had to be the only thing in the image.",
+                "labels": [
+                    {
+                        "relevance": 0.7032207250595093,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.1294470876455307,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.06276758015155792,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.015378931537270546,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.008369186893105507,
+                        "label": "Technology&Computing>VirtualReality"
+                    },
+                    {
+                        "relevance": 0.007215138524770737,
+                        "label": "FineArt>DigitalArts"
+                    },
+                    {
+                        "relevance": 0.0039985934272408485,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    },
+                    {
+                        "relevance": 0.003897276008501649,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0037369802594184875,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0023907346185296774,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    }
+                ],
+                "timestamp": {
+                    "start": 3850,
+                    "end": 31506
+                },
+                "sentences_idx_start": 0,
+                "sentences_idx_end": 4
+            },
+            {
+                "text": "So the code you wrote would work for that shoe. But what about these? It wouldn't be able to identify all of them because it's not trained to do so. For that, we have to use something called a convolutional neural network, which works a little differently than what you've just seen. The idea behind a convolutional neural network is that you filter the images before training the deep neural network.",
+                "labels": [
+                    {
+                        "relevance": 0.629675567150116,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.009265762753784657,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.005961116869002581,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0034819976426661015,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.003046379191800952,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0015196421882137656,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0010737981647253036,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.0010712785879150033,
+                        "label": "MedicalHealth>DiseasesAndConditions>EyeAndVisionConditions"
+                    },
+                    {
+                        "relevance": 0.0006938761216588318,
+                        "label": "Technology&Computing>VirtualReality"
+                    },
+                    {
+                        "relevance": 0.0005285335355438292,
+                        "label": "HealthyLiving>FitnessAndExercise>RunningAndJogging"
+                    }
+                ],
+                "timestamp": {
+                    "start": 31618,
+                    "end": 57230
+                },
+                "sentences_idx_start": 5,
+                "sentences_idx_end": 9
+            },
+            {
+                "text": "After filtering the images, features within the images could then come to the forefront, and you would then spot those features to identify something. A filter is simply a set of multipliers. So, for example, in this case, if you're looking at a particular pixel that has the value 192 and the filter is the values in the red box, then you multiply 192 by 4.5 and each of its neighbors by the respective filter value. So its neighbor above and to the left is zero.",
+                "labels": [
+                    {
+                        "relevance": 0.7950325012207031,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.0026638880372047424,
+                        "label": "Hobbies&Interests>ArtsAndCrafts>Photography"
+                    },
+                    {
+                        "relevance": 0.0020833266898989677,
+                        "label": "Technology&Computing>ConsumerElectronics>CamerasAndCamcorders"
+                    },
+                    {
+                        "relevance": 0.0007714928360655904,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.0003000539727509022,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0002900690014939755,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.00023732121917419136,
+                        "label": "MedicalHealth>DiseasesAndConditions>LungAndRespiratoryHealth"
+                    },
+                    {
+                        "relevance": 0.00016052147839218378,
+                        "label": "BusinessAndFinance>Business>LargeBusiness"
+                    },
+                    {
+                        "relevance": 0.0001550873275846243,
+                        "label": "MedicalHealth>MedicalTests"
+                    },
+                    {
+                        "relevance": 0.00014213025860954076,
+                        "label": "Sports>FieldHockey"
+                    }
+                ],
+                "timestamp": {
+                    "start": 57650,
+                    "end": 88710
+                },
+                "sentences_idx_start": 10,
+                "sentences_idx_end": 13
+            },
+            {
+                "text": "So you multiply that by minus one. Its upper neighbor is 64, so you multiply that by zero and so on. Sum up the result, and you get the new value for the pixel. Now, this might seem a little OD, but check out the results for some filters. Like this one that when multiplied over the contents of the image, it removes almost everything except the vertical lines. And this one, that removes almost everything except the horizontal lines.",
+                "labels": [
+                    {
+                        "relevance": 0.6052274703979492,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.0006113758427090943,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.0005582625744864345,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0005253682029433548,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0003302065306343138,
+                        "label": "Hobbies&Interests>ArtsAndCrafts>Photography"
+                    },
+                    {
+                        "relevance": 0.00018075625121127814,
+                        "label": "MedicalHealth>DiseasesAndConditions>ReproductiveHealth>BirthControl"
+                    },
+                    {
+                        "relevance": 0.00014208987704478204,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>DigitalAudio"
+                    },
+                    {
+                        "relevance": 0.00012447092740330845,
+                        "label": "Sports>FieldHockey"
+                    },
+                    {
+                        "relevance": 0.0001224391016876325,
+                        "label": "Technology&Computing>ConsumerElectronics>CamerasAndCamcorders"
+                    },
+                    {
+                        "relevance": 0.00011061244003940374,
+                        "label": "MusicAndAudio>TalkRadio>PublicRadio"
+                    }
+                ],
+                "timestamp": {
+                    "start": 88780,
+                    "end": 117410
+                },
+                "sentences_idx_start": 14,
+                "sentences_idx_end": 19
+            },
+            {
+                "text": "This can then be combined with something called pooling, which groups up the pixels in the image and filters them down to a subset. So, for example, max pooling, two by two will group the image into sets of two by two pixels and simply pick the largest. The image will be reduced to a quarter of its original size, but the features can still be maintained. So the previous image, after being filtered and then max pooled, could look like this.",
+                "labels": [
+                    {
+                        "relevance": 0.8489896059036255,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.0019958852790296078,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0012285663979128003,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.0010424808133393526,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0005898046656511724,
+                        "label": "Hobbies&Interests>ArtsAndCrafts>Photography"
+                    },
+                    {
+                        "relevance": 0.0005130874342285097,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0004149164888076484,
+                        "label": "Technology&Computing>ConsumerElectronics>CamerasAndCamcorders"
+                    },
+                    {
+                        "relevance": 0.0003706624556798488,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.00017677716095931828,
+                        "label": "BusinessAndFinance>Business>LargeBusiness"
+                    },
+                    {
+                        "relevance": 0.00015137168520595878,
+                        "label": "MedicalHealth>MedicalTests"
+                    }
+                ],
+                "timestamp": {
+                    "start": 118550,
+                    "end": 147340
+                },
+                "sentences_idx_start": 20,
+                "sentences_idx_end": 23
+            },
+            {
+                "text": "The image on the right is one quarter the size of the one on the left. But the vertical line features were maintained, and indeed, they were enhanced. So where did these filters come from? That's the magic of a convolutional neural network. They're actually learned they're just parameters like those in the neurons of a neural network that we saw in the last video. So as our image is fed into the convolutional layer, a number of randomly initialized filters will pass over the image.",
+                "labels": [
+                    {
+                        "relevance": 0.8964570760726929,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.011253243312239647,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.005289448890835047,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.004475419409573078,
+                        "label": "Hobbies&Interests>ArtsAndCrafts>Photography"
+                    },
+                    {
+                        "relevance": 0.003682054579257965,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0033256649039685726,
+                        "label": "Technology&Computing>ConsumerElectronics>CamerasAndCamcorders"
+                    },
+                    {
+                        "relevance": 0.001564210164360702,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    },
+                    {
+                        "relevance": 0.00037765197339467704,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>DigitalAudio"
+                    },
+                    {
+                        "relevance": 0.00037429804797284305,
+                        "label": "FineArt>DigitalArts"
+                    },
+                    {
+                        "relevance": 0.0003282282850705087,
+                        "label": "Hobbies&Interests>ContentProduction>VideoProduction"
+                    }
+                ],
+                "timestamp": {
+                    "start": 147870,
+                    "end": 178870
+                },
+                "sentences_idx_start": 24,
+                "sentences_idx_end": 29
+            },
+            {
+                "text": "The results of these are fed into the next layer, and matching is performed by the neural network. And over time, the filters that give us the image outputs that give the best matches will be learned. And the process is called feature extraction. Here's an example of how a convolutional filter layer can help a computer visualize things.",
+                "labels": [
+                    {
+                        "relevance": 0.765460193157196,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.40360909700393677,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.039044033735990524,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0026782508939504623,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.002417102688923478,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.002338659018278122,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.00224585784599185,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    },
+                    {
+                        "relevance": 0.0016456161392852664,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0006482249591499567,
+                        "label": "Hobbies&Interests>ArtsAndCrafts>DrawingAndSketching"
+                    },
+                    {
+                        "relevance": 0.0006269591394811869,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    }
+                ],
+                "timestamp": {
+                    "start": 179290,
+                    "end": 201466
+                },
+                "sentences_idx_start": 30,
+                "sentences_idx_end": 33
+            },
+            {
+                "text": "You can see across the top row here that you actually have a shoe, but it has been filtered down to the sole and the silhouette of a shoe by filters that learned what a shoe looks like. You'll run this code for yourself in just a few minutes. Now, let's take a look at the code to build a convolutional neural network. Like this.",
+                "labels": [
+                    {
+                        "relevance": 0.7104487419128418,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.07324017584323883,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.02012825757265091,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.014398837462067604,
+                        "label": "Style&Fashion>Women'sFashion>Women'sShoesAndFootwear"
+                    },
+                    {
+                        "relevance": 0.01247397717088461,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.00992430467158556,
+                        "label": "Style&Fashion>Men'sFashion>Men'sShoesAndFootwear"
+                    },
+                    {
+                        "relevance": 0.007731443736702204,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0027032168582081795,
+                        "label": "Technology&Computing>ConsumerElectronics>WearableTechnology"
+                    },
+                    {
+                        "relevance": 0.0025042337365448475,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.002200779039412737,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    }
+                ],
+                "timestamp": {
+                    "start": 201648,
+                    "end": 221874
+                },
+                "sentences_idx_start": 34,
+                "sentences_idx_end": 37
+            },
+            {
+                "text": "So this code is very similar to what you used earlier, where you have a flattened input that's fed into a dense layer that in turn, is fed into the final dense layer that is our output. The only difference here is that I haven't specified the input shape. That's because I'll, uh, put a convolutional layer on top of it, like this. This layer takes the input. So we specify the input shape and we're telling it to generate 64 filters with this parameter.",
+                "labels": [
+                    {
+                        "relevance": 0.06699205189943314,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.03796088322997093,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0024832936469465494,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0013559645740315318,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.0011120600393041968,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0009274287149310112,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0007609533495269716,
+                        "label": "Technology&Computing>ConsumerElectronics>CamerasAndCamcorders"
+                    },
+                    {
+                        "relevance": 0.00035935858613811433,
+                        "label": "MedicalHealth>MedicalTests"
+                    },
+                    {
+                        "relevance": 0.0002502745483070612,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.0001833160495152697,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    }
+                ],
+                "timestamp": {
+                    "start": 222072,
+                    "end": 250330
+                },
+                "sentences_idx_start": 38,
+                "sentences_idx_end": 42
+            },
+            {
+                "text": "That is, it will generate 64 filters and multiply each of them across the image. Then, each epoch, it will figure out which filters gave the best signals to help match the images to their labels. In much the same way, it learned which parameters worked best in the dense layer. The max pooling to compress the image and enhance the features looks like this.",
+                "labels": [
+                    {
+                        "relevance": 0.9677637219429016,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.007044310215860605,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.006225678138434887,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.003536732867360115,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.0013320347061380744,
+                        "label": "Technology&Computing>ConsumerElectronics>CamerasAndCamcorders"
+                    },
+                    {
+                        "relevance": 0.001135610626079142,
+                        "label": "Hobbies&Interests>ArtsAndCrafts>Photography"
+                    },
+                    {
+                        "relevance": 0.0004986532730981708,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0004713830421678722,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.00026832264848053455,
+                        "label": "MedicalHealth>MedicalTests"
+                    },
+                    {
+                        "relevance": 0.00021684860985260457,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    }
+                ],
+                "timestamp": {
+                    "start": 250850,
+                    "end": 275940
+                },
+                "sentences_idx_start": 43,
+                "sentences_idx_end": 46
+            },
+            {
+                "text": "And we can stack convolutional layers on top of each other to really break down the image and try to learn from very abstract features like this. With this methodology, your network starts to learn based on the features of the image instead of just the raw patterns of pixels. Two sleeves, it's a shirt. Two short sleeves, it's a T shirt. Solen laces, it's a shoe, that type of thing.",
+                "labels": [
+                    {
+                        "relevance": 0.811051070690155,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.08214452862739563,
+                        "label": "Technology&Computing>AugmentedReality"
+                    },
+                    {
+                        "relevance": 0.03700236231088638,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    },
+                    {
+                        "relevance": 0.01765432581305504,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.01252804510295391,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware"
+                    },
+                    {
+                        "relevance": 0.008370955474674702,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.005520511418581009,
+                        "label": "Technology&Computing>VirtualReality"
+                    },
+                    {
+                        "relevance": 0.005043078679591417,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    },
+                    {
+                        "relevance": 0.004152416717261076,
+                        "label": "FineArt>DigitalArts"
+                    },
+                    {
+                        "relevance": 0.0017693182453513145,
+                        "label": "Technology&Computing>Robotics"
+                    }
+                ],
+                "timestamp": {
+                    "start": 277130,
+                    "end": 301434
+                },
+                "sentences_idx_start": 47,
+                "sentences_idx_end": 51
+            },
+            {
+                "text": "Now, we're still looking at just the simple images of fashion at the moment, but the principles will extend into more complex images. And you'll see that in the next video. But before going there, try out the notebook to see convolutions for yourself. I've made a link to it in the description below. And before we get to the next video, don't forget to hit that subscribe button. Thank you.",
+                "labels": [
+                    {
+                        "relevance": 0.4605138599872589,
+                        "label": "EventsAndAttractions>FashionEvents"
+                    },
+                    {
+                        "relevance": 0.44278284907341003,
+                        "label": "Style&Fashion>HighFashion"
+                    },
+                    {
+                        "relevance": 0.23226545751094818,
+                        "label": "Style&Fashion"
+                    },
+                    {
+                        "relevance": 0.2233637124300003,
+                        "label": "Style&Fashion>FashionTrends"
+                    },
+                    {
+                        "relevance": 0.11119317263364792,
+                        "label": "FineArt>DigitalArts"
+                    },
+                    {
+                        "relevance": 0.09995732456445694,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation"
+                    },
+                    {
+                        "relevance": 0.07463149726390839,
+                        "label": "Style&Fashion>Men'sFashion"
+                    },
+                    {
+                        "relevance": 0.07157959789037704,
+                        "label": "Style&Fashion>StreetStyle"
+                    },
+                    {
+                        "relevance": 0.04897886514663696,
+                        "label": "Style&Fashion>Women'sFashion"
+                    },
+                    {
+                        "relevance": 0.025246161967515945,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware"
+                    }
+                ],
+                "timestamp": {
+                    "start": 301632,
+                    "end": 321520
+                },
+                "sentences_idx_start": 52,
+                "sentences_idx_end": 57
+            }
+        ],
+        "summary": {
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>PhotoEditingSoftware": 1.0,
+            "Technology&Computing>ArtificialIntelligence": 0.41144344210624695,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics": 0.28642043471336365,
+            "EventsAndAttractions>FashionEvents": 0.09198099374771118,
+            "Style&Fashion>HighFashion": 0.08841437846422195,
+            "Style&Fashion": 0.046408526599407196,
+            "Style&Fashion>FashionTrends": 0.04463692381978035,
+            "Technology&Computing>AugmentedReality": 0.031137624755501747,
+            "FineArt>DigitalArts": 0.024770144373178482,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>ComputerAnimation": 0.022756801918148994,
+            "Technology&Computing>Robotics": 0.019945289939641953,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>GraphicsSoftware": 0.01607879064977169,
+            "Style&Fashion>Men'sFashion": 0.01495455764234066,
+            "Style&Fashion>StreetStyle": 0.014309925027191639,
+            "Style&Fashion>Women'sFashion": 0.009824353270232677,
+            "Technology&Computing>Computing": 0.007218570914119482,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware": 0.0058319405652582645,
+            "Hobbies&Interests>ArtsAndCrafts>Photography": 0.003731733886525035,
+            "Hobbies&Interests>ArtsAndCrafts>DrawingAndSketching": 0.00372021971270442,
+            "Technology&Computing>Computing>ProgrammingLanguages": 0.0036977024283260107
+        }
+    },
+    "language_detection": true,
+    "custom_spelling": null,
+    "throttled": null,
+    "auto_chapters": true,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": null,
+    "disfluencies": true,
+    "sentiment_analysis": false,
+    "chapters": [
+        {
+            "summary": "Use a convolutional neural network to filter images before training a deep neural network. After filtering the images, features within the images could then come to the forefront. The process is called feature extraction. In the next episode, we'll try out more complex principles.",
+            "gist": "Using Convolutional Neural Networks for Computer Vision",
+            "headline": "Using a convolutional neural network can help a computer visualize things",
+            "start": 3850,
+            "end": 321520
+        }
+    ],
+    "sentiment_analysis_results": null,
+    "entity_detection": false,
+    "entities": null,
+    "summary": null,
+    "speakers_expected": null
+}
