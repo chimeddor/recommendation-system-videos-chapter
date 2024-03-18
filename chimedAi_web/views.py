@@ -73,7 +73,7 @@ for resource_path, resource_name in downloads.items():
         nltk.download(resource_name)
 
 # stop_words_l=stopwords.words('english')
-stop_words =stopwords.words('english')
+# stop_words = stopwords.words('english')
 
 import time
 # endrecommendation
@@ -128,7 +128,12 @@ tokens = word_tokenize(big_chapter_string)
 
 # 다 문자인지 확인 다음 소문자로 변경
 words = [word.lower() for word in tokens if word.isalpha()]
-stop_words = set(stopwords.words('english'))
+# stop_words = set(stopwords.words('english'))
+
+#볼용어가 더 많아진 양이 더 큰 데이터셋. alphabet이 입력 시 처리하기 위해 사용. nltk보다 양아 많은 데이터셋
+stopwords_txt = "/var/www/chimedAi/stopwords.txt"
+with open(stopwords_txt, "r") as word_file:
+    stop_words = word_file.read()
 
 # end stopwords zone
 
@@ -1072,7 +1077,6 @@ def Gnn():
 def Search_recommendation(request):
     global class_idx
     if request.method == 'POST':
-        
         question = request.POST.get("search")
         matrix_data = pd.read_csv('/var/www/chimedAi/dataset/matrix_data.csv')
         class_values = sorted(matrix_data["category_"].unique())
@@ -1118,7 +1122,7 @@ def Search_recommendation(request):
                     chapters_dict["chapter"] = chapter
                     chapters_dict["category_"] = "gnn"
                     youtube_id = list(dataset.loc[dataset["text(summary)"] == chapter, 'youtube_id'])[0]
-                    chapters_dict["youtube_id"] = youtube_id
+                    chapters_dict["youtube_id"] = youtube_ids
                     content2.append(chapters_dict)
         else:
             if len(recc_chapters.axes[0]) <= 1:
