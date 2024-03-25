@@ -34,10 +34,13 @@ mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using rea
 5. Cosine similarity
 
 1)   
+
 ![Screenshot 2024-03-25 at 21 08 12](https://github.com/chimeddor/recommendation-system-videos-chapter/assets/53028417/e8ae8793-ad38-478b-b068-17414e526d0d)
 
 2)
+
 ![Screenshot 2024-03-25 at 21 09 05](https://github.com/chimeddor/recommendation-system-videos-chapter/assets/53028417/0c090f1d-aec8-4257-8d98-78ec79fabbaa)
 
 3)
+
 ![Screenshot 2024-03-25 at 21 09 46](https://github.com/chimeddor/recommendation-system-videos-chapter/assets/53028417/cbaf189f-8572-4a3a-9d5f-3cc437c20f73)
