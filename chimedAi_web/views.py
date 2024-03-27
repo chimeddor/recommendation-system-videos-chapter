@@ -1369,10 +1369,14 @@ def Insert_video(request):
 def New_video_page(request):
     return render(request, 'videos/professor/new_videos.html')
 
-def get_video_data():
+def get_video_data(current_id=None):
     
     video_data = []
-    videos = Video.objects.all()
+    if current_id:
+        videos = Video.objects.filter(uploaded_by=current_id)
+    else:
+        videos = Video.objects.all()
+        
     current_date = datetime.now(timezone.utc)
     for video in videos:
         video.days_since_upload = (current_date - video.uploaded_at).days
@@ -1393,6 +1397,21 @@ def get_video_data():
 
     return video_data
 
+
+def Prof_change(request, id):
+    users = Users.objects.get(id=id)
+    if request.method == "POST":
+        users.username = request.POST.get('update_username')
+        users.email = request.POST.get('update_email')
+        users.save()
+        context = {"message":"Updated your information!", "class":"success"}
+    else:
+        context = {"message":"Not Updated your information!", "class":"danger"}
+
+    return render(request, "users/professor/prof_profile.html",context)
+
+
+
 #강의 동영상 보는 페이지  
 def watch(request, youtube_id):
     video_data = get_video_data()
@@ -1412,7 +1431,9 @@ def LogoutView(request):
     return redirect('base')
 
 def Prof_channels(request):
-    video_data = get_video_data()
+    current_user = request.user
+    print("user_id: ",current_user.id)
+    video_data = get_video_data(current_user.id)
     return render(request, 'channels/professor/pro_channels.html', {'videos':video_data})
     
 def Searched_video(request):
