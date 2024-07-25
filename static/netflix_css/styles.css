@@ -335,6 +335,11 @@
     transform: translateX(30%);
     animation: none;
   }
+
+  footer {
+    padding-left: 20px;
+    margin-bottom: 0;
+  }
   
   @keyframes attention {
     0% {
