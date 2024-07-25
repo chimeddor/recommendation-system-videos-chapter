@@ -33,6 +33,9 @@ urlpatterns = [
     path('prof_profile/', views.Prof_profile, name="prof_profile"),
     path('prof_channels/',views.Prof_channels, name="prof_channels"),
     
+    # 자기 정보 수정 요청
+    path('informationChange/<str:id>/', views.Prof_change, name="informationChange"),
+    
     path('error/', views.error, name = "error"),
     path('search_recommandation/', views.Search_recommendation, name="search_recommandation"),
     path('logout/', views.LogoutView, name='logout'),
