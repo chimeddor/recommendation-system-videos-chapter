@@ -47,22 +47,29 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
+                {% if message %}
+                <div class="alert alert-{{class}}">
+                  {{message}}
+                </div>
+                {% endif%}
                 <form method="POST" action="{% url 'informationChange' user.id %}">
+                    {% csrf_token %}
                     <img src="{{ user.profile_picture.url }}" alt="Profile Picture" class="profile-img">
                     
                     <h1>Profile</h1>
 
                     <div>
                         <label>Username:</label>    
-                        <input type="text" name="username" value="{{ user.username }}">
+                        <input type="text" name="update_username" value="{{ user.username }}">
                     </div>
                     <div>
                         <label>Email: </label>      
-                        <input type="text" name="email" value="{{user.email}}">
+                        <input type="text" name="update_email" value="{{ user.email }}">
                     </div>
                     <!-- 기타 프로필 정보 표시 -->
-                    <a href="{% url 'informationChange' user.id %}" class="btn btn-primary">Edit Profile</a>
-            </form>
+                    <!-- <a href="{% url 'informationChange' user.id %}" class="btn btn-primary">Edit Profile</a> -->
+                    <button type="submit" class="form-control btn btn-primary" id="upload_btn">Update</button>
+                </form>
             </div>
         </div>
     </div>
