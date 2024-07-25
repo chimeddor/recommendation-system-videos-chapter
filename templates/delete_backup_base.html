@@ -1,0 +1,122 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chimedAi</title>
+    <!-- Bootstrap CSS 파일 -->
+    <!-- search micraphon icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+   <!-- <link rel="stylesheet" type="text/css" href="{% static '/netflix_css/style.css' %}"> -->
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+
+    {% include 'header/header.html' %}
+    <!-- 콘텐츠 영역 -->
+    <!-- <div class="container-fluid" style="background-color:red">
+        ...
+    </div>
+
+    <div class="container-sm" style="background-color:blue">100% wide until small breakpoint</div>
+    <div class="container-md" style="background-color:blue">100% wide until medium breakpoint</div>
+    <div class="container-lg" style="background-color:blue">100% wide until large breakpoint</div>
+    <div class="container-xl" style="background-color:blue">100% wide until extra large breakpoint</div>
+    <div class="container-xxl" style="background-color:blue">100% wide until extra extra large breakpoint</div> -->
+
+    <div class="container mt-4">
+
+        <div class="d-flex justify-content-center">
+            <div class="col-lg-6">
+                <div class="form">
+                    <i class="fas fa-search"></i>
+                    <input type="text" class="form-control form-input" placeholder="Search anything...">
+                    <span class="left-pan"><i class="fas fa-microphone"></i></span>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <!-- 동영상 시청 영역 -->
+        <div class="col-lg-8">
+            <div id="video-player"></div>
+        </div>
+        <!-- 동영상 리스트 영역 -->
+        <div class="col-lg-4 video-list">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action"><div id="ones"></div> Video Title 1</a>
+                <a href="#" class="list-group-item list-group-item-action">Video Title 2</a>
+                <a href="#" class="list-group-item list-group-item-action">Video Title 3</a>
+                <a href="#" class="list-group-item list-group-item-action video-item">
+                    <img src="video4.jpg" alt="Video Thumbnail">
+                    Video Title 4
+                </a>
+                <a href="#" class="list-group-item list-group-item-action video-item">
+                    <img src="video5.jpg" alt="Video Thumbnail">
+                    Video Title 5
+                </a>
+                <a href="#" class="list-group-item list-group-item-action video-item">
+                    <img src="video6.jpg" alt="Video Thumbnail">
+                    Video Title 6
+                </a>
+                <!-- 추가 동영상 리스트 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
+    <button class="handle left-handle">
+      <div class="text">&#8249;</div>
+    </button>
+    <div class="slider">
+      <img src="https://via.placeholder.com/210/00FF00?text=1">
+      <img src="https://via.placeholder.com/220/00FF00?text=2">
+      <img src="https://via.placeholder.com/230/00FF00?text=3">
+      <img src="https://via.placeholder.com/240/00FF00?text=4">
+      <img src="https://via.placeholder.com/250/00FF00?text=5">
+      <img src="https://via.placeholder.com/260/00FF00?text=6">
+      <img src="https://via.placeholder.com/270/00FF00?text=7">
+      <img src="https://via.placeholder.com/280/00FF00?text=8">
+      <img src="https://via.placeholder.com/250/00FF00?text=9">
+      <img src="https://via.placeholder.com/260/00FF00?text=10">
+      <img src="https://via.placeholder.com/270/00FF00?text=11">
+      <img src="https://via.placeholder.com/280/00FF00?text=12">
+    </div>
+    <button class="handle right-handle">
+      <div class="text">&#8250;</div>
+    </button>
+  </div>
+   -->
+<script>
+    // YouTube API에서 제공하는 콜백 함수
+    function onYouTubeIframeAPIReady() {
+        // 동영상 플레이어 설정
+        var player = new YT.Player('video-player', {
+            videoId: 'https://www.youtube.com/watch?v=R-nv0qD0l44&list=RDR-nv0qD0l44&start_radio=1', // 동영상 ID를 설정하세요
+            height: '100%',
+            width: '100%',
+            playerVars: {
+                autoplay: 1,
+                controls: 1,
+                rel: 0,
+                showinfo: 0
+            },
+            events: {
+                onReady: onPlayerReady
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        // 동영상 플레이어가 준비되었을 때의 동작을 설정하세요
+    }
+</script>
+
+<script src="{% static '/js/script.js' %}" defer></script>
+
+</body>
+</html>

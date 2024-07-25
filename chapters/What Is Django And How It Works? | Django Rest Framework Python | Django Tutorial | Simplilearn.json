@@ -1,0 +1,5300 @@
+{
+    "id": "6hjnuutgkq-b455-442d-b77e-eb106e8d7f1f",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/e32bf809-43b1-45e5-b0a6-e6f0c5b0dfa2",
+    "text": "Hello everyone. I welcome you all to simply learn. Django is a popular framework nowadays, and you must have heard it. Almost every websites and web applications uses Django in some way or other for their web development. So in today's session, we will discuss what is Django framework. Let's start by discussing what is a web framework? A uh web framework is a software framework that is created to support the development of dynamic sites, web services and web applications. It supports creation, development and publishing of the web applications and websites. It can include web services, APIs and other resources. Some of the features why web framework are so popular are they uh, are easy to maintain, they have high scalability and they are compatible with almost every browser and it is very easy to learn. Now that we know what is a web framework, let's move on to discuss what is Django? Django is an open source framework that is used for backend web applications based on Python. It is based on MVT web framework and its primary goal is to ease the creation of complex data driven websites. It can handle higher amount of traffics and transactions. Now, let's discuss why Django is so popular. First, it has a very vast and excellent community. Django has been in the market for the past 13 years, which means it has been used by millions of users and improved by thousands of developers. It is super easy to find a community of developers who know in and out of Django and have experience coding with it. The second feature is it is an open source software. Django is introduced to the market with documentation far above the usual standards of the open source technologies. It has improved over time and it is considered to be the best example of the open source documentation in the world. The third feature is it has an enhanced security. Django is super secure. It has covered all the loopholes by default, which were once left open for the backend developers to compete. Although by using Django you may not feel those loopholes, but the expert backend developers can tell the quantity and security of work done by Django. The fourth feature is rapid development. Django is a framework that takes less time to build web applications. While working with Django, you don't have to start from the scratch. You uh, only need the basic knowledge of the backend because most of the work Django handles itself. The last feature is it is very versatile. The versatility of the application signifies its ability to perform well in different domains. Django has spread its hand on various domains out there in the market. Nice time to see the companies using Django. Some of the major companies are the Washington Post, Instagram, Pinterest, Netflix, Firefox and many more. Now we'll discuss the model view template on which the Django architecture is built. The first one is model. A uh model provides the interface for the data stored in the database. It is responsible for maintaining the data and handling the logical structure for the entire web application. A view is the user interface of the Web applications. It is responsible for displaying model data to the user, uh, and also to take up information from the user. And the last one is template. Just like Vue in MVC Django uses template in its framework, templates are responsible for the entire user interface. It handles all the static parts of the web page along with the HTML which the users visiting the Webpage will receive. So with this, we come to an end to this tutorial. I hope the video was useful for you. If yes, do share uh and subscribe to our channel. Until then, thank you again and happy learning. Hi there. If you like this video, subscribe to the Simply Learn YouTube channel and click here. To watch similar videos to nerd up and get certified, click here.",
+    "words": [
+        {
+            "text": "Hello",
+            "start": 9130,
+            "end": 9342,
+            "confidence": 0.95095,
+            "speaker": null
+        },
+        {
+            "text": "everyone.",
+            "start": 9396,
+            "end": 10094,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 10292,
+            "end": 10654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "welcome",
+            "start": 10692,
+            "end": 10942,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 10996,
+            "end": 11118,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 11124,
+            "end": 11246,
+            "confidence": 0.98331,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 11268,
+            "end": 11358,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "simply",
+            "start": 11364,
+            "end": 11706,
+            "confidence": 0.95943,
+            "speaker": null
+        },
+        {
+            "text": "learn.",
+            "start": 11738,
+            "end": 12320,
+            "confidence": 0.97456,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 13250,
+            "end": 13834,
+            "confidence": 0.84126,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 13882,
+            "end": 13998,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 14004,
+            "end": 14078,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "popular",
+            "start": 14084,
+            "end": 14346,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 14378,
+            "end": 14746,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "nowadays,",
+            "start": 14778,
+            "end": 15466,
+            "confidence": 0.73362,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 15578,
+            "end": 15854,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 15892,
+            "end": 15998,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "must",
+            "start": 16004,
+            "end": 16174,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 16212,
+            "end": 16366,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "heard",
+            "start": 16388,
+            "end": 16574,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "it.",
+            "start": 16612,
+            "end": 17200,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "Almost",
+            "start": 17650,
+            "end": 18110,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "every",
+            "start": 18180,
+            "end": 18414,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "websites",
+            "start": 18452,
+            "end": 18938,
+            "confidence": 0.72937,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 18954,
+            "end": 19086,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 19108,
+            "end": 19294,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "applications",
+            "start": 19332,
+            "end": 19962,
+            "confidence": 0.99743,
+            "speaker": null
+        },
+        {
+            "text": "uses",
+            "start": 20026,
+            "end": 20346,
+            "confidence": 0.96614,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 20378,
+            "end": 20874,
+            "confidence": 0.99564,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 20922,
+            "end": 21086,
+            "confidence": 0.99939,
+            "speaker": null
+        },
+        {
+            "text": "some",
+            "start": 21108,
+            "end": 21246,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "way",
+            "start": 21268,
+            "end": 21358,
+            "confidence": 0.99646,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 21364,
+            "end": 21486,
+            "confidence": 0.98467,
+            "speaker": null
+        },
+        {
+            "text": "other",
+            "start": 21508,
+            "end": 21742,
+            "confidence": 0.99596,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 21796,
+            "end": 21918,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "their",
+            "start": 21924,
+            "end": 22094,
+            "confidence": 0.94251,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 22132,
+            "end": 22286,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "development.",
+            "start": 22308,
+            "end": 23130,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 23290,
+            "end": 23614,
+            "confidence": 0.99869,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 23652,
+            "end": 23806,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "today's",
+            "start": 23828,
+            "end": 24186,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "session,",
+            "start": 24218,
+            "end": 24650,
+            "confidence": 0.99563,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 24730,
+            "end": 24950,
+            "confidence": 0.96272,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 24980,
+            "end": 25174,
+            "confidence": 0.57006,
+            "speaker": null
+        },
+        {
+            "text": "discuss",
+            "start": 25212,
+            "end": 25462,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 25516,
+            "end": 25638,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 25644,
+            "end": 25766,
+            "confidence": 0.99945,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 25788,
+            "end": 26146,
+            "confidence": 0.98109,
+            "speaker": null
+        },
+        {
+            "text": "framework.",
+            "start": 26178,
+            "end": 27026,
+            "confidence": 0.99917,
+            "speaker": null
+        },
+        {
+            "text": "Let's",
+            "start": 27218,
+            "end": 27666,
+            "confidence": 0.99186,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 27698,
+            "end": 27846,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 27868,
+            "end": 28054,
+            "confidence": 0.98003,
+            "speaker": null
+        },
+        {
+            "text": "discussing",
+            "start": 28092,
+            "end": 28466,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 28498,
+            "end": 28646,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 28668,
+            "end": 28758,
+            "confidence": 0.99945,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 28764,
+            "end": 28838,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 28844,
+            "end": 29014,
+            "confidence": 0.99945,
+            "speaker": null
+        },
+        {
+            "text": "framework?",
+            "start": 29052,
+            "end": 29830,
+            "confidence": 0.99731,
+            "speaker": null
+        },
+        {
+            "text": "A",
+            "start": 30490,
+            "end": 30700,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "uh",
+            "start": 30700,
+            "end": 30800,
+            "confidence": 0.876080334186554,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 30828,
+            "end": 31014,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 31052,
+            "end": 31394,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 31442,
+            "end": 31558,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 31564,
+            "end": 31638,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "software",
+            "start": 31644,
+            "end": 31954,
+            "confidence": 0.97067,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 32002,
+            "end": 32434,
+            "confidence": 0.80308,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 32482,
+            "end": 32646,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 32668,
+            "end": 32806,
+            "confidence": 0.99951,
+            "speaker": null
+        },
+        {
+            "text": "created",
+            "start": 32828,
+            "end": 33058,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 33074,
+            "end": 33206,
+            "confidence": 0.66,
+            "speaker": null
+        },
+        {
+            "text": "support",
+            "start": 33228,
+            "end": 33462,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 33516,
+            "end": 33638,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "development",
+            "start": 33644,
+            "end": 33986,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 34018,
+            "end": 34166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "dynamic",
+            "start": 34188,
+            "end": 34546,
+            "confidence": 0.9846,
+            "speaker": null
+        },
+        {
+            "text": "sites,",
+            "start": 34578,
+            "end": 34866,
+            "confidence": 0.87324,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 34898,
+            "end": 35094,
+            "confidence": 0.81032,
+            "speaker": null
+        },
+        {
+            "text": "services",
+            "start": 35132,
+            "end": 35478,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 35564,
+            "end": 35766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 35788,
+            "end": 35974,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "applications.",
+            "start": 36012,
+            "end": 37026,
+            "confidence": 0.9987,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 37218,
+            "end": 37574,
+            "confidence": 0.99902,
+            "speaker": null
+        },
+        {
+            "text": "supports",
+            "start": 37612,
+            "end": 37998,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "creation,",
+            "start": 38034,
+            "end": 38454,
+            "confidence": 0.99946,
+            "speaker": null
+        },
+        {
+            "text": "development",
+            "start": 38502,
+            "end": 38886,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 38918,
+            "end": 39114,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "publishing",
+            "start": 39152,
+            "end": 39478,
+            "confidence": 0.87198,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 39494,
+            "end": 39626,
+            "confidence": 0.52,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 39648,
+            "end": 39738,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 39744,
+            "end": 39866,
+            "confidence": 0.99913,
+            "speaker": null
+        },
+        {
+            "text": "applications",
+            "start": 39888,
+            "end": 40406,
+            "confidence": 0.96004,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 40438,
+            "end": 40634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "websites.",
+            "start": 40672,
+            "end": 41530,
+            "confidence": 0.68566,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 42110,
+            "end": 42426,
+            "confidence": 0.99956,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 42448,
+            "end": 42634,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "include",
+            "start": 42672,
+            "end": 42966,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 42998,
+            "end": 43146,
+            "confidence": 0.99685,
+            "speaker": null
+        },
+        {
+            "text": "services,",
+            "start": 43168,
+            "end": 43498,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "APIs",
+            "start": 43584,
+            "end": 44054,
+            "confidence": 0.99189,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 44102,
+            "end": 44218,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "other",
+            "start": 44224,
+            "end": 44394,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "resources.",
+            "start": 44432,
+            "end": 45290,
+            "confidence": 0.99269,
+            "speaker": null
+        },
+        {
+            "text": "Some",
+            "start": 47070,
+            "end": 47482,
+            "confidence": 0.61,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 47536,
+            "end": 47658,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 47664,
+            "end": 47786,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "features",
+            "start": 47808,
+            "end": 48134,
+            "confidence": 0.56974,
+            "speaker": null
+        },
+        {
+            "text": "why",
+            "start": 48182,
+            "end": 48346,
+            "confidence": 0.99475,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 48368,
+            "end": 48506,
+            "confidence": 0.99781,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 48528,
+            "end": 48854,
+            "confidence": 0.98397,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 48902,
+            "end": 49018,
+            "confidence": 0.99866,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 49024,
+            "end": 49146,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "popular",
+            "start": 49168,
+            "end": 49542,
+            "confidence": 0.99414,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 49606,
+            "end": 50122,
+            "confidence": 0.99845,
+            "speaker": null
+        },
+        {
+            "text": "they",
+            "start": 50256,
+            "end": 50290,
+            "confidence": 0.99374,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 50290,
+            "end": 50330,
+            "confidence": 0.9905097484588623,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 50464,
+            "end": 50586,
+            "confidence": 0.75098,
+            "speaker": null
+        },
+        {
+            "text": "easy",
+            "start": 50608,
+            "end": 50794,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 50832,
+            "end": 50986,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "maintain,",
+            "start": 51008,
+            "end": 51770,
+            "confidence": 0.92041,
+            "speaker": null
+        },
+        {
+            "text": "they",
+            "start": 52110,
+            "end": 52438,
+            "confidence": 0.99895,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 52464,
+            "end": 52606,
+            "confidence": 0.99861,
+            "speaker": null
+        },
+        {
+            "text": "high",
+            "start": 52628,
+            "end": 52766,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "scalability",
+            "start": 52788,
+            "end": 53706,
+            "confidence": 0.99933,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 53898,
+            "end": 54206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "they",
+            "start": 54228,
+            "end": 54366,
+            "confidence": 0.53867,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 54388,
+            "end": 54526,
+            "confidence": 0.8258,
+            "speaker": null
+        },
+        {
+            "text": "compatible",
+            "start": 54548,
+            "end": 55082,
+            "confidence": 0.87029,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 55146,
+            "end": 55326,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "almost",
+            "start": 55348,
+            "end": 55582,
+            "confidence": 0.9995,
+            "speaker": null
+        },
+        {
+            "text": "every",
+            "start": 55636,
+            "end": 55854,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "browser",
+            "start": 55892,
+            "end": 56670,
+            "confidence": 0.90046,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 57090,
+            "end": 57454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 57492,
+            "end": 57646,
+            "confidence": 0.99957,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 57668,
+            "end": 57806,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 57828,
+            "end": 57966,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "easy",
+            "start": 57988,
+            "end": 58174,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 58212,
+            "end": 58366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learn.",
+            "start": 58388,
+            "end": 58960,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "Now",
+            "start": 60210,
+            "end": 60526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 60548,
+            "end": 60734,
+            "confidence": 0.9993,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 60772,
+            "end": 60878,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 60884,
+            "end": 61006,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 61028,
+            "end": 61166,
+            "confidence": 0.99927,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 61188,
+            "end": 61278,
+            "confidence": 0.99897,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 61284,
+            "end": 61358,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 61364,
+            "end": 61534,
+            "confidence": 0.99749,
+            "speaker": null
+        },
+        {
+            "text": "framework,",
+            "start": 61572,
+            "end": 61914,
+            "confidence": 0.99867,
+            "speaker": null
+        },
+        {
+            "text": "let's",
+            "start": 61962,
+            "end": 62186,
+            "confidence": 0.87768,
+            "speaker": null
+        },
+        {
+            "text": "move",
+            "start": 62218,
+            "end": 62366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 62388,
+            "end": 62526,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 62548,
+            "end": 62686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "discuss",
+            "start": 62708,
+            "end": 62942,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 62996,
+            "end": 63166,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 63188,
+            "end": 63326,
+            "confidence": 0.99891,
+            "speaker": null
+        },
+        {
+            "text": "Django?",
+            "start": 63348,
+            "end": 64110,
+            "confidence": 0.63234,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 64770,
+            "end": 65318,
+            "confidence": 0.61408,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 65354,
+            "end": 65506,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 65528,
+            "end": 65618,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 65624,
+            "end": 65794,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "source",
+            "start": 65832,
+            "end": 66126,
+            "confidence": 0.99955,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 66158,
+            "end": 66734,
+            "confidence": 0.91111,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 66862,
+            "end": 67154,
+            "confidence": 0.99873,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 67192,
+            "end": 67298,
+            "confidence": 0.97591,
+            "speaker": null
+        },
+        {
+            "text": "used",
+            "start": 67304,
+            "end": 67474,
+            "confidence": 0.82771,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 67512,
+            "end": 67618,
+            "confidence": 0.9939,
+            "speaker": null
+        },
+        {
+            "text": "backend",
+            "start": 67624,
+            "end": 67886,
+            "confidence": 0.94613,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 67918,
+            "end": 68114,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "applications",
+            "start": 68152,
+            "end": 68734,
+            "confidence": 0.99631,
+            "speaker": null
+        },
+        {
+            "text": "based",
+            "start": 68782,
+            "end": 68994,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 69032,
+            "end": 69186,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "Python.",
+            "start": 69208,
+            "end": 69970,
+            "confidence": 0.69537,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 70310,
+            "end": 70626,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 70648,
+            "end": 70834,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "based",
+            "start": 70872,
+            "end": 71074,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 71112,
+            "end": 71362,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "MVT",
+            "start": 71416,
+            "end": 71806,
+            "confidence": 0.49943,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 71838,
+            "end": 72034,
+            "confidence": 0.97888,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 72072,
+            "end": 72782,
+            "confidence": 0.99816,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 72926,
+            "end": 73282,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 73336,
+            "end": 73554,
+            "confidence": 0.99909,
+            "speaker": null
+        },
+        {
+            "text": "primary",
+            "start": 73592,
+            "end": 73886,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "goal",
+            "start": 73918,
+            "end": 74158,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 74174,
+            "end": 74306,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 74328,
+            "end": 74418,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ease",
+            "start": 74424,
+            "end": 74718,
+            "confidence": 0.98184,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 74734,
+            "end": 74818,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "creation",
+            "start": 74824,
+            "end": 75118,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 75134,
+            "end": 75314,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "complex",
+            "start": 75352,
+            "end": 75694,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 75742,
+            "end": 75966,
+            "confidence": 0.99616,
+            "speaker": null
+        },
+        {
+            "text": "driven",
+            "start": 76008,
+            "end": 76306,
+            "confidence": 0.9095,
+            "speaker": null
+        },
+        {
+            "text": "websites.",
+            "start": 76338,
+            "end": 77190,
+            "confidence": 0.9571,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 77850,
+            "end": 78166,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 78188,
+            "end": 78326,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "handle",
+            "start": 78348,
+            "end": 78674,
+            "confidence": 0.99917,
+            "speaker": null
+        },
+        {
+            "text": "higher",
+            "start": 78722,
+            "end": 78934,
+            "confidence": 0.51551,
+            "speaker": null
+        },
+        {
+            "text": "amount",
+            "start": 78972,
+            "end": 79174,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 79212,
+            "end": 79318,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "traffics",
+            "start": 79324,
+            "end": 79714,
+            "confidence": 0.83807,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 79762,
+            "end": 79926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "transactions.",
+            "start": 79948,
+            "end": 80870,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 81370,
+            "end": 81734,
+            "confidence": 0.56,
+            "speaker": null
+        },
+        {
+            "text": "let's",
+            "start": 81772,
+            "end": 82066,
+            "confidence": 0.99946,
+            "speaker": null
+        },
+        {
+            "text": "discuss",
+            "start": 82098,
+            "end": 82390,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "why",
+            "start": 82460,
+            "end": 82694,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 82732,
+            "end": 83026,
+            "confidence": 0.62275,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 83058,
+            "end": 83206,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 83228,
+            "end": 83366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "popular.",
+            "start": 83388,
+            "end": 84070,
+            "confidence": 0.98592,
+            "speaker": null
+        },
+        {
+            "text": "First,",
+            "start": 84730,
+            "end": 85382,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 85516,
+            "end": 85814,
+            "confidence": 0.64786,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 85852,
+            "end": 86006,
+            "confidence": 0.9996,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 86028,
+            "end": 86118,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 86124,
+            "end": 86246,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "vast",
+            "start": 86268,
+            "end": 86546,
+            "confidence": 0.99578,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 86578,
+            "end": 86726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "excellent",
+            "start": 86748,
+            "end": 87154,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "community.",
+            "start": 87202,
+            "end": 87800,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 88970,
+            "end": 89506,
+            "confidence": 0.97236,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 89538,
+            "end": 89686,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "been",
+            "start": 89708,
+            "end": 89798,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 89804,
+            "end": 89926,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 89948,
+            "end": 90038,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "market",
+            "start": 90044,
+            "end": 90262,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 90316,
+            "end": 90438,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 90444,
+            "end": 90566,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "past",
+            "start": 90588,
+            "end": 90774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "13",
+            "start": 90812,
+            "end": 91122,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "years,",
+            "start": 91186,
+            "end": 91606,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 91708,
+            "end": 91974,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "means",
+            "start": 92012,
+            "end": 92214,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 92252,
+            "end": 92418,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 92444,
+            "end": 92538,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "been",
+            "start": 92544,
+            "end": 92714,
+            "confidence": 0.60387,
+            "speaker": null
+        },
+        {
+            "text": "used",
+            "start": 92752,
+            "end": 92954,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 92992,
+            "end": 93146,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "millions",
+            "start": 93168,
+            "end": 93398,
+            "confidence": 0.60375,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 93414,
+            "end": 93546,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "users",
+            "start": 93568,
+            "end": 93926,
+            "confidence": 0.99685,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 93958,
+            "end": 94106,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "improved",
+            "start": 94128,
+            "end": 94438,
+            "confidence": 0.56198,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 94454,
+            "end": 94634,
+            "confidence": 0.71223,
+            "speaker": null
+        },
+        {
+            "text": "thousands",
+            "start": 94672,
+            "end": 94966,
+            "confidence": 0.77994,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 94998,
+            "end": 95146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "developers.",
+            "start": 95168,
+            "end": 95930,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 96270,
+            "end": 96586,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 96608,
+            "end": 96746,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "super",
+            "start": 96768,
+            "end": 96954,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "easy",
+            "start": 96992,
+            "end": 97194,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 97232,
+            "end": 97338,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "find",
+            "start": 97344,
+            "end": 97514,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 97552,
+            "end": 97706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "community",
+            "start": 97728,
+            "end": 98010,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 98080,
+            "end": 98266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "developers",
+            "start": 98288,
+            "end": 98646,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "who",
+            "start": 98678,
+            "end": 98826,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 98848,
+            "end": 99034,
+            "confidence": 0.99604,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 99072,
+            "end": 99226,
+            "confidence": 0.98178,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 99248,
+            "end": 99386,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 99408,
+            "end": 99546,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 99568,
+            "end": 99658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 99664,
+            "end": 100006,
+            "confidence": 0.9903,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 100038,
+            "end": 100186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 100208,
+            "end": 100394,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "experience",
+            "start": 100432,
+            "end": 100778,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "coding",
+            "start": 100864,
+            "end": 101206,
+            "confidence": 0.99928,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 101238,
+            "end": 101386,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it.",
+            "start": 101408,
+            "end": 101980,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 103330,
+            "end": 103646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "second",
+            "start": 103668,
+            "end": 103902,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 103956,
+            "end": 104186,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 104218,
+            "end": 104414,
+            "confidence": 0.86332,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 104452,
+            "end": 104606,
+            "confidence": 0.99867,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 104628,
+            "end": 104718,
+            "confidence": 0.99827,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 104724,
+            "end": 104846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 104868,
+            "end": 105006,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "source",
+            "start": 105028,
+            "end": 105306,
+            "confidence": 0.56115,
+            "speaker": null
+        },
+        {
+            "text": "software.",
+            "start": 105338,
+            "end": 106110,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 106690,
+            "end": 107306,
+            "confidence": 0.98471,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 107338,
+            "end": 107438,
+            "confidence": 0.85587,
+            "speaker": null
+        },
+        {
+            "text": "introduced",
+            "start": 107444,
+            "end": 107818,
+            "confidence": 0.86196,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 107834,
+            "end": 107918,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 107924,
+            "end": 107998,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "market",
+            "start": 108004,
+            "end": 108222,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 108276,
+            "end": 108446,
+            "confidence": 0.99936,
+            "speaker": null
+        },
+        {
+            "text": "documentation",
+            "start": 108468,
+            "end": 109034,
+            "confidence": 0.99821,
+            "speaker": null
+        },
+        {
+            "text": "far",
+            "start": 109082,
+            "end": 109294,
+            "confidence": 0.99941,
+            "speaker": null
+        },
+        {
+            "text": "above",
+            "start": 109332,
+            "end": 109498,
+            "confidence": 0.99954,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 109514,
+            "end": 109598,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "usual",
+            "start": 109604,
+            "end": 109866,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "standards",
+            "start": 109898,
+            "end": 110298,
+            "confidence": 0.84562,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 110314,
+            "end": 110446,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 110468,
+            "end": 110558,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 110564,
+            "end": 110734,
+            "confidence": 0.99866,
+            "speaker": null
+        },
+        {
+            "text": "source",
+            "start": 110772,
+            "end": 111018,
+            "confidence": 0.99356,
+            "speaker": null
+        },
+        {
+            "text": "technologies.",
+            "start": 111034,
+            "end": 111802,
+            "confidence": 0.99904,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 111946,
+            "end": 112206,
+            "confidence": 0.99963,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 112228,
+            "end": 112414,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "improved",
+            "start": 112452,
+            "end": 112746,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "over",
+            "start": 112778,
+            "end": 112974,
+            "confidence": 0.99886,
+            "speaker": null
+        },
+        {
+            "text": "time",
+            "start": 113012,
+            "end": 113214,
+            "confidence": 0.99802,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 113252,
+            "end": 113454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 113492,
+            "end": 113646,
+            "confidence": 0.99934,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 113668,
+            "end": 113806,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "considered",
+            "start": 113828,
+            "end": 114138,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 114154,
+            "end": 114286,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 114308,
+            "end": 114398,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 114404,
+            "end": 114526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "best",
+            "start": 114548,
+            "end": 114734,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "example",
+            "start": 114772,
+            "end": 115022,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 115076,
+            "end": 115198,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 115204,
+            "end": 115290,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 115300,
+            "end": 115474,
+            "confidence": 0.99782,
+            "speaker": null
+        },
+        {
+            "text": "source",
+            "start": 115512,
+            "end": 115806,
+            "confidence": 0.99346,
+            "speaker": null
+        },
+        {
+            "text": "documentation",
+            "start": 115838,
+            "end": 116334,
+            "confidence": 0.99053,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 116382,
+            "end": 116546,
+            "confidence": 0.93148,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 116568,
+            "end": 116706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "world.",
+            "start": 116728,
+            "end": 117346,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 117528,
+            "end": 117826,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "third",
+            "start": 117848,
+            "end": 118034,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 118072,
+            "end": 118382,
+            "confidence": 0.99944,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 118446,
+            "end": 118674,
+            "confidence": 0.99737,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 118712,
+            "end": 118866,
+            "confidence": 0.99918,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 118888,
+            "end": 119026,
+            "confidence": 0.99829,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 119048,
+            "end": 119138,
+            "confidence": 0.84,
+            "speaker": null
+        },
+        {
+            "text": "enhanced",
+            "start": 119144,
+            "end": 119518,
+            "confidence": 0.91806,
+            "speaker": null
+        },
+        {
+            "text": "security.",
+            "start": 119534,
+            "end": 120146,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 120328,
+            "end": 120894,
+            "confidence": 0.83464,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 120942,
+            "end": 121058,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "super",
+            "start": 121064,
+            "end": 121234,
+            "confidence": 0.99811,
+            "speaker": null
+        },
+        {
+            "text": "secure.",
+            "start": 121272,
+            "end": 122126,
+            "confidence": 0.51073,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 122318,
+            "end": 122626,
+            "confidence": 0.99944,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 122648,
+            "end": 122786,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "covered",
+            "start": 122808,
+            "end": 123086,
+            "confidence": 0.92622,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 123118,
+            "end": 123266,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 123288,
+            "end": 123378,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "loopholes",
+            "start": 123384,
+            "end": 123886,
+            "confidence": 0.78898,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 123918,
+            "end": 124066,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "default,",
+            "start": 124088,
+            "end": 124414,
+            "confidence": 0.99884,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 124462,
+            "end": 124626,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "were",
+            "start": 124648,
+            "end": 124786,
+            "confidence": 0.82479,
+            "speaker": null
+        },
+        {
+            "text": "once",
+            "start": 124808,
+            "end": 125042,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "left",
+            "start": 125096,
+            "end": 125314,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 125352,
+            "end": 125602,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 125656,
+            "end": 125778,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 125784,
+            "end": 125906,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "backend",
+            "start": 125928,
+            "end": 126206,
+            "confidence": 0.98561,
+            "speaker": null
+        },
+        {
+            "text": "developers",
+            "start": 126238,
+            "end": 126606,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 126638,
+            "end": 126786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "compete.",
+            "start": 126808,
+            "end": 127646,
+            "confidence": 0.99118,
+            "speaker": null
+        },
+        {
+            "text": "Although",
+            "start": 127838,
+            "end": 128254,
+            "confidence": 0.56959,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 128302,
+            "end": 128478,
+            "confidence": 0.60653,
+            "speaker": null
+        },
+        {
+            "text": "using",
+            "start": 128504,
+            "end": 128694,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 128732,
+            "end": 129186,
+            "confidence": 0.99686,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 129218,
+            "end": 129366,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "may",
+            "start": 129388,
+            "end": 129526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 129548,
+            "end": 129734,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "feel",
+            "start": 129772,
+            "end": 129926,
+            "confidence": 0.98764,
+            "speaker": null
+        },
+        {
+            "text": "those",
+            "start": 129948,
+            "end": 130134,
+            "confidence": 0.99939,
+            "speaker": null
+        },
+        {
+            "text": "loopholes,",
+            "start": 130172,
+            "end": 130898,
+            "confidence": 0.98468,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 130994,
+            "end": 131206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 131228,
+            "end": 131366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "expert",
+            "start": 131388,
+            "end": 131666,
+            "confidence": 0.95372,
+            "speaker": null
+        },
+        {
+            "text": "backend",
+            "start": 131698,
+            "end": 131986,
+            "confidence": 0.97586,
+            "speaker": null
+        },
+        {
+            "text": "developers",
+            "start": 132018,
+            "end": 132434,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 132482,
+            "end": 132646,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "tell",
+            "start": 132668,
+            "end": 132806,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 132828,
+            "end": 132966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "quantity",
+            "start": 132988,
+            "end": 133314,
+            "confidence": 0.99975,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 133362,
+            "end": 133478,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "security",
+            "start": 133484,
+            "end": 133750,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 133820,
+            "end": 133958,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "work",
+            "start": 133964,
+            "end": 134134,
+            "confidence": 0.89165,
+            "speaker": null
+        },
+        {
+            "text": "done",
+            "start": 134172,
+            "end": 134374,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 134412,
+            "end": 134566,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "Django.",
+            "start": 134588,
+            "end": 135430,
+            "confidence": 0.99178,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 136410,
+            "end": 136774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fourth",
+            "start": 136812,
+            "end": 137026,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 137058,
+            "end": 137266,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 137298,
+            "end": 137446,
+            "confidence": 0.66533,
+            "speaker": null
+        },
+        {
+            "text": "rapid",
+            "start": 137468,
+            "end": 137746,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "development.",
+            "start": 137778,
+            "end": 138630,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 139530,
+            "end": 140066,
+            "confidence": 0.82489,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 140098,
+            "end": 140198,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 140204,
+            "end": 140278,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 140284,
+            "end": 140674,
+            "confidence": 0.9997,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 140722,
+            "end": 140934,
+            "confidence": 0.6188,
+            "speaker": null
+        },
+        {
+            "text": "takes",
+            "start": 140972,
+            "end": 141174,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "less",
+            "start": 141212,
+            "end": 141414,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "time",
+            "start": 141452,
+            "end": 141606,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 141628,
+            "end": 141730,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "build",
+            "start": 141740,
+            "end": 141914,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 141952,
+            "end": 142154,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "applications.",
+            "start": 142192,
+            "end": 143014,
+            "confidence": 0.95658,
+            "speaker": null
+        },
+        {
+            "text": "While",
+            "start": 143142,
+            "end": 143482,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "working",
+            "start": 143536,
+            "end": 143754,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 143792,
+            "end": 143946,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "Django,",
+            "start": 143968,
+            "end": 144518,
+            "confidence": 0.65539,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 144614,
+            "end": 144826,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "don't",
+            "start": 144848,
+            "end": 145046,
+            "confidence": 0.45788,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 145078,
+            "end": 145226,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 145248,
+            "end": 145386,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 145408,
+            "end": 145546,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 145568,
+            "end": 145706,
+            "confidence": 0.99924,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 145728,
+            "end": 145866,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "scratch.",
+            "start": 145888,
+            "end": 146438,
+            "confidence": 0.5441,
+            "speaker": null
+        },
+        {
+            "text": "You",
+            "start": 146534,
+            "end": 146794,
+            "confidence": 0.98827,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 146820,
+            "end": 146920,
+            "confidence": 0.6448901891708374,
+            "speaker": null
+        },
+        {
+            "text": "only",
+            "start": 146920,
+            "end": 147034,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 147072,
+            "end": 147274,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 147312,
+            "end": 147418,
+            "confidence": 0.64,
+            "speaker": null
+        },
+        {
+            "text": "basic",
+            "start": 147424,
+            "end": 147686,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "knowledge",
+            "start": 147718,
+            "end": 147926,
+            "confidence": 0.87437,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 147958,
+            "end": 148058,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 148064,
+            "end": 148186,
+            "confidence": 0.86,
+            "speaker": null
+        },
+        {
+            "text": "backend",
+            "start": 148208,
+            "end": 148534,
+            "confidence": 0.95002,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 148582,
+            "end": 148794,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "most",
+            "start": 148832,
+            "end": 149034,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 149072,
+            "end": 149178,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 149184,
+            "end": 149258,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "work",
+            "start": 149264,
+            "end": 149434,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 149472,
+            "end": 149846,
+            "confidence": 0.99487,
+            "speaker": null
+        },
+        {
+            "text": "handles",
+            "start": 149878,
+            "end": 150214,
+            "confidence": 0.99963,
+            "speaker": null
+        },
+        {
+            "text": "itself.",
+            "start": 150262,
+            "end": 150860,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 151550,
+            "end": 151866,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "last",
+            "start": 151888,
+            "end": 152074,
+            "confidence": 0.99803,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 152112,
+            "end": 152374,
+            "confidence": 0.99709,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 152422,
+            "end": 152538,
+            "confidence": 0.97928,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 152544,
+            "end": 152666,
+            "confidence": 0.99502,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 152688,
+            "end": 152778,
+            "confidence": 0.99963,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 152784,
+            "end": 152906,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "versatile.",
+            "start": 152928,
+            "end": 153770,
+            "confidence": 0.73701,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 154510,
+            "end": 154826,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "versatility",
+            "start": 154848,
+            "end": 155414,
+            "confidence": 0.99964,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 155462,
+            "end": 155578,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 155584,
+            "end": 155814,
+            "confidence": 0.65,
+            "speaker": null
+        },
+        {
+            "text": "application",
+            "start": 155872,
+            "end": 156238,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "signifies",
+            "start": 156324,
+            "end": 156746,
+            "confidence": 0.99722,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 156778,
+            "end": 156974,
+            "confidence": 0.65822,
+            "speaker": null
+        },
+        {
+            "text": "ability",
+            "start": 157012,
+            "end": 157274,
+            "confidence": 0.99681,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 157322,
+            "end": 157486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "perform",
+            "start": 157508,
+            "end": 157742,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "well",
+            "start": 157796,
+            "end": 157966,
+            "confidence": 0.99963,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 157988,
+            "end": 158126,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "different",
+            "start": 158148,
+            "end": 158334,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "domains.",
+            "start": 158372,
+            "end": 159018,
+            "confidence": 0.73336,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 159114,
+            "end": 159626,
+            "confidence": 0.64701,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 159658,
+            "end": 159758,
+            "confidence": 0.99691,
+            "speaker": null
+        },
+        {
+            "text": "spread",
+            "start": 159764,
+            "end": 159978,
+            "confidence": 0.62835,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 159994,
+            "end": 160174,
+            "confidence": 0.99095,
+            "speaker": null
+        },
+        {
+            "text": "hand",
+            "start": 160212,
+            "end": 160366,
+            "confidence": 0.99891,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 160388,
+            "end": 160526,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "various",
+            "start": 160548,
+            "end": 160794,
+            "confidence": 0.99494,
+            "speaker": null
+        },
+        {
+            "text": "domains",
+            "start": 160842,
+            "end": 161178,
+            "confidence": 0.91324,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 161194,
+            "end": 161326,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 161348,
+            "end": 161534,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 161572,
+            "end": 161678,
+            "confidence": 0.99945,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 161684,
+            "end": 161758,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "market.",
+            "start": 161764,
+            "end": 162320,
+            "confidence": 0.98249,
+            "speaker": null
+        },
+        {
+            "text": "Nice",
+            "start": 163250,
+            "end": 163626,
+            "confidence": 0.95508,
+            "speaker": null
+        },
+        {
+            "text": "time",
+            "start": 163668,
+            "end": 163874,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 163912,
+            "end": 164066,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 164088,
+            "end": 164274,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 164312,
+            "end": 164466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "companies",
+            "start": 164488,
+            "end": 164914,
+            "confidence": 0.99932,
+            "speaker": null
+        },
+        {
+            "text": "using",
+            "start": 165032,
+            "end": 165314,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "Django.",
+            "start": 165352,
+            "end": 166210,
+            "confidence": 0.62928,
+            "speaker": null
+        },
+        {
+            "text": "Some",
+            "start": 167030,
+            "end": 167346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 167368,
+            "end": 167458,
+            "confidence": 0.89,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 167464,
+            "end": 167586,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "major",
+            "start": 167608,
+            "end": 167842,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "companies",
+            "start": 167896,
+            "end": 168210,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 168280,
+            "end": 168466,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 168488,
+            "end": 168626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Washington",
+            "start": 168648,
+            "end": 169054,
+            "confidence": 0.89353,
+            "speaker": null
+        },
+        {
+            "text": "Post,",
+            "start": 169102,
+            "end": 169506,
+            "confidence": 0.54662,
+            "speaker": null
+        },
+        {
+            "text": "Instagram,",
+            "start": 169608,
+            "end": 170414,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "Pinterest,",
+            "start": 170542,
+            "end": 171294,
+            "confidence": 0.60615,
+            "speaker": null
+        },
+        {
+            "text": "Netflix,",
+            "start": 171422,
+            "end": 172238,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "Firefox",
+            "start": 172334,
+            "end": 173054,
+            "confidence": 0.99918,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 173102,
+            "end": 173266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "many",
+            "start": 173288,
+            "end": 173474,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "more.",
+            "start": 173512,
+            "end": 174100,
+            "confidence": 0.74,
+            "speaker": null
+        },
+        {
+            "text": "Now",
+            "start": 174550,
+            "end": 174914,
+            "confidence": 0.58,
+            "speaker": null
+        },
+        {
+            "text": "we'll",
+            "start": 174952,
+            "end": 175166,
+            "confidence": 0.72889,
+            "speaker": null
+        },
+        {
+            "text": "discuss",
+            "start": 175198,
+            "end": 175442,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 175496,
+            "end": 175666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 175688,
+            "end": 175874,
+            "confidence": 0.99949,
+            "speaker": null
+        },
+        {
+            "text": "view",
+            "start": 175912,
+            "end": 176114,
+            "confidence": 0.70565,
+            "speaker": null
+        },
+        {
+            "text": "template",
+            "start": 176152,
+            "end": 176586,
+            "confidence": 0.5807,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 176638,
+            "end": 176806,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 176828,
+            "end": 177014,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 177052,
+            "end": 177206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 177228,
+            "end": 177586,
+            "confidence": 0.73225,
+            "speaker": null
+        },
+        {
+            "text": "architecture",
+            "start": 177618,
+            "end": 178066,
+            "confidence": 0.85933,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 178098,
+            "end": 178294,
+            "confidence": 0.99934,
+            "speaker": null
+        },
+        {
+            "text": "built.",
+            "start": 178332,
+            "end": 178920,
+            "confidence": 0.99874,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 180410,
+            "end": 180726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "first",
+            "start": 180748,
+            "end": 180934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 180972,
+            "end": 181126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 181148,
+            "end": 181334,
+            "confidence": 0.99972,
+            "speaker": null
+        },
+        {
+            "text": "model.",
+            "start": 181372,
+            "end": 182006,
+            "confidence": 0.99927,
+            "speaker": null
+        },
+        {
+            "text": "A",
+            "start": 182188,
+            "end": 182360,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "uh",
+            "start": 182360,
+            "end": 182440,
+            "confidence": 0.7329308390617371,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 182508,
+            "end": 182742,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "provides",
+            "start": 182796,
+            "end": 183138,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 183154,
+            "end": 183286,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "interface",
+            "start": 183308,
+            "end": 183746,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 183778,
+            "end": 183926,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 183948,
+            "end": 184038,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 184044,
+            "end": 184262,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "stored",
+            "start": 184316,
+            "end": 184626,
+            "confidence": 0.86699,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 184658,
+            "end": 184758,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 184764,
+            "end": 184838,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "database.",
+            "start": 184844,
+            "end": 185602,
+            "confidence": 0.668,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 185746,
+            "end": 186006,
+            "confidence": 0.99955,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 186028,
+            "end": 186166,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "responsible",
+            "start": 186188,
+            "end": 186674,
+            "confidence": 0.66542,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 186722,
+            "end": 186934,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "maintaining",
+            "start": 186972,
+            "end": 187378,
+            "confidence": 0.86878,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 187394,
+            "end": 187526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 187548,
+            "end": 187782,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 187836,
+            "end": 188006,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "handling",
+            "start": 188028,
+            "end": 188306,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 188338,
+            "end": 188486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "logical",
+            "start": 188508,
+            "end": 188834,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "structure",
+            "start": 188882,
+            "end": 189278,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 189314,
+            "end": 189418,
+            "confidence": 0.9997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 189424,
+            "end": 189546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "entire",
+            "start": 189568,
+            "end": 189802,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 189856,
+            "end": 190074,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "application.",
+            "start": 190112,
+            "end": 190700,
+            "confidence": 0.9996,
+            "speaker": null
+        },
+        {
+            "text": "A",
+            "start": 192270,
+            "end": 192586,
+            "confidence": 0.63,
+            "speaker": null
+        },
+        {
+            "text": "view",
+            "start": 192608,
+            "end": 192794,
+            "confidence": 0.83993,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 192832,
+            "end": 192986,
+            "confidence": 0.97961,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 193008,
+            "end": 193146,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "user",
+            "start": 193168,
+            "end": 193366,
+            "confidence": 0.99831,
+            "speaker": null
+        },
+        {
+            "text": "interface",
+            "start": 193398,
+            "end": 193846,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 193878,
+            "end": 193978,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 193984,
+            "end": 194058,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Web",
+            "start": 194064,
+            "end": 194282,
+            "confidence": 0.535,
+            "speaker": null
+        },
+        {
+            "text": "applications.",
+            "start": 194336,
+            "end": 195290,
+            "confidence": 0.71831,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 196190,
+            "end": 196506,
+            "confidence": 0.99891,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 196528,
+            "end": 196666,
+            "confidence": 0.99932,
+            "speaker": null
+        },
+        {
+            "text": "responsible",
+            "start": 196688,
+            "end": 197126,
+            "confidence": 0.51827,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 197158,
+            "end": 197306,
+            "confidence": 0.99961,
+            "speaker": null
+        },
+        {
+            "text": "displaying",
+            "start": 197328,
+            "end": 197686,
+            "confidence": 0.63588,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 197718,
+            "end": 197962,
+            "confidence": 0.99935,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 198016,
+            "end": 198282,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 198336,
+            "end": 198506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 198528,
+            "end": 198666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "user,",
+            "start": 198688,
+            "end": 198840,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 198840,
+            "end": 198850,
+            "confidence": 0.3264935612678528,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 198998,
+            "end": 199146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "also",
+            "start": 199168,
+            "end": 199354,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 199392,
+            "end": 199546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "take",
+            "start": 199568,
+            "end": 199706,
+            "confidence": 0.9993,
+            "speaker": null
+        },
+        {
+            "text": "up",
+            "start": 199728,
+            "end": 199866,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "information",
+            "start": 199888,
+            "end": 200266,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 200368,
+            "end": 200586,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 200608,
+            "end": 200698,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "user.",
+            "start": 200704,
+            "end": 201450,
+            "confidence": 0.99919,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 202590,
+            "end": 202906,
+            "confidence": 0.9,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 202928,
+            "end": 203066,
+            "confidence": 0.76,
+            "speaker": null
+        },
+        {
+            "text": "last",
+            "start": 203088,
+            "end": 203274,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 203312,
+            "end": 203466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 203488,
+            "end": 203626,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "template.",
+            "start": 203648,
+            "end": 204490,
+            "confidence": 0.98355,
+            "speaker": null
+        },
+        {
+            "text": "Just",
+            "start": 205310,
+            "end": 205626,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 205648,
+            "end": 205834,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "Vue",
+            "start": 205872,
+            "end": 206086,
+            "confidence": 0.49591,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 206118,
+            "end": 206278,
+            "confidence": 0.65151,
+            "speaker": null
+        },
+        {
+            "text": "MVC",
+            "start": 206304,
+            "end": 206714,
+            "confidence": 0.77854,
+            "speaker": null
+        },
+        {
+            "text": "Django",
+            "start": 206762,
+            "end": 207146,
+            "confidence": 0.94737,
+            "speaker": null
+        },
+        {
+            "text": "uses",
+            "start": 207178,
+            "end": 207434,
+            "confidence": 0.50329,
+            "speaker": null
+        },
+        {
+            "text": "template",
+            "start": 207482,
+            "end": 207834,
+            "confidence": 0.77407,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 207882,
+            "end": 207998,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 208004,
+            "end": 208174,
+            "confidence": 0.99959,
+            "speaker": null
+        },
+        {
+            "text": "framework,",
+            "start": 208212,
+            "end": 208938,
+            "confidence": 0.99222,
+            "speaker": null
+        },
+        {
+            "text": "templates",
+            "start": 209114,
+            "end": 209674,
+            "confidence": 0.96938,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 209722,
+            "end": 209886,
+            "confidence": 0.97843,
+            "speaker": null
+        },
+        {
+            "text": "responsible",
+            "start": 209908,
+            "end": 210346,
+            "confidence": 0.57367,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 210378,
+            "end": 210478,
+            "confidence": 0.99933,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 210484,
+            "end": 210606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "entire",
+            "start": 210628,
+            "end": 210862,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "user",
+            "start": 210916,
+            "end": 211226,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "interface.",
+            "start": 211258,
+            "end": 211994,
+            "confidence": 0.99933,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 212122,
+            "end": 212414,
+            "confidence": 0.99828,
+            "speaker": null
+        },
+        {
+            "text": "handles",
+            "start": 212452,
+            "end": 212794,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 212842,
+            "end": 213006,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 213028,
+            "end": 213166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "static",
+            "start": 213188,
+            "end": 213514,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "parts",
+            "start": 213562,
+            "end": 213818,
+            "confidence": 0.99426,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 213834,
+            "end": 213966,
+            "confidence": 0.63,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 213988,
+            "end": 214078,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "web",
+            "start": 214084,
+            "end": 214206,
+            "confidence": 0.99175,
+            "speaker": null
+        },
+        {
+            "text": "page",
+            "start": 214228,
+            "end": 214414,
+            "confidence": 0.58844,
+            "speaker": null
+        },
+        {
+            "text": "along",
+            "start": 214452,
+            "end": 214654,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 214692,
+            "end": 214798,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 214804,
+            "end": 214926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "HTML",
+            "start": 214948,
+            "end": 215514,
+            "confidence": 0.94918,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 215562,
+            "end": 215726,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 215748,
+            "end": 215934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "users",
+            "start": 215972,
+            "end": 216314,
+            "confidence": 0.6506,
+            "speaker": null
+        },
+        {
+            "text": "visiting",
+            "start": 216362,
+            "end": 216682,
+            "confidence": 0.74118,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 216746,
+            "end": 216878,
+            "confidence": 0.66,
+            "speaker": null
+        },
+        {
+            "text": "Webpage",
+            "start": 216884,
+            "end": 217274,
+            "confidence": 0.52568,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 217322,
+            "end": 217534,
+            "confidence": 0.99749,
+            "speaker": null
+        },
+        {
+            "text": "receive.",
+            "start": 217572,
+            "end": 218270,
+            "confidence": 0.98454,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 219250,
+            "end": 219614,
+            "confidence": 0.99778,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 219652,
+            "end": 219854,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "this,",
+            "start": 219892,
+            "end": 220142,
+            "confidence": 0.9994,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 220196,
+            "end": 220414,
+            "confidence": 0.57734,
+            "speaker": null
+        },
+        {
+            "text": "come",
+            "start": 220452,
+            "end": 220606,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 220628,
+            "end": 220718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 220724,
+            "end": 220846,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "end",
+            "start": 220868,
+            "end": 221006,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 221028,
+            "end": 221166,
+            "confidence": 0.69,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 221188,
+            "end": 221326,
+            "confidence": 0.99937,
+            "speaker": null
+        },
+        {
+            "text": "tutorial.",
+            "start": 221348,
+            "end": 222026,
+            "confidence": 0.99482,
+            "speaker": null
+        },
+        {
+            "text": "I",
+            "start": 222138,
+            "end": 222414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "hope",
+            "start": 222452,
+            "end": 222606,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 222628,
+            "end": 222766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "video",
+            "start": 222788,
+            "end": 222974,
+            "confidence": 0.99958,
+            "speaker": null
+        },
+        {
+            "text": "was",
+            "start": 223012,
+            "end": 223214,
+            "confidence": 0.87723,
+            "speaker": null
+        },
+        {
+            "text": "useful",
+            "start": 223252,
+            "end": 223546,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 223578,
+            "end": 223726,
+            "confidence": 0.99956,
+            "speaker": null
+        },
+        {
+            "text": "you.",
+            "start": 223748,
+            "end": 224030,
+            "confidence": 0.84869,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 224100,
+            "end": 224334,
+            "confidence": 0.98754,
+            "speaker": null
+        },
+        {
+            "text": "yes,",
+            "start": 224372,
+            "end": 224886,
+            "confidence": 0.93718,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 225028,
+            "end": 225286,
+            "confidence": 0.98982,
+            "speaker": null
+        },
+        {
+            "text": "share",
+            "start": 225308,
+            "end": 225400,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "uh",
+            "start": 225400,
+            "end": 225540,
+            "confidence": 0.7833071947097778,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 225596,
+            "end": 225766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "subscribe",
+            "start": 225788,
+            "end": 226066,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 226098,
+            "end": 226246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 226268,
+            "end": 226406,
+            "confidence": 0.95952,
+            "speaker": null
+        },
+        {
+            "text": "channel.",
+            "start": 226428,
+            "end": 226854,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "Until",
+            "start": 226972,
+            "end": 227302,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "then,",
+            "start": 227356,
+            "end": 227622,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "thank",
+            "start": 227676,
+            "end": 227846,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 227868,
+            "end": 228054,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "again",
+            "start": 228092,
+            "end": 228294,
+            "confidence": 0.99812,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 228332,
+            "end": 228486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "happy",
+            "start": 228508,
+            "end": 228742,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "learning.",
+            "start": 228796,
+            "end": 229400,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "Hi",
+            "start": 234090,
+            "end": 234454,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "there.",
+            "start": 234492,
+            "end": 234742,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 234796,
+            "end": 234918,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 234924,
+            "end": 235094,
+            "confidence": 0.85775,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 235132,
+            "end": 235334,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 235372,
+            "end": 235574,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "video,",
+            "start": 235612,
+            "end": 235958,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "subscribe",
+            "start": 236044,
+            "end": 236466,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 236498,
+            "end": 236646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 236668,
+            "end": 236806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Simply",
+            "start": 236828,
+            "end": 237106,
+            "confidence": 0.88609,
+            "speaker": null
+        },
+        {
+            "text": "Learn",
+            "start": 237138,
+            "end": 237334,
+            "confidence": 0.94033,
+            "speaker": null
+        },
+        {
+            "text": "YouTube",
+            "start": 237372,
+            "end": 237746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "channel",
+            "start": 237778,
+            "end": 238214,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 238332,
+            "end": 238710,
+            "confidence": 0.95,
+            "speaker": null
+        },
+        {
+            "text": "click",
+            "start": 238780,
+            "end": 239062,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "here.",
+            "start": 239116,
+            "end": 239334,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "To",
+            "start": 239372,
+            "end": 239526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "watch",
+            "start": 239548,
+            "end": 239830,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "similar",
+            "start": 239900,
+            "end": 240278,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "videos",
+            "start": 240364,
+            "end": 240806,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 240908,
+            "end": 241126,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "nerd",
+            "start": 241148,
+            "end": 241346,
+            "confidence": 0.9967,
+            "speaker": null
+        },
+        {
+            "text": "up",
+            "start": 241378,
+            "end": 241526,
+            "confidence": 0.9988,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 241548,
+            "end": 241686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 241708,
+            "end": 241846,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "certified,",
+            "start": 241868,
+            "end": 242386,
+            "confidence": 0.99718,
+            "speaker": null
+        },
+        {
+            "text": "click",
+            "start": 242498,
+            "end": 242822,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "here.",
+            "start": 242876,
+            "end": 242980,
+            "confidence": 0.99876,
+            "speaker": null
+        }
+    ],
+    "utterances": null,
+    "confidence": 0.9477854101731209,
+    "audio_duration": 245,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": null,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": false,
+    "content_safety": false,
+    "iab_categories": true,
+    "content_safety_labels": {
+        "status": "unavailable",
+        "results": [],
+        "summary": {}
+    },
+    "iab_categories_result": {
+        "status": "success",
+        "results": [
+            {
+                "text": "Hello everyone. I welcome you all to simply learn. Django is a popular framework nowadays, and you must have heard it. Almost every websites and web applications uses Django in some way or other for their web development. So in today's session, we will discuss what is Django framework. Let's start by discussing what is a web framework? A uh web framework is a software framework that is created to support the development of dynamic sites, web services and web applications.",
+                "labels": [
+                    {
+                        "relevance": 0.9952431321144104,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.9673858284950256,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.15948602557182312,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.11231762170791626,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.0034773366060107946,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0025267761666327715,
+                        "label": "Technology&Computing>Computing>Internet>InternetForBeginners"
+                    },
+                    {
+                        "relevance": 0.002279168926179409,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0022182739339768887,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0008297540480270982,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    },
+                    {
+                        "relevance": 0.0005334352608770132,
+                        "label": "Automotive>AutoType"
+                    }
+                ],
+                "timestamp": {
+                    "start": 9130,
+                    "end": 37026
+                },
+                "sentences_idx_start": 0,
+                "sentences_idx_end": 6
+            },
+            {
+                "text": "It supports creation, development and publishing of the web applications and websites. It can include web services, APIs and other resources. Some of the features why web framework are so popular are they uh, are easy to maintain, they have high scalability and they are compatible with almost every browser and it is very easy to learn. Now that we know what is a web framework, let's move on to discuss what is Django?",
+                "labels": [
+                    {
+                        "relevance": 0.9958245754241943,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.9216262698173523,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.3754752278327942,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.046511080116033554,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.013078457675874233,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.008959585800766945,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0031841269228607416,
+                        "label": "Technology&Computing>Computing>Internet>InternetForBeginners"
+                    },
+                    {
+                        "relevance": 0.0015520688612014055,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0011462642578408122,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    },
+                    {
+                        "relevance": 0.0006991096306592226,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    }
+                ],
+                "timestamp": {
+                    "start": 37218,
+                    "end": 64110
+                },
+                "sentences_idx_start": 7,
+                "sentences_idx_end": 10
+            },
+            {
+                "text": "Django is an open source framework that is used for backend web applications based on Python. It is based on MVT web framework and its primary goal is to ease the creation of complex data driven websites. It can handle higher amount of traffics and transactions. Now, let's discuss why Django is so popular. First, it has a very vast and excellent community. Django has been in the market for the past 13 years, which means it has been used by millions of users and improved by thousands of developers.",
+                "labels": [
+                    {
+                        "relevance": 0.9114506244659424,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.2711201310157776,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.12520068883895874,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.055866826325654984,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0038682864978909492,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0018804622814059258,
+                        "label": "Technology&Computing>Computing>Internet>InternetForBeginners"
+                    },
+                    {
+                        "relevance": 0.0017804836388677359,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0013925543753430247,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.0009839821141213179,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0008708057575859129,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    }
+                ],
+                "timestamp": {
+                    "start": 64770,
+                    "end": 95930
+                },
+                "sentences_idx_start": 11,
+                "sentences_idx_end": 16
+            },
+            {
+                "text": "It is super easy to find a community of developers who know in and out of Django and have experience coding with it. The second feature is it is an open source software. Django is introduced to the market with documentation far above the usual standards of the open source technologies. It has improved over time and it is considered to be the best example of the open source documentation in the world. The third feature is it has an enhanced security. Django is super secure.",
+                "labels": [
+                    {
+                        "relevance": 0.11550059914588928,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.03376438841223717,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.03145334869623184,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>SharewareAndFreeware"
+                    },
+                    {
+                        "relevance": 0.0240841805934906,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.004223475698381662,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.003525027772411704,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0024157108273357153,
+                        "label": "Technology&Computing>Computing>Internet>InternetForBeginners"
+                    },
+                    {
+                        "relevance": 0.001100391848012805,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>AntivirusSoftware"
+                    },
+                    {
+                        "relevance": 0.000811214093118906,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.0007821587496437132,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>OperatingSystems"
+                    }
+                ],
+                "timestamp": {
+                    "start": 96270,
+                    "end": 122126
+                },
+                "sentences_idx_start": 17,
+                "sentences_idx_end": 22
+            },
+            {
+                "text": "It has covered all the loopholes by default, which were once left open for the backend developers to compete. Although by using Django you may not feel those loopholes, but the expert backend developers can tell the quantity and security of work done by Django. The fourth feature is rapid development. Django is a framework that takes less time to build web applications. While working with Django, you don't have to start from the scratch.",
+                "labels": [
+                    {
+                        "relevance": 0.648063063621521,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.14271892607212067,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.06464798003435135,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.03129792958498001,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.0031135044991970062,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0015298211947083473,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.00144004519097507,
+                        "label": "Technology&Computing>Computing>Internet>InternetForBeginners"
+                    },
+                    {
+                        "relevance": 0.0009349286556243896,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>SharewareAndFreeware"
+                    },
+                    {
+                        "relevance": 0.0008276531589217484,
+                        "label": "Technology&Computing>Computing>InformationAndNetworkSecurity"
+                    },
+                    {
+                        "relevance": 0.0006842847797088325,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>AntivirusSoftware"
+                    }
+                ],
+                "timestamp": {
+                    "start": 122318,
+                    "end": 146438
+                },
+                "sentences_idx_start": 23,
+                "sentences_idx_end": 27
+            },
+            {
+                "text": "You uh, only need the basic knowledge of the backend because most of the work Django handles itself. The last feature is it is very versatile. The versatility of the application signifies its ability to perform well in different domains. Django has spread its hand on various domains out there in the market. Nice time to see the companies using Django. Some of the major companies are the Washington Post, Instagram, Pinterest, Netflix, Firefox and many more.",
+                "labels": [
+                    {
+                        "relevance": 0.27260956168174744,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.22865715622901917,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.07006457448005676,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.010319408029317856,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0047879586927592754,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>SharewareAndFreeware"
+                    },
+                    {
+                        "relevance": 0.004679378587752581,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.002609425224363804,
+                        "label": "Hobbies&Interests>ContentProduction"
+                    },
+                    {
+                        "relevance": 0.0007092941086739302,
+                        "label": "Technology&Computing>Computing>Internet>InternetForBeginners"
+                    },
+                    {
+                        "relevance": 0.0006700180820189416,
+                        "label": "BusinessAndFinance>Business>Sales"
+                    },
+                    {
+                        "relevance": 0.0003681575180962682,
+                        "label": "Technology&Computing>Computing>Internet>SocialNetworking"
+                    }
+                ],
+                "timestamp": {
+                    "start": 146534,
+                    "end": 174100
+                },
+                "sentences_idx_start": 28,
+                "sentences_idx_end": 33
+            },
+            {
+                "text": "Now we'll discuss the model view template on which the Django architecture is built. The first one is model. A uh model provides the interface for the data stored in the database. It is responsible for maintaining the data and handling the logical structure for the entire web application. A view is the user interface of the Web applications. It is responsible for displaying model data to the user, uh, and also to take up information from the user. And the last one is template.",
+                "labels": [
+                    {
+                        "relevance": 0.8567354679107666,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.7843191623687744,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.1338801234960556,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.09895723313093185,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.04951188340783119,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0283187422901392,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0032284832559525967,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.0013431936968117952,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.001257956144399941,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.0009683937532827258,
+                        "label": "BusinessAndFinance>Business>Sales"
+                    }
+                ],
+                "timestamp": {
+                    "start": 174550,
+                    "end": 204490
+                },
+                "sentences_idx_start": 34,
+                "sentences_idx_end": 40
+            },
+            {
+                "text": "Just like Vue in MVC Django uses template in its framework, templates are responsible for the entire user interface. It handles all the static parts of the web page along with the HTML which the users visiting the Webpage will receive. So with this, we come to an end to this tutorial. I hope the video was useful for you. If yes, do share uh and subscribe to our channel. Until then, thank you again and happy learning. Hi there.",
+                "labels": [
+                    {
+                        "relevance": 0.997575581073761,
+                        "label": "Technology&Computing>Computing>Internet>WebDesignAndHTML"
+                    },
+                    {
+                        "relevance": 0.9832287430763245,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.06227656826376915,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers"
+                    },
+                    {
+                        "relevance": 0.007432064972817898,
+                        "label": "Technology&Computing>Computing>Internet>WebHosting"
+                    },
+                    {
+                        "relevance": 0.003267312655225396,
+                        "label": "FineArt>Design"
+                    },
+                    {
+                        "relevance": 0.0016864591743797064,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0012878457782790065,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>DesktopPublishing"
+                    },
+                    {
+                        "relevance": 0.0006297228974290192,
+                        "label": "Automotive>AutoType"
+                    },
+                    {
+                        "relevance": 0.0005424380069598556,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.00048336852341890335,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    }
+                ],
+                "timestamp": {
+                    "start": 205310,
+                    "end": 234742
+                },
+                "sentences_idx_start": 41,
+                "sentences_idx_end": 47
+            },
+            {
+                "text": "If you like this video, subscribe to the Simply Learn YouTube channel and click here. To watch similar videos to nerd up and get certified, click here.",
+                "labels": [
+                    {
+                        "relevance": 0.31511276960372925,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0057921321131289005,
+                        "label": "Careers>VocationalTraining"
+                    },
+                    {
+                        "relevance": 0.00531549658626318,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    },
+                    {
+                        "relevance": 0.0032568383030593395,
+                        "label": "VideoGaming>VideoGameGenres>EducationalVideoGames"
+                    },
+                    {
+                        "relevance": 0.003195396391674876,
+                        "label": "Careers>Apprenticeships"
+                    },
+                    {
+                        "relevance": 0.00248141260817647,
+                        "label": "Education>AdultEducation"
+                    },
+                    {
+                        "relevance": 0.0020761042833328247,
+                        "label": "Education>LanguageLearning"
+                    },
+                    {
+                        "relevance": 0.001338475150987506,
+                        "label": "Education>CollegeEducation>PostgraduateEducation>ProfessionalSchool"
+                    },
+                    {
+                        "relevance": 0.0011126126628369093,
+                        "label": "Education>EducationalAssessment"
+                    },
+                    {
+                        "relevance": 0.0010201557306572795,
+                        "label": "Education>HomeworkAndStudy"
+                    }
+                ],
+                "timestamp": {
+                    "start": 234796,
+                    "end": 242980
+                },
+                "sentences_idx_start": 48,
+                "sentences_idx_end": 49
+            }
+        ],
+        "summary": {
+            "Technology&Computing>Computing>Internet>WebDevelopment": 1.0,
+            "Technology&Computing>Computing>Internet>WebDesignAndHTML": 0.6689568758010864,
+            "Technology&Computing>Computing>Internet>WebHosting": 0.2190455198287964,
+            "Education>OnlineEducation": 0.05501548573374748,
+            "Technology&Computing>Computing>Internet>CloudComputing": 0.04122069850564003,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>Browsers": 0.03945634886622429,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications": 0.029971027746796608,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases": 0.01789936050772667,
+            "Technology&Computing>Computing>DataStorageAndWarehousing": 0.008998861536383629,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>SharewareAndFreeware": 0.006726446561515331,
+            "Technology&Computing>Computing>ProgrammingLanguages": 0.006121904589235783,
+            "Technology&Computing>Computing>Internet>InternetForBeginners": 0.0021998833399266005,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing": 0.0016853848937898874,
+            "Careers>VocationalTraining": 0.0010451459093019366,
+            "Hobbies&Interests>ContentProduction": 0.0008591779042035341,
+            "FineArt>Design": 0.0008213193505071104,
+            "Careers>Apprenticeships": 0.000583621789701283,
+            "VideoGaming>VideoGameGenres>EducationalVideoGames": 0.000579756626393646,
+            "BusinessAndFinance>Business>Sales": 0.0005485508008860052,
+            "Education>LanguageLearning": 0.0005118190310895443
+        }
+    },
+    "language_detection": true,
+    "custom_spelling": null,
+    "throttled": null,
+    "auto_chapters": true,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": null,
+    "disfluencies": true,
+    "sentiment_analysis": false,
+    "chapters": [
+        {
+            "summary": "Almost every websites and web applications uses Django in some way or other for their web development. A uh web framework is a software framework that is created to support the development of dynamic sites. Some of the features why web framework are so popular are easy to maintain and high scalability.",
+            "gist": "What is a Web Framework?",
+            "headline": "Almost every websites and web applications uses Django framework for their web development",
+            "start": 9130,
+            "end": 58960
+        },
+        {
+            "summary": "Django is an open source framework that is used for backend web applications based on Python. Its primary goal is to ease the creation of complex data driven websites. Some of the major companies are the Washington Post, Instagram, Pinterest, Netflix, Firefox and many more.",
+            "gist": "What is Django",
+            "headline": "Django is an open source framework that is used for backend web applications",
+            "start": 60210,
+            "end": 174100
+        },
+        {
+            "summary": "A model provides the interface for the data stored in the database. A view is the user interface of the Web applications. Just like Vue in MVC Django uses template in its framework. templates are responsible for the entire user interface.",
+            "gist": " Django Architecture",
+            "headline": "View is the user interface of the Web applications",
+            "start": 174550,
+            "end": 218270
+        },
+        {
+            "summary": "So with this, we come to an end to this tutorial. If you like this video, subscribe to the Simply Learn YouTube channel. To watch similar videos to nerd up and get certified, click here.",
+            "gist": "How To Get Certified in Computer Science",
+            "headline": "This tutorial was created by Simply Learn YouTube channel",
+            "start": 219250,
+            "end": 242980
+        }
+    ],
+    "sentiment_analysis_results": null,
+    "entity_detection": false,
+    "entities": null,
+    "summary": null,
+    "speakers_expected": null
+}

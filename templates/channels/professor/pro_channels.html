@@ -1,0 +1,346 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chimedAi</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- 기타 CSS 파일들 -->
+      <!-- Font Awesome -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+      />
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+      
+      <!-- MDB -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+     
+      <!-- <link rel="stylesheet" type="text/css" href="{% static '/netflix_css/styles.css' %}"> -->
+
+    <style>
+
+        body{
+            background-color: #333333;
+            color: #fff;
+            font-family: "Gill sans", sans-serif;
+            font-size: 1.1rem;
+        }
+        body, a, h4 {
+            color: #fff;
+            font-family: "Gill sans", sans-serif;
+        }
+
+        .CartBtn {
+            width: 140px;
+            height: 40px;
+            border-radius: 12px;
+            border: #4d4d4d solid 1px;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition-duration: .5s;
+            overflow: hidden;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+            position: relative;
+        }
+
+        .IconContainer {
+            /* position: absolute; */
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            z-index: 2;
+            transition-duration: .5s;
+        }
+
+        .icon {
+            border-radius: 1px;
+        }
+
+        .text {
+            height: 100%;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(17, 17, 17);
+            z-index: 1;
+            transition-duration: .5s;
+            font-size: 1.04em;
+            font-weight: 600;
+        }
+
+        /* .CartBtn:hover .IconContainer {
+            transform: translateX(58px);
+            border-radius: 40px;
+            transition-duration: .5s;
+        } */
+
+        .CartBtn:hover .text {
+            transform: translate(10px,0px);
+            transition-duration: .5s;
+        }
+
+        .CartBtn:active {
+            transform: scale(0.95);
+            transition-duration: .5s;
+        }
+
+        .header .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            width: 100px;
+        }
+
+        .video_create {
+            position: absolute;
+            right: 100px;
+        }
+
+        .header .profile img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* Channel Tabs */
+        .channel-tabs {
+            /* margin-bottom: 20px; */
+            position: relative;
+        }
+
+        .channel-tabs .nav-link {
+            padding: 10px;
+            margin-right: 10px;
+            position: relative;
+            color: #fff;
+        }
+
+        .channel-tabs .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 2px;
+            background-color: transparent;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .channel-tabs .nav-link.active::after {
+            height: 3px;
+            border-radius: 3px;
+            background-color: #8D8D8D; /* 활성화된 탭의 밑줄 색상을 변경하세요 */
+        }
+
+        /* Video List */
+        .video-list {
+            margin-top: 30px;
+        }
+
+        .video-card {
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+        }
+
+        /* .video-card .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        } */
+        .video-card {
+            object-fit: cover;
+            height: 350px;
+            overflow: auto;
+        }
+        .video-card:hover {
+            transform: scale(1.1);
+        }
+        .video-card .card-body {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            background-color: #4d4d4d;
+        }
+
+        /* .video-card .card-title {
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: bold;
+        } */
+        .video-card .profile-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .video-card .card-text {
+            font-size: 14px;
+            color: #666;
+        }
+        .video-card .card-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            background-color: #4d4d4d;
+        }
+        .video-card iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        .tab-pane {
+            margin-top: 20px;
+        }
+
+        .username {
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: #4d4d4d;
+        }
+
+        .datetime {
+            font-size: 11px;
+        }
+    </style>
+
+</head>
+<body>
+    {% include 'header/netflix_header.html' %}
+    <div class="header">
+        <div class="container">
+            <drun_streamlitiv class="profile">
+                <div class="">
+                <a href="{% url 'prof_profile' %}"><img src="{% static 'icons/user-login.png' %}" alt="User Profile Image"></a>
+                </div>
+                <div class="username">
+                    <h4>{{ user.username }}</h4>
+                </div>
+                <div class="video_create">
+                    <!-- <a href="{% url 'newvideopage' %}">create</a> -->
+                    <button class="CartBtn">
+                        <span class="IconContainer"> 
+                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"> 
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" fill="white"></path> 
+                            </svg>
+                        </span>
+                        <a class="" href="{% url 'newvideopage' %}">CREATE</a>
+                      </button>
+                </div>
+            </drun_streamlitiv>
+            <ul class="nav channel-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#videos">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#playlists">Playlists</a>
+                </li>
+                <div class="line"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+                <h5>Home~</h5>
+                <!-- 홈 콘텐츠 -->
+            </div>
+            <div class="tab-pane fade" id="videos">
+                <div class="video-list">
+                    <div class="row">
+                        {% for video in videos %}
+                        <div class="col-md-4">
+                          <div class="card video-card">
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <a href="https://www.youtube.com/embed/{{ video.youtube_id }}">
+                                <img class="embed-responsive-item" src="https://img.youtube.com/vi/{{ video.youtube_id }}/0.jpg" allowfullscreen></img>
+                              </a>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-title">
+                                    <a href="{% url 'prof_profile' %}"><img class="profile-image" src="{% static 'icons/user-login.png' %}" alt="Profile Image"></a>
+                                    <a href="https://www.youtube.com/embed/{{ video.youtube_id }}">{{ video.title }}</a>
+                              </p>
+                            </div>
+                            <div class="card-body">
+                                <span class="datetime">
+                                    {% if video.years %}
+                                        {{ video.years}} years ago
+                                    {% elif video.months %}
+                                        {{ video.months }} months ago
+                                    {% elif video.days %}
+                                        {{video.days}} days ago
+                                    {% endif %}
+                                </span>
+                            </div>
+                          </div>
+                        </div>
+                        {% empty %}
+                        <div class="col-md-12">
+                          <p>No videos available.</p>
+                        </div>
+                        {% endfor %}
+                      </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="playlists">
+                <h5>Playlists</h5>
+                <!-- 플레이리스트 콘텐츠 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 기타 JavaScript 파일들 -->
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.nav-link').on('shown.bs.tab', function(e) {
+                var target = $(e.target).attr("href");
+                window.location.hash = target;
+            });
+
+            // Activate tab based on hash in URL
+            if (window.location.hash) {
+                var hash = window.location.hash;
+                $('.nav-link[href="' + hash + '"]').tab('show');
+            }
+        });
+    </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+</body>
+</html>

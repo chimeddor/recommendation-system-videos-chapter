@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chimedAi</title>
+    <!-- Bootstrap CSS 파일 -->
+    <!-- search micraphon icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+
+    {% include 'header/header.html' %}
+    <!-- 콘텐츠 영역 -->
+    <div class="container mt-4">
+
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-6">
+                    <div class="form">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="form-control form-input" placeholder="Search anything...">
+                        <span class="left-pan"><i class="fas fa-microphone"></i></span>
+                    </div>
+                </div>
+            </div>
+
+        <div class="row">
+            <!-- 동영상 시청 영역 -->
+            <div class="col-lg-8">
+                <div id="video-player"></div>
+            </div>
+            <!-- 동영상 리스트 영역 -->
+
+        </div>
+  
+    </div>
+
+    <!-- Bootstrap JavaScript 파일 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // YouTube API에서 제공하는 콜백 함수
+        function onYouTubeIframeAPIReady() {
+            // 동영상 플레이어 설정
+            var player = new YT.Player('video-player', {
+                videoId: 'https://www.youtube.com/watch?v=R-nv0qD0l44&list=RDR-nv0qD0l44&start_radio=1', // 동영상 ID를 설정하세요
+                height: '100%',
+                width: '100%',
+                playerVars: {
+                    autoplay: 1,
+                    controls: 1,
+                    rel: 0,
+                    showinfo: 0
+                },
+                events: {
+                    onReady: onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // 동영상 플레이어가 준비되었을 때의 동작을 설정하세요
+        }
+    </script>
+      
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>

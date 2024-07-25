@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Style</title>
+    <!-- Bootstrap CSS 파일 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* 동영상 시청 영역 */
+        #video-player {
+            height: 360px;
+        }
+
+        /* 동영상 리스트 영역 */
+        .video-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Channels</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 콘텐츠 영역 -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- 검색 영역 -->
+            <div class="col-lg-12">
+                <form id="search-form" class="form-inline" action="#" method="GET">
+                    <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 동영상 시청 영역 -->
+            <div class="col-lg-8">
+                <div id="video-player"></div>
+            </div>
+
+            <!-- 동영상 리스트 영역 -->
+            <div class="col-lg-4 video-list">
+                <div class="list-group" id="video-list">
+                    <!-- 동영상 리스트 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript 파일 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // YouTube API에서 제공하는 콜백 함수
+        function onYouTubeIframeAPIReady() {
+            // 동영상 플레이어 초기화
+            new YT.Player('video-player', {
+                videoId: 'VIDEO_ID', // 동영상 ID를 설정하세요
+                height: '360',
+                width: '100%',
+                playerVars: {
+                    autoplay: 1,
+                    controls: 1,
+                    rel: 0,
+                    showinfo: 0
+                },
+                events: {
+                    onReady: onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // 동영상 플레이어가 준비되었을 때의 동작을 설정하세요
+        }
+
+        // 검색 폼 제출 이벤트 핸들러
+        document.getElementById('search-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // 폼 제출 동작 중지
+            var searchInput = document.getElementById('search-input');
+            var keyword = searchInput.value;
+            searchVideos(keyword);
+        });
+
+        // 동영상 검색 함수
+        function searchVideos(keyword) {
+            // 검색 결과를 받아와서 동영상 리스트 표시
+            // AJAX 등을 사용하여 검색 요청을 보내고 결과를 처리하는 로직을 추가해야 합니다.
+            // 예시로 동작하지 않는 함수입니다.
+            var videoList = document.getElementById('video-list');
+            videoList.innerHTML = ''; // 기존 동영상 리스트 초기화
+
+            // 검색 결과를 동적으로 생성하여 동영상 리스트에 추가
+            for (var i = 0; i < 10; i++) {
+                var videoItem = document.createElement('a');
+                videoItem.href = '#';
+                videoItem.className = 'list-group-item list-group-item-action';
+                videoItem.innerText = 'Video Title ' + (i + 1);
+                videoList.appendChild(videoItem);
+            }
+        }
+    </script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>

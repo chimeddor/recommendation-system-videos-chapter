@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Page</title>
+    <!-- Bootstrap CSS 파일 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* 추가적인 사용자 정의 스타일 */
+        .container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 로그인 페이지 내용 작성 -->
+    <div class="container">
+        <div class="row justify-content-center">
+<!-- Section: Design Block -->
+<section class="">
+    <!-- Jumbotron -->
+    <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight">
+              
+              <span class="text-primary">WELCOME to </span>chimedAi
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)">
+              Chapter-Level Lecture Video Recommendation System Using Graph Neural Network.
+            </p>
+          </div>
+  
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="card">
+              <div class="card-body py-5 px-md-5">
+                <form method="POST" action="{% url 'signup' %}">
+                  {% csrf_token %}
+                  {% if message%}
+                  <div class="alert alert-{{class}}">
+                    {{message}}
+                  </div>
+                  {% endif%}
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                      <div class="form-outline mb-4">
+                        <input name="username" type="text" id="form3Example1" class="form-control" placeholder="Username" required=""/>
+                      </div>
+                
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input name="email" type="email" id="form3Example3" class="form-control" placeholder="Enter email" required=""/>
+                  </div>
+  
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input name="password1" type="password" id="form3Example4" class="form-control" placeholder="Enter password [a-zA-Z]" required pattern="a-zA-Z"/>
+                  </div> 
+                  <div class="form-outline mb-4">
+                    <input name="password2" type="password" id="form3Example4" class="form-control" placeholder="Confirm password [a-zA-Z]" required pattern="a-zA-Z"/>
+                  </div> 
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-primary btn-block mb-4">
+                    Next
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript 파일 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

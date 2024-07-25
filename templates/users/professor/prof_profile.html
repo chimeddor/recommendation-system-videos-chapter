@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chimedAi</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- 기타 CSS 파일들 -->
+    
+    <!-- MDB header에 필요한 link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+    <!-- header의 search button -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet">
+    
+
+    <style>
+        body {
+
+            height: 100vh;
+        }
+        .container {
+            background-color:white;
+        }
+        .row {
+            height: 80vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    {% include 'header/netflix_header.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <form method="POST" action="{% url 'informationChange' user.id %}">
+                    <img src="{{ user.profile_picture.url }}" alt="Profile Picture" class="profile-img">
+                    
+                    <h1>Profile</h1>
+
+                    <div>
+                        <label>Username:</label>    
+                        <input type="text" name="username" value="{{ user.username }}">
+                    </div>
+                    <div>
+                        <label>Email: </label>      
+                        <input type="text" name="email" value="{{user.email}}">
+                    </div>
+                    <!-- 기타 프로필 정보 표시 -->
+                    <a href="{% url 'informationChange' user.id %}" class="btn btn-primary">Edit Profile</a>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기타 JavaScript 파일들 -->
+    <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <!--header의 menu bar의 해당하는 script -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+</body>
+</html>

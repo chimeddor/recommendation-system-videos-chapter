@@ -1,0 +1,52 @@
+{% load static %}
+{% block content %}
+<style>
+    ul li img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="../">chimedAi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            {% if user.is_authenticated %}
+                {% if user.role == user.professor %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link" id="myVideoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><img class="profile-image" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="Profile Image"></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="myVideoDropdown">
+                        <a class="dropdown-item" href="../">Home</a>
+                        <a class="dropdown-item" href="{% url 'prof_channels' %}">Your channel</a>
+                        <a class="dropdown-item" href="{% url 'newvideopage' %}">New video</a>
+                        <hr>
+                        <a class="dropdown-item" href="{% url 'logout' %}">Sign out</a>
+
+                    </div>
+                </li> 
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#">View Video</a>
+                </li>          
+                {% endif%}
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="../loginpage/">Sign In</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+{% endblock %}

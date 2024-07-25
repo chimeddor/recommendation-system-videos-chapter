@@ -1,0 +1,5925 @@
+{
+    "id": "6hhotbx2ll-3ec7-4a89-83c7-f187a482902b",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/100cc8c2-6ff1-4194-9e24-f33fd1814d65",
+    "text": "Hi, I'm Robert Crowe, and today I'm going to be talking about TensorFlow Extended, also known as TFX, and how it helps you put your amazing machine learning models into production. This is the first episode in our five part series on real world machine learning, which will help you get up to speed on using TFX to create your own production machine learning pipelines. In today's episode, we'll be asking the question, what exactly is this TFX thing anyway? Let's find out. When we think about ML, we usually only think about the great models that we can now create. After all, that's what all the research papers are focused on. But when we want to take that amazing model and make it available to the world, we need to think about all the things that a production solution requires. So that's why we have TFX to build production pipelines so that we can offer our amazing models to the world. Google created TFX because we needed it, and there was nothing already available that could meet our needs. Google does a ton of ML, and not just Google, but all of the alphabet companies. There's ML in almost everything we do. In fact, TFX wasn't the first ML pipeline framework that Google created. It evolved out of earlier attempts and is now the default framework for the majority of Google's ML production solutions. And now Google is open sourcing TFX and making it available to everyone. And it's not just Google. TFX has had deep impact on our partners, including Twitter, Airbnb, and PayPal. As ML developers. Putting a model into Production what do we need to think about first? When we start planning for developing an ML M application, we have all the normal ML things to think about. That includes getting labeled data if we're doing supervised learning, and making sure that our data set covers well the space of possible inputs. We also want to minimize the dimensionality of our feature set while maximizing the predictive information it contains. And we need to think about fairness and make sure that our application won't be unfairly biased. We also need to consider rare conditions, especially in applications like healthcare, where we might be making predictions for conditions that only occur in rare but important situations. And finally, we need to consider that this will be a living solution that will evolve over time as new data flows in and as conditions change and plan for lifecycle management of our data. But in addition to all that, we need to remember that we're putting a software application into production. That means that we still have all the requirements that any production software application has, including scalability, consistency, modularity, and testability, as well as safety and security. We're way beyond just training a model now by themselves. These are challenges for any production software deployment, and we can't forget about them just because we're doing ML. How are we going to meet all these needs and get our amazing new model into production. We don't pretend to have all the answers. This is an evolving field within the ML community, and we welcome contributions. If you're interested in a more in depth discussion of the challenges of machine learning in production environments, this is a great paper. That's what TFX is all about. TFX allows you to create production ML pipelines that include many of the requirements for production, software deployments, and best practices. It starts with ingesting your data and flows through data validation, feature engineering, training, evaluating, and serving. In addition to TensorFlow itself, we've created libraries for each of the major phases of an ML pipeline TensorFlow data validation, TensorFlow transform, and TensorFlow model Analysis. TFX implements a series of pipeline components which leverage these libraries, which in this diagram are in orange and allows you to create your own components too. To m tie all this together, we've created some horizontal layers for things like pipeline storage, configuration, and orchestration. These layers are really important for managing and optimizing your pipelines and the applications that you run on them. We'll be discussing those more in later episodes. For now, that should give you an idea of what we're talking about when we think about implementing a production ML pipeline with TFX. In our next episode, we'll discuss how TFX pipelines actually work. For more information on TFX, visit us@tensorflow.org TFX. And don't forget to comment and like us below. And thanks for watching.",
+    "words": [
+        {
+            "text": "Hi,",
+            "start": 410,
+            "end": 526,
+            "confidence": 0.99827,
+            "speaker": null
+        },
+        {
+            "text": "I'm",
+            "start": 548,
+            "end": 746,
+            "confidence": 0.93686,
+            "speaker": null
+        },
+        {
+            "text": "Robert",
+            "start": 778,
+            "end": 1146,
+            "confidence": 0.99746,
+            "speaker": null
+        },
+        {
+            "text": "Crowe,",
+            "start": 1178,
+            "end": 1514,
+            "confidence": 0.66738,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 1562,
+            "end": 1774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "today",
+            "start": 1812,
+            "end": 2014,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "I'm",
+            "start": 2052,
+            "end": 2298,
+            "confidence": 0.51164,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 2314,
+            "end": 2398,
+            "confidence": 0.99165,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 2404,
+            "end": 2478,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 2484,
+            "end": 2606,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "talking",
+            "start": 2628,
+            "end": 2814,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 2852,
+            "end": 3054,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 3092,
+            "end": 3786,
+            "confidence": 0.93,
+            "speaker": null
+        },
+        {
+            "text": "Extended,",
+            "start": 3818,
+            "end": 4410,
+            "confidence": 0.98596,
+            "speaker": null
+        },
+        {
+            "text": "also",
+            "start": 4490,
+            "end": 4782,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "known",
+            "start": 4836,
+            "end": 5018,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 5034,
+            "end": 5166,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "TFX,",
+            "start": 5188,
+            "end": 6010,
+            "confidence": 0.99455,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 6170,
+            "end": 6494,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 6532,
+            "end": 6686,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 6708,
+            "end": 6846,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "helps",
+            "start": 6868,
+            "end": 7194,
+            "confidence": 0.71284,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 7242,
+            "end": 7694,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "put",
+            "start": 7812,
+            "end": 8094,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 8132,
+            "end": 8334,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "amazing",
+            "start": 8372,
+            "end": 8814,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "machine",
+            "start": 8932,
+            "end": 9354,
+            "confidence": 0.99746,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 9402,
+            "end": 9662,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "models",
+            "start": 9716,
+            "end": 10234,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 10282,
+            "end": 10542,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "production.",
+            "start": 10596,
+            "end": 11470,
+            "confidence": 0.99516,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 11810,
+            "end": 12318,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 12404,
+            "end": 12606,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 12628,
+            "end": 12814,
+            "confidence": 0.85,
+            "speaker": null
+        },
+        {
+            "text": "first",
+            "start": 12852,
+            "end": 13102,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "episode",
+            "start": 13156,
+            "end": 13594,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 13642,
+            "end": 13806,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 13828,
+            "end": 14014,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "five",
+            "start": 14052,
+            "end": 14254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "part",
+            "start": 14292,
+            "end": 14542,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "series",
+            "start": 14596,
+            "end": 15034,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 15082,
+            "end": 15342,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "real",
+            "start": 15396,
+            "end": 15662,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "world",
+            "start": 15716,
+            "end": 16222,
+            "confidence": 0.95246,
+            "speaker": null
+        },
+        {
+            "text": "machine",
+            "start": 16356,
+            "end": 16874,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "learning,",
+            "start": 16922,
+            "end": 17520,
+            "confidence": 0.76635,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 17890,
+            "end": 18206,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 18228,
+            "end": 18414,
+            "confidence": 0.98402,
+            "speaker": null
+        },
+        {
+            "text": "help",
+            "start": 18452,
+            "end": 18654,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 18692,
+            "end": 18894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 18932,
+            "end": 19086,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "up",
+            "start": 19108,
+            "end": 19198,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 19204,
+            "end": 19326,
+            "confidence": 0.76,
+            "speaker": null
+        },
+        {
+            "text": "speed",
+            "start": 19348,
+            "end": 19706,
+            "confidence": 0.97022,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 19738,
+            "end": 19934,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "using",
+            "start": 19972,
+            "end": 20174,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 20212,
+            "end": 21034,
+            "confidence": 0.98227,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 21162,
+            "end": 21406,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "create",
+            "start": 21428,
+            "end": 21710,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 21780,
+            "end": 22014,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "own",
+            "start": 22052,
+            "end": 22398,
+            "confidence": 0.79562,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 22484,
+            "end": 22954,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "machine",
+            "start": 23002,
+            "end": 23306,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 23338,
+            "end": 23582,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "pipelines.",
+            "start": 23636,
+            "end": 24590,
+            "confidence": 0.99599,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 25130,
+            "end": 25494,
+            "confidence": 0.99747,
+            "speaker": null
+        },
+        {
+            "text": "today's",
+            "start": 25532,
+            "end": 25954,
+            "confidence": 0.89325,
+            "speaker": null
+        },
+        {
+            "text": "episode,",
+            "start": 26002,
+            "end": 26770,
+            "confidence": 0.63238,
+            "speaker": null
+        },
+        {
+            "text": "we'll",
+            "start": 26930,
+            "end": 27266,
+            "confidence": 0.64721,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 27298,
+            "end": 27446,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "asking",
+            "start": 27468,
+            "end": 27702,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 27756,
+            "end": 27926,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "question,",
+            "start": 27948,
+            "end": 28614,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 28812,
+            "end": 29174,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "exactly",
+            "start": 29212,
+            "end": 29558,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 29644,
+            "end": 29990,
+            "confidence": 0.99745,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 30060,
+            "end": 30294,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 30332,
+            "end": 30914,
+            "confidence": 0.99845,
+            "speaker": null
+        },
+        {
+            "text": "thing",
+            "start": 30962,
+            "end": 31270,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "anyway?",
+            "start": 31340,
+            "end": 31960,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "Let's",
+            "start": 32330,
+            "end": 32754,
+            "confidence": 0.93982,
+            "speaker": null
+        },
+        {
+            "text": "find",
+            "start": 32802,
+            "end": 33014,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "out.",
+            "start": 33052,
+            "end": 33640,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "When",
+            "start": 37130,
+            "end": 37446,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 37468,
+            "end": 37606,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 37628,
+            "end": 37766,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 37788,
+            "end": 38022,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "ML,",
+            "start": 38076,
+            "end": 38482,
+            "confidence": 0.99954,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 38546,
+            "end": 38726,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "usually",
+            "start": 38748,
+            "end": 39030,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "only",
+            "start": 39100,
+            "end": 39334,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 39372,
+            "end": 39622,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 39676,
+            "end": 39894,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 39932,
+            "end": 40098,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "great",
+            "start": 40124,
+            "end": 40362,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "models",
+            "start": 40416,
+            "end": 40806,
+            "confidence": 0.99964,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 40838,
+            "end": 40986,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 41008,
+            "end": 41098,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 41104,
+            "end": 41274,
+            "confidence": 0.78856,
+            "speaker": null
+        },
+        {
+            "text": "now",
+            "start": 41312,
+            "end": 41514,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "create.",
+            "start": 41552,
+            "end": 41994,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "After",
+            "start": 42112,
+            "end": 42442,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "all,",
+            "start": 42496,
+            "end": 43050,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 43200,
+            "end": 43558,
+            "confidence": 0.90843,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 43574,
+            "end": 43706,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 43728,
+            "end": 43866,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 43888,
+            "end": 43978,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "research",
+            "start": 43984,
+            "end": 44298,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "papers",
+            "start": 44384,
+            "end": 44758,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 44774,
+            "end": 44906,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "focused",
+            "start": 44928,
+            "end": 45286,
+            "confidence": 0.9996,
+            "speaker": null
+        },
+        {
+            "text": "on.",
+            "start": 45318,
+            "end": 45900,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 46590,
+            "end": 47242,
+            "confidence": 0.98588,
+            "speaker": null
+        },
+        {
+            "text": "when",
+            "start": 47376,
+            "end": 47626,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 47648,
+            "end": 47786,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "want",
+            "start": 47808,
+            "end": 47946,
+            "confidence": 0.97927,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 47968,
+            "end": 48058,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "take",
+            "start": 48064,
+            "end": 48234,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 48272,
+            "end": 48474,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "amazing",
+            "start": 48512,
+            "end": 48858,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 48944,
+            "end": 49338,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 49424,
+            "end": 49674,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 49712,
+            "end": 49866,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 49888,
+            "end": 50038,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "available",
+            "start": 50064,
+            "end": 50350,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 50420,
+            "end": 50606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 50628,
+            "end": 50766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "world,",
+            "start": 50788,
+            "end": 51406,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 51588,
+            "end": 51886,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 51908,
+            "end": 52046,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 52068,
+            "end": 52158,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 52164,
+            "end": 52334,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 52372,
+            "end": 52670,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 52740,
+            "end": 52974,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 53012,
+            "end": 53166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 53188,
+            "end": 53470,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 53540,
+            "end": 53726,
+            "confidence": 0.99949,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 53748,
+            "end": 53886,
+            "confidence": 0.7,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 53908,
+            "end": 54442,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "solution",
+            "start": 54506,
+            "end": 55018,
+            "confidence": 0.69587,
+            "speaker": null
+        },
+        {
+            "text": "requires.",
+            "start": 55114,
+            "end": 56110,
+            "confidence": 0.59192,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 56610,
+            "end": 57454,
+            "confidence": 0.96313,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 57652,
+            "end": 58058,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "why",
+            "start": 58074,
+            "end": 58254,
+            "confidence": 0.97804,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 58292,
+            "end": 58398,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 58404,
+            "end": 58574,
+            "confidence": 0.9923,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 58612,
+            "end": 59578,
+            "confidence": 0.99946,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 59754,
+            "end": 60046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "build",
+            "start": 60068,
+            "end": 60398,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 60484,
+            "end": 60986,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "pipelines",
+            "start": 61018,
+            "end": 61866,
+            "confidence": 0.99567,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 61978,
+            "end": 62254,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 62292,
+            "end": 62506,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 62548,
+            "end": 62706,
+            "confidence": 0.96066,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 62728,
+            "end": 62866,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "offer",
+            "start": 62888,
+            "end": 63170,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 63240,
+            "end": 63474,
+            "confidence": 0.98868,
+            "speaker": null
+        },
+        {
+            "text": "amazing",
+            "start": 63512,
+            "end": 63906,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "models",
+            "start": 64008,
+            "end": 64526,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 64558,
+            "end": 64658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 64664,
+            "end": 64834,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "world.",
+            "start": 64872,
+            "end": 65460,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "Google",
+            "start": 66230,
+            "end": 66738,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "created",
+            "start": 66824,
+            "end": 67294,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 67342,
+            "end": 67982,
+            "confidence": 0.88651,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 68046,
+            "end": 68706,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 68888,
+            "end": 69282,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "needed",
+            "start": 69336,
+            "end": 69602,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "it,",
+            "start": 69656,
+            "end": 70210,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 70360,
+            "end": 70626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 70648,
+            "end": 70786,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "was",
+            "start": 70808,
+            "end": 70994,
+            "confidence": 0.81757,
+            "speaker": null
+        },
+        {
+            "text": "nothing",
+            "start": 71032,
+            "end": 71330,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "already",
+            "start": 71400,
+            "end": 71730,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "available",
+            "start": 71800,
+            "end": 72226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 72328,
+            "end": 72546,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "could",
+            "start": 72568,
+            "end": 72706,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "meet",
+            "start": 72728,
+            "end": 72866,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 72888,
+            "end": 73074,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "needs.",
+            "start": 73112,
+            "end": 73700,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Google",
+            "start": 74150,
+            "end": 74658,
+            "confidence": 0.90326,
+            "speaker": null
+        },
+        {
+            "text": "does",
+            "start": 74744,
+            "end": 75138,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 75224,
+            "end": 75486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ton",
+            "start": 75528,
+            "end": 75878,
+            "confidence": 0.71852,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 75964,
+            "end": 76214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ML,",
+            "start": 76252,
+            "end": 76834,
+            "confidence": 0.95803,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 76962,
+            "end": 77254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 77292,
+            "end": 77446,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 77468,
+            "end": 77654,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "Google,",
+            "start": 77692,
+            "end": 77990,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 78060,
+            "end": 78342,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 78396,
+            "end": 78614,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 78652,
+            "end": 78758,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 78764,
+            "end": 78886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "alphabet",
+            "start": 78908,
+            "end": 79426,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "companies.",
+            "start": 79458,
+            "end": 80040,
+            "confidence": 0.99773,
+            "speaker": null
+        },
+        {
+            "text": "There's",
+            "start": 80570,
+            "end": 80994,
+            "confidence": 0.62835,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 81042,
+            "end": 81442,
+            "confidence": 0.99141,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 81506,
+            "end": 81686,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "almost",
+            "start": 81708,
+            "end": 81942,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "everything",
+            "start": 81996,
+            "end": 82358,
+            "confidence": 0.82893,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 82444,
+            "end": 82694,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "do.",
+            "start": 82732,
+            "end": 83222,
+            "confidence": 0.99967,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 83356,
+            "end": 83606,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "fact,",
+            "start": 83628,
+            "end": 84006,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 84108,
+            "end": 84802,
+            "confidence": 0.99741,
+            "speaker": null
+        },
+        {
+            "text": "wasn't",
+            "start": 84866,
+            "end": 85186,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 85218,
+            "end": 85366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "first",
+            "start": 85388,
+            "end": 85622,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 85676,
+            "end": 85954,
+            "confidence": 0.87189,
+            "speaker": null
+        },
+        {
+            "text": "pipeline",
+            "start": 86002,
+            "end": 86642,
+            "confidence": 0.99763,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 86706,
+            "end": 87202,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 87266,
+            "end": 87506,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Google",
+            "start": 87548,
+            "end": 87802,
+            "confidence": 0.99915,
+            "speaker": null
+        },
+        {
+            "text": "created.",
+            "start": 87856,
+            "end": 88518,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 88614,
+            "end": 88874,
+            "confidence": 0.99844,
+            "speaker": null
+        },
+        {
+            "text": "evolved",
+            "start": 88912,
+            "end": 89510,
+            "confidence": 0.97623,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 89590,
+            "end": 89786,
+            "confidence": 0.99881,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 89808,
+            "end": 90042,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "earlier",
+            "start": 90096,
+            "end": 90534,
+            "confidence": 0.6442,
+            "speaker": null
+        },
+        {
+            "text": "attempts",
+            "start": 90582,
+            "end": 91238,
+            "confidence": 0.9996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 91334,
+            "end": 91594,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 91632,
+            "end": 91834,
+            "confidence": 0.99877,
+            "speaker": null
+        },
+        {
+            "text": "now",
+            "start": 91872,
+            "end": 92026,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 92048,
+            "end": 92234,
+            "confidence": 0.93,
+            "speaker": null
+        },
+        {
+            "text": "default",
+            "start": 92272,
+            "end": 92662,
+            "confidence": 0.93102,
+            "speaker": null
+        },
+        {
+            "text": "framework",
+            "start": 92726,
+            "end": 93414,
+            "confidence": 0.99358,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 93542,
+            "end": 93786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 93808,
+            "end": 93946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "majority",
+            "start": 93968,
+            "end": 94630,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 94710,
+            "end": 94954,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Google's",
+            "start": 94992,
+            "end": 95446,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 95478,
+            "end": 95814,
+            "confidence": 0.99041,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 95862,
+            "end": 96422,
+            "confidence": 0.99885,
+            "speaker": null
+        },
+        {
+            "text": "solutions.",
+            "start": 96486,
+            "end": 97450,
+            "confidence": 0.99526,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 97870,
+            "end": 98234,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "now",
+            "start": 98272,
+            "end": 98858,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Google",
+            "start": 99024,
+            "end": 99450,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 99520,
+            "end": 99754,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "open",
+            "start": 99792,
+            "end": 100054,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "sourcing",
+            "start": 100112,
+            "end": 100522,
+            "confidence": 0.94033,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 100586,
+            "end": 101354,
+            "confidence": 0.54554,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 101482,
+            "end": 101774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "making",
+            "start": 101812,
+            "end": 102062,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 102116,
+            "end": 102286,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "available",
+            "start": 102308,
+            "end": 102734,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 102852,
+            "end": 103182,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "everyone.",
+            "start": 103236,
+            "end": 103840,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 104770,
+            "end": 105086,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "it's",
+            "start": 105108,
+            "end": 105258,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 105274,
+            "end": 105406,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 105428,
+            "end": 105614,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Google.",
+            "start": 105652,
+            "end": 106190,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 106340,
+            "end": 107034,
+            "confidence": 0.99955,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 107082,
+            "end": 107246,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "had",
+            "start": 107268,
+            "end": 107454,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "deep",
+            "start": 107492,
+            "end": 107706,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "impact",
+            "start": 107738,
+            "end": 108154,
+            "confidence": 0.97678,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 108202,
+            "end": 108366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 108388,
+            "end": 108526,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "partners,",
+            "start": 108548,
+            "end": 109082,
+            "confidence": 0.96313,
+            "speaker": null
+        },
+        {
+            "text": "including",
+            "start": 109146,
+            "end": 109546,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Twitter,",
+            "start": 109578,
+            "end": 110218,
+            "confidence": 0.84991,
+            "speaker": null
+        },
+        {
+            "text": "Airbnb,",
+            "start": 110314,
+            "end": 111354,
+            "confidence": 0.99011,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 111482,
+            "end": 111774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "PayPal.",
+            "start": 111812,
+            "end": 112670,
+            "confidence": 0.99888,
+            "speaker": null
+        },
+        {
+            "text": "As",
+            "start": 113510,
+            "end": 113874,
+            "confidence": 0.9936,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 113912,
+            "end": 114254,
+            "confidence": 0.99931,
+            "speaker": null
+        },
+        {
+            "text": "developers.",
+            "start": 114302,
+            "end": 114958,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "Putting",
+            "start": 115054,
+            "end": 115314,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 115352,
+            "end": 115458,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 115464,
+            "end": 115682,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 115736,
+            "end": 115954,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "Production",
+            "start": 115992,
+            "end": 116878,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 117054,
+            "end": 117346,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "do",
+            "start": 117368,
+            "end": 117506,
+            "confidence": 0.99923,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 117528,
+            "end": 117666,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 117688,
+            "end": 117826,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 117848,
+            "end": 117938,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 117944,
+            "end": 118114,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 118152,
+            "end": 118740,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "first?",
+            "start": 119190,
+            "end": 120034,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "When",
+            "start": 120232,
+            "end": 120546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 120568,
+            "end": 120706,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "start",
+            "start": 120728,
+            "end": 120914,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "planning",
+            "start": 120952,
+            "end": 121326,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 121358,
+            "end": 121554,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "developing",
+            "start": 121592,
+            "end": 122046,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 122078,
+            "end": 122274,
+            "confidence": 0.85964,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 122312,
+            "end": 122654,
+            "confidence": 0.99894,
+            "speaker": null
+        },
+        {
+            "text": "M",
+            "start": 122660,
+            "end": 122680,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "application,",
+            "start": 122702,
+            "end": 123300,
+            "confidence": 0.95727,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 124070,
+            "end": 124434,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 124472,
+            "end": 124866,
+            "confidence": 0.64062,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 124968,
+            "end": 125234,
+            "confidence": 0.92304,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 125272,
+            "end": 125438,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "normal",
+            "start": 125464,
+            "end": 125874,
+            "confidence": 0.9978,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 125922,
+            "end": 126322,
+            "confidence": 0.75167,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 126386,
+            "end": 126614,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 126652,
+            "end": 126854,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 126892,
+            "end": 127046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "about.",
+            "start": 127068,
+            "end": 127398,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "That",
+            "start": 127484,
+            "end": 127734,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "includes",
+            "start": 127772,
+            "end": 128562,
+            "confidence": 0.99962,
+            "speaker": null
+        },
+        {
+            "text": "getting",
+            "start": 128706,
+            "end": 129062,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "labeled",
+            "start": 129116,
+            "end": 129586,
+            "confidence": 0.99866,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 129618,
+            "end": 129958,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 130044,
+            "end": 130294,
+            "confidence": 0.5311,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 130332,
+            "end": 130546,
+            "confidence": 0.99838,
+            "speaker": null
+        },
+        {
+            "text": "doing",
+            "start": 130578,
+            "end": 130966,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "supervised",
+            "start": 131068,
+            "end": 131714,
+            "confidence": 0.99932,
+            "speaker": null
+        },
+        {
+            "text": "learning,",
+            "start": 131762,
+            "end": 132406,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 132588,
+            "end": 132934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "making",
+            "start": 132972,
+            "end": 133174,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "sure",
+            "start": 133212,
+            "end": 133414,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 133452,
+            "end": 133606,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 133628,
+            "end": 133766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 133788,
+            "end": 134022,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "set",
+            "start": 134076,
+            "end": 134342,
+            "confidence": 0.99569,
+            "speaker": null
+        },
+        {
+            "text": "covers",
+            "start": 134396,
+            "end": 134914,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "well",
+            "start": 134962,
+            "end": 135510,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 135660,
+            "end": 135974,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "space",
+            "start": 136012,
+            "end": 136358,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 136444,
+            "end": 136694,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "possible",
+            "start": 136732,
+            "end": 137126,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "inputs.",
+            "start": 137228,
+            "end": 138230,
+            "confidence": 0.99849,
+            "speaker": null
+        },
+        {
+            "text": "We",
+            "start": 139070,
+            "end": 139434,
+            "confidence": 0.82218,
+            "speaker": null
+        },
+        {
+            "text": "also",
+            "start": 139472,
+            "end": 139722,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "want",
+            "start": 139776,
+            "end": 140090,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 140160,
+            "end": 140346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "minimize",
+            "start": 140368,
+            "end": 140806,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 140838,
+            "end": 140986,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "dimensionality",
+            "start": 141008,
+            "end": 141734,
+            "confidence": 0.49677,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 141782,
+            "end": 141946,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 141968,
+            "end": 142154,
+            "confidence": 0.98081,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 142192,
+            "end": 142502,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "set",
+            "start": 142566,
+            "end": 143034,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "while",
+            "start": 143152,
+            "end": 143530,
+            "confidence": 0.79049,
+            "speaker": null
+        },
+        {
+            "text": "maximizing",
+            "start": 143600,
+            "end": 144326,
+            "confidence": 0.76913,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 144358,
+            "end": 144506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "predictive",
+            "start": 144528,
+            "end": 145062,
+            "confidence": 0.99135,
+            "speaker": null
+        },
+        {
+            "text": "information",
+            "start": 145126,
+            "end": 145594,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 145712,
+            "end": 145994,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "contains.",
+            "start": 146032,
+            "end": 147046,
+            "confidence": 0.98662,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 147238,
+            "end": 148074,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 148272,
+            "end": 148586,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 148608,
+            "end": 148746,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 148768,
+            "end": 148858,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 148864,
+            "end": 149034,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 149072,
+            "end": 149274,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fairness",
+            "start": 149312,
+            "end": 149986,
+            "confidence": 0.99778,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 150118,
+            "end": 150414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 150452,
+            "end": 150654,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "sure",
+            "start": 150692,
+            "end": 150990,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 151060,
+            "end": 151294,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 151332,
+            "end": 151534,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "application",
+            "start": 151572,
+            "end": 152110,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "won't",
+            "start": 152260,
+            "end": 152634,
+            "confidence": 0.98449,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 152682,
+            "end": 153086,
+            "confidence": 0.81987,
+            "speaker": null
+        },
+        {
+            "text": "unfairly",
+            "start": 153188,
+            "end": 153834,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "biased.",
+            "start": 153882,
+            "end": 154590,
+            "confidence": 0.96855,
+            "speaker": null
+        },
+        {
+            "text": "We",
+            "start": 155330,
+            "end": 155694,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "also",
+            "start": 155732,
+            "end": 155934,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 155972,
+            "end": 156078,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 156084,
+            "end": 156206,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "consider",
+            "start": 156228,
+            "end": 156558,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "rare",
+            "start": 156644,
+            "end": 157034,
+            "confidence": 0.99877,
+            "speaker": null
+        },
+        {
+            "text": "conditions,",
+            "start": 157082,
+            "end": 157722,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "especially",
+            "start": 157786,
+            "end": 158206,
+            "confidence": 0.90729,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 158308,
+            "end": 158574,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "applications",
+            "start": 158612,
+            "end": 159194,
+            "confidence": 0.535,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 159242,
+            "end": 159454,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "healthcare,",
+            "start": 159492,
+            "end": 160410,
+            "confidence": 0.7217,
+            "speaker": null
+        },
+        {
+            "text": "where",
+            "start": 160570,
+            "end": 161134,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 161252,
+            "end": 161582,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "might",
+            "start": 161636,
+            "end": 161854,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 161892,
+            "end": 162094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "making",
+            "start": 162132,
+            "end": 162442,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "predictions",
+            "start": 162516,
+            "end": 163246,
+            "confidence": 0.98312,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 163358,
+            "end": 163634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "conditions",
+            "start": 163672,
+            "end": 164126,
+            "confidence": 0.65766,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 164158,
+            "end": 164402,
+            "confidence": 0.57763,
+            "speaker": null
+        },
+        {
+            "text": "only",
+            "start": 164456,
+            "end": 164722,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "occur",
+            "start": 164776,
+            "end": 165182,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 165246,
+            "end": 165522,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "rare",
+            "start": 165576,
+            "end": 166126,
+            "confidence": 0.99948,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 166238,
+            "end": 166562,
+            "confidence": 0.99907,
+            "speaker": null
+        },
+        {
+            "text": "important",
+            "start": 166616,
+            "end": 167074,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "situations.",
+            "start": 167192,
+            "end": 168398,
+            "confidence": 0.73699,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 168574,
+            "end": 168914,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "finally,",
+            "start": 168952,
+            "end": 169586,
+            "confidence": 0.57734,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 169768,
+            "end": 170114,
+            "confidence": 0.97839,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 170152,
+            "end": 170306,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 170328,
+            "end": 170466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "consider",
+            "start": 170488,
+            "end": 171010,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 171160,
+            "end": 171474,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 171512,
+            "end": 171714,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 171752,
+            "end": 171954,
+            "confidence": 0.57763,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 171992,
+            "end": 172290,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 172360,
+            "end": 172546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "living",
+            "start": 172568,
+            "end": 172898,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "solution",
+            "start": 172984,
+            "end": 173422,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 173486,
+            "end": 173714,
+            "confidence": 0.93535,
+            "speaker": null
+        },
+        {
+            "text": "will",
+            "start": 173752,
+            "end": 173954,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "evolve",
+            "start": 173992,
+            "end": 174494,
+            "confidence": 0.99032,
+            "speaker": null
+        },
+        {
+            "text": "over",
+            "start": 174542,
+            "end": 174802,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "time",
+            "start": 174856,
+            "end": 175458,
+            "confidence": 0.96151,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 175624,
+            "end": 176002,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 176056,
+            "end": 176286,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 176328,
+            "end": 176582,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "flows",
+            "start": 176636,
+            "end": 176994,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 177042,
+            "end": 177494,
+            "confidence": 0.83972,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 177612,
+            "end": 177894,
+            "confidence": 0.84,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 177932,
+            "end": 178182,
+            "confidence": 0.99951,
+            "speaker": null
+        },
+        {
+            "text": "conditions",
+            "start": 178236,
+            "end": 178882,
+            "confidence": 0.92521,
+            "speaker": null
+        },
+        {
+            "text": "change",
+            "start": 178946,
+            "end": 179654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 179852,
+            "end": 180262,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "plan",
+            "start": 180316,
+            "end": 180774,
+            "confidence": 0.59654,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 180892,
+            "end": 181222,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "lifecycle",
+            "start": 181276,
+            "end": 181874,
+            "confidence": 0.99754,
+            "speaker": null
+        },
+        {
+            "text": "management",
+            "start": 181922,
+            "end": 182434,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 182482,
+            "end": 182646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 182668,
+            "end": 182806,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "data.",
+            "start": 182828,
+            "end": 183206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "But",
+            "start": 183308,
+            "end": 183526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 183548,
+            "end": 183686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "addition",
+            "start": 183708,
+            "end": 184034,
+            "confidence": 0.98118,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 184082,
+            "end": 184294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 184332,
+            "end": 184582,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that,",
+            "start": 184636,
+            "end": 185046,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 185148,
+            "end": 185414,
+            "confidence": 0.77463,
+            "speaker": null
+        },
+        {
+            "text": "need",
+            "start": 185452,
+            "end": 185606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 185628,
+            "end": 185766,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "remember",
+            "start": 185788,
+            "end": 186070,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 186140,
+            "end": 186326,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 186348,
+            "end": 186498,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "putting",
+            "start": 186514,
+            "end": 186694,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 186732,
+            "end": 186934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "software",
+            "start": 186972,
+            "end": 187422,
+            "confidence": 0.50776,
+            "speaker": null
+        },
+        {
+            "text": "application",
+            "start": 187506,
+            "end": 187994,
+            "confidence": 0.72787,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 188112,
+            "end": 188442,
+            "confidence": 0.59277,
+            "speaker": null
+        },
+        {
+            "text": "production.",
+            "start": 188496,
+            "end": 189370,
+            "confidence": 0.96884,
+            "speaker": null
+        },
+        {
+            "text": "That",
+            "start": 189790,
+            "end": 190154,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "means",
+            "start": 190192,
+            "end": 190346,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 190368,
+            "end": 190506,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 190528,
+            "end": 190714,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "still",
+            "start": 190752,
+            "end": 190954,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 190992,
+            "end": 191530,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 191680,
+            "end": 191946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 191968,
+            "end": 192154,
+            "confidence": 0.55,
+            "speaker": null
+        },
+        {
+            "text": "requirements",
+            "start": 192192,
+            "end": 192886,
+            "confidence": 0.98401,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 192998,
+            "end": 193322,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "any",
+            "start": 193376,
+            "end": 193642,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 193696,
+            "end": 194134,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "software",
+            "start": 194182,
+            "end": 194662,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "application",
+            "start": 194726,
+            "end": 195146,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "has,",
+            "start": 195248,
+            "end": 195754,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "including",
+            "start": 195872,
+            "end": 196550,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "scalability,",
+            "start": 196630,
+            "end": 197606,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "consistency,",
+            "start": 197798,
+            "end": 198966,
+            "confidence": 0.69171,
+            "speaker": null
+        },
+        {
+            "text": "modularity,",
+            "start": 199158,
+            "end": 200114,
+            "confidence": 0.8635,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 200182,
+            "end": 200462,
+            "confidence": 0.85,
+            "speaker": null
+        },
+        {
+            "text": "testability,",
+            "start": 200516,
+            "end": 201310,
+            "confidence": 0.75007,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 201650,
+            "end": 201966,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "well",
+            "start": 201988,
+            "end": 202126,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 202148,
+            "end": 202382,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "safety",
+            "start": 202436,
+            "end": 202970,
+            "confidence": 0.99858,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 203050,
+            "end": 203294,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "security.",
+            "start": 203332,
+            "end": 203920,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "We're",
+            "start": 204850,
+            "end": 205322,
+            "confidence": 0.65482,
+            "speaker": null
+        },
+        {
+            "text": "way",
+            "start": 205386,
+            "end": 205662,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "beyond",
+            "start": 205716,
+            "end": 206074,
+            "confidence": 0.99871,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 206122,
+            "end": 206334,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "training",
+            "start": 206372,
+            "end": 206622,
+            "confidence": 0.99687,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 206676,
+            "end": 206846,
+            "confidence": 0.58,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 206868,
+            "end": 207150,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "now",
+            "start": 207220,
+            "end": 207840,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 208450,
+            "end": 208814,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "themselves.",
+            "start": 208852,
+            "end": 209390,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "These",
+            "start": 209540,
+            "end": 209902,
+            "confidence": 0.64423,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 209956,
+            "end": 210126,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "challenges",
+            "start": 210148,
+            "end": 210602,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 210666,
+            "end": 210894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "any",
+            "start": 210932,
+            "end": 211182,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 211236,
+            "end": 211754,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "software",
+            "start": 211802,
+            "end": 212234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "deployment,",
+            "start": 212282,
+            "end": 213050,
+            "confidence": 0.62281,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 213210,
+            "end": 213486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 213508,
+            "end": 213694,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "can't",
+            "start": 213732,
+            "end": 213946,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "forget",
+            "start": 213978,
+            "end": 214278,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 214314,
+            "end": 214562,
+            "confidence": 0.99418,
+            "speaker": null
+        },
+        {
+            "text": "them",
+            "start": 214616,
+            "end": 214978,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "just",
+            "start": 215064,
+            "end": 215314,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "because",
+            "start": 215352,
+            "end": 215554,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 215592,
+            "end": 215758,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "doing",
+            "start": 215774,
+            "end": 216002,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "ML.",
+            "start": 216056,
+            "end": 216770,
+            "confidence": 0.90781,
+            "speaker": null
+        },
+        {
+            "text": "How",
+            "start": 217350,
+            "end": 217666,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 217688,
+            "end": 217826,
+            "confidence": 0.99871,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 217848,
+            "end": 217986,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 218008,
+            "end": 218098,
+            "confidence": 0.98216,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 218104,
+            "end": 218226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "meet",
+            "start": 218248,
+            "end": 218578,
+            "confidence": 0.99948,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 218664,
+            "end": 218914,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 218952,
+            "end": 219202,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "needs",
+            "start": 219256,
+            "end": 219858,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 220024,
+            "end": 220354,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 220392,
+            "end": 220594,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 220632,
+            "end": 220834,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "amazing",
+            "start": 220872,
+            "end": 221170,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "new",
+            "start": 221240,
+            "end": 221474,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 221512,
+            "end": 221810,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 221880,
+            "end": 222162,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "production.",
+            "start": 222216,
+            "end": 223010,
+            "confidence": 0.91234,
+            "speaker": null
+        },
+        {
+            "text": "We",
+            "start": 223430,
+            "end": 223794,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "don't",
+            "start": 223832,
+            "end": 224046,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "pretend",
+            "start": 224078,
+            "end": 224414,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 224462,
+            "end": 224626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 224648,
+            "end": 224786,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 224808,
+            "end": 224946,
+            "confidence": 0.98229,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 224968,
+            "end": 225154,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "answers.",
+            "start": 225192,
+            "end": 225982,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "This",
+            "start": 226126,
+            "end": 226386,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 226408,
+            "end": 226558,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 226584,
+            "end": 226726,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "evolving",
+            "start": 226748,
+            "end": 227202,
+            "confidence": 0.9604,
+            "speaker": null
+        },
+        {
+            "text": "field",
+            "start": 227266,
+            "end": 227638,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "within",
+            "start": 227724,
+            "end": 228022,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 228076,
+            "end": 228246,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 228268,
+            "end": 228594,
+            "confidence": 0.93809,
+            "speaker": null
+        },
+        {
+            "text": "community,",
+            "start": 228642,
+            "end": 229190,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 229340,
+            "end": 229654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 229692,
+            "end": 229894,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "welcome",
+            "start": 229932,
+            "end": 230278,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "contributions.",
+            "start": 230364,
+            "end": 231666,
+            "confidence": 0.94145,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 231858,
+            "end": 232166,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "you're",
+            "start": 232188,
+            "end": 232466,
+            "confidence": 0.92433,
+            "speaker": null
+        },
+        {
+            "text": "interested",
+            "start": 232498,
+            "end": 232838,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 232924,
+            "end": 233174,
+            "confidence": 0.54662,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 233212,
+            "end": 233318,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 233324,
+            "end": 233494,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 233532,
+            "end": 233734,
+            "confidence": 0.97445,
+            "speaker": null
+        },
+        {
+            "text": "depth",
+            "start": 233772,
+            "end": 233986,
+            "confidence": 0.99729,
+            "speaker": null
+        },
+        {
+            "text": "discussion",
+            "start": 234018,
+            "end": 234514,
+            "confidence": 0.99938,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 234562,
+            "end": 234726,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 234748,
+            "end": 234886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "challenges",
+            "start": 234908,
+            "end": 235314,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 235362,
+            "end": 235526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "machine",
+            "start": 235548,
+            "end": 235874,
+            "confidence": 0.99207,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 235922,
+            "end": 236422,
+            "confidence": 0.98935,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 236556,
+            "end": 236854,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 236892,
+            "end": 237374,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "environments,",
+            "start": 237442,
+            "end": 238230,
+            "confidence": 0.74176,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 238390,
+            "end": 238762,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 238816,
+            "end": 238986,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 239008,
+            "end": 239098,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "great",
+            "start": 239104,
+            "end": 239274,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "paper.",
+            "start": 239312,
+            "end": 239900,
+            "confidence": 0.83972,
+            "speaker": null
+        },
+        {
+            "text": "That's",
+            "start": 240670,
+            "end": 241046,
+            "confidence": 0.51548,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 241078,
+            "end": 241274,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 241312,
+            "end": 241894,
+            "confidence": 0.99919,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 241942,
+            "end": 242154,
+            "confidence": 0.92079,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 242192,
+            "end": 242346,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "about.",
+            "start": 242368,
+            "end": 243034,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 243232,
+            "end": 243894,
+            "confidence": 0.9995,
+            "speaker": null
+        },
+        {
+            "text": "allows",
+            "start": 243942,
+            "end": 244198,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 244214,
+            "end": 244346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 244368,
+            "end": 244506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "create",
+            "start": 244528,
+            "end": 244906,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 245008,
+            "end": 245622,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 245686,
+            "end": 246054,
+            "confidence": 0.99878,
+            "speaker": null
+        },
+        {
+            "text": "pipelines",
+            "start": 246102,
+            "end": 246934,
+            "confidence": 0.99484,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 247062,
+            "end": 247354,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "include",
+            "start": 247392,
+            "end": 247766,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "many",
+            "start": 247798,
+            "end": 247946,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 247968,
+            "end": 248106,
+            "confidence": 0.88,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 248128,
+            "end": 248266,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "requirements",
+            "start": 248288,
+            "end": 248742,
+            "confidence": 0.8128,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 248806,
+            "end": 249034,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "production,",
+            "start": 249072,
+            "end": 249542,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "software",
+            "start": 249606,
+            "end": 250034,
+            "confidence": 0.85388,
+            "speaker": null
+        },
+        {
+            "text": "deployments,",
+            "start": 250102,
+            "end": 250778,
+            "confidence": 0.98621,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 250874,
+            "end": 251182,
+            "confidence": 0.94,
+            "speaker": null
+        },
+        {
+            "text": "best",
+            "start": 251236,
+            "end": 251454,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "practices.",
+            "start": 251492,
+            "end": 252270,
+            "confidence": 0.98785,
+            "speaker": null
+        },
+        {
+            "text": "It",
+            "start": 252930,
+            "end": 253294,
+            "confidence": 0.99961,
+            "speaker": null
+        },
+        {
+            "text": "starts",
+            "start": 253332,
+            "end": 253626,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 253658,
+            "end": 253806,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "ingesting",
+            "start": 253828,
+            "end": 254346,
+            "confidence": 0.86628,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 254378,
+            "end": 254574,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 254612,
+            "end": 255102,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 255236,
+            "end": 255582,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "flows",
+            "start": 255636,
+            "end": 255914,
+            "confidence": 0.99275,
+            "speaker": null
+        },
+        {
+            "text": "through",
+            "start": 255962,
+            "end": 256174,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 256212,
+            "end": 256462,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "validation,",
+            "start": 256516,
+            "end": 257226,
+            "confidence": 0.56977,
+            "speaker": null
+        },
+        {
+            "text": "feature",
+            "start": 257338,
+            "end": 257722,
+            "confidence": 0.99279,
+            "speaker": null
+        },
+        {
+            "text": "engineering,",
+            "start": 257786,
+            "end": 258570,
+            "confidence": 0.99975,
+            "speaker": null
+        },
+        {
+            "text": "training,",
+            "start": 258650,
+            "end": 259134,
+            "confidence": 0.99935,
+            "speaker": null
+        },
+        {
+            "text": "evaluating,",
+            "start": 259252,
+            "end": 260010,
+            "confidence": 0.62592,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 260090,
+            "end": 260382,
+            "confidence": 0.63,
+            "speaker": null
+        },
+        {
+            "text": "serving.",
+            "start": 260436,
+            "end": 261230,
+            "confidence": 0.81802,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 262130,
+            "end": 262506,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "addition",
+            "start": 262548,
+            "end": 262814,
+            "confidence": 0.95537,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 262862,
+            "end": 262978,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 262984,
+            "end": 263566,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "itself,",
+            "start": 263598,
+            "end": 263938,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we've",
+            "start": 264024,
+            "end": 264558,
+            "confidence": 0.65556,
+            "speaker": null
+        },
+        {
+            "text": "created",
+            "start": 264654,
+            "end": 265054,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "libraries",
+            "start": 265102,
+            "end": 265742,
+            "confidence": 0.99897,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 265806,
+            "end": 265986,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 266008,
+            "end": 266194,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 266232,
+            "end": 266338,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 266344,
+            "end": 266466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "major",
+            "start": 266488,
+            "end": 266722,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "phases",
+            "start": 266776,
+            "end": 267230,
+            "confidence": 0.77567,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 267310,
+            "end": 267506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 267528,
+            "end": 267666,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 267688,
+            "end": 267966,
+            "confidence": 0.97977,
+            "speaker": null
+        },
+        {
+            "text": "pipeline",
+            "start": 267998,
+            "end": 268830,
+            "confidence": 0.73559,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 268990,
+            "end": 269774,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 269822,
+            "end": 270082,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "validation,",
+            "start": 270136,
+            "end": 271070,
+            "confidence": 0.99951,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 271230,
+            "end": 271966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "transform,",
+            "start": 271998,
+            "end": 272830,
+            "confidence": 0.99739,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 272990,
+            "end": 273314,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TensorFlow",
+            "start": 273352,
+            "end": 273966,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 273998,
+            "end": 274242,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "Analysis.",
+            "start": 274296,
+            "end": 275250,
+            "confidence": 0.98505,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 276170,
+            "end": 276930,
+            "confidence": 0.69459,
+            "speaker": null
+        },
+        {
+            "text": "implements",
+            "start": 277010,
+            "end": 277442,
+            "confidence": 0.99908,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 277506,
+            "end": 277686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "series",
+            "start": 277708,
+            "end": 277986,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 278018,
+            "end": 278214,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "pipeline",
+            "start": 278252,
+            "end": 278802,
+            "confidence": 0.72156,
+            "speaker": null
+        },
+        {
+            "text": "components",
+            "start": 278866,
+            "end": 279394,
+            "confidence": 0.99863,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 279442,
+            "end": 279654,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "leverage",
+            "start": 279692,
+            "end": 280082,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 280146,
+            "end": 280374,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "libraries,",
+            "start": 280412,
+            "end": 281330,
+            "confidence": 0.99738,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 281490,
+            "end": 281814,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 281852,
+            "end": 282006,
+            "confidence": 0.84796,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 282028,
+            "end": 282214,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "diagram",
+            "start": 282252,
+            "end": 282674,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 282722,
+            "end": 282886,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 282908,
+            "end": 283094,
+            "confidence": 0.99541,
+            "speaker": null
+        },
+        {
+            "text": "orange",
+            "start": 283132,
+            "end": 283858,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 284034,
+            "end": 284374,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "allows",
+            "start": 284412,
+            "end": 284738,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 284754,
+            "end": 284886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 284908,
+            "end": 285094,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "create",
+            "start": 285132,
+            "end": 285382,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 285436,
+            "end": 285606,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "own",
+            "start": 285628,
+            "end": 285814,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "components",
+            "start": 285852,
+            "end": 286354,
+            "confidence": 0.94809,
+            "speaker": null
+        },
+        {
+            "text": "too.",
+            "start": 286402,
+            "end": 287000,
+            "confidence": 0.75429,
+            "speaker": null
+        },
+        {
+            "text": "To",
+            "start": 287950,
+            "end": 288130,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "m",
+            "start": 288130,
+            "end": 288170,
+            "confidence": 0.66,
+            "speaker": null
+        },
+        {
+            "text": "tie",
+            "start": 288352,
+            "end": 288566,
+            "confidence": 0.98319,
+            "speaker": null
+        },
+        {
+            "text": "all",
+            "start": 288598,
+            "end": 288746,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 288768,
+            "end": 288954,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "together,",
+            "start": 288992,
+            "end": 289434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we've",
+            "start": 289552,
+            "end": 289846,
+            "confidence": 0.77707,
+            "speaker": null
+        },
+        {
+            "text": "created",
+            "start": 289878,
+            "end": 290166,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "some",
+            "start": 290198,
+            "end": 290346,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "horizontal",
+            "start": 290368,
+            "end": 291014,
+            "confidence": 0.93605,
+            "speaker": null
+        },
+        {
+            "text": "layers",
+            "start": 291062,
+            "end": 291494,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 291542,
+            "end": 291706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 291728,
+            "end": 291914,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 291952,
+            "end": 292154,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "pipeline",
+            "start": 292192,
+            "end": 292694,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "storage,",
+            "start": 292742,
+            "end": 293558,
+            "confidence": 0.646,
+            "speaker": null
+        },
+        {
+            "text": "configuration,",
+            "start": 293734,
+            "end": 294678,
+            "confidence": 0.98541,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 294774,
+            "end": 295082,
+            "confidence": 0.55,
+            "speaker": null
+        },
+        {
+            "text": "orchestration.",
+            "start": 295136,
+            "end": 296090,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "These",
+            "start": 296830,
+            "end": 297194,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "layers",
+            "start": 297232,
+            "end": 297574,
+            "confidence": 0.51378,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 297622,
+            "end": 297786,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "really",
+            "start": 297808,
+            "end": 297994,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "important",
+            "start": 298032,
+            "end": 298426,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 298528,
+            "end": 298794,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "managing",
+            "start": 298832,
+            "end": 299382,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 299446,
+            "end": 299722,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "optimizing",
+            "start": 299776,
+            "end": 300406,
+            "confidence": 0.9978,
+            "speaker": null
+        },
+        {
+            "text": "your",
+            "start": 300438,
+            "end": 300586,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "pipelines",
+            "start": 300608,
+            "end": 301366,
+            "confidence": 0.94732,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 301478,
+            "end": 301718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 301744,
+            "end": 301934,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "applications",
+            "start": 301972,
+            "end": 302506,
+            "confidence": 0.90461,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 302538,
+            "end": 302686,
+            "confidence": 0.93718,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 302708,
+            "end": 302846,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "run",
+            "start": 302868,
+            "end": 303054,
+            "confidence": 0.91112,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 303092,
+            "end": 303246,
+            "confidence": 0.50234,
+            "speaker": null
+        },
+        {
+            "text": "them.",
+            "start": 303268,
+            "end": 303840,
+            "confidence": 0.99936,
+            "speaker": null
+        },
+        {
+            "text": "We'll",
+            "start": 304530,
+            "end": 304906,
+            "confidence": 0.95084,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 304938,
+            "end": 305086,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "discussing",
+            "start": 305108,
+            "end": 305594,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "those",
+            "start": 305642,
+            "end": 305902,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 305956,
+            "end": 306222,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 306276,
+            "end": 306494,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "later",
+            "start": 306532,
+            "end": 306782,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "episodes.",
+            "start": 306836,
+            "end": 307754,
+            "confidence": 0.76537,
+            "speaker": null
+        },
+        {
+            "text": "For",
+            "start": 307882,
+            "end": 308174,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "now,",
+            "start": 308212,
+            "end": 308798,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 308964,
+            "end": 309294,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "should",
+            "start": 309332,
+            "end": 309486,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "give",
+            "start": 309508,
+            "end": 309646,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 309668,
+            "end": 309806,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 309828,
+            "end": 310014,
+            "confidence": 0.98983,
+            "speaker": null
+        },
+        {
+            "text": "idea",
+            "start": 310052,
+            "end": 310350,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 310420,
+            "end": 310654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 310692,
+            "end": 310846,
+            "confidence": 0.99657,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 310868,
+            "end": 311146,
+            "confidence": 0.71821,
+            "speaker": null
+        },
+        {
+            "text": "talking",
+            "start": 311178,
+            "end": 311422,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 311476,
+            "end": 311934,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "when",
+            "start": 312052,
+            "end": 312286,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 312308,
+            "end": 312494,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 312532,
+            "end": 312686,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 312708,
+            "end": 312942,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "implementing",
+            "start": 312996,
+            "end": 313546,
+            "confidence": 0.71532,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 313578,
+            "end": 313726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "production",
+            "start": 313748,
+            "end": 314234,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "ML",
+            "start": 314282,
+            "end": 314634,
+            "confidence": 0.84849,
+            "speaker": null
+        },
+        {
+            "text": "pipeline",
+            "start": 314682,
+            "end": 315466,
+            "confidence": 0.95093,
+            "speaker": null
+        },
+        {
+            "text": "with",
+            "start": 315578,
+            "end": 315854,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "TFX.",
+            "start": 315892,
+            "end": 316830,
+            "confidence": 0.9242,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 317970,
+            "end": 318286,
+            "confidence": 0.9986,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 318308,
+            "end": 318446,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "next",
+            "start": 318468,
+            "end": 318702,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "episode,",
+            "start": 318756,
+            "end": 319550,
+            "confidence": 0.9623,
+            "speaker": null
+        },
+        {
+            "text": "we'll",
+            "start": 319890,
+            "end": 320346,
+            "confidence": 0.99426,
+            "speaker": null
+        },
+        {
+            "text": "discuss",
+            "start": 320378,
+            "end": 320622,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 320676,
+            "end": 320894,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "TFX",
+            "start": 320932,
+            "end": 321434,
+            "confidence": 0.99958,
+            "speaker": null
+        },
+        {
+            "text": "pipelines",
+            "start": 321482,
+            "end": 322138,
+            "confidence": 0.99707,
+            "speaker": null
+        },
+        {
+            "text": "actually",
+            "start": 322234,
+            "end": 322686,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "work.",
+            "start": 322788,
+            "end": 323440,
+            "confidence": 0.99853,
+            "speaker": null
+        },
+        {
+            "text": "For",
+            "start": 323890,
+            "end": 324254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 324292,
+            "end": 324494,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "information",
+            "start": 324532,
+            "end": 324950,
+            "confidence": 0.99825,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 325060,
+            "end": 325286,
+            "confidence": 0.99698,
+            "speaker": null
+        },
+        {
+            "text": "TFX,",
+            "start": 325308,
+            "end": 326130,
+            "confidence": 0.99477,
+            "speaker": null
+        },
+        {
+            "text": "visit",
+            "start": 326290,
+            "end": 326706,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "us@tensorflow.org",
+            "start": 326738,
+            "end": 328546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "TFX.",
+            "start": 328658,
+            "end": 329602,
+            "confidence": 0.99625,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 329746,
+            "end": 330006,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "don't",
+            "start": 330028,
+            "end": 330258,
+            "confidence": 0.90177,
+            "speaker": null
+        },
+        {
+            "text": "forget",
+            "start": 330274,
+            "end": 330546,
+            "confidence": 0.99952,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 330578,
+            "end": 330774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "comment",
+            "start": 330812,
+            "end": 331202,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 331266,
+            "end": 331446,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 331468,
+            "end": 331702,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "us",
+            "start": 331756,
+            "end": 331974,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "below.",
+            "start": 332012,
+            "end": 332600,
+            "confidence": 0.99912,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 332970,
+            "end": 333334,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "thanks",
+            "start": 333372,
+            "end": 333574,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 333612,
+            "end": 333814,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "watching.",
+            "start": 333852,
+            "end": 333940,
+            "confidence": 0.97795,
+            "speaker": null
+        }
+    ],
+    "utterances": null,
+    "confidence": 0.9621011594202921,
+    "audio_duration": 345,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": null,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": false,
+    "content_safety": false,
+    "iab_categories": true,
+    "content_safety_labels": {
+        "status": "unavailable",
+        "results": [],
+        "summary": {}
+    },
+    "iab_categories_result": {
+        "status": "success",
+        "results": [
+            {
+                "text": "Hi, I'm Robert Crowe, and today I'm going to be talking about TensorFlow Extended, also known as TFX, and how it helps you put your amazing machine learning models into production. This is the first episode in our five part series on real world machine learning, which will help you get up to speed on using TFX to create your own production machine learning pipelines. In today's episode, we'll be asking the question, what exactly is this TFX thing anyway? Let's find out.",
+                "labels": [
+                    {
+                        "relevance": 0.3168427646160126,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.02277442067861557,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.010067488066852093,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.004600490443408489,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.004449279047548771,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0014275053981691599,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.00129338214173913,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0009561321930959821,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0005372210289351642,
+                        "label": "VideoGaming>VideoGameGenres>SimulationVideoGames"
+                    },
+                    {
+                        "relevance": 0.0004471589927561581,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    }
+                ],
+                "timestamp": {
+                    "start": 410,
+                    "end": 33640
+                },
+                "sentences_idx_start": 0,
+                "sentences_idx_end": 3
+            },
+            {
+                "text": "When we think about ML, we usually only think about the great models that we can now create. After all, that's what all the research papers are focused on. But when we want to take that amazing model and make it available to the world, we need to think about all the things that a production solution requires. So that's why we have TFX to build production pipelines so that we can offer our amazing models to the world.",
+                "labels": [
+                    {
+                        "relevance": 0.21996933221817017,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.04961762949824333,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.008617022074759007,
+                        "label": "BusinessAndFinance>Business>Logistics"
+                    },
+                    {
+                        "relevance": 0.005228883121162653,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.005205501802265644,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.004372570663690567,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.004186575300991535,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.004010832402855158,
+                        "label": "BusinessAndFinance>Business>BusinessOperations"
+                    },
+                    {
+                        "relevance": 0.003905244404450059,
+                        "label": "BusinessAndFinance>Industries>ManufacturingIndustry"
+                    },
+                    {
+                        "relevance": 0.002237239619717002,
+                        "label": "BusinessAndFinance>Business>Sales"
+                    }
+                ],
+                "timestamp": {
+                    "start": 37130,
+                    "end": 65460
+                },
+                "sentences_idx_start": 4,
+                "sentences_idx_end": 7
+            },
+            {
+                "text": "Google created TFX because we needed it, and there was nothing already available that could meet our needs. Google does a ton of ML, and not just Google, but all of the alphabet companies. There's ML in almost everything we do. In fact, TFX wasn't the first ML pipeline framework that Google created. It evolved out of earlier attempts and is now the default framework for the majority of Google's ML production solutions. And now Google is open sourcing TFX and making it available to everyone.",
+                "labels": [
+                    {
+                        "relevance": 0.016455121338367462,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.00824042595922947,
+                        "label": "Technology&Computing>Computing>Internet>Search"
+                    },
+                    {
+                        "relevance": 0.00409548869356513,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0024171797558665276,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0005403753602877259,
+                        "label": "Automotive>AutoTechnology>AutoNavigationSystems"
+                    },
+                    {
+                        "relevance": 0.0002711809938773513,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0002283842914039269,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.00021641667990479618,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0001836801675381139,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.00015455984976142645,
+                        "label": "Shopping>SalesAndPromotions"
+                    }
+                ],
+                "timestamp": {
+                    "start": 66230,
+                    "end": 103840
+                },
+                "sentences_idx_start": 8,
+                "sentences_idx_end": 13
+            },
+            {
+                "text": "And it's not just Google. TFX has had deep impact on our partners, including Twitter, Airbnb, and PayPal. As ML developers. Putting a model into Production what do we need to think about first? When we start planning for developing an ML M application, we have all the normal ML things to think about. That includes getting labeled data if we're doing supervised learning, and making sure that our data set covers well the space of possible inputs.",
+                "labels": [
+                    {
+                        "relevance": 0.44951462745666504,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.07361777126789093,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.04255439341068268,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.02441161870956421,
+                        "label": "Technology&Computing>Computing>Internet>Search"
+                    },
+                    {
+                        "relevance": 0.01327943429350853,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.003711431287229061,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0020551278721541166,
+                        "label": "BusinessAndFinance>Business>Sales"
+                    },
+                    {
+                        "relevance": 0.0020330108236521482,
+                        "label": "Automotive>AutoTechnology>AutoNavigationSystems"
+                    },
+                    {
+                        "relevance": 0.001797200064174831,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.0016023727366700768,
+                        "label": "Home&Garden>SmartHome"
+                    }
+                ],
+                "timestamp": {
+                    "start": 104770,
+                    "end": 138230
+                },
+                "sentences_idx_start": 14,
+                "sentences_idx_end": 19
+            },
+            {
+                "text": "We also want to minimize the dimensionality of our feature set while maximizing the predictive information it contains. And we need to think about fairness and make sure that our application won't be unfairly biased. We also need to consider rare conditions, especially in applications like healthcare, where we might be making predictions for conditions that only occur in rare but important situations.",
+                "labels": [
+                    {
+                        "relevance": 0.229787677526474,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.04291336610913277,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.03141164034605026,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.013195106759667397,
+                        "label": "MedicalHealth>MedicalTests"
+                    },
+                    {
+                        "relevance": 0.0053398506715893745,
+                        "label": "MedicalHealth"
+                    },
+                    {
+                        "relevance": 0.0038143512792885303,
+                        "label": "BusinessAndFinance>Business>BusinessI.T."
+                    },
+                    {
+                        "relevance": 0.0034442131873220205,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0031108413822948933,
+                        "label": "BusinessAndFinance>Business>BusinessOperations"
+                    },
+                    {
+                        "relevance": 0.0026251922827214003,
+                        "label": "BusinessAndFinance>Industries>ManufacturingIndustry"
+                    },
+                    {
+                        "relevance": 0.002477566711604595,
+                        "label": "BusinessAndFinance>Industries>HealthcareIndustry"
+                    }
+                ],
+                "timestamp": {
+                    "start": 139070,
+                    "end": 168398
+                },
+                "sentences_idx_start": 20,
+                "sentences_idx_end": 22
+            },
+            {
+                "text": "And finally, we need to consider that this will be a living solution that will evolve over time as new data flows in and as conditions change and plan for lifecycle management of our data. But in addition to all that, we need to remember that we're putting a software application into production. That means that we still have all the requirements that any production software application has, including scalability, consistency, modularity, and testability, as well as safety and security.",
+                "labels": [
+                    {
+                        "relevance": 0.9663062691688538,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.6871660947799683,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.5986974239349365,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.42307963967323303,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.041418109089136124,
+                        "label": "BusinessAndFinance>Business>BusinessI.T."
+                    },
+                    {
+                        "relevance": 0.015020390972495079,
+                        "label": "Technology&Computing>Computing>InformationAndNetworkSecurity"
+                    },
+                    {
+                        "relevance": 0.00672264164313674,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.005051143001765013,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.0025391224771738052,
+                        "label": "BusinessAndFinance>Business>BusinessOperations"
+                    },
+                    {
+                        "relevance": 0.0020781601779162884,
+                        "label": "BusinessAndFinance>Business>Logistics"
+                    }
+                ],
+                "timestamp": {
+                    "start": 168574,
+                    "end": 203920
+                },
+                "sentences_idx_start": 23,
+                "sentences_idx_end": 25
+            },
+            {
+                "text": "We're way beyond just training a model now by themselves. These are challenges for any production software deployment, and we can't forget about them just because we're doing ML. How are we going to meet all these needs and get our amazing new model into production. We don't pretend to have all the answers. This is an evolving field within the ML community, and we welcome contributions.",
+                "labels": [
+                    {
+                        "relevance": 0.4682861268520355,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.012671707198023796,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.008799680508673191,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0053298440761864185,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.002672080881893635,
+                        "label": "VideoGaming>VideoGameGenres>SimulationVideoGames"
+                    },
+                    {
+                        "relevance": 0.002667044522240758,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.001597282593138516,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0012115394929423928,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0011780103668570518,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0010120338993147016,
+                        "label": "BusinessAndFinance>Business>Sales"
+                    }
+                ],
+                "timestamp": {
+                    "start": 204850,
+                    "end": 231666
+                },
+                "sentences_idx_start": 26,
+                "sentences_idx_end": 30
+            },
+            {
+                "text": "If you're interested in a more in depth discussion of the challenges of machine learning in production environments, this is a great paper. That's what TFX is all about. TFX allows you to create production ML pipelines that include many of the requirements for production, software deployments, and best practices. It starts with ingesting your data and flows through data validation, feature engineering, training, evaluating, and serving.",
+                "labels": [
+                    {
+                        "relevance": 0.5564272403717041,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.053445689380168915,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0350424088537693,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.007322265766561031,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.004681187216192484,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0021859444677829742,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0018117997096851468,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0016064330702647567,
+                        "label": "BusinessAndFinance>Business>BusinessI.T."
+                    },
+                    {
+                        "relevance": 0.0015020443825051188,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0010001265909522772,
+                        "label": "BusinessAndFinance>Business>Logistics"
+                    }
+                ],
+                "timestamp": {
+                    "start": 231858,
+                    "end": 261230
+                },
+                "sentences_idx_start": 31,
+                "sentences_idx_end": 34
+            },
+            {
+                "text": "In addition to TensorFlow itself, we've created libraries for each of the major phases of an ML pipeline TensorFlow data validation, TensorFlow transform, and TensorFlow model Analysis. TFX implements a series of pipeline components which leverage these libraries, which in this diagram are in orange and allows you to create your own components too. To m tie all this together, we've created some horizontal layers for things like pipeline storage, configuration, and orchestration.",
+                "labels": [
+                    {
+                        "relevance": 0.134789377450943,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.027409490197896957,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0225325096398592,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.006184534635394812,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.003456922248005867,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.003348998725414276,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.002568103838711977,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0014339404879137874,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0009371337946504354,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0007817742880433798,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    }
+                ],
+                "timestamp": {
+                    "start": 262130,
+                    "end": 296090
+                },
+                "sentences_idx_start": 35,
+                "sentences_idx_end": 37
+            },
+            {
+                "text": "These layers are really important for managing and optimizing your pipelines and the applications that you run on them. We'll be discussing those more in later episodes. For now, that should give you an idea of what we're talking about when we think about implementing a production ML pipeline with TFX. In our next episode, we'll discuss how TFX pipelines actually work. For more information on TFX, visit us@tensorflow.org TFX. And don't forget to comment and like us below. And thanks for watching.",
+                "labels": [
+                    {
+                        "relevance": 0.12885084748268127,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0818343311548233,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.003973209299147129,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0019248183816671371,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications"
+                    },
+                    {
+                        "relevance": 0.0018717099446803331,
+                        "label": "BusinessAndFinance>Business>Logistics"
+                    },
+                    {
+                        "relevance": 0.0009419965208508074,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0007773545221425593,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0007065394893288612,
+                        "label": "BusinessAndFinance>Business>Sales"
+                    },
+                    {
+                        "relevance": 0.0004276023246347904,
+                        "label": "Technology&Computing>Computing>Internet>WebDevelopment"
+                    },
+                    {
+                        "relevance": 0.00038760100142098963,
+                        "label": "BusinessAndFinance>Business>BusinessOperations"
+                    }
+                ],
+                "timestamp": {
+                    "start": 296830,
+                    "end": 333940
+                },
+                "sentences_idx_start": 38,
+                "sentences_idx_end": 44
+            }
+        ],
+        "summary": {
+            "Technology&Computing>Computing>DataStorageAndWarehousing": 1.0,
+            "Technology&Computing>Computing>Internet>CloudComputing": 0.3340674340724945,
+            "Technology&Computing>ArtificialIntelligence": 0.3114495873451233,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications": 0.2599419355392456,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases": 0.20989015698432922,
+            "BusinessAndFinance>Business>BusinessI.T.": 0.01821788027882576,
+            "Technology&Computing>Robotics": 0.016593087464571,
+            "Technology&Computing>Computing>Internet>Search": 0.013165603391826153,
+            "Technology&Computing>Computing": 0.012049091048538685,
+            "Technology&Computing>Computing>Internet>InternetOfThings": 0.008686755783855915,
+            "Technology&Computing>Computing>InformationAndNetworkSecurity": 0.0064467210322618484,
+            "BusinessAndFinance>Business>Logistics": 0.00530388206243515,
+            "MedicalHealth>MedicalTests": 0.0052339197136461735,
+            "Technology&Computing>Computing>ProgrammingLanguages": 0.004984056577086449,
+            "BusinessAndFinance>Business>BusinessOperations": 0.004426767583936453,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics": 0.0038627181202173233,
+            "BusinessAndFinance>Business>Sales": 0.0035397724714130163,
+            "Technology&Computing>Computing>Internet>WebDevelopment": 0.002690395573154092,
+            "BusinessAndFinance>Industries>ManufacturingIndustry": 0.002650004578754306,
+            "VideoGaming>VideoGameGenres>SimulationVideoGames": 0.0024356397334486246
+        }
+    },
+    "language_detection": true,
+    "custom_spelling": null,
+    "throttled": null,
+    "auto_chapters": true,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": null,
+    "disfluencies": true,
+    "sentiment_analysis": false,
+    "chapters": [
+        {
+            "summary": "TensorFlow Extended, also known as TFX, helps you put your amazing machine learning models into production. This is the first episode in our five part series on real world machine learning. Now Google is open sourcing TFX and making it available to everyone.",
+            "gist": "What Exactly is TensorFlow Extended (TFX)?",
+            "headline": "TFX helps you put your amazing machine learning models into production",
+            "start": 410,
+            "end": 112670
+        },
+        {
+            "summary": "TFX allows you to create production ML pipelines that include many of the requirements for production, software deployments, and best practices. In the next episode, we'll discuss how TFX pipelines actually work.",
+            "gist": "Putting a Machine Learning (ML) Pipeline into Production",
+            "headline": "TFX allows you to create production ML pipelines that include many requirements",
+            "start": 113510,
+            "end": 333940
+        }
+    ],
+    "sentiment_analysis_results": null,
+    "entity_detection": false,
+    "entities": null,
+    "summary": null,
+    "speakers_expected": null
+}

@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id="modal-content">
+      <span class="close">&times;</span>
+      <a href="#">Some text in the Modal..</a>
+    </div>
+  </div>
+<head>
+  <title>chimedAi</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" type="image/png" href="{% static '/icons/cAi.png' %}"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'netflix_css/styles.css' %}">
+
+</head>
+<body>
+  {% include 'header/netflix_header.html' %}
+  <div class="row col-12 col-group">
+    <div class="carouselHeader">
+      <button class="btn_explore" id="myBtn">
+        Machine Learning
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon_explore">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#fafafa" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
+      </svg>
+      </button>
+      <div class="carousel-progress-bar"></div>
+    </div> 
+    <div class="container">
+      <button class="handle left-handle">
+        <div class="text">&#8249;</div>
+      </button>
+
+      <div class="slider">
+        {% for video in videos %}
+          <figure class="snip1577">
+            <img class="video_img" onclick="location.href='https://www.youtube.com/embed/{{ video.youtube_id }}'" src="https://img.youtube.com/vi/{{ video.youtube_id }}/0.jpg"></img>
+              <!-- <video class="video_img" controls>
+                <source src="{{ video.video_l.url }}" type="video/mp4">
+              </video>               -->
+              <figcaption>
+                <h3>{{video.title}}</h3>
+                <h4>name:</h4>
+              </figcaption>
+              <a href="{% url 'watch' video.youtube_id %}"></a>
+          </figure>
+          {% empty%}
+          <p>No Videos available.</p>
+        {% endfor %}
+      </div>
+      <button class="handle right-handle">
+        <div class="text">&#8250;</div>
+      </button>
+    </div>
+    </div>
+    <div class="row col-12 col-group">
+    <div class="carouselHeader">
+      <button class="btn_explore">
+        Big-Data
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon_explore">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#fafafa" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
+      </svg>
+      </button>
+      <div class="carousel-progress-bar"></div>
+    </div> 
+    <div class="container">
+      <button class="handle left-handle">
+        <div class="text">&#8249;</div>
+      </button>
+      <div class="slider">
+        {% for video in videos %}
+        <figure class="snip1577">
+            <img class="video_img" onclick="location.href='https://www.youtube.com/embed/{{ video.youtube_id }}'" src="https://img.youtube.com/vi/{{ video.youtube_id }}/0.jpg"></img>
+            <!-- <video class="video_img" controls>
+              <source src="{{ video.video_l.url }}" type="video/mp4">
+            </video>     -->
+            <figcaption>
+              <h3>{{video.title}}</h3>
+              <h4>name:</h4>
+            </figcaption>
+            <!--  -->
+        </figure>
+        {% empty%}
+        <p>No Videos available.</p>
+      {% endfor %}
+      </div>
+      <button class="handle right-handle">
+        <div class="text">&#8250;</div>
+      </button>
+    </div>
+  </div>
+  <div class="row col-12 col-group">
+    <div class="carouselHeader">
+      <button class="btn_explore">
+        Recently added
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon_explore">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#fafafa" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
+      </svg>
+      </button>
+      <!-- <h3 class="title">Recently added <button class="explore-all btn">explore all</button></h3> -->
+      <div class="carousel-progress-bar"></div>
+    </div> 
+    <div class="container">
+      <button class="handle left-handle">
+        <div class="text">&#8249;</div>
+      </button>
+      <div class="slider">
+        {% for video in videos %}
+        <figure class="snip1577">
+            <img class="video_img" onclick="location.href='https://www.youtube.com/embed/{{video.youtube_id}}'" src="https://img.youtube.com/vi/{{video.youtube_id}}/0.jpg"></img>
+            <!-- <video class="video_img" controls>
+              <source src="{{ video.video_l.url }}" type="video/mp4">
+            </video>     -->
+            <figcaption>
+              <h3>{{video.title}}</h3>
+              <h4>name:</h4>
+            </figcaption>
+            <!--  -->
+
+        </figure>
+        {% empty%}
+        <p>No Videos available.</p>
+      {% endfor %}
+      </div>
+      <button class="handle right-handle">
+        <div class="text">&#8250;</div>
+      </button>
+    </div>
+  </div>
+  <div class="row col-12 col-group">
+    <div class="carouselHeader">
+      <button class="btn_explore">
+        Kubernetes
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon_explore">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#fafafa" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
+      </svg>
+      </button>
+      <!-- <h3 class="title">Kubernetes <button class="explore-all btn">explore all</button></h3> -->
+      <div class="carousel-progress-bar"></div>
+    </div> 
+    <div class="container">
+      <button class="handle left-handle">
+        <div class="text">&#8249;</div>
+      </button>
+      <div class="slider">
+        {% for video in videos %}
+        <figure class="snip1577">
+            <img class="video_img" onclick="location.href='https://www.youtube.com/embed/{{ video.youtube_id }}'" src="https://img.youtube.com/vi/{{ video.youtube_id }}/0.jpg">
+            <figcaption>
+              <h3>{{video.title}}</h3>
+              <h4>name: {{video.youtube_id}}</h4>
+            </figcaption>
+            <!--  -->
+
+        </figure>
+        {% empty%}
+        <p>No Videos available.</p>
+      {% endfor %}
+      </div>
+      <button class="handle right-handle">
+        <div class="text">&#8250;</div>
+      </button>
+    </div>
+  </div>
+  <script src="{% static '/js/script.js' %}" defer></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+</body>
+</html>

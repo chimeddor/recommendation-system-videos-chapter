@@ -1,0 +1,5358 @@
+{
+    "id": "6unuemp85u-31b8-4744-b4ff-d5ce70fe9815",
+    "language_model": "assemblyai_default",
+    "acoustic_model": "assemblyai_default",
+    "language_code": "en",
+    "status": "completed",
+    "audio_url": "https://cdn.assemblyai.com/upload/22af88ba-3f10-4f65-a7d3-d31133737571",
+    "text": "Here are five things to know about neural networks in in under five minutes. Number one neural networks are composed of node layers. There is an input node layer, there is a hidden layer and there is an output layer. And these neural networks reflect the behavior of the human brain allowing computer programs to recognize patterns and solve common problems in the fields of AI and deep learning. In fact, we should be describing this as an artificial neural network or an ann to distinguish it from the very unartificial neural network that's operating in our heads. Now, think of each node or artificial neuron as its own linear regression model. That's number two. Linear regression is a mathematical model that's used to predict future events. The weights of the connections between the nodes determines how much influence each input has on the output. So each node is composed of input data weights a bias or a threshold and then an output. Now, data is passed from one layer in the neural network to the next in what is known as a feed forward network. Number three. To illustrate this, let's consider what a single node in our neural network might look like. To decide, should we go surfing? The decision to go or not is our predicted outcome or known as our y hat. Let's assume there are three factors influencing our, uh, decision. Uh, the waves. Good. One for yes or zero for no. The waves are pumping. So x one equals one, one for yes. Uh, is the lineup empty? Well, unfortunately not. So that gets a zero. And then let's consider is it shark free out there? That's x three and, uh, yeah. No shark attacks have been reported. Now, to each decision we assign a weight based on its importance on a scale of zero to five. So let's say that the waves we're going to score that one. Yeah. No, this is important. Let's give it a five. And, uh, for the crowds, that's w two. Uh, not so important. We'll give that a two. And, uh, sharks? Well, we'll give that a score of a four. Now, we can plug in these values into the formula to get the desired output. So y hat equals one times five plus zero times two plus one times four. Then minus three that's our, uh, threshold and that gives us a value of six. Six is greater than zero. So the output of this node is one. We're going surfing. And if we adjust the weights or the threshold we can achieve different outcomes. Number four. Well, yes, but number four neural networks rely on training data to learn and improve their accuracy over time. We leverage supervised learning or labeled data sets to train the algorithm. As we train the model we'll want to evaluate its accuracy using something called a cost function. Ultimately, the goal is to minimize our cost function to ensure the correctness of fit for any given observation. And that happens as the model adjusts its weights and biases to fit the training data set through what's known as gradient descent, allowing the model to determine the direction to take to reduce errors or more specifically, minimize the cost function. And then finally, number five. There are multiple types of neural networks beyond the feed forward neural network that we've described here. For example, there are ah, convolutional neural networks known as CNNs, which have a unique architecture that's well suited for identifying patterns like image recognition. And there are recurrent neural networks or RNNs which are identified by their feedback loops. And RNNs are primarily leveraged using time series data to make predictions about future events like sales forecasting. So so five things in five minutes. To learn more about neural networks, check out these videos. Thanks for watching. If you have any questions, please drop us a line below. And if you want to see more videos like this in the future, please like and subscribe.",
+    "words": [
+        {
+            "text": "Here",
+            "start": 490,
+            "end": 654,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 692,
+            "end": 942,
+            "confidence": 0.99969,
+            "speaker": null
+        },
+        {
+            "text": "five",
+            "start": 996,
+            "end": 1262,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 1316,
+            "end": 1534,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 1572,
+            "end": 1726,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "know",
+            "start": 1748,
+            "end": 1886,
+            "confidence": 0.68595,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 1908,
+            "end": 2094,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 2132,
+            "end": 2378,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 2394,
+            "end": 2826,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 2858,
+            "end": 3246,
+            "confidence": 0.98704,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 3348,
+            "end": 3614,
+            "confidence": 0.87745,
+            "speaker": null
+        },
+        {
+            "text": "under",
+            "start": 3652,
+            "end": 3902,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "five",
+            "start": 3956,
+            "end": 4318,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "minutes.",
+            "start": 4404,
+            "end": 5038,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Number",
+            "start": 5204,
+            "end": 5534,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 5572,
+            "end": 5918,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 6004,
+            "end": 6474,
+            "confidence": 0.9969,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 6522,
+            "end": 6986,
+            "confidence": 0.99853,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 7018,
+            "end": 7262,
+            "confidence": 0.54289,
+            "speaker": null
+        },
+        {
+            "text": "composed",
+            "start": 7316,
+            "end": 7674,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 7722,
+            "end": 7934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "node",
+            "start": 7972,
+            "end": 8650,
+            "confidence": 0.51173,
+            "speaker": null
+        },
+        {
+            "text": "layers.",
+            "start": 8810,
+            "end": 9690,
+            "confidence": 0.99598,
+            "speaker": null
+        },
+        {
+            "text": "There",
+            "start": 9850,
+            "end": 10174,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 10212,
+            "end": 10462,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 10516,
+            "end": 10782,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "input",
+            "start": 10836,
+            "end": 11546,
+            "confidence": 0.99917,
+            "speaker": null
+        },
+        {
+            "text": "node",
+            "start": 11658,
+            "end": 12510,
+            "confidence": 0.59907,
+            "speaker": null
+        },
+        {
+            "text": "layer,",
+            "start": 13090,
+            "end": 13770,
+            "confidence": 0.89007,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 13850,
+            "end": 14046,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 14068,
+            "end": 14350,
+            "confidence": 0.70893,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 14420,
+            "end": 14654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "hidden",
+            "start": 14692,
+            "end": 15354,
+            "confidence": 0.78968,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 15482,
+            "end": 16270,
+            "confidence": 0.99298,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 16610,
+            "end": 17166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 17268,
+            "end": 17534,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 17572,
+            "end": 17822,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 17876,
+            "end": 18190,
+            "confidence": 0.94967,
+            "speaker": null
+        },
+        {
+            "text": "output",
+            "start": 18260,
+            "end": 19310,
+            "confidence": 0.73367,
+            "speaker": null
+        },
+        {
+            "text": "layer.",
+            "start": 20050,
+            "end": 20990,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 21490,
+            "end": 22046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 22148,
+            "end": 22510,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 22580,
+            "end": 22986,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 23018,
+            "end": 23562,
+            "confidence": 0.90387,
+            "speaker": null
+        },
+        {
+            "text": "reflect",
+            "start": 23626,
+            "end": 24074,
+            "confidence": 0.58902,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 24122,
+            "end": 24334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "behavior",
+            "start": 24372,
+            "end": 24882,
+            "confidence": 0.5146,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 24986,
+            "end": 25206,
+            "confidence": 0.79,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 25228,
+            "end": 25366,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "human",
+            "start": 25388,
+            "end": 25622,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "brain",
+            "start": 25676,
+            "end": 26178,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "allowing",
+            "start": 26274,
+            "end": 26626,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "computer",
+            "start": 26658,
+            "end": 26950,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "programs",
+            "start": 27020,
+            "end": 27426,
+            "confidence": 0.56895,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 27458,
+            "end": 27606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "recognize",
+            "start": 27628,
+            "end": 28082,
+            "confidence": 0.91934,
+            "speaker": null
+        },
+        {
+            "text": "patterns",
+            "start": 28146,
+            "end": 28578,
+            "confidence": 0.99735,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 28594,
+            "end": 28774,
+            "confidence": 0.57,
+            "speaker": null
+        },
+        {
+            "text": "solve",
+            "start": 28812,
+            "end": 29026,
+            "confidence": 0.82216,
+            "speaker": null
+        },
+        {
+            "text": "common",
+            "start": 29058,
+            "end": 29350,
+            "confidence": 0.55064,
+            "speaker": null
+        },
+        {
+            "text": "problems",
+            "start": 29420,
+            "end": 29750,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 29820,
+            "end": 29958,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 29964,
+            "end": 30038,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fields",
+            "start": 30044,
+            "end": 30306,
+            "confidence": 0.64422,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 30338,
+            "end": 30438,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "AI",
+            "start": 30444,
+            "end": 30706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 30738,
+            "end": 30886,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "deep",
+            "start": 30908,
+            "end": 31106,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "learning.",
+            "start": 31138,
+            "end": 31622,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "In",
+            "start": 31756,
+            "end": 32054,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "fact,",
+            "start": 32092,
+            "end": 32342,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 32396,
+            "end": 32566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "should",
+            "start": 32588,
+            "end": 32774,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "be",
+            "start": 32812,
+            "end": 33014,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "describing",
+            "start": 33052,
+            "end": 33506,
+            "confidence": 0.99907,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 33538,
+            "end": 33830,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 33900,
+            "end": 34134,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 34172,
+            "end": 34422,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "artificial",
+            "start": 34476,
+            "end": 35394,
+            "confidence": 0.59903,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 35522,
+            "end": 36034,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 36082,
+            "end": 36482,
+            "confidence": 0.9566,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 36546,
+            "end": 36774,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 36812,
+            "end": 37158,
+            "confidence": 0.99914,
+            "speaker": null
+        },
+        {
+            "text": "ann",
+            "start": 37244,
+            "end": 37842,
+            "confidence": 0.81598,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 37996,
+            "end": 38362,
+            "confidence": 0.77,
+            "speaker": null
+        },
+        {
+            "text": "distinguish",
+            "start": 38416,
+            "end": 38886,
+            "confidence": 0.96879,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 38918,
+            "end": 39114,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 39152,
+            "end": 39306,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 39328,
+            "end": 39514,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "very",
+            "start": 39552,
+            "end": 39898,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "unartificial",
+            "start": 39984,
+            "end": 40886,
+            "confidence": 0.30114,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 40918,
+            "end": 41206,
+            "confidence": 0.55038,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 41238,
+            "end": 41862,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 42006,
+            "end": 42454,
+            "confidence": 0.84814,
+            "speaker": null
+        },
+        {
+            "text": "operating",
+            "start": 42502,
+            "end": 42806,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 42838,
+            "end": 42986,
+            "confidence": 0.99927,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 43008,
+            "end": 43146,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "heads.",
+            "start": 43168,
+            "end": 43638,
+            "confidence": 0.95639,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 43734,
+            "end": 44138,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "think",
+            "start": 44224,
+            "end": 44474,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 44512,
+            "end": 44666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 44688,
+            "end": 45018,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "node",
+            "start": 45104,
+            "end": 45814,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 45942,
+            "end": 46234,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "artificial",
+            "start": 46272,
+            "end": 46902,
+            "confidence": 0.88395,
+            "speaker": null
+        },
+        {
+            "text": "neuron",
+            "start": 46966,
+            "end": 47590,
+            "confidence": 0.99872,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 47670,
+            "end": 47914,
+            "confidence": 0.99955,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 47952,
+            "end": 48106,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "own",
+            "start": 48128,
+            "end": 48410,
+            "confidence": 0.6188,
+            "speaker": null
+        },
+        {
+            "text": "linear",
+            "start": 48480,
+            "end": 48982,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "regression",
+            "start": 49046,
+            "end": 49526,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "model.",
+            "start": 49558,
+            "end": 49994,
+            "confidence": 0.9987,
+            "speaker": null
+        },
+        {
+            "text": "That's",
+            "start": 50112,
+            "end": 50486,
+            "confidence": 0.70563,
+            "speaker": null
+        },
+        {
+            "text": "number",
+            "start": 50518,
+            "end": 50714,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "two.",
+            "start": 50752,
+            "end": 51254,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Linear",
+            "start": 51392,
+            "end": 51834,
+            "confidence": 0.95598,
+            "speaker": null
+        },
+        {
+            "text": "regression",
+            "start": 51882,
+            "end": 52266,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 52298,
+            "end": 52446,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 52468,
+            "end": 52606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "mathematical",
+            "start": 52628,
+            "end": 53178,
+            "confidence": 0.98797,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 53194,
+            "end": 53422,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 53476,
+            "end": 53706,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "used",
+            "start": 53738,
+            "end": 53886,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 53908,
+            "end": 54046,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "predict",
+            "start": 54068,
+            "end": 54442,
+            "confidence": 0.99012,
+            "speaker": null
+        },
+        {
+            "text": "future",
+            "start": 54506,
+            "end": 54830,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "events.",
+            "start": 54900,
+            "end": 55546,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 55658,
+            "end": 55982,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "weights",
+            "start": 56036,
+            "end": 56426,
+            "confidence": 0.99204,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 56458,
+            "end": 56558,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 56564,
+            "end": 56686,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "connections",
+            "start": 56708,
+            "end": 57210,
+            "confidence": 0.9957,
+            "speaker": null
+        },
+        {
+            "text": "between",
+            "start": 57290,
+            "end": 57678,
+            "confidence": 0.82218,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 57764,
+            "end": 57966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "nodes",
+            "start": 57988,
+            "end": 58586,
+            "confidence": 0.56971,
+            "speaker": null
+        },
+        {
+            "text": "determines",
+            "start": 58698,
+            "end": 59498,
+            "confidence": 0.75747,
+            "speaker": null
+        },
+        {
+            "text": "how",
+            "start": 59594,
+            "end": 59854,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "much",
+            "start": 59892,
+            "end": 60142,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "influence",
+            "start": 60196,
+            "end": 60714,
+            "confidence": 0.814,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 60762,
+            "end": 61022,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "input",
+            "start": 61076,
+            "end": 61434,
+            "confidence": 0.99459,
+            "speaker": null
+        },
+        {
+            "text": "has",
+            "start": 61482,
+            "end": 61646,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 61668,
+            "end": 61806,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 61828,
+            "end": 61918,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "output.",
+            "start": 61924,
+            "end": 62362,
+            "confidence": 0.84581,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 62426,
+            "end": 62654,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 62692,
+            "end": 62894,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "node",
+            "start": 62932,
+            "end": 63146,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 63178,
+            "end": 63422,
+            "confidence": 0.99657,
+            "speaker": null
+        },
+        {
+            "text": "composed",
+            "start": 63476,
+            "end": 63914,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 63962,
+            "end": 64174,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "input",
+            "start": 64212,
+            "end": 64518,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 64554,
+            "end": 64850,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "weights",
+            "start": 64920,
+            "end": 65646,
+            "confidence": 0.76298,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 65758,
+            "end": 65986,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "bias",
+            "start": 66008,
+            "end": 66366,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 66398,
+            "end": 66546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 66568,
+            "end": 66658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "threshold",
+            "start": 66664,
+            "end": 67230,
+            "confidence": 0.87395,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 67310,
+            "end": 67506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 67528,
+            "end": 67714,
+            "confidence": 0.99844,
+            "speaker": null
+        },
+        {
+            "text": "an",
+            "start": 67752,
+            "end": 67954,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "output.",
+            "start": 67992,
+            "end": 68686,
+            "confidence": 0.96029,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 68798,
+            "end": 69074,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 69112,
+            "end": 69362,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 69416,
+            "end": 69682,
+            "confidence": 0.9674,
+            "speaker": null
+        },
+        {
+            "text": "passed",
+            "start": 69736,
+            "end": 70174,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "from",
+            "start": 70222,
+            "end": 70530,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 70600,
+            "end": 70882,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "layer",
+            "start": 70936,
+            "end": 71342,
+            "confidence": 0.85388,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 71406,
+            "end": 71634,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 71672,
+            "end": 71874,
+            "confidence": 0.73,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 71912,
+            "end": 72238,
+            "confidence": 0.62609,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 72254,
+            "end": 72654,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 72702,
+            "end": 72866,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 72888,
+            "end": 72978,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "next",
+            "start": 72984,
+            "end": 73346,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 73448,
+            "end": 73762,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 73816,
+            "end": 73986,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 74008,
+            "end": 74146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "known",
+            "start": 74168,
+            "end": 74446,
+            "confidence": 0.93802,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 74478,
+            "end": 74674,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 74712,
+            "end": 74962,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "feed",
+            "start": 75016,
+            "end": 75518,
+            "confidence": 0.99933,
+            "speaker": null
+        },
+        {
+            "text": "forward",
+            "start": 75614,
+            "end": 76114,
+            "confidence": 0.88331,
+            "speaker": null
+        },
+        {
+            "text": "network.",
+            "start": 76232,
+            "end": 77070,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Number",
+            "start": 77230,
+            "end": 77602,
+            "confidence": 0.99505,
+            "speaker": null
+        },
+        {
+            "text": "three.",
+            "start": 77656,
+            "end": 78258,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "To",
+            "start": 78424,
+            "end": 78718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "illustrate",
+            "start": 78744,
+            "end": 79394,
+            "confidence": 0.97322,
+            "speaker": null
+        },
+        {
+            "text": "this,",
+            "start": 79442,
+            "end": 79702,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "let's",
+            "start": 79756,
+            "end": 80066,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "consider",
+            "start": 80098,
+            "end": 80390,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "what",
+            "start": 80460,
+            "end": 80646,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 80668,
+            "end": 80806,
+            "confidence": 0.79,
+            "speaker": null
+        },
+        {
+            "text": "single",
+            "start": 80828,
+            "end": 81062,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "node",
+            "start": 81116,
+            "end": 81346,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 81378,
+            "end": 81478,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 81484,
+            "end": 81606,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 81628,
+            "end": 81858,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 81874,
+            "end": 82194,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "might",
+            "start": 82242,
+            "end": 82454,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "look",
+            "start": 82492,
+            "end": 82646,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "like.",
+            "start": 82668,
+            "end": 82902,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "To",
+            "start": 82956,
+            "end": 83174,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "decide,",
+            "start": 83212,
+            "end": 83746,
+            "confidence": 0.98789,
+            "speaker": null
+        },
+        {
+            "text": "should",
+            "start": 83858,
+            "end": 84134,
+            "confidence": 0.71223,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 84172,
+            "end": 84278,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "go",
+            "start": 84284,
+            "end": 84454,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "surfing?",
+            "start": 84492,
+            "end": 85186,
+            "confidence": 0.78252,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 85298,
+            "end": 85526,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "decision",
+            "start": 85548,
+            "end": 85826,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 85858,
+            "end": 86006,
+            "confidence": 0.73,
+            "speaker": null
+        },
+        {
+            "text": "go",
+            "start": 86028,
+            "end": 86214,
+            "confidence": 0.94499,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 86252,
+            "end": 86406,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 86428,
+            "end": 86710,
+            "confidence": 0.92807,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 86780,
+            "end": 86966,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 86988,
+            "end": 87174,
+            "confidence": 0.97283,
+            "speaker": null
+        },
+        {
+            "text": "predicted",
+            "start": 87212,
+            "end": 87726,
+            "confidence": 0.99033,
+            "speaker": null
+        },
+        {
+            "text": "outcome",
+            "start": 87778,
+            "end": 88358,
+            "confidence": 0.99979,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 88454,
+            "end": 89002,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "known",
+            "start": 89136,
+            "end": 89574,
+            "confidence": 0.99098,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 89622,
+            "end": 89786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 89808,
+            "end": 90138,
+            "confidence": 0.52337,
+            "speaker": null
+        },
+        {
+            "text": "y",
+            "start": 90224,
+            "end": 90570,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "hat.",
+            "start": 90640,
+            "end": 91450,
+            "confidence": 0.44969,
+            "speaker": null
+        },
+        {
+            "text": "Let's",
+            "start": 92430,
+            "end": 92854,
+            "confidence": 0.80556,
+            "speaker": null
+        },
+        {
+            "text": "assume",
+            "start": 92902,
+            "end": 93302,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 93366,
+            "end": 93546,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 93568,
+            "end": 93850,
+            "confidence": 0.73108,
+            "speaker": null
+        },
+        {
+            "text": "three",
+            "start": 93920,
+            "end": 94202,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "factors",
+            "start": 94256,
+            "end": 94694,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "influencing",
+            "start": 94742,
+            "end": 95302,
+            "confidence": 0.98607,
+            "speaker": null
+        },
+        {
+            "text": "our,",
+            "start": 95366,
+            "end": 95420,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 95420,
+            "end": 95510,
+            "confidence": 0.7159327864646912,
+            "speaker": null
+        },
+        {
+            "text": "decision.",
+            "start": 95632,
+            "end": 96214,
+            "confidence": 0.90728,
+            "speaker": null
+        },
+        {
+            "text": "Uh,",
+            "start": 96300,
+            "end": 96460,
+            "confidence": 0.8846735954284668,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 96460,
+            "end": 96634,
+            "confidence": 0.53,
+            "speaker": null
+        },
+        {
+            "text": "waves.",
+            "start": 96672,
+            "end": 96982,
+            "confidence": 0.86824,
+            "speaker": null
+        },
+        {
+            "text": "Good.",
+            "start": 97046,
+            "end": 97466,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "One",
+            "start": 97568,
+            "end": 97930,
+            "confidence": 0.89,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 98000,
+            "end": 98234,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "yes",
+            "start": 98272,
+            "end": 98474,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 98512,
+            "end": 98666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "zero",
+            "start": 98688,
+            "end": 98922,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 98976,
+            "end": 99194,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "no.",
+            "start": 99232,
+            "end": 99674,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "The",
+            "start": 99792,
+            "end": 100026,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "waves",
+            "start": 100048,
+            "end": 100326,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 100358,
+            "end": 100518,
+            "confidence": 0.72115,
+            "speaker": null
+        },
+        {
+            "text": "pumping.",
+            "start": 100544,
+            "end": 100954,
+            "confidence": 0.99154,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 101002,
+            "end": 101262,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "x",
+            "start": 101316,
+            "end": 101582,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 101636,
+            "end": 101950,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "equals",
+            "start": 102020,
+            "end": 102714,
+            "confidence": 0.6329,
+            "speaker": null
+        },
+        {
+            "text": "one,",
+            "start": 102842,
+            "end": 103278,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 103364,
+            "end": 103662,
+            "confidence": 0.59,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 103716,
+            "end": 103934,
+            "confidence": 0.99753,
+            "speaker": null
+        },
+        {
+            "text": "yes.",
+            "start": 103972,
+            "end": 104560,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "Uh,",
+            "start": 104900,
+            "end": 105090,
+            "confidence": 0.918315052986145,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 105090,
+            "end": 105246,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 105268,
+            "end": 105406,
+            "confidence": 0.81,
+            "speaker": null
+        },
+        {
+            "text": "lineup",
+            "start": 105428,
+            "end": 105834,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "empty?",
+            "start": 105882,
+            "end": 106426,
+            "confidence": 0.51279,
+            "speaker": null
+        },
+        {
+            "text": "Well,",
+            "start": 106538,
+            "end": 106910,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "unfortunately",
+            "start": 106980,
+            "end": 107514,
+            "confidence": 0.52043,
+            "speaker": null
+        },
+        {
+            "text": "not.",
+            "start": 107562,
+            "end": 107774,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 107812,
+            "end": 107966,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 107988,
+            "end": 108126,
+            "confidence": 0.99743,
+            "speaker": null
+        },
+        {
+            "text": "gets",
+            "start": 108148,
+            "end": 108334,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 108372,
+            "end": 108670,
+            "confidence": 0.79,
+            "speaker": null
+        },
+        {
+            "text": "zero.",
+            "start": 108740,
+            "end": 109454,
+            "confidence": 0.52,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 109652,
+            "end": 110110,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 110180,
+            "end": 110510,
+            "confidence": 0.74623,
+            "speaker": null
+        },
+        {
+            "text": "let's",
+            "start": 110580,
+            "end": 110874,
+            "confidence": 0.94078,
+            "speaker": null
+        },
+        {
+            "text": "consider",
+            "start": 110922,
+            "end": 111278,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 111364,
+            "end": 111566,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 111588,
+            "end": 111726,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "shark",
+            "start": 111748,
+            "end": 111994,
+            "confidence": 0.99742,
+            "speaker": null
+        },
+        {
+            "text": "free",
+            "start": 112042,
+            "end": 112302,
+            "confidence": 0.76,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 112356,
+            "end": 112478,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "there?",
+            "start": 112484,
+            "end": 112654,
+            "confidence": 0.91732,
+            "speaker": null
+        },
+        {
+            "text": "That's",
+            "start": 112692,
+            "end": 112906,
+            "confidence": 0.99803,
+            "speaker": null
+        },
+        {
+            "text": "x",
+            "start": 112938,
+            "end": 113134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "three",
+            "start": 113172,
+            "end": 113710,
+            "confidence": 0.71,
+            "speaker": null
+        },
+        {
+            "text": "and,",
+            "start": 113860,
+            "end": 114270,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 114300,
+            "end": 114420,
+            "confidence": 0.8634393811225891,
+            "speaker": null
+        },
+        {
+            "text": "yeah.",
+            "start": 114420,
+            "end": 114622,
+            "confidence": 0.64754,
+            "speaker": null
+        },
+        {
+            "text": "No",
+            "start": 114676,
+            "end": 114894,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "shark",
+            "start": 114932,
+            "end": 115274,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "attacks",
+            "start": 115322,
+            "end": 115706,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 115738,
+            "end": 115898,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "been",
+            "start": 115924,
+            "end": 116066,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "reported.",
+            "start": 116088,
+            "end": 116766,
+            "confidence": 0.99973,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 116878,
+            "end": 117202,
+            "confidence": 0.57,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 117256,
+            "end": 117426,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "each",
+            "start": 117448,
+            "end": 117634,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "decision",
+            "start": 117672,
+            "end": 118014,
+            "confidence": 0.60965,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 118062,
+            "end": 118226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "assign",
+            "start": 118248,
+            "end": 118574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 118622,
+            "end": 118786,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "weight",
+            "start": 118808,
+            "end": 119102,
+            "confidence": 0.64773,
+            "speaker": null
+        },
+        {
+            "text": "based",
+            "start": 119166,
+            "end": 119442,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 119496,
+            "end": 119666,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 119688,
+            "end": 119874,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "importance",
+            "start": 119912,
+            "end": 120334,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 120382,
+            "end": 120546,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 120568,
+            "end": 120658,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "scale",
+            "start": 120664,
+            "end": 120926,
+            "confidence": 0.88077,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 120958,
+            "end": 121106,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "zero",
+            "start": 121128,
+            "end": 121362,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 121416,
+            "end": 121634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "five.",
+            "start": 121672,
+            "end": 122114,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 122232,
+            "end": 122514,
+            "confidence": 0.9664,
+            "speaker": null
+        },
+        {
+            "text": "let's",
+            "start": 122552,
+            "end": 122766,
+            "confidence": 0.95972,
+            "speaker": null
+        },
+        {
+            "text": "say",
+            "start": 122798,
+            "end": 122994,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 123032,
+            "end": 123282,
+            "confidence": 0.66533,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 123336,
+            "end": 123506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "waves",
+            "start": 123528,
+            "end": 124270,
+            "confidence": 0.61259,
+            "speaker": null
+        },
+        {
+            "text": "we're",
+            "start": 124430,
+            "end": 124766,
+            "confidence": 0.61857,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 124798,
+            "end": 124898,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 124904,
+            "end": 125026,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "score",
+            "start": 125048,
+            "end": 125374,
+            "confidence": 0.50118,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 125422,
+            "end": 125586,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "one.",
+            "start": 125608,
+            "end": 125890,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Yeah.",
+            "start": 125960,
+            "end": 126254,
+            "confidence": 0.90829,
+            "speaker": null
+        },
+        {
+            "text": "No,",
+            "start": 126312,
+            "end": 126582,
+            "confidence": 0.6959,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 126636,
+            "end": 126806,
+            "confidence": 0.52337,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 126828,
+            "end": 126966,
+            "confidence": 0.99943,
+            "speaker": null
+        },
+        {
+            "text": "important.",
+            "start": 126988,
+            "end": 127270,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "Let's",
+            "start": 127340,
+            "end": 127538,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "give",
+            "start": 127554,
+            "end": 127638,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "it",
+            "start": 127644,
+            "end": 127766,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 127788,
+            "end": 127974,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "five.",
+            "start": 128012,
+            "end": 128600,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "And,",
+            "start": 128970,
+            "end": 129410,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 129410,
+            "end": 129560,
+            "confidence": 0.9777868986129761,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 129628,
+            "end": 129846,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 129868,
+            "end": 130054,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "crowds,",
+            "start": 130092,
+            "end": 130722,
+            "confidence": 0.65727,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 130786,
+            "end": 131154,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "w",
+            "start": 131202,
+            "end": 131510,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "two.",
+            "start": 131580,
+            "end": 132200,
+            "confidence": 0.84,
+            "speaker": null
+        },
+        {
+            "text": "Uh,",
+            "start": 132650,
+            "end": 133050,
+            "confidence": 0.9838830232620239,
+            "speaker": null
+        },
+        {
+            "text": "not",
+            "start": 133050,
+            "end": 133254,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 133292,
+            "end": 133494,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "important.",
+            "start": 133532,
+            "end": 133782,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "We'll",
+            "start": 133836,
+            "end": 134018,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "give",
+            "start": 134034,
+            "end": 134166,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 134188,
+            "end": 134326,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 134348,
+            "end": 134534,
+            "confidence": 0.65,
+            "speaker": null
+        },
+        {
+            "text": "two.",
+            "start": 134572,
+            "end": 135062,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "And,",
+            "start": 135196,
+            "end": 135630,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 135630,
+            "end": 135750,
+            "confidence": 0.9255282282829285,
+            "speaker": null
+        },
+        {
+            "text": "sharks?",
+            "start": 135750,
+            "end": 136450,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "Well,",
+            "start": 136530,
+            "end": 136726,
+            "confidence": 0.93941,
+            "speaker": null
+        },
+        {
+            "text": "we'll",
+            "start": 136748,
+            "end": 136946,
+            "confidence": 0.57795,
+            "speaker": null
+        },
+        {
+            "text": "give",
+            "start": 136978,
+            "end": 137126,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 137148,
+            "end": 137442,
+            "confidence": 0.99532,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 137516,
+            "end": 137706,
+            "confidence": 0.5,
+            "speaker": null
+        },
+        {
+            "text": "score",
+            "start": 137728,
+            "end": 138390,
+            "confidence": 0.98193,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 138550,
+            "end": 138922,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 138976,
+            "end": 139434,
+            "confidence": 0.71,
+            "speaker": null
+        },
+        {
+            "text": "four.",
+            "start": 139552,
+            "end": 140220,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Now,",
+            "start": 140670,
+            "end": 141130,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 141200,
+            "end": 141434,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 141472,
+            "end": 141722,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "plug",
+            "start": 141776,
+            "end": 142134,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 142182,
+            "end": 142442,
+            "confidence": 0.9984,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 142496,
+            "end": 142762,
+            "confidence": 0.59654,
+            "speaker": null
+        },
+        {
+            "text": "values",
+            "start": 142816,
+            "end": 143334,
+            "confidence": 0.999,
+            "speaker": null
+        },
+        {
+            "text": "into",
+            "start": 143382,
+            "end": 143786,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 143888,
+            "end": 144154,
+            "confidence": 0.71,
+            "speaker": null
+        },
+        {
+            "text": "formula",
+            "start": 144192,
+            "end": 144822,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 144886,
+            "end": 145114,
+            "confidence": 0.9,
+            "speaker": null
+        },
+        {
+            "text": "get",
+            "start": 145152,
+            "end": 145354,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 145392,
+            "end": 145546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "desired",
+            "start": 145568,
+            "end": 145974,
+            "confidence": 0.86511,
+            "speaker": null
+        },
+        {
+            "text": "output.",
+            "start": 146022,
+            "end": 146630,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 146710,
+            "end": 147098,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "y",
+            "start": 147184,
+            "end": 147482,
+            "confidence": 0.59,
+            "speaker": null
+        },
+        {
+            "text": "hat",
+            "start": 147536,
+            "end": 147846,
+            "confidence": 0.95712,
+            "speaker": null
+        },
+        {
+            "text": "equals",
+            "start": 147878,
+            "end": 148678,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 148854,
+            "end": 149242,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "times",
+            "start": 149296,
+            "end": 149862,
+            "confidence": 0.5659,
+            "speaker": null
+        },
+        {
+            "text": "five",
+            "start": 150016,
+            "end": 150622,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "plus",
+            "start": 150756,
+            "end": 151440,
+            "confidence": 0.84993,
+            "speaker": null
+        },
+        {
+            "text": "zero",
+            "start": 151890,
+            "end": 152494,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "times",
+            "start": 152612,
+            "end": 153086,
+            "confidence": 0.9099,
+            "speaker": null
+        },
+        {
+            "text": "two",
+            "start": 153188,
+            "end": 153934,
+            "confidence": 0.8,
+            "speaker": null
+        },
+        {
+            "text": "plus",
+            "start": 154132,
+            "end": 154878,
+            "confidence": 0.7718,
+            "speaker": null
+        },
+        {
+            "text": "one",
+            "start": 155044,
+            "end": 155518,
+            "confidence": 0.93,
+            "speaker": null
+        },
+        {
+            "text": "times",
+            "start": 155604,
+            "end": 156142,
+            "confidence": 0.62977,
+            "speaker": null
+        },
+        {
+            "text": "four.",
+            "start": 156276,
+            "end": 157006,
+            "confidence": 0.97,
+            "speaker": null
+        },
+        {
+            "text": "Then",
+            "start": 157188,
+            "end": 157726,
+            "confidence": 0.90729,
+            "speaker": null
+        },
+        {
+            "text": "minus",
+            "start": 157828,
+            "end": 158506,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "three",
+            "start": 158618,
+            "end": 159182,
+            "confidence": 0.93,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 159316,
+            "end": 159786,
+            "confidence": 0.66882,
+            "speaker": null
+        },
+        {
+            "text": "our,",
+            "start": 159818,
+            "end": 159850,
+            "confidence": 0.5813,
+            "speaker": null
+        },
+        {
+            "text": "uh,",
+            "start": 159850,
+            "end": 159930,
+            "confidence": 0.9880332946777344,
+            "speaker": null
+        },
+        {
+            "text": "threshold",
+            "start": 160116,
+            "end": 160826,
+            "confidence": 0.89089,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 160938,
+            "end": 161214,
+            "confidence": 0.62,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 161252,
+            "end": 161454,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "gives",
+            "start": 161492,
+            "end": 161694,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "us",
+            "start": 161732,
+            "end": 161934,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 161972,
+            "end": 162270,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "value",
+            "start": 162340,
+            "end": 162718,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 162804,
+            "end": 163198,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "six.",
+            "start": 163284,
+            "end": 163870,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Six",
+            "start": 164020,
+            "end": 164442,
+            "confidence": 0.95,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 164516,
+            "end": 164754,
+            "confidence": 0.80805,
+            "speaker": null
+        },
+        {
+            "text": "greater",
+            "start": 164792,
+            "end": 165118,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "than",
+            "start": 165134,
+            "end": 165314,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "zero.",
+            "start": 165352,
+            "end": 165650,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 165720,
+            "end": 165954,
+            "confidence": 0.55822,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 165992,
+            "end": 166194,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "output",
+            "start": 166232,
+            "end": 166702,
+            "confidence": 0.66423,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 166766,
+            "end": 166946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 166968,
+            "end": 167154,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "node",
+            "start": 167192,
+            "end": 167582,
+            "confidence": 0.99859,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 167646,
+            "end": 167922,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "one.",
+            "start": 167976,
+            "end": 168626,
+            "confidence": 0.54,
+            "speaker": null
+        },
+        {
+            "text": "We're",
+            "start": 168808,
+            "end": 169166,
+            "confidence": 0.96829,
+            "speaker": null
+        },
+        {
+            "text": "going",
+            "start": 169198,
+            "end": 169394,
+            "confidence": 0.99922,
+            "speaker": null
+        },
+        {
+            "text": "surfing.",
+            "start": 169432,
+            "end": 170078,
+            "confidence": 0.63588,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 170174,
+            "end": 170386,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 170408,
+            "end": 170546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 170568,
+            "end": 170706,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "adjust",
+            "start": 170728,
+            "end": 171006,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 171038,
+            "end": 171186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "weights",
+            "start": 171208,
+            "end": 171486,
+            "confidence": 0.6821,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 171518,
+            "end": 171618,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 171624,
+            "end": 171746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "threshold",
+            "start": 171768,
+            "end": 172254,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 172302,
+            "end": 172466,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "can",
+            "start": 172488,
+            "end": 172626,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "achieve",
+            "start": 172648,
+            "end": 172974,
+            "confidence": 0.70843,
+            "speaker": null
+        },
+        {
+            "text": "different",
+            "start": 173022,
+            "end": 173282,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "outcomes.",
+            "start": 173336,
+            "end": 174290,
+            "confidence": 0.99949,
+            "speaker": null
+        },
+        {
+            "text": "Number",
+            "start": 175050,
+            "end": 175462,
+            "confidence": 0.99008,
+            "speaker": null
+        },
+        {
+            "text": "four.",
+            "start": 175516,
+            "end": 176120,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Well,",
+            "start": 176730,
+            "end": 177190,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "yes,",
+            "start": 177260,
+            "end": 177880,
+            "confidence": 0.96725,
+            "speaker": null
+        },
+        {
+            "text": "but",
+            "start": 178410,
+            "end": 178822,
+            "confidence": 0.54289,
+            "speaker": null
+        },
+        {
+            "text": "number",
+            "start": 178876,
+            "end": 179046,
+            "confidence": 0.99975,
+            "speaker": null
+        },
+        {
+            "text": "four",
+            "start": 179068,
+            "end": 179446,
+            "confidence": 0.92,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 179548,
+            "end": 179938,
+            "confidence": 0.97891,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 179954,
+            "end": 180354,
+            "confidence": 0.96634,
+            "speaker": null
+        },
+        {
+            "text": "rely",
+            "start": 180402,
+            "end": 180786,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "on",
+            "start": 180818,
+            "end": 181158,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "training",
+            "start": 181244,
+            "end": 181686,
+            "confidence": 0.93979,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 181788,
+            "end": 182246,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 182348,
+            "end": 182662,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learn",
+            "start": 182716,
+            "end": 182934,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 182972,
+            "end": 183126,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "improve",
+            "start": 183148,
+            "end": 183378,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "their",
+            "start": 183394,
+            "end": 183526,
+            "confidence": 0.90596,
+            "speaker": null
+        },
+        {
+            "text": "accuracy",
+            "start": 183548,
+            "end": 183986,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "over",
+            "start": 184018,
+            "end": 184262,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "time.",
+            "start": 184316,
+            "end": 184726,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "We",
+            "start": 184828,
+            "end": 185142,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "leverage",
+            "start": 185196,
+            "end": 185570,
+            "confidence": 0.9996,
+            "speaker": null
+        },
+        {
+            "text": "supervised",
+            "start": 185650,
+            "end": 186194,
+            "confidence": 0.99786,
+            "speaker": null
+        },
+        {
+            "text": "learning",
+            "start": 186242,
+            "end": 186502,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 186556,
+            "end": 186726,
+            "confidence": 0.96,
+            "speaker": null
+        },
+        {
+            "text": "labeled",
+            "start": 186748,
+            "end": 187106,
+            "confidence": 0.96038,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 187138,
+            "end": 187334,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "sets",
+            "start": 187372,
+            "end": 187678,
+            "confidence": 0.63328,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 187714,
+            "end": 187818,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "train",
+            "start": 187824,
+            "end": 187994,
+            "confidence": 0.96678,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 188032,
+            "end": 188186,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "algorithm.",
+            "start": 188208,
+            "end": 188790,
+            "confidence": 0.99396,
+            "speaker": null
+        },
+        {
+            "text": "As",
+            "start": 188870,
+            "end": 189066,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "we",
+            "start": 189088,
+            "end": 189178,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "train",
+            "start": 189184,
+            "end": 189354,
+            "confidence": 0.66533,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 189392,
+            "end": 189546,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 189568,
+            "end": 189898,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "we'll",
+            "start": 189984,
+            "end": 190278,
+            "confidence": 0.9969,
+            "speaker": null
+        },
+        {
+            "text": "want",
+            "start": 190294,
+            "end": 190474,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 190512,
+            "end": 190762,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "evaluate",
+            "start": 190816,
+            "end": 191510,
+            "confidence": 0.83463,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 191590,
+            "end": 191882,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "accuracy",
+            "start": 191936,
+            "end": 192646,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "using",
+            "start": 192758,
+            "end": 193130,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "something",
+            "start": 193200,
+            "end": 193530,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "called",
+            "start": 193600,
+            "end": 193882,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 193936,
+            "end": 194202,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "cost",
+            "start": 194256,
+            "end": 194860,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "function.",
+            "start": 195390,
+            "end": 196140,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "Ultimately,",
+            "start": 197870,
+            "end": 198502,
+            "confidence": 0.997,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 198566,
+            "end": 198842,
+            "confidence": 0.79,
+            "speaker": null
+        },
+        {
+            "text": "goal",
+            "start": 198896,
+            "end": 199206,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "is",
+            "start": 199238,
+            "end": 199434,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 199472,
+            "end": 199626,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "minimize",
+            "start": 199648,
+            "end": 200182,
+            "confidence": 0.51207,
+            "speaker": null
+        },
+        {
+            "text": "our",
+            "start": 200246,
+            "end": 200426,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "cost",
+            "start": 200448,
+            "end": 200682,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "function",
+            "start": 200736,
+            "end": 201002,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 201056,
+            "end": 201226,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "ensure",
+            "start": 201248,
+            "end": 201526,
+            "confidence": 0.99971,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 201558,
+            "end": 201706,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "correctness",
+            "start": 201728,
+            "end": 202134,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 202182,
+            "end": 202346,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "fit",
+            "start": 202368,
+            "end": 202614,
+            "confidence": 0.9991,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 202672,
+            "end": 202846,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "any",
+            "start": 202868,
+            "end": 203006,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "given",
+            "start": 203028,
+            "end": 203310,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "observation.",
+            "start": 203380,
+            "end": 204010,
+            "confidence": 0.99607,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 204090,
+            "end": 204334,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 204372,
+            "end": 204574,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "happens",
+            "start": 204612,
+            "end": 204910,
+            "confidence": 0.81052,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 204980,
+            "end": 205166,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 205188,
+            "end": 205278,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 205284,
+            "end": 205550,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "adjusts",
+            "start": 205620,
+            "end": 206154,
+            "confidence": 0.51293,
+            "speaker": null
+        },
+        {
+            "text": "its",
+            "start": 206202,
+            "end": 206414,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "weights",
+            "start": 206452,
+            "end": 206826,
+            "confidence": 0.94775,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 206858,
+            "end": 207006,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "biases",
+            "start": 207028,
+            "end": 207402,
+            "confidence": 0.99884,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 207466,
+            "end": 207598,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "fit",
+            "start": 207604,
+            "end": 207726,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 207748,
+            "end": 207886,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "training",
+            "start": 207908,
+            "end": 208190,
+            "confidence": 0.99947,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 208260,
+            "end": 208494,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "set",
+            "start": 208532,
+            "end": 208782,
+            "confidence": 0.86395,
+            "speaker": null
+        },
+        {
+            "text": "through",
+            "start": 208836,
+            "end": 209054,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "what's",
+            "start": 209092,
+            "end": 209306,
+            "confidence": 0.96484,
+            "speaker": null
+        },
+        {
+            "text": "known",
+            "start": 209338,
+            "end": 209578,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 209594,
+            "end": 209870,
+            "confidence": 0.68931,
+            "speaker": null
+        },
+        {
+            "text": "gradient",
+            "start": 209940,
+            "end": 210538,
+            "confidence": 0.59273,
+            "speaker": null
+        },
+        {
+            "text": "descent,",
+            "start": 210634,
+            "end": 211402,
+            "confidence": 0.99582,
+            "speaker": null
+        },
+        {
+            "text": "allowing",
+            "start": 211546,
+            "end": 211978,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 211994,
+            "end": 212126,
+            "confidence": 0.67,
+            "speaker": null
+        },
+        {
+            "text": "model",
+            "start": 212148,
+            "end": 212382,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 212436,
+            "end": 212606,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "determine",
+            "start": 212628,
+            "end": 213018,
+            "confidence": 0.9991,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 213034,
+            "end": 213166,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "direction",
+            "start": 213188,
+            "end": 213558,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 213594,
+            "end": 213746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "take",
+            "start": 213768,
+            "end": 214098,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 214184,
+            "end": 214434,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "reduce",
+            "start": 214472,
+            "end": 214846,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "errors",
+            "start": 214878,
+            "end": 215246,
+            "confidence": 0.32331,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 215278,
+            "end": 215522,
+            "confidence": 0.98,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 215576,
+            "end": 215746,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "specifically,",
+            "start": 215768,
+            "end": 216574,
+            "confidence": 0.98139,
+            "speaker": null
+        },
+        {
+            "text": "minimize",
+            "start": 216702,
+            "end": 217214,
+            "confidence": 0.89589,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 217262,
+            "end": 217426,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "cost",
+            "start": 217448,
+            "end": 217826,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "function.",
+            "start": 217928,
+            "end": 218530,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 218680,
+            "end": 218946,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "then",
+            "start": 218968,
+            "end": 219202,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "finally,",
+            "start": 219256,
+            "end": 219666,
+            "confidence": 0.89328,
+            "speaker": null
+        },
+        {
+            "text": "number",
+            "start": 219768,
+            "end": 220130,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "five.",
+            "start": 220200,
+            "end": 220674,
+            "confidence": 0.94,
+            "speaker": null
+        },
+        {
+            "text": "There",
+            "start": 220792,
+            "end": 221074,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 221112,
+            "end": 221266,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "multiple",
+            "start": 221288,
+            "end": 221614,
+            "confidence": 0.95974,
+            "speaker": null
+        },
+        {
+            "text": "types",
+            "start": 221662,
+            "end": 221998,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "of",
+            "start": 222014,
+            "end": 222146,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 222168,
+            "end": 222478,
+            "confidence": 0.53109,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 222494,
+            "end": 222974,
+            "confidence": 0.99985,
+            "speaker": null
+        },
+        {
+            "text": "beyond",
+            "start": 223022,
+            "end": 223374,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 223422,
+            "end": 223634,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "feed",
+            "start": 223672,
+            "end": 224014,
+            "confidence": 0.99739,
+            "speaker": null
+        },
+        {
+            "text": "forward",
+            "start": 224062,
+            "end": 224322,
+            "confidence": 0.60476,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 224376,
+            "end": 224718,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "network",
+            "start": 224734,
+            "end": 225054,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "that",
+            "start": 225102,
+            "end": 225218,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "we've",
+            "start": 225224,
+            "end": 225418,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "described",
+            "start": 225454,
+            "end": 225826,
+            "confidence": 0.99942,
+            "speaker": null
+        },
+        {
+            "text": "here.",
+            "start": 225858,
+            "end": 226150,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "For",
+            "start": 226220,
+            "end": 226406,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "example,",
+            "start": 226428,
+            "end": 226758,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 226844,
+            "end": 227094,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 227132,
+            "end": 227340,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "ah,",
+            "start": 227340,
+            "end": 227380,
+            "confidence": 0.9927304983139038,
+            "speaker": null
+        },
+        {
+            "text": "convolutional",
+            "start": 227436,
+            "end": 228242,
+            "confidence": 0.54432,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 228306,
+            "end": 228706,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 228738,
+            "end": 229202,
+            "confidence": 0.83543,
+            "speaker": null
+        },
+        {
+            "text": "known",
+            "start": 229266,
+            "end": 229506,
+            "confidence": 0.99953,
+            "speaker": null
+        },
+        {
+            "text": "as",
+            "start": 229538,
+            "end": 229830,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "CNNs,",
+            "start": 229900,
+            "end": 230882,
+            "confidence": 0.89732,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 230946,
+            "end": 231174,
+            "confidence": 0.99978,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 231212,
+            "end": 231366,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 231388,
+            "end": 231574,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "unique",
+            "start": 231612,
+            "end": 232082,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "architecture",
+            "start": 232146,
+            "end": 232706,
+            "confidence": 0.99862,
+            "speaker": null
+        },
+        {
+            "text": "that's",
+            "start": 232738,
+            "end": 232946,
+            "confidence": 0.99965,
+            "speaker": null
+        },
+        {
+            "text": "well",
+            "start": 232978,
+            "end": 233126,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "suited",
+            "start": 233148,
+            "end": 233394,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 233442,
+            "end": 233606,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "identifying",
+            "start": 233628,
+            "end": 234146,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "patterns",
+            "start": 234178,
+            "end": 234578,
+            "confidence": 0.99964,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 234594,
+            "end": 234774,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "image",
+            "start": 234812,
+            "end": 235106,
+            "confidence": 0.9947,
+            "speaker": null
+        },
+        {
+            "text": "recognition.",
+            "start": 235138,
+            "end": 235906,
+            "confidence": 0.97282,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 236018,
+            "end": 236294,
+            "confidence": 0.99,
+            "speaker": null
+        },
+        {
+            "text": "there",
+            "start": 236332,
+            "end": 236486,
+            "confidence": 0.99994,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 236508,
+            "end": 236694,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "recurrent",
+            "start": 236732,
+            "end": 237410,
+            "confidence": 0.9608,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 237490,
+            "end": 237906,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "networks",
+            "start": 237938,
+            "end": 238386,
+            "confidence": 0.99808,
+            "speaker": null
+        },
+        {
+            "text": "or",
+            "start": 238418,
+            "end": 238758,
+            "confidence": 0.64,
+            "speaker": null
+        },
+        {
+            "text": "RNNs",
+            "start": 238844,
+            "end": 240050,
+            "confidence": 0.51408,
+            "speaker": null
+        },
+        {
+            "text": "which",
+            "start": 240130,
+            "end": 240326,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 240348,
+            "end": 240534,
+            "confidence": 0.62609,
+            "speaker": null
+        },
+        {
+            "text": "identified",
+            "start": 240572,
+            "end": 241042,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "by",
+            "start": 241106,
+            "end": 241286,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "their",
+            "start": 241308,
+            "end": 241542,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "feedback",
+            "start": 241596,
+            "end": 242066,
+            "confidence": 0.99998,
+            "speaker": null
+        },
+        {
+            "text": "loops.",
+            "start": 242098,
+            "end": 242418,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 242434,
+            "end": 242614,
+            "confidence": 0.81,
+            "speaker": null
+        },
+        {
+            "text": "RNNs",
+            "start": 242652,
+            "end": 243266,
+            "confidence": 0.9707,
+            "speaker": null
+        },
+        {
+            "text": "are",
+            "start": 243298,
+            "end": 243398,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "primarily",
+            "start": 243404,
+            "end": 243874,
+            "confidence": 0.99984,
+            "speaker": null
+        },
+        {
+            "text": "leveraged",
+            "start": 243922,
+            "end": 244578,
+            "confidence": 0.93629,
+            "speaker": null
+        },
+        {
+            "text": "using",
+            "start": 244674,
+            "end": 245030,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "time",
+            "start": 245100,
+            "end": 245430,
+            "confidence": 0.70565,
+            "speaker": null
+        },
+        {
+            "text": "series",
+            "start": 245500,
+            "end": 245906,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "data",
+            "start": 245938,
+            "end": 246134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 246172,
+            "end": 246326,
+            "confidence": 0.64,
+            "speaker": null
+        },
+        {
+            "text": "make",
+            "start": 246348,
+            "end": 246534,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "predictions",
+            "start": 246572,
+            "end": 246946,
+            "confidence": 0.96736,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 246978,
+            "end": 247174,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "future",
+            "start": 247212,
+            "end": 247462,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "events",
+            "start": 247516,
+            "end": 247906,
+            "confidence": 0.99999,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 247938,
+            "end": 248230,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "sales",
+            "start": 248300,
+            "end": 248582,
+            "confidence": 0.99968,
+            "speaker": null
+        },
+        {
+            "text": "forecasting.",
+            "start": 248636,
+            "end": 249554,
+            "confidence": 0.99892,
+            "speaker": null
+        },
+        {
+            "text": "So",
+            "start": 249682,
+            "end": 249998,
+            "confidence": 0.51275,
+            "speaker": null
+        },
+        {
+            "text": "so",
+            "start": 250044,
+            "end": 250542,
+            "confidence": 0.99826,
+            "speaker": null
+        },
+        {
+            "text": "five",
+            "start": 250676,
+            "end": 251022,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "things",
+            "start": 251076,
+            "end": 251390,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 251460,
+            "end": 251790,
+            "confidence": 0.99859,
+            "speaker": null
+        },
+        {
+            "text": "five",
+            "start": 251860,
+            "end": 252142,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "minutes.",
+            "start": 252196,
+            "end": 252702,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "To",
+            "start": 252836,
+            "end": 253134,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "learn",
+            "start": 253172,
+            "end": 253326,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 253348,
+            "end": 253486,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "about",
+            "start": 253508,
+            "end": 253694,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "neural",
+            "start": 253732,
+            "end": 253978,
+            "confidence": 0.99912,
+            "speaker": null
+        },
+        {
+            "text": "networks,",
+            "start": 253994,
+            "end": 254570,
+            "confidence": 0.79051,
+            "speaker": null
+        },
+        {
+            "text": "check",
+            "start": 254650,
+            "end": 254894,
+            "confidence": 0.99992,
+            "speaker": null
+        },
+        {
+            "text": "out",
+            "start": 254932,
+            "end": 255086,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "these",
+            "start": 255108,
+            "end": 255294,
+            "confidence": 0.99982,
+            "speaker": null
+        },
+        {
+            "text": "videos.",
+            "start": 255332,
+            "end": 255920,
+            "confidence": 0.99761,
+            "speaker": null
+        },
+        {
+            "text": "Thanks",
+            "start": 256370,
+            "end": 256734,
+            "confidence": 0.9998,
+            "speaker": null
+        },
+        {
+            "text": "for",
+            "start": 256772,
+            "end": 256926,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "watching.",
+            "start": 256948,
+            "end": 257520,
+            "confidence": 0.99997,
+            "speaker": null
+        },
+        {
+            "text": "If",
+            "start": 258210,
+            "end": 258526,
+            "confidence": 0.9999,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 258548,
+            "end": 258638,
+            "confidence": 0.99964,
+            "speaker": null
+        },
+        {
+            "text": "have",
+            "start": 258644,
+            "end": 258766,
+            "confidence": 0.99895,
+            "speaker": null
+        },
+        {
+            "text": "any",
+            "start": 258788,
+            "end": 258974,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "questions,",
+            "start": 259012,
+            "end": 259358,
+            "confidence": 0.99993,
+            "speaker": null
+        },
+        {
+            "text": "please",
+            "start": 259444,
+            "end": 259742,
+            "confidence": 0.99974,
+            "speaker": null
+        },
+        {
+            "text": "drop",
+            "start": 259796,
+            "end": 260026,
+            "confidence": 0.99991,
+            "speaker": null
+        },
+        {
+            "text": "us",
+            "start": 260058,
+            "end": 260206,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "a",
+            "start": 260228,
+            "end": 260318,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "line",
+            "start": 260324,
+            "end": 260542,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "below.",
+            "start": 260596,
+            "end": 260958,
+            "confidence": 0.99983,
+            "speaker": null
+        },
+        {
+            "text": "And",
+            "start": 261044,
+            "end": 261342,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "if",
+            "start": 261396,
+            "end": 261566,
+            "confidence": 0.99986,
+            "speaker": null
+        },
+        {
+            "text": "you",
+            "start": 261588,
+            "end": 261726,
+            "confidence": 0.9996,
+            "speaker": null
+        },
+        {
+            "text": "want",
+            "start": 261748,
+            "end": 261838,
+            "confidence": 0.99989,
+            "speaker": null
+        },
+        {
+            "text": "to",
+            "start": 261844,
+            "end": 261966,
+            "confidence": 0.78,
+            "speaker": null
+        },
+        {
+            "text": "see",
+            "start": 261988,
+            "end": 262174,
+            "confidence": 0.99995,
+            "speaker": null
+        },
+        {
+            "text": "more",
+            "start": 262212,
+            "end": 262414,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "videos",
+            "start": 262452,
+            "end": 262702,
+            "confidence": 0.99981,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 262756,
+            "end": 262926,
+            "confidence": 0.99976,
+            "speaker": null
+        },
+        {
+            "text": "this",
+            "start": 262948,
+            "end": 263134,
+            "confidence": 0.99966,
+            "speaker": null
+        },
+        {
+            "text": "in",
+            "start": 263172,
+            "end": 263326,
+            "confidence": 0.99977,
+            "speaker": null
+        },
+        {
+            "text": "the",
+            "start": 263348,
+            "end": 263438,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "future,",
+            "start": 263444,
+            "end": 263854,
+            "confidence": 0.99996,
+            "speaker": null
+        },
+        {
+            "text": "please",
+            "start": 263972,
+            "end": 264350,
+            "confidence": 0.99987,
+            "speaker": null
+        },
+        {
+            "text": "like",
+            "start": 264420,
+            "end": 264750,
+            "confidence": 0.99988,
+            "speaker": null
+        },
+        {
+            "text": "and",
+            "start": 264820,
+            "end": 265054,
+            "confidence": 1.0,
+            "speaker": null
+        },
+        {
+            "text": "subscribe.",
+            "start": 265092,
+            "end": 265870,
+            "confidence": 0.9864,
+            "speaker": null
+        }
+    ],
+    "utterances": null,
+    "confidence": 0.9357197090842935,
+    "audio_duration": 271,
+    "punctuate": true,
+    "format_text": true,
+    "dual_channel": null,
+    "webhook_url": null,
+    "webhook_status_code": null,
+    "webhook_auth": false,
+    "webhook_auth_header_name": null,
+    "speed_boost": false,
+    "auto_highlights_result": null,
+    "auto_highlights": false,
+    "audio_start_from": null,
+    "audio_end_at": null,
+    "word_boost": [],
+    "boost_param": null,
+    "filter_profanity": false,
+    "redact_pii": false,
+    "redact_pii_audio": false,
+    "redact_pii_audio_quality": null,
+    "redact_pii_policies": null,
+    "redact_pii_sub": null,
+    "speaker_labels": false,
+    "content_safety": false,
+    "iab_categories": true,
+    "content_safety_labels": {
+        "status": "unavailable",
+        "results": [],
+        "summary": {}
+    },
+    "iab_categories_result": {
+        "status": "success",
+        "results": [
+            {
+                "text": "Here are five things to know about neural networks in in under five minutes. Number one neural networks are composed of node layers. There is an input node layer, there is a hidden layer and there is an output layer. And these neural networks reflect the behavior of the human brain allowing computer programs to recognize patterns and solve common problems in the fields of AI and deep learning.",
+                "labels": [
+                    {
+                        "relevance": 0.9863072037696838,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.04323599115014076,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.013276792131364346,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.01254202052950859,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0071208421140909195,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0005775231402367353,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.00032617757096886635,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0003170958370901644,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.00027945515466853976,
+                        "label": "VideoGaming>VideoGameGenres>SimulationVideoGames"
+                    },
+                    {
+                        "relevance": 0.00023872691963333637,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    }
+                ],
+                "timestamp": {
+                    "start": 490,
+                    "end": 31622
+                },
+                "sentences_idx_start": 0,
+                "sentences_idx_end": 3
+            },
+            {
+                "text": "In fact, we should be describing this as an artificial neural network or an ann to distinguish it from the very unartificial neural network that's operating in our heads. Now, think of each node or artificial neuron as its own linear regression model. That's number two. Linear regression is a mathematical model that's used to predict future events. The weights of the connections between the nodes determines how much influence each input has on the output.",
+                "labels": [
+                    {
+                        "relevance": 0.9637724757194519,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.04015786945819855,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.018440796062350273,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.004805522505193949,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0038132313638925552,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0012368484167382121,
+                        "label": "VideoGaming>VideoGameGenres>SimulationVideoGames"
+                    },
+                    {
+                        "relevance": 0.0006552680861204863,
+                        "label": "Science>Physics"
+                    },
+                    {
+                        "relevance": 0.0003421603178139776,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    },
+                    {
+                        "relevance": 0.0003093577397521585,
+                        "label": "MedicalHealth>DiseasesAndConditions>BrainAndNervousSystemDisorders"
+                    },
+                    {
+                        "relevance": 0.0003080104652326554,
+                        "label": "Hobbies&Interests>ParanormalPhenomena"
+                    }
+                ],
+                "timestamp": {
+                    "start": 31756,
+                    "end": 62362
+                },
+                "sentences_idx_start": 4,
+                "sentences_idx_end": 8
+            },
+            {
+                "text": "So each node is composed of input data weights a bias or a threshold and then an output. Now, data is passed from one layer in the neural network to the next in what is known as a feed forward network. Number three. To illustrate this, let's consider what a single node in our neural network might look like. To decide, should we go surfing? The decision to go or not is our predicted outcome or known as our y hat.",
+                "labels": [
+                    {
+                        "relevance": 0.08160271495580673,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.006961194798350334,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.005725518334656954,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.0017496186774224043,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0012891612714156508,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0012682779924944043,
+                        "label": "Technology&Computing>Computing>ComputerNetworking"
+                    },
+                    {
+                        "relevance": 0.0008252044208347797,
+                        "label": "Home&Garden>SmartHome"
+                    },
+                    {
+                        "relevance": 0.0007898102630861104,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0006945059867575765,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.000535951869096607,
+                        "label": "Automotive>AutoType>DriverlessCars"
+                    }
+                ],
+                "timestamp": {
+                    "start": 62426,
+                    "end": 91450
+                },
+                "sentences_idx_start": 9,
+                "sentences_idx_end": 14
+            },
+            {
+                "text": "Let's assume there are three factors influencing our, uh, decision. Uh, the waves. Good. One for yes or zero for no. The waves are pumping. So x one equals one, one for yes. Uh, is the lineup empty? Well, unfortunately not. So that gets a zero. And then let's consider is it shark free out there? That's x three and, uh, yeah. No shark attacks have been reported.",
+                "labels": [
+                    {
+                        "relevance": 0.6278047561645508,
+                        "label": "Sports>ExtremeSports>SurfingAndBodyboarding"
+                    },
+                    {
+                        "relevance": 0.1210801899433136,
+                        "label": "Sports>FishingSports"
+                    },
+                    {
+                        "relevance": 0.055677589029073715,
+                        "label": "Travel>TravelType>BeachTravel"
+                    },
+                    {
+                        "relevance": 0.014577810652554035,
+                        "label": "Pets>FishAndAquariums"
+                    },
+                    {
+                        "relevance": 0.0011158287525177002,
+                        "label": "Sports>Diving"
+                    },
+                    {
+                        "relevance": 0.0007537125493399799,
+                        "label": "Travel>TravelLocations>AustraliaAndOceaniaTravel"
+                    },
+                    {
+                        "relevance": 0.000706941937096417,
+                        "label": "Sports>Sailing"
+                    },
+                    {
+                        "relevance": 0.0006895632832311094,
+                        "label": "Pets>Birds"
+                    },
+                    {
+                        "relevance": 0.00032045587431639433,
+                        "label": "BusinessAndFinance>Industries>EnvironmentalServicesIndustry"
+                    },
+                    {
+                        "relevance": 0.00030796523788012564,
+                        "label": "Sports>ExtremeSports>ScubaDiving"
+                    }
+                ],
+                "timestamp": {
+                    "start": 92430,
+                    "end": 116766
+                },
+                "sentences_idx_start": 15,
+                "sentences_idx_end": 26
+            },
+            {
+                "text": "Now, to each decision we assign a weight based on its importance on a scale of zero to five. So let's say that the waves we're going to score that one. Yeah. No, this is important. Let's give it a five. And, uh, for the crowds, that's w two. Uh, not so important. We'll give that a two. And, uh, sharks? Well, we'll give that a score of a four.",
+                "labels": [
+                    {
+                        "relevance": 0.5226960778236389,
+                        "label": "Sports>ExtremeSports>SurfingAndBodyboarding"
+                    },
+                    {
+                        "relevance": 0.3460182249546051,
+                        "label": "Travel>TravelType>BeachTravel"
+                    },
+                    {
+                        "relevance": 0.10986074805259705,
+                        "label": "Pets>FishAndAquariums"
+                    },
+                    {
+                        "relevance": 0.06553087383508682,
+                        "label": "Sports>FishingSports"
+                    },
+                    {
+                        "relevance": 0.006418094038963318,
+                        "label": "BusinessAndFinance>Industries>EnvironmentalServicesIndustry"
+                    },
+                    {
+                        "relevance": 0.002941108774393797,
+                        "label": "Travel>TravelLocations"
+                    },
+                    {
+                        "relevance": 0.0028034842107445,
+                        "label": "EventsAndAttractions"
+                    },
+                    {
+                        "relevance": 0.002126354956999421,
+                        "label": "Sports>Diving"
+                    },
+                    {
+                        "relevance": 0.00128513528034091,
+                        "label": "Sports>ExtremeSports>ScubaDiving"
+                    },
+                    {
+                        "relevance": 0.001284993253648281,
+                        "label": "Pets>Birds"
+                    }
+                ],
+                "timestamp": {
+                    "start": 116878,
+                    "end": 140220
+                },
+                "sentences_idx_start": 27,
+                "sentences_idx_end": 36
+            },
+            {
+                "text": "Now, we can plug in these values into the formula to get the desired output. So y hat equals one times five plus zero times two plus one times four. Then minus three that's our, uh, threshold and that gives us a value of six. Six is greater than zero. So the output of this node is one. We're going surfing. And if we adjust the weights or the threshold we can achieve different outcomes. Number four.",
+                "labels": [
+                    {
+                        "relevance": 0.938458263874054,
+                        "label": "Sports>ExtremeSports>SurfingAndBodyboarding"
+                    },
+                    {
+                        "relevance": 0.009941809810698032,
+                        "label": "Sports>Sailing"
+                    },
+                    {
+                        "relevance": 0.007003944367170334,
+                        "label": "Sports>ExtremeSports>WaterskiingAndWakeboarding"
+                    },
+                    {
+                        "relevance": 0.0016168354777619243,
+                        "label": "Sports>FishingSports"
+                    },
+                    {
+                        "relevance": 0.0009567801025696099,
+                        "label": "Sports>ExtremeSports>CanoeingAndKayaking"
+                    },
+                    {
+                        "relevance": 0.0008692183182574809,
+                        "label": "Travel>TravelLocations>AustraliaAndOceaniaTravel"
+                    },
+                    {
+                        "relevance": 0.0007581279496662319,
+                        "label": "Sports>ExtremeSports"
+                    },
+                    {
+                        "relevance": 0.0006261103553697467,
+                        "label": "Travel>TravelType>BeachTravel"
+                    },
+                    {
+                        "relevance": 0.000541703833732754,
+                        "label": "VideoGaming>VideoGameGenres>PuzzleVideoGames"
+                    },
+                    {
+                        "relevance": 0.0003934675478376448,
+                        "label": "Sports>Diving"
+                    }
+                ],
+                "timestamp": {
+                    "start": 140670,
+                    "end": 176120
+                },
+                "sentences_idx_start": 37,
+                "sentences_idx_end": 44
+            },
+            {
+                "text": "Well, yes, but number four neural networks rely on training data to learn and improve their accuracy over time. We leverage supervised learning or labeled data sets to train the algorithm. As we train the model we'll want to evaluate its accuracy using something called a cost function. Ultimately, the goal is to minimize our cost function to ensure the correctness of fit for any given observation.",
+                "labels": [
+                    {
+                        "relevance": 0.6224537491798401,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.011994550004601479,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.004968653433024883,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0044460236094892025,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.0012020602589473128,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0007748370990157127,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.0005539783160202205,
+                        "label": "Science>Physics"
+                    },
+                    {
+                        "relevance": 0.0004948657006025314,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0004845854709856212,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.0004211027699057013,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    }
+                ],
+                "timestamp": {
+                    "start": 176730,
+                    "end": 204010
+                },
+                "sentences_idx_start": 45,
+                "sentences_idx_end": 48
+            },
+            {
+                "text": "And that happens as the model adjusts its weights and biases to fit the training data set through what's known as gradient descent, allowing the model to determine the direction to take to reduce errors or more specifically, minimize the cost function. And then finally, number five. There are multiple types of neural networks beyond the feed forward neural network that we've described here.",
+                "labels": [
+                    {
+                        "relevance": 0.046520184725522995,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.004271386656910181,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.002695642877370119,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.0026911033783107996,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>Databases"
+                    },
+                    {
+                        "relevance": 0.0011615470284596086,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0011064348509535193,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    },
+                    {
+                        "relevance": 0.00039356359047815204,
+                        "label": "Science>Physics"
+                    },
+                    {
+                        "relevance": 0.00033050921047106385,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.000292640965199098,
+                        "label": "VideoGaming>VideoGameGenres>SimulationVideoGames"
+                    },
+                    {
+                        "relevance": 0.00027854382642544806,
+                        "label": "Hobbies&Interests>GamesAndPuzzles"
+                    }
+                ],
+                "timestamp": {
+                    "start": 204090,
+                    "end": 226150
+                },
+                "sentences_idx_start": 49,
+                "sentences_idx_end": 51
+            },
+            {
+                "text": "For example, there are ah, convolutional neural networks known as CNNs, which have a unique architecture that's well suited for identifying patterns like image recognition. And there are recurrent neural networks or RNNs which are identified by their feedback loops. And RNNs are primarily leveraged using time series data to make predictions about future events like sales forecasting. So so five things in five minutes. To learn more about neural networks, check out these videos. Thanks for watching.",
+                "labels": [
+                    {
+                        "relevance": 0.9846788644790649,
+                        "label": "Technology&Computing>ArtificialIntelligence"
+                    },
+                    {
+                        "relevance": 0.28743574023246765,
+                        "label": "Technology&Computing>Computing"
+                    },
+                    {
+                        "relevance": 0.02135523594915867,
+                        "label": "Technology&Computing"
+                    },
+                    {
+                        "relevance": 0.01126060914248228,
+                        "label": "Technology&Computing>Robotics"
+                    },
+                    {
+                        "relevance": 0.009760943241417408,
+                        "label": "Technology&Computing>Computing>ProgrammingLanguages"
+                    },
+                    {
+                        "relevance": 0.0021696100011467934,
+                        "label": "Technology&Computing>Computing>Internet>InternetOfThings"
+                    },
+                    {
+                        "relevance": 0.002110250061377883,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>3-DGraphics"
+                    },
+                    {
+                        "relevance": 0.0015924567123875022,
+                        "label": "VideoGaming>VideoGameGenres>SimulationVideoGames"
+                    },
+                    {
+                        "relevance": 0.001245721592567861,
+                        "label": "Technology&Computing>Computing>Internet>CloudComputing"
+                    },
+                    {
+                        "relevance": 0.0009625679231248796,
+                        "label": "Technology&Computing>Computing>DataStorageAndWarehousing"
+                    }
+                ],
+                "timestamp": {
+                    "start": 226220,
+                    "end": 257520
+                },
+                "sentences_idx_start": 52,
+                "sentences_idx_end": 57
+            },
+            {
+                "text": "If you have any questions, please drop us a line below. And if you want to see more videos like this in the future, please like and subscribe.",
+                "labels": [
+                    {
+                        "relevance": 0.30300047993659973,
+                        "label": "Hobbies&Interests>ContentProduction>VideoProduction"
+                    },
+                    {
+                        "relevance": 0.044744741171598434,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware"
+                    },
+                    {
+                        "relevance": 0.029120562598109245,
+                        "label": "Television>RealityTV"
+                    },
+                    {
+                        "relevance": 0.010882426053285599,
+                        "label": "Television>FactualTV"
+                    },
+                    {
+                        "relevance": 0.009241084568202496,
+                        "label": "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing"
+                    },
+                    {
+                        "relevance": 0.009028428234159946,
+                        "label": "Hobbies&Interests>ContentProduction>Screenwriting"
+                    },
+                    {
+                        "relevance": 0.006116780452430248,
+                        "label": "Movies>DocumentaryMovies"
+                    },
+                    {
+                        "relevance": 0.0035929095465689898,
+                        "label": "Hobbies&Interests>ContentProduction"
+                    },
+                    {
+                        "relevance": 0.0017569954507052898,
+                        "label": "Education>OnlineEducation"
+                    },
+                    {
+                        "relevance": 0.0007739334250800312,
+                        "label": "MedicalHealth>DiseasesAndConditions>Injuries>FirstAid"
+                    }
+                ],
+                "timestamp": {
+                    "start": 258210,
+                    "end": 265870
+                },
+                "sentences_idx_start": 58,
+                "sentences_idx_end": 59
+            }
+        ],
+        "summary": {
+            "Technology&Computing>ArtificialIntelligence": 1.0,
+            "Sports>ExtremeSports>SurfingAndBodyboarding": 0.5668359398841858,
+            "Travel>TravelType>BeachTravel": 0.10916953533887863,
+            "Technology&Computing>Computing": 0.10650195926427841,
+            "Hobbies&Interests>ContentProduction>VideoProduction": 0.0822514221072197,
+            "Sports>FishingSports": 0.051096316426992416,
+            "Pets>FishAndAquariums": 0.03404274582862854,
+            "Technology&Computing>Robotics": 0.013471036218106747,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>VideoSoftware": 0.012204376980662346,
+            "Technology&Computing": 0.010851185768842697,
+            "Technology&Computing>Computing>ProgrammingLanguages": 0.008184729143977165,
+            "Television>RealityTV": 0.008121337741613388,
+            "Sports>Sailing": 0.0031102467328310013,
+            "Television>FactualTV": 0.0030200141482055187,
+            "Technology&Computing>Computing>ComputerSoftwareAndApplications>WebConferencing": 0.0025733669754117727,
+            "Hobbies&Interests>ContentProduction>Screenwriting": 0.0025133853778243065,
+            "Technology&Computing>Computing>Internet>InternetOfThings": 0.0023792653810232878,
+            "Sports>ExtremeSports>WaterskiingAndWakeboarding": 0.002040557563304901,
+            "BusinessAndFinance>Industries>EnvironmentalServicesIndustry": 0.0018632718129083514,
+            "Movies>DocumentaryMovies": 0.0017736522713676095
+        }
+    },
+    "language_detection": true,
+    "custom_spelling": null,
+    "throttled": null,
+    "auto_chapters": true,
+    "summarization": false,
+    "summary_type": null,
+    "summary_model": null,
+    "custom_topics": false,
+    "topics": [],
+    "speech_threshold": null,
+    "disfluencies": true,
+    "sentiment_analysis": false,
+    "chapters": [
+        {
+            "summary": " neural networks reflect the behavior of the human brain. They allow computer programs to recognize patterns and solve common problems in the fields of AI and deep learning. Here are five things to know about neural networks in in under five minutes.",
+            "gist": "What Are NeuroNeural Networks?",
+            "headline": "Neural networks allow computers to recognize patterns and solve common problems",
+            "start": 490,
+            "end": 249554
+        },
+        {
+            "summary": "To learn more about neural networks, check out these videos. If you have any questions, please drop us a line below. And if you want to see more videos like this in the future, please like and subscribe.",
+            "gist": "5 Things You Need To Know About Neural Networks",
+            "headline": "So so five things in five minutes about neural networks",
+            "start": 249682,
+            "end": 265870
+        }
+    ],
+    "sentiment_analysis_results": null,
+    "entity_detection": false,
+    "entities": null,
+    "summary": null,
+    "speakers_expected": null
+}

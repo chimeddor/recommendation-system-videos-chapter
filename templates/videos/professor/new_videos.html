@@ -1,0 +1,266 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+
+  <link rel="stylesheet" type="text/css" href="{% static '/netflix_css/styles.css' %}">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<style>
+  .form-main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-group {
+    position: relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+  }
+  .form-control {
+    width: 25vw;
+    margin: 10px 0;
+    font-size: .9em;
+    font-weight: 500;
+  }
+  #video-container {
+    width: 25vw;
+  }
+  /* .label {
+    position: absolute;
+    color: red;
+    top:30%;
+  } */
+   /* The Modal (background) */
+   .loader {
+    /*Hidden by default */
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(0,0,0); 
+    /* Fallback color */
+    background-color: rgba(0,0,0,1);
+     /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .loader-content {
+    /* display: block; */
+    position: absolute;
+    background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    }
+    .loading-text{
+      margin:0;
+    }
+    .yes-display {
+      display: block;
+    }
+    #headerdiv{
+      display: block;
+    }
+    .no-header{
+      display: none;
+    }
+</style>
+<title>Create Video</title>
+</head>
+<body>
+  <div id="headerdiv">
+    {% include 'header/netflix_header.html' %}
+  </div>
+  <div class="loader" id="loader">
+    <div class="loader-content" id="loader-content" role="status">
+      <div class="spinner-grow text-success" role="status"></div>
+      <br>
+      <p class="loading-text">Loading ...</p>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <form class="form-main" method="POST" enctype="multipart/form-data" action="{% url 'insertvideo' %}">
+      <h1>Create Video</h1>
+      <div class="form-group input-form">
+        {% csrf_token %}
+        {% if message %}
+        <div class="alert alert-{{class}}">
+          {{message}}
+        </div>
+        {% endif%}
+        <!-- <label for="link" class="label">Link</label> -->
+        <!-- <input type="text" name="title" class="form-control link" id="video_title" placeholder="Video title"> -->
+        <!-- <input type="text" class="form-control link" id="link" name="link" placeholder="Enter youtube link..." required> -->
+        <!-- <input type="text" name="title" id="video_title"> -->
+        <!-- <input type="file" name="video" id="video_file"> -->
+  
+        <div class="grid w-full max-w-xs items-center gap-1.5">
+          <input type="text" name="title" class="form-control link" id="video_title" placeholder="Video title...">
+          <!-- <input id="picture" type="file" name="video" class="form-control link"> -->
+          <input id="link" type="text" class="form-control link" name="link" placeholder="Video link...">
+        </div>
+      </div>
+      <div id="video-container"></div>
+      <div id="console"></div>
+      <div id="console2"></div>
+      <div class="form-group">
+        <button type="submit" class="form-control btn btn-primary" id="upload_btn">Upload</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+
+    document.getElementById('upload_btn').addEventListener('click', function(){
+      const headerdiv1 = document.getElementById("headerdiv")
+      document.getElementById('loader').style.display = 'block';
+      document.getElementById('headerdiv').style.display = 'none';
+      $.ajax({
+        method: 'POST',
+        url: '/insertvideo',
+        processData: false,
+        contentType: false,
+        beforeSend: function() {
+          // Ajax 요청이 서버로 보내지기 전에 실행될 코드를 여기에 작성합니다.
+          // 예를 들어, loader를 표시하는 코드를 추가할 수 있습니다.
+          const loader1 = document.getElementById("loader");
+          loader1.classList.add('yes-display');
+        },
+        success: function(res) {
+          console.log("success");
+        }
+      });
+
+
+      // $.ajax({
+      //   type:'GET',
+      //   url:'/insertvideo',
+      //   success: function(res){
+      //     loader1.classList.add('yes-display')
+      //     console.log("success")
+      //   }
+      // });
+
+      });
+  </script>
+  
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+      $(document).ready(function(){
+        $('#link').on('input', function(){
+
+          var link = $(this).val();
+          var video_Id = extractVideoId(link);
+
+          if (player) {
+            player.destory();
+          }
+          player = new YT.Player('video-container', {
+            height: '390',
+            width: '640',
+            videoId: video_Id,
+            playerVars: {
+              'playsinline': 1
+            },
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+                }
+              });
+            });
+          });
+        }
+
+        function onPlayerReady(event) {
+          event.target.playVideo();
+          event.target.mute();
+        }
+
+        var done = false;
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            done = true;
+          }
+        }
+
+        function stopVideo() {
+          player.stopVideo();
+        }
+        
+        function extractVideoId(link) {
+        // 정규식을 사용하여 유튜브 링크에서 비디오 ID 추출
+          var regex = /(?:\/|%3D|v=|vi=)([0-9A-Za-z_-]{11})(?:[%#?&]|$)/;
+          var match = link.match(regex);
+          if (match[1]) {
+            var videoId_ = match[1];
+            var invalidWords = ["buy", "spam", "invalid"]; // 잘못된 단어들의 목록
+            invalidWords.forEach(function(word) {
+                if (videoId_.includes(word)) {
+                  extra_id = videoId_.replace(word, '');
+                  return extra_id;
+                }
+            });
+            return videoId_;
+          } else {
+            return null;
+          }
+
+        }
+       
+  </script>
+
+</body>
+</html>
