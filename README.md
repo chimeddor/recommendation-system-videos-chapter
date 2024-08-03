@@ -26,12 +26,12 @@ mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using rea
 
 <p><b>--- 시스템 ---</b></p>
 
-0. youtube link
-1. 자동으로 강의 동영상에 대한 챕터를 생성
-2. TF-IDF
-3. k-means++ Clustering
-4. GNN
-5. Cosine similarity
+1. youtube link
+2. 자동으로 강의 동영상에 대한 챕터를 생성
+3. TF-IDF
+4. k-means++ Clustering
+5. GNN
+6. Cosine similarity
 
 1)   
 
