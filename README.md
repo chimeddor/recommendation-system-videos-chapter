@@ -17,7 +17,7 @@ mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using rea
 
 <p> - 데이터 베이스를 장고 administration 페이지에서 관리 가능</p>
 <p> - 장고 administration 페이지에서 사용자 및 강의 동영상 관리 가능</p>
-<p>- 검색 부분을 통해 질문하면 챕터 추천하며, 챕터를 클릭 시 해당되는 강의 동영상으로 이동</p>
+<p> - 검색 부분을 통해 질문하면 챕터 추천하며, 챕터를 클릭 시 해당되는 강의 동영상으로 이동</p>
 
 
 <p><b>--- 시스템을 실행하는 명령어 ---</b></p>
