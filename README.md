@@ -8,7 +8,7 @@ python 3.8.10
 django 4.2.1
 mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
 
-<p><b>--- 가상 환경 설치 필요할 경우 ---</b></p>
+<p><b>--- 가상 환경 필요한 경우 ---</b></p>
 <p>- python3 -m venv my-venv</p>
 
 <p><b>--- 변경된 사항 있는 경우 다음 명령어를 터미너에서 실행 ---</b></p>
