@@ -30,7 +30,7 @@ mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using rea
 
 <p>- python3 manage.py runserver 0:port</p>
 
-<p><b>--- 시스템 ---</b></p>
+<p><b>--- 시스템 구성 ---</b></p>
 
 1. youtube link
 2. 자동으로 강의 동영상에 대한 챕터를 생성
