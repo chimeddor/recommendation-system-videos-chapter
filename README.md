@@ -11,10 +11,13 @@ mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using rea
 <p><b>--- 가상 환경 필요한 경우 ---</b></p>
 <p>- python3 -m venv my-venv</p>
 
+<p><b>--- 라이브러리 설치하는 명령어 ---</b></p>
+<p>- pip install django-libraryname</p>
+
 <p><b>--- 변경된 사항 있는 경우 다음 명령어를 터미너에서 실행 ---</b></p>
 
 <p>- python3 manage.py makemigrations</p>
-<p> - python3 manage.py migrate</p>
+<p>- python3 manage.py migrate</p>
 
 <p><b>--- 시스템 사용 방법---</b></p>
 
