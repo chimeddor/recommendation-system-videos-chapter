@@ -1,6 +1,6 @@
 “chapter level lecture video recommendation system using Graph Neural Network"
 
-license - mozilla public license (MPL)
+license - mozilla public license (MPL)<br>
 django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 활용
 
 <p><b>--- 환경 설치 ---</b></p>
