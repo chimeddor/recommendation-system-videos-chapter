@@ -32,13 +32,12 @@ django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 �
     6.1 python3 manage.py runserver 0:port
 
 <h3><b>7. 시스템 구성 </b></h3>
-
-    7.1. youtube link
-    7.2. 자동으로 강의 동영상에 대한 챕터를 생성
-    7.3. TF-IDF
-    7.4. k-means++ Clustering
-    7.5. GNN
-    7.6. Cosine similarity
+    <p>7.1 youtube link</p>
+    <p>7.2 자동으로 강의 동영상에 대한 챕터를 생성</p>
+    <p>7.3 TF-IDF</p>
+    <p>7.4 k-means++ Clustering</p>
+    <p>7.5 GNN</p>
+    <p>7.6 Cosine similarity</p>
 
 1)   
 
