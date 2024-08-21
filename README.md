@@ -6,8 +6,8 @@
 <h4>논문[paper]-scienceON <a href="https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0016835391&fbclid=IwZXh0bgNhZW0CMTEAAR0N098y0pUjimMzz6kju2Mw_rh9xQrOLJjI0Cb3tYyWNDxf6dmER_YOvic_aem_BiH8cKASkCIdlzfZ82PACg#;">Graph Neural Network를 활용한 챕터 수준의 강의 동영상 추천 시스템 = Chapter-level lecture video recommendation system using Graph Neural Network</a></4>
 
 <br>
-license - mozilla public license (MPL)<br>
-django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 활용
+<p>license - mozilla public license (MPL)</p><br><br>
+<p>django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 활용</p>
 
 <h3> 1. 환경 설치 </h3>
     <p>1.1 python 3.8.10</p>
@@ -44,12 +44,6 @@ django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 �
     <p> 7.4 k-means++ Clustering(유사한 챕터들끼리 클러스터링)</p>
     <p> 7.5 GNN(Graph Neural Network) </p>
     <p> 7.6 Cosine similarity </p>
-
-
-
-
-
-
 
 1)   
 
