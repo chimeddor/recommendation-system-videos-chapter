@@ -1,14 +1,14 @@
-“chapter level lecture video recommendation system using Graph Neural Network"
+<h1><b>chapter level lecture video recommendation system using Graph Neural Network</b></h1>
 
 license - mozilla public license (MPL)<br>
 django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 활용
 
-<p><b>--- 환경 설치 ---</b></p>
+<h3> 1. 환경 설치 </h3>
 python 3.8.10
 django 4.2.1
 mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
 
-<p><b>--- 가상 환경 필요한 경우 ---</b></p>
+<h3><b>2. 가상 환경 필요한 경우 </b></h3>
 <p>- python3 -m venv my-venv</p>
 
 <p><b>--- 라이브러리 설치하는 명령어 ---</b></p>
