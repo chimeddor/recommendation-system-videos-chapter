@@ -3,8 +3,8 @@
 
 <h4>논문[paper]-RISS <a href="https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=8880060ffec5650bffe0bdc3ef48d419&outLink=K">Graph Neural Network를 활용한 챕터 수준의 강의 동영상 추천 시스템 = Chapter-level lecture video recommendation system using Graph Neural Network</a></4>
 
-<h4>논문[paper]-scienceON <a href="https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0016835391&fbclid=IwZXh0bgNhZW0CMTEAAR0N098y0pUjimMzz6kju2Mw_rh9xQrOLJjI0Cb3tYyWNDxf6dmER_YOvic_aem_BiH8cKASkCIdlzfZ82PACg#;">Graph Neural Network를 활용한 챕터 수준의 강의 동영상 추천 시스템 = Chapter-level lecture video recommendation system using Graph Neural Network</a></4>
-
+<h4>논문[paper]-scienceON <a href="https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=DIKO0016835391&fbclid=IwZXh0bgNhZW0CMTEAAR0N098y0pUjimMzz6kju2Mw_rh9xQrOLJjI0Cb3tYyWNDxf6dmER_YOvic_aem_BiH8cKASkCIdlzfZ82PACg#;">Graph Neural Network를 활용한 챕터 수준의 강의 동영상 추천 시스템 = Chapter-level lecture video ,recommendation system using Graph Neural Network</a></4>
+<p></p>
 <br>
 <p>license - mozilla public license (MPL)</p><br>
 <p>django platform에 그래프 신경망과 그 외에 다른 알고리즘들을 활용</p>
