@@ -14,7 +14,7 @@
     <p>1.2 django 4.2.1</p>
     <p>1.3 mysql  Ver 15.1 Distrib 10.6.15-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2</p>
 
-<h3><b>2. 가상 환경 필요한 경우 </b></h3>
+<h3><b> 2. 가상 환경 필요한 경우 </b></h3>
 
     2.1 python3 -m venv my-venv
 
