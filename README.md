@@ -1,5 +1,5 @@
 <h1><b>Chapter level lecture video recommendation system using Graph Neural Network</b></h1>
-<h4>논문[paper] <a href="https://journal.kci.go.kr/jksci/archive/articleView?artiId=ART003104517">Improving Accuracy of Chapter-level Lecture Video Recommendation System using Keyword Cluster-based Graph Neural Networks</a></4>
+<h4>논문[paper]-KJC(Korea Journal Central) <a href="https://journal.kci.go.kr/jksci/archive/articleView?artiId=ART003104517">Improving Accuracy of Chapter-level Lecture Video Recommendation System using Keyword Cluster-based Graph Neural Networks</a></4>
 
 <h4>논문[paper]-RISS <a href="https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=8880060ffec5650bffe0bdc3ef48d419&outLink=K">Graph Neural Network를 활용한 챕터 수준의 강의 동영상 추천 시스템 = Chapter-level lecture video recommendation system using Graph Neural Network</a></4>
 
